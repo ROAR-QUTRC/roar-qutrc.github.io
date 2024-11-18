@@ -765,13 +765,13 @@
 <p>This means using <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;cstlib&gt;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;stdlib.h&gt;</span></code> and similar. If you’re including a standard library file ending in <code class="docutils literal notranslate"><span class="pre">.h</span></code>, chances are it’s a C include and you should be using the <code class="docutils literal notranslate"><span class="pre">&lt;clibname&gt;</span></code> alternative.</p>
 <section id="id12">
 <h5>Correct<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##include &lt;cstdint&gt;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
 </pre></div>
 </div>
 </section>
 <section id="id13">
 <h5>Incorrect<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##include &lt;stdint.h&gt; </span><span class="c1">// don&#39;t do this</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdint.h&gt;</span><span class="c1"> // don&#39;t do this</span>
 </pre></div>
 </div>
 </section>
@@ -785,7 +785,7 @@
 <p>Make no assumptions about files being included before whatever you’re writing. If your header file needs another file to be included before it, <strong>do not</strong> assume that it will be included. Include it yourself. If you need a certain variable to be declared, declare it. If your code can be broken by including it into a different file, or with a different include order of files, it needs to be fixed.</p>
 <section id="id14">
 <h5>Correct<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##include &lt;cstdint&gt;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
 
 <span class="kt">uint8_t</span><span class="w"> </span><span class="nf">adder</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">input</span><span class="p">);</span>
 </pre></div>
@@ -805,11 +805,11 @@
 <p>You should never use a <code class="docutils literal notranslate"><span class="pre">using</span></code> directive in a header. This goes for both <code class="docutils literal notranslate"><span class="pre">using</span> <span class="pre">namespace</span></code> directives and specific symbol inclusion such as <code class="docutils literal notranslate"><span class="pre">using</span> <span class="pre">std::vector</span></code>.</p>
 <section id="id16">
 <h5>Correct<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##pragma once</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
-<span class="cp">##include &lt;cstdint&gt;</span>
-<span class="cp">##include &lt;tuple&gt;</span>
-<span class="cp">##include &lt;vector&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tuple&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">Settings</span>
 <span class="p">{</span>
@@ -833,11 +833,11 @@
 </section>
 <section id="id17">
 <h5>Incorrect<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##pragma once</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
-<span class="cp">##include &lt;cstdint&gt;</span>
-<span class="cp">##include &lt;tuple&gt;</span>
-<span class="cp">##include &lt;vector&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tuple&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
 
 <span class="c1">// now everything after the inclusion of this file has to deal with the inclusion of the entire std namespace</span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
@@ -865,18 +865,18 @@
 <section id="use-include-guards">
 <h4>Use include guards<a class="headerlink" href="#use-include-guards" title="Link to this heading">¶</a></h4>
 <p>Put <code class="docutils literal notranslate"><span class="pre">#pragma</span> <span class="pre">once</span></code> as the first line of all headers. This prevents files from being included more than once in a file. Whilst technically <code class="docutils literal notranslate"><span class="pre">#pragma</span> <span class="pre">once</span></code> is compiler specific, it’s common enough that it’s effectively a standard, and all C++ code on the rover is compiled with <code class="docutils literal notranslate"><span class="pre">gcc</span></code> anyway making it a nonissue. You may have already seen the standard include guard pattern of</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##ifndef __MY_FILE_H</span>
-<span class="cp">##define __MY_FILE_H</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef __MY_FILE_H</span>
+<span class="cp">#define __MY_FILE_H</span>
 <span class="c1">// code here...</span>
-<span class="cp">##endif </span><span class="c1">// __MY_FILE_H</span>
+<span class="cp">#endif </span><span class="c1">// __MY_FILE_H</span>
 </pre></div>
 </div>
 <p>or something similar - whilst this will work the exact same way, it is liable to programmer mistakes if a file gets moved, renamed, or copied, whereas the pragma directive doesn’t have these issues.</p>
 <section id="id18">
 <h5>Correct<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##pragma once</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
-<span class="cp">##include &lt;cstdint&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
 
 <span class="c1">// now if this file is included twice, there&#39;ll be an error since the class is declared twice</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">Settings</span>
@@ -888,7 +888,7 @@
 </section>
 <section id="id19">
 <h5>Incorrect<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##include &lt;cstdint&gt;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
 
 <span class="c1">// now if this file is included twice, there&#39;ll be an error since the class is declared twice</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">Settings</span>
@@ -926,7 +926,7 @@
 <h5>Correct<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h5>
 <section id="settings-cpp">
 <h6>settings.cpp<a class="headerlink" href="#settings-cpp" title="Link to this heading">¶</a></h6>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##include &quot;settings.hpp&quot;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;settings.hpp&quot;</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">settings_t</span><span class="w"> </span><span class="n">settings</span><span class="p">;</span>
 
@@ -939,7 +939,7 @@
 <h5>Incorrect<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h5>
 <section id="id24">
 <h6>settings.cpp<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h6>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">##include &quot;settings.hpp&quot;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;settings.hpp&quot;</span>
 
 <span class="c1">// other code can modify settings now!</span>
 <span class="n">settings_t</span><span class="w"> </span><span class="n">settings</span><span class="p">;</span>
@@ -956,16 +956,16 @@
 <p>There is very little need for namespaces in ROAR software (except for common libraries such as <code class="docutils literal notranslate"><span class="pre">hi-can-lib</span></code> and associated libs under <code class="docutils literal notranslate"><span class="pre">hi_can</span></code>). However, if you do need a namespace, keep it to all lowercase single words, and if that’s impractical, multiple words of <code class="docutils literal notranslate"><span class="pre">snake_case</span></code> is also acceptable - just keep it as short as possible while remaining understandable.</p>
 <section id="id25">
 <h5>Acceptable<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="o">::</span><span class="n">hi_can</span>
-<span class="o">::</span><span class="n">hi_can</span><span class="o">::</span><span class="n">drive</span>
-<span class="o">::</span><span class="n">hi_can</span><span class="o">::</span><span class="n">drive</span><span class="o">::</span><span class="n">traction_control</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">hi_can</span>
+<span class="n">hi_can</span><span class="o">::</span><span class="n">drive</span>
+<span class="n">hi_can</span><span class="o">::</span><span class="n">drive</span><span class="o">::</span><span class="n">traction_control</span>
 </pre></div>
 </div>
 </section>
 <section id="id26">
 <h5>Incorrect<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h5>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="o">::</span><span class="n">rover_libraries</span><span class="o">::</span><span class="n">drive</span>
-<span class="o">::</span><span class="n">RoverLibraries</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">rover_libraries</span><span class="o">::</span><span class="n">drive</span>
+<span class="n">RoverLibraries</span>
 </pre></div>
 </div>
 </section>
