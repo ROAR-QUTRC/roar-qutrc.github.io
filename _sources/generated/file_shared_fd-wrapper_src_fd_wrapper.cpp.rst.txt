@@ -1,0 +1,39 @@
+
+.. _file_shared_fd-wrapper_src_fd_wrapper.cpp:
+
+File fd_wrapper.cpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_fd-wrapper_src>` (``shared/fd-wrapper/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/fd-wrapper/src/fd_wrapper.cpp``)
+-----------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``fd_wrapper.hpp`` (:ref:`file_shared_fd-wrapper_include_fd_wrapper.hpp`)
+
+- ``stdexcept``
+
+- ``unistd.h``
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_fd__wrapper_8cpp_1ae18e498ea5e0f56245f661e154bf496b`
+

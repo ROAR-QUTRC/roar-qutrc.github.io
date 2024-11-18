@@ -1,0 +1,36 @@
+
+.. _file_ros_ws_src_input_devices_launch_xbox_controller_launch.py:
+
+File xbox_controller_launch.py
+==============================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_input_devices_launch>` (``ros_ws/src/input_devices/launch``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/input_devices/launch/xbox_controller_launch.py``)
+--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_xbox_controller_launch`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_xbox__controller__launch_8py_1a1458a93322ee60e3c8ae88e415588a05`
+

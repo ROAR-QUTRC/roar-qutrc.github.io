@@ -1,0 +1,15 @@
+
+.. _namespace_input_devices:
+
+Namespace input_devices
+=======================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_input_devices__generic_controller`
+
+- :ref:`namespace_input_devices__xbox_controller`

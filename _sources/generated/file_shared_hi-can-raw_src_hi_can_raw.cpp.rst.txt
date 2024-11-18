@@ -1,0 +1,44 @@
+
+.. _file_shared_hi-can-raw_src_hi_can_raw.cpp:
+
+File hi_can_raw.cpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_hi-can-raw_src>` (``shared/hi-can-raw/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/hi-can-raw/src/hi_can_raw.cpp``)
+-----------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstring``
+
+- ``hi_can_raw.hpp`` (:ref:`file_shared_hi-can-raw_include_hi_can_raw.hpp`)
+
+- ``linux/can.h``
+
+- ``linux/can/raw.h``
+
+- ``net/if.h``
+
+- ``stdexcept``
+
+- ``sys/ioctl.h``
+
+- ``sys/socket.h``
+
+- ``unistd.h``
+
+
+
+
+

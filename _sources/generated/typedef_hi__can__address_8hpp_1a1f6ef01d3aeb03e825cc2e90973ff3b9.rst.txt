@@ -1,0 +1,14 @@
+.. _exhale_typedef_hi__can__address_8hpp_1a1f6ef01d3aeb03e825cc2e90973ff3b9:
+
+Typedef hi_can::can_address_t
+=============================
+
+- Defined in :ref:`file_shared_hi-can-lib_include_hi_can_address.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: hi_can::can_address_t
+   :project: rover

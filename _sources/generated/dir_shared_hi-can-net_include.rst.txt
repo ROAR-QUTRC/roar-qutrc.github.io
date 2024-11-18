@@ -1,0 +1,21 @@
+.. _dir_shared_hi-can-net_include:
+
+
+Directory include
+=================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_hi-can-net>` (``shared/hi-can-net``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``shared/hi-can-net/include``
+
+
+Files
+-----
+
+- :ref:`file_shared_hi-can-net_include_hi_can_net.hpp`
+
+

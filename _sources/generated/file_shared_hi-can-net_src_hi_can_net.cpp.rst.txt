@@ -1,0 +1,44 @@
+
+.. _file_shared_hi-can-net_src_hi_can_net.cpp:
+
+File hi_can_net.cpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_hi-can-net_src>` (``shared/hi-can-net/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/hi-can-net/src/hi_can_net.cpp``)
+-----------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``hi_can_net.hpp`` (:ref:`file_shared_hi-can-net_include_hi_can_net.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classhi__can_1_1NetworkClient`
+
+- :ref:`exhale_class_classhi__can_1_1NetworkServer`
+

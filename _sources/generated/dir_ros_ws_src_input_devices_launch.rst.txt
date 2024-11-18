@@ -1,0 +1,21 @@
+.. _dir_ros_ws_src_input_devices_launch:
+
+
+Directory launch
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_input_devices>` (``ros_ws/src/input_devices``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``ros_ws/src/input_devices/launch``
+
+
+Files
+-----
+
+- :ref:`file_ros_ws_src_input_devices_launch_xbox_controller_launch.py`
+
+

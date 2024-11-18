@@ -1,0 +1,14 @@
+.. _exhale_function_generic__controller_8py_1a51d704bdb6e79170e29fdaf7a3bee9da:
+
+Function input_devices::generic_controller::main
+================================================
+
+- Defined in :ref:`file_ros_ws_src_input_devices_input_devices_generic_controller.py`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: input_devices::generic_controller::main()
+   :project: rover

@@ -1,0 +1,17 @@
+.. _exhale_struct_structhi__can_1_1hi__can__address__t:
+
+Struct hi_can_address_t
+=======================
+
+- Defined in :ref:`file_shared_hi-can-lib_include_hi_can_address.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: hi_can::hi_can_address_t
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
