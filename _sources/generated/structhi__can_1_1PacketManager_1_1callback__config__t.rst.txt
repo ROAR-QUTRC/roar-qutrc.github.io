@@ -1,0 +1,23 @@
+.. _exhale_struct_structhi__can_1_1PacketManager_1_1callback__config__t:
+
+Struct PacketManager::callback_config_t
+=======================================
+
+- Defined in :ref:`file_shared_hi-can-lib_include_hi_can_lib.hpp`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classhi__can_1_1PacketManager`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: hi_can::PacketManager::callback_config_t
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:

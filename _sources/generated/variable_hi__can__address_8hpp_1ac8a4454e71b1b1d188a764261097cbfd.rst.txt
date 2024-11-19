@@ -1,0 +1,14 @@
+.. _exhale_variable_hi__can__address_8hpp_1ac8a4454e71b1b1d188a764261097cbfd:
+
+Variable hi_can::CANLIB_SYSTEM_ADDRESS_BITS
+===========================================
+
+- Defined in :ref:`file_shared_hi-can-lib_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::CANLIB_SYSTEM_ADDRESS_BITS
+   :project: rover

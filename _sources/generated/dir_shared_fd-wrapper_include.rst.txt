@@ -1,0 +1,21 @@
+.. _dir_shared_fd-wrapper_include:
+
+
+Directory include
+=================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_fd-wrapper>` (``shared/fd-wrapper``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``shared/fd-wrapper/include``
+
+
+Files
+-----
+
+- :ref:`file_shared_fd-wrapper_include_fd_wrapper.hpp`
+
+

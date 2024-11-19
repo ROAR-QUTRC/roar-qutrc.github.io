@@ -1,0 +1,37 @@
+
+.. _file_ros_ws_src_hardware_interfaces_src_beacon.cpp:
+
+File beacon.cpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_hardware_interfaces_src>` (``ros_ws/src/hardware_interfaces/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/hardware_interfaces/src/beacon.cpp``)
+--------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstdio``
+
+- ``hi_can_lib.hpp`` (:ref:`file_shared_hi-can-lib_include_hi_can_lib.hpp`)
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_beacon_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627`
+

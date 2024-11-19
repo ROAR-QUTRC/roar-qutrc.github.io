@@ -1,0 +1,41 @@
+
+.. _file_shared_hi-can-lib_src_hi_can_lib.cpp:
+
+File hi_can_lib.cpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_hi-can-lib_src>` (``shared/hi-can-lib/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/hi-can-lib/src/hi_can_lib.cpp``)
+-----------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``hi_can_lib.hpp`` (:ref:`file_shared_hi-can-lib_include_hi_can_lib.hpp`)
+
+- ``sys/socket.h``
+
+- ``sys/un.h``
+
+- ``unistd.h``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_std__chrono`
+

@@ -1,406 +1,1598 @@
+
+
 <!doctype html>
-<html class="no-js" lang="en" data-content_root="../">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
-
-    <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
-        <title>File hi_can_net.cpp - Perseus V2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
-    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+<html lang="en" class="no-js">
+  <head>
     
-    
-
-
-<style>
-  body {
-    --color-code-background: #f8f8f8;
-  --color-code-foreground: black;
-  
-  }
-  @media not print {
-    body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
-  
-    }
-    @media (prefers-color-scheme: dark) {
-      body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
-  
-      }
-    }
-  }
-</style></head>
-  <body>
-    
-    <script>
-      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
-    </script>
-    
-
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="svg-toc" viewBox="0 0 24 24">
-    <title>Contents</title>
-    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
-      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
-    </svg>
-  </symbol>
-  <symbol id="svg-menu" viewBox="0 0 24 24">
-    <title>Menu</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
-      <line x1="3" y1="12" x2="21" y2="12"></line>
-      <line x1="3" y1="6" x2="21" y2="6"></line>
-      <line x1="3" y1="18" x2="21" y2="18"></line>
-    </svg>
-  </symbol>
-  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
-    <title>Expand</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
-      <polyline points="9 18 15 12 9 6"></polyline>
-    </svg>
-  </symbol>
-  <symbol id="svg-sun" viewBox="0 0 24 24">
-    <title>Light mode</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
-      <circle cx="12" cy="12" r="5"></circle>
-      <line x1="12" y1="1" x2="12" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="23"></line>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-      <line x1="1" y1="12" x2="3" y2="12"></line>
-      <line x1="21" y1="12" x2="23" y2="12"></line>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-  </symbol>
-  <symbol id="svg-moon" viewBox="0 0 24 24">
-    <title>Dark mode</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
-    </svg>
-  </symbol>
-  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
-    <title>Auto light/dark, in light mode</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
-      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
-      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
-      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
-      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
-      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
-      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
-      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
-      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
-      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
-      <circle cx="14.5" cy="9.55" r="3.6"/>
-    </svg>
-  </symbol>
-  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
-    <title>Auto light/dark, in dark mode</title>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
-      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
-      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
-      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
-      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
-      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
-      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
-      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
-      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
-      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
-      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
-    </svg>
-  </symbol>
-  <symbol id="svg-pencil" viewBox="0 0 24 24">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
-      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
-      <path d="M13.5 6.5l4 4" />
-      <path d="M20 21l2 -2l-2 -2" />
-      <path d="M17 17l-2 2l2 2" />
-    </svg>
-  </symbol>
-  <symbol id="svg-eye" viewBox="0 0 24 24">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-      <path
-        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
-      <path d="M20 21l2 -2l-2 -2" />
-      <path d="M17 17l-2 2l2 2" />
-    </svg>
-  </symbol>
-</svg>
-
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
-
-<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
-
-
-
-<div class="page">
-  <header class="mobile-header">
-    <div class="header-left">
-      <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
-      </label>
-    </div>
-    <div class="header-center">
-      <a href="../index.html"><div class="brand">Perseus V2  documentation</div></a>
-    </div>
-    <div class="header-right">
-      <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
-          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
-          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
-          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
-          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
-        </button>
-      </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
-      </label>
-    </div>
-  </header>
-  <aside class="sidebar-drawer">
-    <div class="sidebar-container">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
-  
-  
-  <span class="sidebar-brand-text">Perseus V2  documentation</span>
-  
-</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
-  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
-  <input type="hidden" name="check_keywords" value="yes">
-  <input type="hidden" name="area" value="default">
-</form>
-<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">Home</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../home/docs-structure.html">Documentation Structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../home/getting-started.html">Getting Started</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Architecture</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/can-bus.html">CAN Bus Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/electrical.html">Electrical Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/network.html">Details and attributes of Perseus’s Network</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/software.html">Software Architecture</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Standards</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../standards/README.html">Standards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../standards/electronics.html">Electronics Design Guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../standards/software.html">Software Standards</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Maintenance</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../maintenance/README.html">Maintenance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../maintenance/documentation.html">Documentation Maintenance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../maintenance/software.html">Software Maintenance</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Code Documentation</span></p>
-<ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="root.html">Code Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Code Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="namespace_hi_can.html">Namespace hi_can</a></li>
-<li class="toctree-l2"><a class="reference internal" href="namespace_hi_can__addresses.html">Namespace hi_can::addresses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="namespace_hi_can__addresses__drive.html">Namespace hi_can::addresses::drive</a></li>
-<li class="toctree-l2"><a class="reference internal" href="namespace_input_devices.html">Namespace input_devices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="namespace_input_devices__generic_controller.html">Namespace input_devices::generic_controller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="namespace_input_devices__xbox_controller.html">Namespace input_devices::xbox_controller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="namespace_mapping_using_slam_toolbox.html">Namespace mapping_using_slam_toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="namespace_std__chrono.html">Namespace std::chrono</a></li>
-<li class="toctree-l2"><a class="reference internal" href="namespace_xbox_controller_launch.html">Namespace xbox_controller_launch</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structhi__can_1_1hi__can__address__t.html">Struct hi_can_address_t</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structhi__can_1_1PacketManager_1_1callback__config__t.html">Struct PacketManager::callback_config_t</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structhi__can_1_1PacketManager_1_1callback__data__t.html">Struct PacketManager::callback_data_t</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structhi__can_1_1PacketManager_1_1transmit__config__t.html">Struct PacketManager::transmit_config_t</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structhi__can_1_1PacketManager_1_1transmit__data__t.html">Struct PacketManager::transmit_data_t</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structhi__can_1_1vesc__address__t.html">Struct vesc_address_t</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classFdWrapper.html">Class FdWrapper</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classhi__can_1_1CanInterface.html">Class CanInterface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classhi__can_1_1FilteredCanInterface.html">Class FilteredCanInterface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classhi__can_1_1NetworkClient.html">Class NetworkClient</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classhi__can_1_1NetworkServer.html">Class NetworkServer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classhi__can_1_1Packet.html">Class Packet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classhi__can_1_1PacketManager.html">Class PacketManager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classhi__can_1_1RawCanInterface.html">Class RawCanInterface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classhi__can_1_1SoftwareFilteredCanInterface.html">Class SoftwareFilteredCanInterface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classinput__devices_1_1xbox__controller_1_1XboxControllerNode.html">Class XboxControllerNode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_generic__controller_8py_1a51d704bdb6e79170e29fdaf7a3bee9da.html">Function input_devices::generic_controller::main</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_xbox__controller_8py_1a00ebf7d3afacd199ace117b0e26d69f0.html">Function input_devices::xbox_controller::main</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4.html">Function main()</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_beacon_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main(int, char **)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_drive_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main(int, char **)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_excavation_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main(int, char **)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_mapping__using__slam__toolbox_8launch_8py_1a67bcf68dadb3392668e2da8da65c5d90.html">Function mapping_using_slam_toolbox::generate_launch_description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_fd__wrapper_8cpp_1ae18e498ea5e0f56245f661e154bf496b.html">Function swap</a></li>
-<li class="toctree-l2"><a class="reference internal" href="function_xbox__controller__launch_8py_1a1458a93322ee60e3c8ae88e415588a05.html">Function xbox_controller_launch::generate_launch_description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1a11b2a494674a863c29c6d715fe2466b4.html">Variable hi_can::CANLIB_DEVICE_ADDRESS_BITS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1a364c367bf6a56754de22c9859ead7400.html">Variable hi_can::CANLIB_DEVICE_ADDRESS_POS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1ac8af06649fc39c8bf2436a2c694f9637.html">Variable hi_can::CANLIB_GROUP_ADDRESS_BITS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1aa12904cb0c25680c3a0bc8925b6eb1ab.html">Variable hi_can::CANLIB_GROUP_ADDRESS_POS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1a4961cd9591efc9d7b2e7e88376b296c8.html">Variable hi_can::CANLIB_PARAM_ADDRESS_BITS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1a7d68852f262a651b52d2072ea845b591.html">Variable hi_can::CANLIB_PARAM_ADDRESS_POS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1a2a3c59bbddf1b8c55f99b8978f09b698.html">Variable hi_can::CANLIB_SUBSYSTEM_ADDRESS_BITS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1a5edcf9ed31e4efd3ecba03a271149211.html">Variable hi_can::CANLIB_SUBSYSTEM_ADDRESS_POS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1ac8a4454e71b1b1d188a764261097cbfd.html">Variable hi_can::CANLIB_SYSTEM_ADDRESS_BITS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1afe870a8a642fcd625137e014ae2682ef.html">Variable hi_can::CANLIB_SYSTEM_ADDRESS_POS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1aa5c8e0fa3786193c03f0c3f2bb4806ba.html">Variable hi_can::MAX_ADDRESS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="variable_hi__can__address_8hpp_1a65803fac77b2aac606188789d4b39408.html">Variable hi_can::MAX_PACKET_LEN</a></li>
-<li class="toctree-l2"><a class="reference internal" href="typedef_hi__can__address_8hpp_1a1f6ef01d3aeb03e825cc2e90973ff3b9.html">Typedef hi_can::can_address_t</a></li>
-</ul>
-</li>
-</ul>
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>File hi_can_net.cpp - Perseus V2  documentation</title>
+      
+    
+    
+      
+        
+        
+      
+      
 
-</div>
-</div>
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.4b4a8c74e2ff2ab5b.min.css?v=afa97f93" />
+        <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+        <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=daa511bc" />
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-      </div>
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
       
     </div>
-  </aside>
-  <div class="main">
-    <div class="content">
-      <div class="article-container">
-        <a href="#" class="back-to-top muted-link">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
-          </svg>
-          <span>Back to top</span>
-        </a>
-        <div class="content-icon-container">
-          <div class="view-this-page">
-  <a class="muted-link" href="../_sources/generated/file_shared_hi-can-net_src_hi_can_net.cpp.rst.txt" title="View this page">
-    <svg><use href="#svg-eye"></use></svg>
-    <span class="visually-hidden">View this page</span>
-  </a>
-</div>
-<div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
-              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
-              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
-              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
-              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
-            </button>
-          </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
-          </label>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Perseus V2  documentation" class="md-header__button md-logo" aria-label="Perseus V2  documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Perseus V2  documentation
+          </span>
         </div>
-        <article role="main" id="furo-main-content">
-          <section id="file-hi-can-net-cpp">
-<span id="file-shared-hi-can-net-src-hi-can-net-cpp"></span><h1>File hi_can_net.cpp<a class="headerlink" href="#file-hi-can-net-cpp" title="Link to this heading">¶</a></h1>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              File hi_can_net.cpp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ROAR-QUTRC/perseus-v2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Perseus V2
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Perseus V2  documentation" class="md-nav__button md-logo" aria-label="Perseus V2  documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    Perseus V2  documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ROAR-QUTRC/perseus-v2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Perseus V2
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        <span class="md-ellipsis">Home</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/getting-started.html" class="md-nav__link">
+        <span class="md-ellipsis">Getting Started</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/docs-structure.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation Structure</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../architecture.html"><span class="md-ellipsis">Architecture</span></a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Architecture" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Architecture</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/can-bus.html" class="md-nav__link">
+        <span class="md-ellipsis">CAN Bus Architecture</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/electrical.html" class="md-nav__link">
+        <span class="md-ellipsis">Electrical Architecture</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/network.html" class="md-nav__link">
+        <span class="md-ellipsis">Network Architecture</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software Architecture</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../standards.html"><span class="md-ellipsis">Standards</span></a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Standards" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Standards</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/electronics.html" class="md-nav__link">
+        <span class="md-ellipsis">Electronics Design Guidelines</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software Standards</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../maintenance.html"><span class="md-ellipsis">Maintenance</span></a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Maintenance" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Maintenance</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation Maintenance</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software Maintenance</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="root.html"><span class="md-ellipsis">Generated Documentation</span></a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Generated Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Generated Documentation</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="root.html#full-api"><span class="md-ellipsis">Full API</span></a>
+          
+            <label for="__nav_7_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Full API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Full API</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_1" type="checkbox" id="__nav_7_1_1" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="root.html#namespaces"><span class="md-ellipsis">Namespaces</span></a>
+          
+            <label for="__nav_7_1_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Namespaces" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Namespaces</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addresses.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addresses</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addresses__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addresses::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_input_devices.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_input_devices__generic_controller.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices::<wbr>generic_<wbr>controller</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_input_devices__xbox_controller.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices::<wbr>xbox_<wbr>controller</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_mapping_using_slam_toolbox.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace mapping_<wbr>using_<wbr>slam_<wbr>toolbox</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_std__chrono.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace std::<wbr>chrono</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_xbox_controller_launch.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace xbox_<wbr>controller_<wbr>launch</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_2" type="checkbox" id="__nav_7_1_2" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="root.html#classes-and-structs"><span class="md-ellipsis">Classes and Structs</span></a>
+          
+            <label for="__nav_7_1_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Classes and Structs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Classes and Structs</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1hi__can__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct hi_<wbr>can_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1PacketManager_1_1callback__config__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>callback_<wbr>config_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1PacketManager_1_1callback__data__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>callback_<wbr>data_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1PacketManager_1_1transmit__config__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>transmit_<wbr>config_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1PacketManager_1_1transmit__data__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>transmit_<wbr>data_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1vesc__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct vesc_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classFdWrapper.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Fd<wbr>Wrapper</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1CanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1FilteredCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Filtered<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1NetworkClient.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Network<wbr>Client</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1NetworkServer.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Network<wbr>Server</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1Packet.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Packet</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1PacketManager.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Packet<wbr>Manager</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1RawCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Raw<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1SoftwareFilteredCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Software<wbr>Filtered<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classinput__devices_1_1xbox__controller_1_1XboxControllerNode.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Xbox<wbr>Controller<wbr>Node</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_3" type="checkbox" id="__nav_7_1_3" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="root.html#functions"><span class="md-ellipsis">Functions</span></a>
+          
+            <label for="__nav_7_1_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Functions" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Functions</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_generic__controller_8py_1a51d704bdb6e79170e29fdaf7a3bee9da.html" class="md-nav__link">
+        <span class="md-ellipsis">Function input_<wbr>devices::<wbr>generic_<wbr>controller::<wbr>main</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_xbox__controller_8py_1a00ebf7d3afacd199ace117b0e26d69f0.html" class="md-nav__link">
+        <span class="md-ellipsis">Function input_<wbr>devices::<wbr>xbox_<wbr>controller::<wbr>main</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4.html" class="md-nav__link">
+        <span class="md-ellipsis">Function main<wbr>()</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_beacon_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+        <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_drive_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+        <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_excavation_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+        <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_mapping__using__slam__toolbox_8launch_8py_1a67bcf68dadb3392668e2da8da65c5d90.html" class="md-nav__link">
+        <span class="md-ellipsis">Function mapping_<wbr>using_<wbr>slam_<wbr>toolbox::<wbr>generate_<wbr>launch_<wbr>description</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_fd__wrapper_8cpp_1ae18e498ea5e0f56245f661e154bf496b.html" class="md-nav__link">
+        <span class="md-ellipsis">Function swap</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_xbox__controller__launch_8py_1a1458a93322ee60e3c8ae88e415588a05.html" class="md-nav__link">
+        <span class="md-ellipsis">Function xbox_<wbr>controller_<wbr>launch::<wbr>generate_<wbr>launch_<wbr>description</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_4" type="checkbox" id="__nav_7_1_4" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="root.html#variables"><span class="md-ellipsis">Variables</span></a>
+          
+            <label for="__nav_7_1_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Variables" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Variables</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a11b2a494674a863c29c6d715fe2466b4.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>DEVICE_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a364c367bf6a56754de22c9859ead7400.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>DEVICE_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1ac8af06649fc39c8bf2436a2c694f9637.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>GROUP_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1aa12904cb0c25680c3a0bc8925b6eb1ab.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>GROUP_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a4961cd9591efc9d7b2e7e88376b296c8.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>PARAM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a7d68852f262a651b52d2072ea845b591.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>PARAM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a2a3c59bbddf1b8c55f99b8978f09b698.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a5edcf9ed31e4efd3ecba03a271149211.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1ac8a4454e71b1b1d188a764261097cbfd.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1afe870a8a642fcd625137e014ae2682ef.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1aa5c8e0fa3786193c03f0c3f2bb4806ba.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>MAX_<wbr>ADDRESS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a65803fac77b2aac606188789d4b39408.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>MAX_<wbr>PACKET_<wbr>LEN</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_5" type="checkbox" id="__nav_7_1_5" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="root.html#typedefs"><span class="md-ellipsis">Typedefs</span></a>
+          
+            <label for="__nav_7_1_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Typedefs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Typedefs</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="typedef_hi__can__address_8hpp_1a1f6ef01d3aeb03e825cc2e90973ff3b9.html" class="md-nav__link">
+        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>can_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+  <a href="https://github.com/ROAR-QUTRC/perseus-v2/edit/main/docs/source/generated/file_shared_hi-can-net_src_hi_can_net.cpp.rst" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+<h1 id="file-hi-can-net-cpp"><span id="file-shared-hi-can-net-src-hi-can-net-cpp"></span>File hi_can_net.cpp<a class="headerlink" href="#file-hi-can-net-cpp" title="Link to this heading">¶</a></h1>
 <p>↰ <a class="reference internal" href="dir_shared_hi-can-net_src.html#dir-shared-hi-can-net-src"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">shared/hi-can-net/src</span></code>)</p>
-<section id="definition-shared-hi-can-net-src-hi-can-net-cpp">
-<h2>Definition (<code class="docutils literal notranslate"><span class="pre">shared/hi-can-net/src/hi_can_net.cpp</span></code>)<a class="headerlink" href="#definition-shared-hi-can-net-src-hi-can-net-cpp" title="Link to this heading">¶</a></h2>
-</section>
-<section id="includes">
-<h2>Includes<a class="headerlink" href="#includes" title="Link to this heading">¶</a></h2>
+<h2 id="definition-shared-hi-can-net-src-hi-can-net-cpp">Definition (<code class="docutils literal notranslate"><span class="pre">shared/hi-can-net/src/hi_can_net.cpp</span></code>)<a class="headerlink" href="#definition-shared-hi-can-net-src-hi-can-net-cpp" title="Link to this heading">¶</a></h2>
+<h2 id="includes">Includes<a class="headerlink" href="#includes" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">hi_can_net.hpp</span></code> (<a class="reference internal" href="file_shared_hi-can-net_include_hi_can_net.hpp.html#file-shared-hi-can-net-include-hi-can-net-hpp"><span class="std std-ref">File hi_can_net.hpp</span></a>)</p></li>
 </ul>
-</section>
-<section id="namespaces">
-<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading">¶</a></h2>
+<h2 id="namespaces">Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="namespace_hi_can.html#namespace-hi-can"><span class="std std-ref">Namespace hi_can</span></a></p></li>
 </ul>
-</section>
-<section id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+<h2 id="classes">Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="classhi__can_1_1NetworkClient.html#exhale-class-classhi-can-1-1networkclient"><span class="std std-ref">Class NetworkClient</span></a></p></li>
 <li><p><a class="reference internal" href="classhi__can_1_1NetworkServer.html#exhale-class-classhi-can-1-1networkserver"><span class="std std-ref">Class NetworkServer</span></a></p></li>
 </ul>
-</section>
-</section>
 
-        </article>
-      </div>
-      <footer>
-        
-        <div class="related-pages">
-          
-          
-        </div>
-        <div class="bottom-of-page">
-          <div class="left-details">
-            <div class="copyright">
-                Copyright &#169; 1980, ROAR Team
+
+
+
+
+
+                
+              </article>
             </div>
-            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
-            
-            <a href="https://github.com/pradyunsg/furo">Furo</a>
-            
-          </div>
-          <div class="right-details">
-            
-          </div>
+          
+          
         </div>
         
-      </footer>
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2024, ROAR Team.
+        
     </div>
-    <aside class="toc-drawer">
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    8.1.3.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">File hi_can_net.cpp</a><ul>
-<li><a class="reference internal" href="#definition-shared-hi-can-net-src-hi-can-net-cpp">Definition (<code class="docutils literal notranslate"><span class="pre">shared/hi-can-net/src/hi_can_net.cpp</span></code>)</a></li>
-<li><a class="reference internal" href="#includes">Includes</a></li>
-<li><a class="reference internal" href="#namespaces">Namespaces</a></li>
-<li><a class="reference internal" href="#classes">Classes</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      
-      
-    </aside>
+    </div>
+    
   </div>
-</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
-    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
-    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
-    </body>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.highlight", "search.share", "toc.follow", "toc.sticky"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+      
+        <script src="../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    
+  </body>
 </html>

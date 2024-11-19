@@ -1,0 +1,16 @@
+.. _dir_ros_ws:
+
+
+Directory ros_ws
+================
+
+
+*Directory path:* ``ros_ws``
+
+Subdirectories
+--------------
+
+- :ref:`dir_ros_ws_src`
+
+
+

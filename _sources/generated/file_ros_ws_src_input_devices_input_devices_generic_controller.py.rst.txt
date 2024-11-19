@@ -1,0 +1,38 @@
+
+.. _file_ros_ws_src_input_devices_input_devices_generic_controller.py:
+
+File generic_controller.py
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_input_devices_input_devices>` (``ros_ws/src/input_devices/input_devices``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/input_devices/input_devices/generic_controller.py``)
+-----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_input_devices`
+
+- :ref:`namespace_input_devices__generic_controller`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_generic__controller_8py_1a51d704bdb6e79170e29fdaf7a3bee9da`
+

@@ -1,0 +1,22 @@
+.. _dir_shared_hi-can-raw:
+
+
+Directory hi-can-raw
+====================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_shared>` (``shared``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``shared/hi-can-raw``
+
+Subdirectories
+--------------
+
+- :ref:`dir_shared_hi-can-raw_include`
+- :ref:`dir_shared_hi-can-raw_src`
+
+
+
