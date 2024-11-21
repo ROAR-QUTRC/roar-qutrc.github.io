@@ -13,7 +13,7 @@
     
     
       
-        <title>Directory launch - Perseus V2  documentation</title>
+        <title>Documentation Build Architecture - Perseus V2  documentation</title>
       
     
     
@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-to-build" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -86,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Directory launch
+              Documentation Build Architecture
             
           </span>
         </div>
@@ -267,14 +272,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -302,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/can-bus.html" class="md-nav__link">
+      <a href="can-bus.html" class="md-nav__link">
         <span class="md-ellipsis">CAN Bus Architecture</span>
       </a>
     </li>
@@ -314,12 +321,99 @@
               
   
   
+    
+  
+    
   
   
-    <li class="md-nav__item">
-      <a href="../architecture/documentation-build.html" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Documentation Build Architecture</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
         <span class="md-ellipsis">Documentation Build Architecture</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Documentation Build Architecture</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-build" class="md-nav__link">
+    <span class="md-ellipsis">How to build</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-nix-build" class="md-nav__link">
+    <span class="md-ellipsis">Using nix build</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-nix-develop" class="md-nav__link">
+    <span class="md-ellipsis">Using nix develop</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using nix develop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    <span class="md-ellipsis">Building</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-environment-management-with-uv" class="md-nav__link">
+    <span class="md-ellipsis">Python environment management with uv</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serving-the-built-docs" class="md-nav__link">
+    <span class="md-ellipsis">Serving the built docs</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -332,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/electrical.html" class="md-nav__link">
+      <a href="electrical.html" class="md-nav__link">
         <span class="md-ellipsis">Electrical Architecture</span>
       </a>
     </li>
@@ -347,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/network.html" class="md-nav__link">
+      <a href="network.html" class="md-nav__link">
         <span class="md-ellipsis">Network Architecture</span>
       </a>
     </li>
@@ -362,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/software.html" class="md-nav__link">
+      <a href="software.html" class="md-nav__link">
         <span class="md-ellipsis">Software Architecture</span>
       </a>
     </li>
@@ -538,7 +632,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html"><span class="md-ellipsis">Generated Documentation</span></a>
+          <a href="../generated/index.html"><span class="md-ellipsis">Generated Documentation</span></a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -568,7 +662,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html#full-api"><span class="md-ellipsis">Full API</span></a>
+          <a href="../generated/index.html#full-api"><span class="md-ellipsis">Full API</span></a>
           
             <label for="__nav_7_1">
               <span class="md-nav__icon md-icon"></span>
@@ -598,7 +692,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html#namespaces"><span class="md-ellipsis">Namespaces</span></a>
+          <a href="../generated/index.html#namespaces"><span class="md-ellipsis">Namespaces</span></a>
           
             <label for="__nav_7_1_1">
               <span class="md-nav__icon md-icon"></span>
@@ -620,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_hi_can.html" class="md-nav__link">
+      <a href="../generated/namespace_hi_can.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace hi_<wbr>can</span>
       </a>
     </li>
@@ -635,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_hi_can__addresses.html" class="md-nav__link">
+      <a href="../generated/namespace_hi_can__addresses.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addresses</span>
       </a>
     </li>
@@ -650,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_hi_can__addresses__drive.html" class="md-nav__link">
+      <a href="../generated/namespace_hi_can__addresses__drive.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addresses::<wbr>drive</span>
       </a>
     </li>
@@ -665,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_input_devices.html" class="md-nav__link">
+      <a href="../generated/namespace_input_devices.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace input_<wbr>devices</span>
       </a>
     </li>
@@ -680,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_input_devices__generic_controller.html" class="md-nav__link">
+      <a href="../generated/namespace_input_devices__generic_controller.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace input_<wbr>devices::<wbr>generic_<wbr>controller</span>
       </a>
     </li>
@@ -695,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_input_devices__xbox_controller.html" class="md-nav__link">
+      <a href="../generated/namespace_input_devices__xbox_controller.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace input_<wbr>devices::<wbr>xbox_<wbr>controller</span>
       </a>
     </li>
@@ -710,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_mapping_using_slam_toolbox.html" class="md-nav__link">
+      <a href="../generated/namespace_mapping_using_slam_toolbox.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace mapping_<wbr>using_<wbr>slam_<wbr>toolbox</span>
       </a>
     </li>
@@ -725,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_std__chrono.html" class="md-nav__link">
+      <a href="../generated/namespace_std__chrono.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace std::<wbr>chrono</span>
       </a>
     </li>
@@ -740,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="namespace_xbox_controller_launch.html" class="md-nav__link">
+      <a href="../generated/namespace_xbox_controller_launch.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace xbox_<wbr>controller_<wbr>launch</span>
       </a>
     </li>
@@ -771,7 +865,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html#classes-and-structs"><span class="md-ellipsis">Classes and Structs</span></a>
+          <a href="../generated/index.html#classes-and-structs"><span class="md-ellipsis">Classes and Structs</span></a>
           
             <label for="__nav_7_1_2">
               <span class="md-nav__icon md-icon"></span>
@@ -793,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="structhi__can_1_1hi__can__address__t.html" class="md-nav__link">
+      <a href="../generated/structhi__can_1_1hi__can__address__t.html" class="md-nav__link">
         <span class="md-ellipsis">Struct hi_<wbr>can_<wbr>address_<wbr>t</span>
       </a>
     </li>
@@ -808,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="structhi__can_1_1PacketManager_1_1callback__config__t.html" class="md-nav__link">
+      <a href="../generated/structhi__can_1_1PacketManager_1_1callback__config__t.html" class="md-nav__link">
         <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>callback_<wbr>config_<wbr>t</span>
       </a>
     </li>
@@ -823,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="structhi__can_1_1PacketManager_1_1callback__data__t.html" class="md-nav__link">
+      <a href="../generated/structhi__can_1_1PacketManager_1_1callback__data__t.html" class="md-nav__link">
         <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>callback_<wbr>data_<wbr>t</span>
       </a>
     </li>
@@ -838,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="structhi__can_1_1PacketManager_1_1transmit__config__t.html" class="md-nav__link">
+      <a href="../generated/structhi__can_1_1PacketManager_1_1transmit__config__t.html" class="md-nav__link">
         <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>transmit_<wbr>config_<wbr>t</span>
       </a>
     </li>
@@ -853,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="structhi__can_1_1PacketManager_1_1transmit__data__t.html" class="md-nav__link">
+      <a href="../generated/structhi__can_1_1PacketManager_1_1transmit__data__t.html" class="md-nav__link">
         <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>transmit_<wbr>data_<wbr>t</span>
       </a>
     </li>
@@ -868,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="structhi__can_1_1vesc__address__t.html" class="md-nav__link">
+      <a href="../generated/structhi__can_1_1vesc__address__t.html" class="md-nav__link">
         <span class="md-ellipsis">Struct vesc_<wbr>address_<wbr>t</span>
       </a>
     </li>
@@ -883,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classFdWrapper.html" class="md-nav__link">
+      <a href="../generated/classFdWrapper.html" class="md-nav__link">
         <span class="md-ellipsis">Class Fd<wbr>Wrapper</span>
       </a>
     </li>
@@ -898,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classhi__can_1_1CanInterface.html" class="md-nav__link">
+      <a href="../generated/classhi__can_1_1CanInterface.html" class="md-nav__link">
         <span class="md-ellipsis">Class Can<wbr>Interface</span>
       </a>
     </li>
@@ -913,7 +1007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classhi__can_1_1FilteredCanInterface.html" class="md-nav__link">
+      <a href="../generated/classhi__can_1_1FilteredCanInterface.html" class="md-nav__link">
         <span class="md-ellipsis">Class Filtered<wbr>Can<wbr>Interface</span>
       </a>
     </li>
@@ -928,7 +1022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classhi__can_1_1NetworkClient.html" class="md-nav__link">
+      <a href="../generated/classhi__can_1_1NetworkClient.html" class="md-nav__link">
         <span class="md-ellipsis">Class Network<wbr>Client</span>
       </a>
     </li>
@@ -943,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classhi__can_1_1NetworkServer.html" class="md-nav__link">
+      <a href="../generated/classhi__can_1_1NetworkServer.html" class="md-nav__link">
         <span class="md-ellipsis">Class Network<wbr>Server</span>
       </a>
     </li>
@@ -958,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classhi__can_1_1Packet.html" class="md-nav__link">
+      <a href="../generated/classhi__can_1_1Packet.html" class="md-nav__link">
         <span class="md-ellipsis">Class Packet</span>
       </a>
     </li>
@@ -973,7 +1067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classhi__can_1_1PacketManager.html" class="md-nav__link">
+      <a href="../generated/classhi__can_1_1PacketManager.html" class="md-nav__link">
         <span class="md-ellipsis">Class Packet<wbr>Manager</span>
       </a>
     </li>
@@ -988,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classhi__can_1_1RawCanInterface.html" class="md-nav__link">
+      <a href="../generated/classhi__can_1_1RawCanInterface.html" class="md-nav__link">
         <span class="md-ellipsis">Class Raw<wbr>Can<wbr>Interface</span>
       </a>
     </li>
@@ -1003,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classhi__can_1_1SoftwareFilteredCanInterface.html" class="md-nav__link">
+      <a href="../generated/classhi__can_1_1SoftwareFilteredCanInterface.html" class="md-nav__link">
         <span class="md-ellipsis">Class Software<wbr>Filtered<wbr>Can<wbr>Interface</span>
       </a>
     </li>
@@ -1018,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="classinput__devices_1_1xbox__controller_1_1XboxControllerNode.html" class="md-nav__link">
+      <a href="../generated/classinput__devices_1_1xbox__controller_1_1XboxControllerNode.html" class="md-nav__link">
         <span class="md-ellipsis">Class Xbox<wbr>Controller<wbr>Node</span>
       </a>
     </li>
@@ -1049,7 +1143,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html#functions"><span class="md-ellipsis">Functions</span></a>
+          <a href="../generated/index.html#functions"><span class="md-ellipsis">Functions</span></a>
           
             <label for="__nav_7_1_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1071,7 +1165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_generic__controller_8py_1a51d704bdb6e79170e29fdaf7a3bee9da.html" class="md-nav__link">
+      <a href="../generated/function_generic__controller_8py_1a51d704bdb6e79170e29fdaf7a3bee9da.html" class="md-nav__link">
         <span class="md-ellipsis">Function input_<wbr>devices::<wbr>generic_<wbr>controller::<wbr>main</span>
       </a>
     </li>
@@ -1086,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_xbox__controller_8py_1a00ebf7d3afacd199ace117b0e26d69f0.html" class="md-nav__link">
+      <a href="../generated/function_xbox__controller_8py_1a00ebf7d3afacd199ace117b0e26d69f0.html" class="md-nav__link">
         <span class="md-ellipsis">Function input_<wbr>devices::<wbr>xbox_<wbr>controller::<wbr>main</span>
       </a>
     </li>
@@ -1101,7 +1195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4.html" class="md-nav__link">
+      <a href="../generated/function_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4.html" class="md-nav__link">
         <span class="md-ellipsis">Function main<wbr>()</span>
       </a>
     </li>
@@ -1116,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_beacon_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+      <a href="../generated/function_beacon_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
         <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
       </a>
     </li>
@@ -1131,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_drive_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+      <a href="../generated/function_drive_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
         <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
       </a>
     </li>
@@ -1146,7 +1240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_excavation_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+      <a href="../generated/function_excavation_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
         <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
       </a>
     </li>
@@ -1161,7 +1255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_mapping__using__slam__toolbox_8launch_8py_1a67bcf68dadb3392668e2da8da65c5d90.html" class="md-nav__link">
+      <a href="../generated/function_mapping__using__slam__toolbox_8launch_8py_1a67bcf68dadb3392668e2da8da65c5d90.html" class="md-nav__link">
         <span class="md-ellipsis">Function mapping_<wbr>using_<wbr>slam_<wbr>toolbox::<wbr>generate_<wbr>launch_<wbr>description</span>
       </a>
     </li>
@@ -1176,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_fd__wrapper_8cpp_1ae18e498ea5e0f56245f661e154bf496b.html" class="md-nav__link">
+      <a href="../generated/function_fd__wrapper_8cpp_1ae18e498ea5e0f56245f661e154bf496b.html" class="md-nav__link">
         <span class="md-ellipsis">Function swap</span>
       </a>
     </li>
@@ -1191,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="function_xbox__controller__launch_8py_1a1458a93322ee60e3c8ae88e415588a05.html" class="md-nav__link">
+      <a href="../generated/function_xbox__controller__launch_8py_1a1458a93322ee60e3c8ae88e415588a05.html" class="md-nav__link">
         <span class="md-ellipsis">Function xbox_<wbr>controller_<wbr>launch::<wbr>generate_<wbr>launch_<wbr>description</span>
       </a>
     </li>
@@ -1222,7 +1316,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html#variables"><span class="md-ellipsis">Variables</span></a>
+          <a href="../generated/index.html#variables"><span class="md-ellipsis">Variables</span></a>
           
             <label for="__nav_7_1_4">
               <span class="md-nav__icon md-icon"></span>
@@ -1244,7 +1338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1a11b2a494674a863c29c6d715fe2466b4.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1a11b2a494674a863c29c6d715fe2466b4.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>DEVICE_<wbr>ADDRESS_<wbr>BITS</span>
       </a>
     </li>
@@ -1259,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1a364c367bf6a56754de22c9859ead7400.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1a364c367bf6a56754de22c9859ead7400.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>DEVICE_<wbr>ADDRESS_<wbr>POS</span>
       </a>
     </li>
@@ -1274,7 +1368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1ac8af06649fc39c8bf2436a2c694f9637.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1ac8af06649fc39c8bf2436a2c694f9637.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>GROUP_<wbr>ADDRESS_<wbr>BITS</span>
       </a>
     </li>
@@ -1289,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1aa12904cb0c25680c3a0bc8925b6eb1ab.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1aa12904cb0c25680c3a0bc8925b6eb1ab.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>GROUP_<wbr>ADDRESS_<wbr>POS</span>
       </a>
     </li>
@@ -1304,7 +1398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1a4961cd9591efc9d7b2e7e88376b296c8.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1a4961cd9591efc9d7b2e7e88376b296c8.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>PARAM_<wbr>ADDRESS_<wbr>BITS</span>
       </a>
     </li>
@@ -1319,7 +1413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1a7d68852f262a651b52d2072ea845b591.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1a7d68852f262a651b52d2072ea845b591.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>PARAM_<wbr>ADDRESS_<wbr>POS</span>
       </a>
     </li>
@@ -1334,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1a2a3c59bbddf1b8c55f99b8978f09b698.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1a2a3c59bbddf1b8c55f99b8978f09b698.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
       </a>
     </li>
@@ -1349,7 +1443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1a5edcf9ed31e4efd3ecba03a271149211.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1a5edcf9ed31e4efd3ecba03a271149211.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>POS</span>
       </a>
     </li>
@@ -1364,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1ac8a4454e71b1b1d188a764261097cbfd.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1ac8a4454e71b1b1d188a764261097cbfd.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
       </a>
     </li>
@@ -1379,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1afe870a8a642fcd625137e014ae2682ef.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1afe870a8a642fcd625137e014ae2682ef.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SYSTEM_<wbr>ADDRESS_<wbr>POS</span>
       </a>
     </li>
@@ -1394,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1aa5c8e0fa3786193c03f0c3f2bb4806ba.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1aa5c8e0fa3786193c03f0c3f2bb4806ba.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>MAX_<wbr>ADDRESS</span>
       </a>
     </li>
@@ -1409,7 +1503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="variable_hi__can__address_8hpp_1a65803fac77b2aac606188789d4b39408.html" class="md-nav__link">
+      <a href="../generated/variable_hi__can__address_8hpp_1a65803fac77b2aac606188789d4b39408.html" class="md-nav__link">
         <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>MAX_<wbr>PACKET_<wbr>LEN</span>
       </a>
     </li>
@@ -1440,7 +1534,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html#typedefs"><span class="md-ellipsis">Typedefs</span></a>
+          <a href="../generated/index.html#typedefs"><span class="md-ellipsis">Typedefs</span></a>
           
             <label for="__nav_7_1_5">
               <span class="md-nav__icon md-icon"></span>
@@ -1462,7 +1556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="typedef_hi__can__address_8hpp_1a1f6ef01d3aeb03e825cc2e90973ff3b9.html" class="md-nav__link">
+      <a href="../generated/typedef_hi__can__address_8hpp_1a1f6ef01d3aeb03e825cc2e90973ff3b9.html" class="md-nav__link">
         <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>can_<wbr>address_<wbr>t</span>
       </a>
     </li>
@@ -1506,9 +1600,73 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Documentation Build Architecture</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-build" class="md-nav__link">
+    <span class="md-ellipsis">How to build</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-nix-build" class="md-nav__link">
+    <span class="md-ellipsis">Using nix build</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-nix-develop" class="md-nav__link">
+    <span class="md-ellipsis">Using nix develop</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using nix develop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    <span class="md-ellipsis">Building</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-environment-management-with-uv" class="md-nav__link">
+    <span class="md-ellipsis">Python environment management with uv</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serving-the-built-docs" class="md-nav__link">
+    <span class="md-ellipsis">Serving the built docs</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1522,18 +1680,54 @@
                   
 
 
-  <a href="https://github.com/ROAR-QUTRC/perseus-v2/edit/main/docs/source/generated/dir_ros_ws_src_autonomy_launch.rst" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/ROAR-QUTRC/perseus-v2/edit/main/docs/source/architecture/documentation-build.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
   </a>
 
-<h1 id="directory-launch"><span id="dir-ros-ws-src-autonomy-launch"></span>Directory launch<a class="headerlink" href="#directory-launch" title="Link to this heading">¶</a></h1>
-<p>↰ <a class="reference internal" href="dir_ros_ws_src_autonomy.html#dir-ros-ws-src-autonomy"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">ros_ws/src/autonomy</span></code>)</p>
-<p><em>Directory path:</em> <code class="docutils literal notranslate"><span class="pre">ros_ws/src/autonomy/launch</span></code></p>
-<h2 id="files">Files<a class="headerlink" href="#files" title="Link to this heading">¶</a></h2>
+<h1 id="documentation-build-architecture">Documentation Build Architecture<a class="headerlink" href="#documentation-build-architecture" title="Link to this heading">¶</a></h1>
+<p>This documentation is loosely based off of Rohit Gaswami’s blog posts documenting <a class="reference external" href="https://rgoswami.me/posts/doc-cpp-dox-sph-exhale/">setting up</a> Sphinx, Breathe, and Exhale, as well as the follow-up detailing <a class="reference external" href="https://rgoswami.me/posts/pub-doc-cpp-dox-sph-nix/">publishing</a> them with Nix.</p>
+<h2 id="how-to-build">How to build<a class="headerlink" href="#how-to-build" title="Link to this heading">¶</a></h2>
+<p>Unless you’re making major edits to the raw markdown/reST files, or you’re fiddling with the build toolchain, you probably don’t need to build them locally - let the continuous deployment take care of it for you!
+However, if you do need to test things locally, you have two options.
+The first is to use <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> - this is ideal if you’re making small edits to the documentation and you want to check that everything’s building properly before pushing to GitHub.
+The second is to enter a <em>development shell</em> using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> - if you want slightly faster builds, you’re modifying Python dependencies, or you’re tinkering with the build toolchain, this is what you’ll need.</p>
+<h3 id="using-nix-build">Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code><a class="headerlink" href="#using-nix-build" title="Link to this heading">¶</a></h3>
+<p>To build the documentation, simply run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span></code> - the output will be in the <code class="docutils literal notranslate"><span class="pre">result</span></code> symlink in the directory where you ran the command.</p>
+<h3 id="using-nix-develop">Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code><a class="headerlink" href="#using-nix-develop" title="Link to this heading">¶</a></h3>
+<h4 id="building">Building<a class="headerlink" href="#building" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span> <span class="pre">.#docs</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> to the <code class="docutils literal notranslate"><span class="pre">docs</span></code> directory</p></li>
+<li><p>Whenever you want to rebuild the docs, run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> - they will be output in <code class="docutils literal notranslate"><span class="pre">build/html</span></code>.</p></li>
+</ol>
+<p>Note that depending on the edits you made, you may also have to run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code> before rebuilding.
+Sphinx is smart enough to only rebuild the files which have changed, which is normally fine - except for when changes propagate to other files.
+One such example is adding new files which appear in the navigation tree - although this affects <em>every</em> page, since they all have the navigation sidebar, only files whose <code class="docutils literal notranslate"><span class="pre">toctree</span></code>s have changed will be updated.
+As such, the new file and its associated heading will not be visible in navigation until a full rebuild after a <code class="docutils literal notranslate"><span class="pre">clean</span></code>.</p>
+<h4 id="python-environment-management-with-uv">Python environment management with <code class="docutils literal notranslate"><span class="pre">uv</span></code><a class="headerlink" href="#python-environment-management-with-uv" title="Link to this heading">¶</a></h4>
+<p>Before managing python dependencies, you will first need to cd to the <code class="docutils literal notranslate"><span class="pre">docs/pyproject</span></code> directory.
+This is because the <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> and <code class="docutils literal notranslate"><span class="pre">uv.lock</span></code> files (defining the Python project) have been moved to this directory so that only changes to these specific files cause a rebuild of the Python workspace.</p>
+<p>To:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="file_ros_ws_src_autonomy_launch_mapping_using_slam_toolbox.launch.py.html#file-ros-ws-src-autonomy-launch-mapping-using-slam-toolbox-launch-py"><span class="std std-ref">File mapping_using_slam_toolbox.launch.py</span></a></p></li>
+<li><p>Add dependencies: <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">add</span> <span class="pre">DEPENDENCY</span></code></p></li>
+<li><p>Remove dependencies: <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">remove</span> <span class="pre">DEPENDENCY</span></code></p></li>
+<li><p>Update the package versions in the lockfile: <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">lock</span> <span class="pre">--update</span></code></p></li>
 </ul>
+<p>You will have to exit and re-enter the dev shell for any of these changes to take effect, as the Python environment is built and applied upon entering the dev shell.
+Alternatively, you can also run <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">COMMAND</span></code> to run a command in the currently specified Python environment.
+However, as previously mentioned, <code class="docutils literal notranslate"><span class="pre">uv</span></code> can only be run from the directory containing th <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file, which limits its usefulness.
+For further usage, consult the <code class="docutils literal notranslate"><span class="pre">uv</span></code> <a class="reference external" href="https://docs.astral.sh/uv/reference/cli/">usage documentation</a> - in particular you may find the <code class="docutils literal notranslate"><span class="pre">venv</span></code> command useful (though at that point you may as well just exit and re-enter the shell to rebuild the environment with Nix anyway).</p>
+<h2 id="serving-the-built-docs">Serving the built docs<a class="headerlink" href="#serving-the-built-docs" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">darkhttpd</span></code> is an excellent fast and lightweight HTTP server, and is excellent for quickly testing that the docs are displaying properly.
+Whilst simply opening the built files from a file browser is fine 99% of the time, certain features won’t work properly unless the pages are being served through HTTP.
+Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">DOCS_LOCATION</span></code> to start serving the documentation (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span> to terminate).
+Note that navigating to <code class="docutils literal notranslate"><span class="pre">localhost:8080</span></code> seems to have weirdness, so I’d recommend you just use the loopback address <code class="docutils literal notranslate"><span class="pre">127.0.0.1:8080</span></code> instead.</p>
+<ul class="simple">
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">./result/html</span></code></p></li>
+<li><p>Building with the dev shell: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">./docs/build/html</span></code> (assuming you’re in the repository root)</p></li>
+</ul>
+<p>To serve on a different port than <code class="docutils literal notranslate"><span class="pre">8080</span></code>, add the <code class="docutils literal notranslate"><span class="pre">--port</span> <span class="pre">PORT</span></code> flag to the end of the command.</p>
 
 
 
@@ -1555,6 +1749,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="can-bus.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: CAN Bus Architecture" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              CAN Bus Architecture
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="electrical.html" class="md-footer__link md-footer__link--next" aria-label="Next: Electrical Architecture" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Electrical Architecture
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   
   
