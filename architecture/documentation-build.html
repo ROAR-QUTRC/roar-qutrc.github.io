@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-build" class="md-skip">
+        <a href="#tech-stack" class="md-skip">
           Skip to content
         </a>
       
@@ -355,6 +355,53 @@
       <span class="md-ellipsis">Documentation Build Architecture</span>
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tech-stack" class="md-nav__link">
+    <span class="md-ellipsis">Tech Stack</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tech Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">Credits</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">Build Infrastructure</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-building" class="md-nav__link">
+    <span class="md-ellipsis">Documentation Building</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ci-cd" class="md-nav__link">
+    <span class="md-ellipsis">CI/CD</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#how-to-build" class="md-nav__link">
@@ -1613,6 +1660,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tech-stack" class="md-nav__link">
+    <span class="md-ellipsis">Tech Stack</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tech Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">Credits</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">Build Infrastructure</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-building" class="md-nav__link">
+    <span class="md-ellipsis">Documentation Building</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ci-cd" class="md-nav__link">
+    <span class="md-ellipsis">CI/CD</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-to-build" class="md-nav__link">
     <span class="md-ellipsis">How to build</span>
   </a>
@@ -1686,7 +1780,39 @@
   </a>
 
 <h1 id="documentation-build-architecture">Documentation Build Architecture<a class="headerlink" href="#documentation-build-architecture" title="Link to this heading">¶</a></h1>
+<h2 id="tech-stack">Tech Stack<a class="headerlink" href="#tech-stack" title="Link to this heading">¶</a></h2>
+<p>This documentation is built using <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html" title="Sphinx 8.2.0">Sphinx</a> with a number of extensions.
+Code (API) documentation is provided with Doxygen through the use of <a class="reference external" href="https://breathe.readthedocs.io/en/stable/index.html" title="Breathe v4.35.0">Breathe</a>, which acts as a bridge from the output Doxygen provides to Sphinx’s reStructuredText (RST) format.
+Although it’s not leveraged much in this documentation, you can reference specific <a class="reference external" href="https://breathe.readthedocs.io/en/stable/file.html" title="Breathe v4.35.0">files</a>, <a class="reference external" href="https://breathe.readthedocs.io/en/stable/class.html" title="Breathe v4.35.0">classes</a>, or <a class="reference external" href="https://breathe.readthedocs.io/en/stable/function.html" title="Breathe v4.35.0">methods</a>, and <a class="reference external" href="https://breathe.readthedocs.io/en/stable/directives.html" title="Breathe v4.35.0">more</a> using Breathe.
+Next is the <a class="reference external" href="https://exhale.readthedocs.io/en/stable/index.html" title="Exhale 0.3.7">Exhale</a> extension, which provides the Doxygen-style namespace, class, and file <a class="reference internal" href="../generated/index.html"><span class="std std-doc">lists</span></a>.
+It’s also set up to automatically run Doxygen, so there’s no need for a standard configuration <code class="docutils literal notranslate"><span class="pre">Doxyfile</span></code> - the modifications to the standard configuration are provided with <a class="reference external" href="https://exhale.readthedocs.io/en/stable/reference/configs.html#exhale.configs.exhaleDoxygenStdin" title="Exhale 0.3.7">configuration</a> options on top of Exhale’s <a class="reference external" href="https://exhale.readthedocs.io/en/stable/reference/configs.html#exhale.configs.DEFAULT_DOXYGEN_STDIN_BASE" title="Exhale 0.3.7">defaults</a>.
+If you inspect the raw documentation, however, you’ll notice it’s written in Markdown, not the standard RST - this is thanks to the <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/index.html" title="MyST Parser 4.0.0">MyST Parser</a>.
+Together, this forms a solid foundation for good manual documentation, as well as leveraging Doxygen’s formidable automatic generation capabilities.</p>
+<p>After these core extensions, comes theming.
+As it says in the footer, this site is built using <a class="reference external" href="https://jbms.github.io/sphinx-immaterial/index.html" title="Sphinx-Immaterial">Sphinx-Immaterial</a>.
+Whilst you shouldn’t need to modify its configuration unless the documentation website is actively broken, it is very well documented if you need to do so.
+In this documentation, we also make use of some of its excellent extensions: <a class="reference external" href="https://jbms.github.io/sphinx-immaterial/keys.html" title="Sphinx-Immaterial"><code class="docutils literal notranslate"><span class="pre">sphinx_immaterial.kbd_keys</span></code></a> for pretty keyboard keys (like <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span>!), <a class="reference external" href="https://jbms.github.io/sphinx-immaterial/apidoc/cpp/cppreference.html" title="Sphinx-Immaterial"><code class="docutils literal notranslate"><span class="pre">sphinx_immaterial.apidoc.cpp.cppreference</span></code></a> for automatic links to <a class="reference external" href="http://cppreference.com">cppreference.com</a>, and finally <a class="reference external" href="https://jbms.github.io/sphinx-immaterial/graphviz.html" title="Sphinx-Immaterial"><code class="docutils literal notranslate"><span class="pre">sphinx_immaterial.graphviz</span></code></a> for lovely theme-integrated <a class="reference external" href="https://graphviz.org/">Graphviz</a> diagrams - though support for <a class="reference external" href="https://jbms.github.io/sphinx-immaterial/mermaid_diagrams.html" title="Sphinx-Immaterial">Mermaid diagrams</a> is also baked in by default if that’s more your style.</p>
+<p>Next, there’s the tweaks to make the docs build with no internet access.
+Since this project is built using Nix (more on that in the <a class="reference internal" href="#build-infrastructure">next section</a>), the entire software stack needs to run offline and therefore requires some extra configuration.
+The first offender is the Sphinx-Immaterial theme itself - it sources its font (<a class="reference external" href="https://fonts.google.com/specimen/Roboto">Roboto</a> by default) from Google’s CDNs - this is obviously incompatible with the sandboxing that Nix applies!
+As such, its <a class="reference external" href="https://jbms.github.io/sphinx-immaterial/customization.html#themeconf-font" title="Sphinx-Immaterial"><code class="docutils literal notranslate"><span class="pre">font</span></code></a> option has been set to <code class="docutils literal notranslate"><span class="pre">False</span></code> and the fonts are “self-hosted” in the <code class="docutils literal notranslate"><span class="pre">_static/fonts</span></code> directory.
+The other item on the list is <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html" title="Sphinx 8.2.0">intersphinx</a>, which provides all the cross-documentation linking you see even just on this very page.
+Since it normally tries to fetch <code class="docutils literal notranslate"><span class="pre">objects.inv</span></code> files (inventories of site content) from the sites themselves, this too needs to be set up locally.
+Thankfully, it’s as simple as pointing it to a locally cached file in its <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_mapping" title="Sphinx 8.2.0">mapping</a> rather than fetching the files every time the docs are built - they’re updated in the project’s <span class="xref myst">CI/CD</span> pipeline before building anyway, so they’ll always be correct.</p>
+<p>The next item on the list is the embedded figures - you may notice that they look suspiciously like <a class="reference external" href="http://draw.io">draw.io</a> diagrams, and that’s because they are!
+This is detailed more in the next section, but they’re built using the tool’s command-line interface to SVGs, which can then be referenced directly in the docs like this:</p>
+<img alt="Example draw.io diagram" class="has-dark-opt align-center" src="../_images/example.drawio.svg" />
+<p>If you switch between the light and dark themes, you’ll notice that the diagram automatically switches themes too - there’s a bit of JavaScript running which automatically switches in the correct image URL based on the currently selected theme, which you can observe if you wish in <code class="docutils literal notranslate"><span class="pre">_static/js/dark-opt-images.js</span></code>.
+Unfortunately, Sphinx doesn’t include images in the final output which aren’t referenced directly in the documentation, so normally the dark theme images would be inaccessible - this is fixed using a dirty hack which you can see <a class="reference internal" href="../generated/_figure-index.html"><span class="std std-doc">here</span></a> if you wish.
+In the project <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>, there’s a hook set up to run before the build starts which iterates through every figure in the <code class="docutils literal notranslate"><span class="pre">generated</span></code> directory (where the figures live) and adds them to an index file, which then ensures that they’re therefore included in the output.</p>
+<h3 id="credits">Credits<a class="headerlink" href="#credits" title="Link to this heading">¶</a></h3>
 <p>This documentation is loosely based off of Rohit Gaswami’s blog posts documenting <a class="reference external" href="https://rgoswami.me/posts/doc-cpp-dox-sph-exhale/">setting up</a> Sphinx, Breathe, and Exhale, as well as the follow-up detailing <a class="reference external" href="https://rgoswami.me/posts/pub-doc-cpp-dox-sph-nix/">publishing</a> them with Nix.</p>
+<h2 id="build-infrastructure">Build Infrastructure<a class="headerlink" href="#build-infrastructure" title="Link to this heading">¶</a></h2>
+<h3 id="documentation-building">Documentation Building<a class="headerlink" href="#documentation-building" title="Link to this heading">¶</a></h3>
+<p>As was previously mentioned, this project is built with Nix, which occasionally brings with it certain challenges (to put it mildly…).
+Whilst this is great from a reproducibility standpoint, certain software simply wasn’t ever intended to be used in the way that Nix does it.
+Python (and therefore Sphinx) and <a class="reference external" href="http://draw.io">draw.io</a> unfortunately both fall into this category and need special treatment to work properly.</p>
+<h3 id="ci-cd">CI/CD<a class="headerlink" href="#ci-cd" title="Link to this heading">¶</a></h3>
 <h2 id="how-to-build">How to build<a class="headerlink" href="#how-to-build" title="Link to this heading">¶</a></h2>
 <p>Unless you’re making major edits to the raw markdown/reST files, or you’re fiddling with the build toolchain, you probably don’t need to build them locally - let the continuous deployment take care of it for you!
 However, if you do need to test things locally, you have two options.
@@ -1696,8 +1822,10 @@ The second is to enter a <em>development shell</em> using <code class="docutils 
 <p>To build the documentation, simply run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span></code> - the output will be in the <code class="docutils literal notranslate"><span class="pre">result</span></code> symlink in the directory where you ran the command.</p>
 <h3 id="using-nix-develop">Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code><a class="headerlink" href="#using-nix-develop" title="Link to this heading">¶</a></h3>
 <h4 id="building">Building<a class="headerlink" href="#building" title="Link to this heading">¶</a></h4>
-<ol class="arabic simple">
+<ol class="arabic simple" start="0">
+<li><p>Run a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> - since CI/CD runs Intersphinx inventory updates, you need to make sure your code is up to date before building!</p></li>
 <li><p>Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span> <span class="pre">.#docs</span></code></p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">.#docs.setup</span></code> - this will build the <a class="reference external" href="http://draw.io">draw.io</a> figures to SVGs and copy them into <code class="docutils literal notranslate"><span class="pre">docs/source/generated</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> to the <code class="docutils literal notranslate"><span class="pre">docs</span></code> directory</p></li>
 <li><p>Whenever you want to rebuild the docs, run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> - they will be output in <code class="docutils literal notranslate"><span class="pre">build/html</span></code>.</p></li>
 </ol>
@@ -1720,9 +1848,9 @@ However, as previously mentioned, <code class="docutils literal notranslate"><sp
 For further usage, consult the <code class="docutils literal notranslate"><span class="pre">uv</span></code> <a class="reference external" href="https://docs.astral.sh/uv/reference/cli/">usage documentation</a> - in particular you may find the <code class="docutils literal notranslate"><span class="pre">venv</span></code> command useful (though at that point you may as well just exit and re-enter the shell to rebuild the environment with Nix anyway).</p>
 <h2 id="serving-the-built-docs">Serving the built docs<a class="headerlink" href="#serving-the-built-docs" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">darkhttpd</span></code> is an excellent fast and lightweight HTTP server, and is excellent for quickly testing that the docs are displaying properly.
-Whilst simply opening the built files from a file browser is fine 99% of the time, certain features won’t work properly unless the pages are being served through HTTP.
+Whilst simply opening the built files from a file browser is fine 99% of the time, some JavaScript may not run correctly without being loaded from a HTTP server for some reason.
 Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">DOCS_LOCATION</span></code> to start serving the documentation (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span> to terminate).
-Note that navigating to <code class="docutils literal notranslate"><span class="pre">localhost:8080</span></code> seems to have weirdness, so I’d recommend you just use the loopback address <code class="docutils literal notranslate"><span class="pre">127.0.0.1:8080</span></code> instead.</p>
+You may have to experiment with using either <code class="docutils literal notranslate"><span class="pre">localhost:8080</span></code> or the loopback address <code class="docutils literal notranslate"><span class="pre">127.0.0.1:8080</span></code> - sometimes one of these won’t load correctly and certain features won’t work.</p>
 <ul class="simple">
 <li><p>Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">./result/html</span></code></p></li>
 <li><p>Building with the dev shell: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">./docs/build/html</span></code> (assuming you’re in the repository root)</p></li>
