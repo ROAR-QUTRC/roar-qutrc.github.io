@@ -3,6 +3,19 @@
 ## Mapping & Autonomous Task - Australian Rover Challenge 2025
 
 - **Goal:** Autonomous exploration and mapping, navigation to specific landmarks by Perseus.
+
+#### Points break-down
+| Activity                                      | Points                      |
+|-----------------------------------------------|-----------------------------|
+| - Leave the Start Area Autonomously           | 5 points                    |
+| - For each placard imaged and relayed         | 6 points per placard        |
+| - Location within 300mm of true position      | 5 points per cube           |
+| - Location within 600mm of true position      | 2 points per cube           |
+| - Autonomous phase bonus                       | Double the above points     |
+| - Design and justification for navigation     | Up to 5 points              |
+| - Mapping system design                       | Up to 5 points              |
+| - Details and visualization of the map        | Up to 15 points             |
+| **Total Possible Points**                     | 100 points                  |
 ### Autonomous Phase
 
 - **Start Condition:** Rover must autonomously exit the start area for points.
