@@ -2,13 +2,8 @@
 
 ## Mapping & Autonomous Task - Australian Rover Challenge 2025
 
-### General Overview
-
-- **Focus:** Autonomous exploration and mapping, navigation to specific landmarks.
-
-### Key Elements
-
-#### Autonomous Phase
+- **Goal:** Autonomous exploration and mapping, navigation to specific landmarks by Perseus.
+### Autonomous Phase
 
 - **Start Condition:** Rover must autonomously exit the start area for points.
 - **Navigation:** 
@@ -18,11 +13,11 @@
   - No manual control once rover begins moving.
   - Interventions move to non-autonomous phase.
 
-#### Non-Autonomous Phase
+### Non-Autonomous Phase
 
 - Teams can take manual control anytime, for further exploration or troubleshooting which ends the ability to gather points in the autonomous phase.
 
-#### Exploratory Mapping
+### Exploratory Mapping
 
 - **Objective:** Locate four 100x100x100mm cubes (red, green, blue, white).
 - **Points:** 
@@ -31,11 +26,9 @@
   - Double points if reported during autonomous phase.
 
 #### Data and Mapping Restrictions
-
 - All mapping data must be gathered during the task; no prior arena knowledge allowed.
 
 #### Presentation
-
 - **Autonomous Navigation Design:** 
   - Discuss the autonomous system's design, advantages, and limitations.
 - **Mapping System Design:** 
@@ -46,8 +39,7 @@
 - **Points:** Up to 25 points for the quality of the presentation.
 
 ### Scoring and Penalties
-
 - Points for navigation success, cube location accuracy, and presentation.
 - Penalties for autonomous phase collisions or exiting arena requiring E-STOP activation.
 
-This task emphasizes autonomous operation, navigation, and mapping, with a focus on practical application of robotics in space exploration scenarios.
+This task emphasises autonomous operation, navigation, and mapping, with a focus on practical application of robotics in space exploration scenarios.
