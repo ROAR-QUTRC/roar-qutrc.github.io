@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nix-setup" class="md-skip">
+        <a href="#environment-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -276,16 +276,83 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nix-setup" class="md-nav__link">
-    <span class="md-ellipsis">Nix Setup</span>
+  <a href="#environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">Environment Setup</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vscode-setup" class="md-nav__link">
+    <span class="md-ellipsis">VSCode Setup</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-ide-setup" class="md-nav__link">
+    <span class="md-ellipsis">Other IDE Setup</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-the-software" class="md-nav__link">
+    <span class="md-ellipsis">Building the software</span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#standard-ros-2-setup" class="md-nav__link">
-    <span class="md-ellipsis">Standard ROS 2 Setup</span>
+  <a href="#developing-software" class="md-nav__link">
+    <span class="md-ellipsis">Developing Software</span>
   </a>
+  
+    <nav class="md-nav" aria-label="Developing Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">Before you start</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">Debugging</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros2-nodes-can-t-see-each-other-on-the-network" class="md-nav__link">
+    <span class="md-ellipsis">ROS2 Nodes can’t see each other on the network</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-installed-ros2-the-normal-way" class="md-nav__link">
+    <span class="md-ellipsis">I installed ROS2 the normal way!</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -306,8 +373,8 @@
   
   
     <li class="md-nav__item">
-      <a href="docs-structure.html" class="md-nav__link">
-        <span class="md-ellipsis">Documentation Structure</span>
+      <a href="documentation-development.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation Development</span>
       </a>
     </li>
   
@@ -354,23 +421,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/autonomy.html" class="md-nav__link">
-        <span class="md-ellipsis">Autonomy Architecture</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../architecture/can-bus.html" class="md-nav__link">
-        <span class="md-ellipsis">CAN Bus Architecture</span>
+        <span class="md-ellipsis">CAN Bus</span>
       </a>
     </li>
   
@@ -384,8 +436,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/documentation-build.html" class="md-nav__link">
-        <span class="md-ellipsis">Documentation Build Architecture</span>
+      <a href="../architecture/ci-cd.html" class="md-nav__link">
+        <span class="md-ellipsis">CI/CD</span>
       </a>
     </li>
   
@@ -399,8 +451,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/electrical.html" class="md-nav__link">
-        <span class="md-ellipsis">Electrical Architecture</span>
+      <a href="../architecture/documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/hardware.html" class="md-nav__link">
+        <span class="md-ellipsis">Hardware</span>
       </a>
     </li>
   
@@ -415,7 +482,22 @@
   
     <li class="md-nav__item">
       <a href="../architecture/network.html" class="md-nav__link">
-        <span class="md-ellipsis">Network Architecture</span>
+        <span class="md-ellipsis">Network</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/nix.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix</span>
       </a>
     </li>
   
@@ -430,7 +512,7 @@
   
     <li class="md-nav__item">
       <a href="../architecture/software.html" class="md-nav__link">
-        <span class="md-ellipsis">Software Architecture</span>
+        <span class="md-ellipsis">Software</span>
       </a>
     </li>
   
@@ -463,7 +545,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../standards.html"><span class="md-ellipsis">Standards</span></a>
+          <a href="../challenge-breakdowns.html"><span class="md-ellipsis">Challenge Breakdowns</span></a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -471,8 +553,109 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Standards" data-md-level="1">
+      <nav class="md-nav" aria-label="Challenge Breakdowns" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Challenge Breakdowns</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/autonomy-mapping.html" class="md-nav__link">
+        <span class="md-ellipsis">Autonomy &amp; Mapping</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/excavation-construction.html" class="md-nav__link">
+        <span class="md-ellipsis">Excavation &amp; Construction</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/post-landing.html" class="md-nav__link">
+        <span class="md-ellipsis">Post-<wbr>Landing</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/space-resources.html" class="md-nav__link">
+        <span class="md-ellipsis">Space Resources</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../standards.html"><span class="md-ellipsis">Standards</span></a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Standards" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Standards</span>
         </label>
@@ -528,7 +711,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
@@ -536,14 +719,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../maintenance.html"><span class="md-ellipsis">Maintenance</span></a>
           
-            <label for="__nav_6">
+            <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Maintenance" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Maintenance</span>
         </label>
@@ -557,7 +740,22 @@
   
     <li class="md-nav__item">
       <a href="../maintenance/documentation.html" class="md-nav__link">
-        <span class="md-ellipsis">Documentation Maintenance</span>
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/nix.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix Build System</span>
       </a>
     </li>
   
@@ -572,7 +770,7 @@
   
     <li class="md-nav__item">
       <a href="../maintenance/software.html" class="md-nav__link">
-        <span class="md-ellipsis">Software Maintenance</span>
+        <span class="md-ellipsis">Software</span>
       </a>
     </li>
   
@@ -599,7 +797,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
@@ -607,14 +805,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html"><span class="md-ellipsis">Generated Documentation</span></a>
           
-            <label for="__nav_7">
+            <label for="__nav_8">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Generated Documentation" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Generated Documentation</span>
         </label>
@@ -629,7 +827,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1" type="checkbox" id="__nav_8_1" >
       
       
       
@@ -637,14 +835,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#full-api"><span class="md-ellipsis">Full API</span></a>
           
-            <label for="__nav_7_1">
+            <label for="__nav_8_1">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Full API" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_1">
+        <label class="md-nav__title" for="__nav_8_1">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Full API</span>
         </label>
@@ -659,7 +857,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_1" type="checkbox" id="__nav_7_1_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_1" type="checkbox" id="__nav_8_1_1" >
       
       
       
@@ -667,14 +865,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#namespaces"><span class="md-ellipsis">Namespaces</span></a>
           
-            <label for="__nav_7_1_1">
+            <label for="__nav_8_1_1">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Namespaces" data-md-level="3">
-        <label class="md-nav__title" for="__nav_7_1_1">
+        <label class="md-nav__title" for="__nav_8_1_1">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Namespaces</span>
         </label>
@@ -832,7 +1030,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_2" type="checkbox" id="__nav_7_1_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_2" type="checkbox" id="__nav_8_1_2" >
       
       
       
@@ -840,14 +1038,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#classes-and-structs"><span class="md-ellipsis">Classes and Structs</span></a>
           
-            <label for="__nav_7_1_2">
+            <label for="__nav_8_1_2">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Classes and Structs" data-md-level="3">
-        <label class="md-nav__title" for="__nav_7_1_2">
+        <label class="md-nav__title" for="__nav_8_1_2">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Classes and Structs</span>
         </label>
@@ -1110,7 +1308,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_3" type="checkbox" id="__nav_7_1_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_3" type="checkbox" id="__nav_8_1_3" >
       
       
       
@@ -1118,14 +1316,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#functions"><span class="md-ellipsis">Functions</span></a>
           
-            <label for="__nav_7_1_3">
+            <label for="__nav_8_1_3">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Functions" data-md-level="3">
-        <label class="md-nav__title" for="__nav_7_1_3">
+        <label class="md-nav__title" for="__nav_8_1_3">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Functions</span>
         </label>
@@ -1283,7 +1481,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_4" type="checkbox" id="__nav_7_1_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_4" type="checkbox" id="__nav_8_1_4" >
       
       
       
@@ -1291,14 +1489,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#variables"><span class="md-ellipsis">Variables</span></a>
           
-            <label for="__nav_7_1_4">
+            <label for="__nav_8_1_4">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Variables" data-md-level="3">
-        <label class="md-nav__title" for="__nav_7_1_4">
+        <label class="md-nav__title" for="__nav_8_1_4">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Variables</span>
         </label>
@@ -1501,7 +1699,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1_5" type="checkbox" id="__nav_7_1_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_5" type="checkbox" id="__nav_8_1_5" >
       
       
       
@@ -1509,14 +1707,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#typedefs"><span class="md-ellipsis">Typedefs</span></a>
           
-            <label for="__nav_7_1_5">
+            <label for="__nav_8_1_5">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Typedefs" data-md-level="3">
-        <label class="md-nav__title" for="__nav_7_1_5">
+        <label class="md-nav__title" for="__nav_8_1_5">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Typedefs</span>
         </label>
@@ -1586,16 +1784,83 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nix-setup" class="md-nav__link">
-    <span class="md-ellipsis">Nix Setup</span>
+  <a href="#environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">Environment Setup</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vscode-setup" class="md-nav__link">
+    <span class="md-ellipsis">VSCode Setup</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-ide-setup" class="md-nav__link">
+    <span class="md-ellipsis">Other IDE Setup</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-the-software" class="md-nav__link">
+    <span class="md-ellipsis">Building the software</span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#standard-ros-2-setup" class="md-nav__link">
-    <span class="md-ellipsis">Standard ROS 2 Setup</span>
+  <a href="#developing-software" class="md-nav__link">
+    <span class="md-ellipsis">Developing Software</span>
   </a>
+  
+    <nav class="md-nav" aria-label="Developing Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">Before you start</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">Debugging</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros2-nodes-can-t-see-each-other-on-the-network" class="md-nav__link">
+    <span class="md-ellipsis">ROS2 Nodes can’t see each other on the network</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-installed-ros2-the-normal-way" class="md-nav__link">
+    <span class="md-ellipsis">I installed ROS2 the normal way!</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1619,34 +1884,99 @@
   </a>
 
 <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
-<p>You have two options to get started with development on this project:</p>
-<ul class="simple">
-<li><p><strong>(RECOMMENDED)</strong> Nix setup</p></li>
-<li><p>Standard ROS 2 setup</p></li>
-</ul>
-<h2 id="nix-setup">Nix Setup<a class="headerlink" href="#nix-setup" title="Link to this heading">¶</a></h2>
+<p>This project is built using <a class="reference external" href="https://nixos.org/">Nix</a>, which makes getting started quite easy - all you have to do is install Nix and <code class="docutils literal notranslate"><span class="pre">direnv</span></code>, and they take care of the rest.</p>
+<h2 id="environment-setup">Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading">¶</a></h2>
 <ol class="arabic simple">
-<li><p>Ensure you have <code class="docutils literal notranslate"><span class="pre">curl</span></code> and <code class="docutils literal notranslate"><span class="pre">direnv</span></code> installed. For Ubuntu and other Debian-based distros, run: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">-y</span> <span class="pre">curl</span> <span class="pre">direnv</span></code></p></li>
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">./tooling/nix-setup.sh</span></code></p></li>
+<li><p>Ensure you have <code class="docutils literal notranslate"><span class="pre">curl</span></code> and <code class="docutils literal notranslate"><span class="pre">direnv</span></code> installed. For Ubuntu and other Debian-based distros, run: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span> <span class="pre">&amp;&amp;</span> <span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">-y</span> <span class="pre">curl</span> <span class="pre">direnv</span></code></p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">software/scripts/nix-setup.sh</span></code></p></li>
 <li><p>Restart your shell</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> to the workspace root</p></li>
-<li><p>When prompted to allow the configuration, hit <code class="docutils literal notranslate"><span class="pre">y</span></code> (yes) for everything (you’ll only need to do this once)</p></li>
-<li><p>Wait for the downloads to finish</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> to the repository root</p></li>
+<li><p>When prompted to allow configuration, hit <code class="docutils literal notranslate"><span class="pre">y</span></code> (yes) for everything (you’ll only need to do this once)</p></li>
+<li><p>Wait for the downloads and builds to finish</p></li>
 <li><p>You’re done!</p></li>
 </ol>
-<p>The <code class="docutils literal notranslate"><span class="pre">nix-setup</span></code> script, in order:</p>
+<p>The script, in order:</p>
 <ul class="simple">
 <li><p>Sets up git submodules (should never be necessary, but better to have it and not need it)</p></li>
 <li><p><a class="reference external" href="https://github.com/DeterminateSystems/nix-installer">Installs Nix</a></p></li>
 <li><p>Configures Nix to allow your user to configure <em>it</em></p></li>
 <li><p>Adds <code class="docutils literal notranslate"><span class="pre">direnv</span></code> setup to your <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code> and <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> files</p></li>
 <li><p>Allows <code class="docutils literal notranslate"><span class="pre">direnv</span></code> to configure based on the <code class="docutils literal notranslate"><span class="pre">.envrc</span></code> file present in this directory</p></li>
-<li><p>Configures <code class="docutils literal notranslate"><span class="pre">direnv</span></code> to silence absurdly long info messages on activation</p></li>
+<li><p>Configures <code class="docutils literal notranslate"><span class="pre">direnv</span></code> to silence absurdly long info messages on activation (this sometimes doesn’t work - if you see a text wall when it activates, contact James N to have a look at it)</p></li>
 </ul>
 <p>After this, you’ll need to restart your shell for <code class="docutils literal notranslate"><span class="pre">direnv</span></code> to take effect and set up your dev environment.</p>
-<p><strong>Note: This script cannot set up direnv if you’re not using <code class="docutils literal notranslate"><span class="pre">bash</span></code> or <code class="docutils literal notranslate"><span class="pre">zsh</span></code> as your shell!</strong> You’ll have to set up the hook yourself according to <a class="reference external" href="https://direnv.net/docs/hook.html">its docs</a>.</p>
-<h2 id="standard-ros-2-setup">Standard ROS 2 Setup<a class="headerlink" href="#standard-ros-2-setup" title="Link to this heading">¶</a></h2>
-<p>Follow the guide on the official <a class="reference external" href="https://docs.ros.org/en/humble/Installation.html">ROS 2 Humble docs</a>.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>This script cannot set up direnv if you’re not using <code class="docutils literal notranslate"><span class="pre">bash</span></code> or <code class="docutils literal notranslate"><span class="pre">zsh</span></code> as your shell!
+You’ll have to set up the hook yourself according to its <a class="reference external" href="https://direnv.net/docs/hook.html">docs</a>, or use <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> instead (see <a class="reference internal" href="#developing-software">Developing</a>).</p>
+</div>
+<p>The script is designed to be able to run multiple times if something goes wrong - it checks if the modifications it makes are already present, and if it detects them, skips that step.</p>
+<h3 id="vscode-setup">VSCode Setup<a class="headerlink" href="#vscode-setup" title="Link to this heading">¶</a></h3>
+<p>If you’re using <a class="reference external" href="https://code.visualstudio.com/">VSCode</a>, open the <code class="docutils literal notranslate"><span class="pre">perseus-v2.code-workspace</span></code> workspace file (you’ll need to do this every time you need)</p>
+<h3 id="other-ide-setup">Other IDE Setup<a class="headerlink" href="#other-ide-setup" title="Link to this heading">¶</a></h3>
+<p>In the event that you’re using another editor, you probably have enough technical know-how to set it up yourself.
+As long as it uses the environment variables from the <code class="docutils literal notranslate"><span class="pre">direnv</span></code> setup, it should be able to find and run everything.</p>
+<h2 id="building-the-software">Building the software<a class="headerlink" href="#building-the-software" title="Link to this heading">¶</a></h2>
+<p>Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>.
+That’s it.
+No, really.
+If that succeeds, that means that the entire project built successfully and you can now use it.
+However, at this point, it’s not available on your shell - <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> creates a symlink named <code class="docutils literal notranslate"><span class="pre">result</span></code> in your current working directory which links to whatever you just built.
+If, instead, you want to build the software and have it available to you, run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code> instead.
+After this runs, you’ll be dropped into a sub-shell with the built rover packages available to you.</p>
+<div class="note admonition" id="setup-autocomplete">
+<p class="admonition-title">Note</p>
+<p>Unfortunately, <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code> can’t set up autocomplete for ROS2 commands - if you want this functionality (which you should!) either run <code class="docutils literal notranslate"><span class="pre">eval</span> <span class="pre">&quot;$(mk-workspace-shell-setup)&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">software/scripts/autocomplete.sh</span></code> (the path for the latter assumes you’re in the repository root) after entering the subshell.</p>
+</div>
+<p>At this point, you can run standard ROS2 commands, and all the rover packages are available like they’ve been installed.</p>
+<h2 id="developing-software">Developing Software<a class="headerlink" href="#developing-software" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">direnv</span></code> automatically makes all the tools you need available to you when you <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the repo.
+Like <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code> however, it unfortunately can’t set up autocomplete, so you’ll need to set it up just like <a class="reference internal" href="#setup-autocomplete">above</a> every time you enter the directory.
+However, if you don’t like <code class="docutils literal notranslate"><span class="pre">direnv</span></code> - or you don’t want to set up autocomplete - you can alternatively run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> to be dropped into a <code class="docutils literal notranslate"><span class="pre">bash</span></code> shell with everything fully set up, including autocomplete.
+In this environment, you can either run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> to build the entire workspace, or you can <code class="docutils literal notranslate"><span class="pre">cd</span></code> to the ROS workspace root <code class="docutils literal notranslate"><span class="pre">software/ros_ws</span></code> and run <code class="docutils literal notranslate"><span class="pre">colcon</span> <span class="pre">build</span></code> just like you’re developing in a standard ROS2 environment.</p>
+<div class="important admonition">
+<p class="admonition-title">Important</p>
+<p>You must <strong>always</strong> run <code class="docutils literal notranslate"><span class="pre">colcon</span></code> inside the workspace root <code class="docutils literal notranslate"><span class="pre">software/ros_ws</span></code>, otherwise the configuration file may not apply properly.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>To the experienced ROS2 developers - you may notice the lack of a <code class="docutils literal notranslate"><span class="pre">--symlink-install</span></code> flag on the <code class="docutils literal notranslate"><span class="pre">colcon</span> <span class="pre">build</span></code> command - that’s because it’s configured using a <a class="reference external" href="https://colcon.readthedocs.io/en/released/user/configuration.html#defaults-yaml"><code class="docutils literal notranslate"><span class="pre">colcon_defaults.yaml</span></code></a> file present at <code class="docutils literal notranslate"><span class="pre">software/ros_ws/colcon_defaults.yaml</span></code> which adds this flag by default.</p>
+</div>
+<h3 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Link to this heading">¶</a></h3>
+<p>However, before you start writing code, there’s a few things you need to read through first.
+The most important one is the software <a class="reference internal" href="../architecture/software.html"><span class="std std-doc">architecture</span></a>, which goes over how all the software links together and how it’s laid out.
+The other document is the software <a class="reference internal" href="../standards/software.html"><span class="std std-doc">standards</span></a>, which details the standards to which your software is expected to be written.
+If your software <em>doesn’t</em> meet these standards, we unfortunately won’t be able to merge your changes until you fix the issues - if code standards aren’t enforced, the code <strong>will</strong> quickly become an un-maintainable mess, leading to another rewrite.</p>
+<h2 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Link to this heading">¶</a></h2>
+<h3 id="ros2-nodes-can-t-see-each-other-on-the-network">ROS2 Nodes can’t see each other on the network<a class="headerlink" href="#ros2-nodes-can-t-see-each-other-on-the-network" title="Link to this heading">¶</a></h3>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">talker</span></code> and <code class="docutils literal notranslate"><span class="pre">listener</span></code> nodes from the <code class="docutils literal notranslate"><span class="pre">demo_nodes_cpp</span></code> package to test this, with the talker on one device and the listener on another.
+For some reason, the <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">multicast</span></code> commands mentioned in the standard ROS <a class="reference external" href="https://docs.ros.org/en/humble/How-To-Guides/Installation-Troubleshooting.html" title="ROS 2 Documentation: Humble">troubleshooting guide</a> use a different port to the actual ROS2 DDS communications layer, and as such is not a reliable way to test - hence the use of <code class="docutils literal notranslate"><span class="pre">talker</span></code> and <code class="docutils literal notranslate"><span class="pre">listener</span></code> nodes.
+This is almost certainly caused by firewall issues - specifically, blocking DDS discovery.
+To allow ROS2 through the firewall on a system managed with <code class="docutils literal notranslate"><span class="pre">ufw</span></code>, run the following commands:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">sudo ufw allow in proto udp to 224.0.0.0/4</span>
+<span class="go">sudo ufw allow in proto udp from 224.0.0.0/4</span>
+</code></pre></div>
+</div>
+<p>If you’re on a system with a firewall <em>not</em> managed by <code class="docutils literal notranslate"><span class="pre">ufw</span></code>, you probably already know how to do this yourself.
+You need to allow UDP traffic to and from the address <code class="docutils literal notranslate"><span class="pre">224.0.0.0</span></code> with a mask of 4 bits (hence <code class="docutils literal notranslate"><span class="pre">224.0.0.0/4</span></code>), as this is the mask for <a class="reference external" href="https://en.wikipedia.org/wiki/Multicast_address">multicast addresses</a>.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>In some cases, you may need to allow specific UDP ports through the firewall as well - if you’re still having issues, let us know!
+We’ll help you debug it.
+You can find a calculator for the ports in use <a class="reference external" href="https://docs.ros.org/en/humble/Concepts/Intermediate/About-Domain-ID.html" title="ROS 2 Documentation: Humble">here</a> - just make sure to plug in the correct domain ID, as per the next section.</p>
+</div>
+<h3 id="i-installed-ros2-the-normal-way">I installed ROS2 the normal way!<a class="headerlink" href="#i-installed-ros2-the-normal-way" title="Link to this heading">¶</a></h3>
+<p>Firstly, you should really be using the Nix setup as it manages dependencies for you automatically.
+It coexists perfectly happily with a standard ROS install, as it takes priority over your normal system-installed packages.
+Secondly, you will probably probably experience <code class="docutils literal notranslate"><span class="pre">ROS_DOMAIN_ID</span></code> mismatches - this project defaults the <code class="docutils literal notranslate"><span class="pre">ROS_DOMAIN_ID</span></code> to 51 for development, and 42 for production deployment, since this ensures that packages in development can’t interfere with those running on the rover.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>If you set the <code class="docutils literal notranslate"><span class="pre">ROS_DOMAIN_ID</span></code> environment variable manually, it will be used instead of the defaults.</p>
+</div>
+<div class="todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>At some point, we might patch the ROS production environment so that it <em>sets</em> the domain ID instead of defaulting - it causes issues with the use of <code class="docutils literal notranslate"><span class="pre">direnv</span></code> since the development environment sets the environment variable itself, and <code class="docutils literal notranslate"><span class="pre">direnv</span></code> uses that.</p>
+</div>
 
 
 
@@ -1689,13 +2019,13 @@
       
       
         
-        <a href="docs-structure.html" class="md-footer__link md-footer__link--next" aria-label="Next: Documentation Structure" rel="next">
+        <a href="documentation-development.html" class="md-footer__link md-footer__link--next" aria-label="Next: Documentation Development" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Documentation Structure
+              Documentation Development
             </div>
           </div>
           <div class="md-footer__button md-icon">
