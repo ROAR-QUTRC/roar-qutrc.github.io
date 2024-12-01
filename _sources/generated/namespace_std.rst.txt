@@ -1,0 +1,13 @@
+
+.. _namespace_std:
+
+Namespace std
+=============
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_std__chrono`

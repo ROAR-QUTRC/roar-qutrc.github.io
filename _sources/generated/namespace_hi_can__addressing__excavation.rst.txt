@@ -1,0 +1,20 @@
+
+.. _namespace_hi_can__addressing__excavation:
+
+Namespace hi_can::addressing::excavation
+========================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__addressing__excavation__arm`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a5c3c47d0be025ac00c78848776f80c8c`

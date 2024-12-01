@@ -11,7 +11,7 @@ Subdirectories
 --------------
 
 - :ref:`dir_shared_fd-wrapper`
-- :ref:`dir_shared_hi-can-lib`
+- :ref:`dir_shared_hi-can`
 - :ref:`dir_shared_hi-can-net`
 - :ref:`dir_shared_hi-can-raw`
 

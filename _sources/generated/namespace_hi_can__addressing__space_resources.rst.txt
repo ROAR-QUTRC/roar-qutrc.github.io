@@ -1,0 +1,13 @@
+
+.. _namespace_hi_can__addressing__space_resources:
+
+Namespace hi_can::addressing::space_resources
+=============================================
+
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1aca2d4f6b2059e0fccdb5de20389b48ee`

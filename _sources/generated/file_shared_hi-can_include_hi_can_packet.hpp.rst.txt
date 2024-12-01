@@ -1,0 +1,60 @@
+
+.. _file_shared_hi-can_include_hi_can_packet.hpp:
+
+File hi_can_packet.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_hi-can_include>` (``shared/hi-can/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/hi-can/include/hi_can_packet.hpp``)
+--------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``array``
+
+- ``cstddef``
+
+- ``hi_can_address.hpp`` (:ref:`file_shared_hi-can_include_hi_can_address.hpp`)
+
+- ``optional``
+
+- ``stdexcept``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_shared_hi-can_include_hi_can.hpp`
+
+- :ref:`file_shared_hi-can_src_hi_can_packet.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classhi__can_1_1Packet`
+

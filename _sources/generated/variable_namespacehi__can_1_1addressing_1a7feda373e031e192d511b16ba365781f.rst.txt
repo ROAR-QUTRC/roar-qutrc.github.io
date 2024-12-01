@@ -1,0 +1,14 @@
+.. _exhale_variable_namespacehi__can_1_1addressing_1a7feda373e031e192d511b16ba365781f:
+
+Variable hi_can::addressing::SUBSYSTEM_ADDRESS_POS
+==================================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::SUBSYSTEM_ADDRESS_POS
+   :project: rover

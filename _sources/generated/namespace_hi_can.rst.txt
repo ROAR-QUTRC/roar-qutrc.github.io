@@ -5,19 +5,24 @@ Namespace hi_can
 ================
 
 
+Contains all classes, functions, and types related to implementing Hi-CAN. 
+
+
+
+
 
 Namespaces
 ----------
 
 
-- :ref:`namespace_hi_can__addresses`
+- :ref:`namespace_hi_can__addressing`
+
+- :ref:`namespace_hi_can__parameter`
 
 
 Classes
 -------
 
-
-- :ref:`exhale_struct_structhi__can_1_1hi__can__address__t`
 
 - :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1callback__config__t`
 
@@ -26,8 +31,6 @@ Classes
 - :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmit__config__t`
 
 - :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmit__data__t`
-
-- :ref:`exhale_struct_structhi__can_1_1vesc__address__t`
 
 - :ref:`exhale_class_classhi__can_1_1CanInterface`
 
@@ -44,39 +47,3 @@ Classes
 - :ref:`exhale_class_classhi__can_1_1RawCanInterface`
 
 - :ref:`exhale_class_classhi__can_1_1SoftwareFilteredCanInterface`
-
-
-Typedefs
---------
-
-
-- :ref:`exhale_typedef_hi__can__address_8hpp_1a1f6ef01d3aeb03e825cc2e90973ff3b9`
-
-
-Variables
----------
-
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1a11b2a494674a863c29c6d715fe2466b4`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1a364c367bf6a56754de22c9859ead7400`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1ac8af06649fc39c8bf2436a2c694f9637`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1aa12904cb0c25680c3a0bc8925b6eb1ab`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1a4961cd9591efc9d7b2e7e88376b296c8`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1a7d68852f262a651b52d2072ea845b591`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1a2a3c59bbddf1b8c55f99b8978f09b698`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1a5edcf9ed31e4efd3ecba03a271149211`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1ac8a4454e71b1b1d188a764261097cbfd`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1afe870a8a642fcd625137e014ae2682ef`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1aa5c8e0fa3786193c03f0c3f2bb4806ba`
-
-- :ref:`exhale_variable_hi__can__address_8hpp_1a65803fac77b2aac606188789d4b39408`

@@ -1,0 +1,15 @@
+
+.. _namespace_hi_can__parameter__power:
+
+Namespace hi_can::parameter::power
+==================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__parameter__power__bms`
+
+- :ref:`namespace_hi_can__parameter__power__distribution`

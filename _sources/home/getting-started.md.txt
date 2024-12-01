@@ -1,6 +1,7 @@
 # Getting Started
 
 This project is built using [Nix](https://nixos.org/), which makes getting started quite easy - all you have to do is install Nix and `direnv`, and they take care of the rest.
+Whilst this page will get you started, it is strongly recommended that you read through <project:nix-basics.md> after reading through this document so you understand how to use the tooling.
 
 ## Environment Setup
 
@@ -30,14 +31,32 @@ You'll have to set up the hook yourself according to its [docs](https://direnv.n
 
 The script is designed to be able to run multiple times if something goes wrong - it checks if the modifications it makes are already present, and if it detects them, skips that step.
 
-### VSCode Setup
+### IDE Setup
 
-If you're using [VSCode](https://code.visualstudio.com/), open the `perseus-v2.code-workspace` workspace file (you'll need to do this every time you need)
+#### [VSCode](https://code.visualstudio.com/) (recommended)
 
-### Other IDE Setup
+Open the `perseus-v2.code-workspace` workspace file and install the recommended extensions.
+This will install language support extensions (python and C++), an extension for the formatter in use ([`treefmt`](https://github.com/numtide/treefmt) - configured using [`treefmt-nix`](https://github.com/numtide/treefmt-nix/)), and configure VSCode to respect the project settings.
+
+:::{important}
+You specifically need to open the `perseus-v2.code-workspace` file, not the folder, as otherwise settings won't apply.
+In the event that you open the folder by mistake, VSCode will prompt you to open the workspace file:
+
+![VSCode Prompt](open-code-workspace.png)
+
+Once you've opened the workspace, you should see `(WORKSPACE)` in your explorer (file view) title.
+:::
+
+Unfortunately, due to limitations in how `treefmt` works, it can only format files on save - this is fine, don't worry if you hit format and nothing happens.
+Save it and try again!
+
+At this point, you're all set up and ready to go.
+
+#### Other (I)DEs
 
 In the event that you're using another editor, you probably have enough technical know-how to set it up yourself.
 As long as it uses the environment variables from the `direnv` setup, it should be able to find and run everything.
+You should also configure your editor to use `treefmt` as its formatter - if you're using `direnv` or you're in a `nix develop` environment (see the [next sections](#developing-software)), it (and the formatters it uses internally) will already be available in your shell.
 
 ## Building the software
 
@@ -73,6 +92,30 @@ However, before you start writing code, there's a few things you need to read th
 The most important one is the software [architecture](project:/architecture/software.md), which goes over how all the software links together and how it's laid out.
 The other document is the software [standards](project:/standards/software.md), which details the standards to which your software is expected to be written.
 If your software _doesn't_ meet these standards, we unfortunately won't be able to merge your changes until you fix the issues - if code standards aren't enforced, the code **will** quickly become an un-maintainable mess, leading to another rewrite.
+
+## Full first-time setup example
+
+If you only care about building the code, the instructions for a first-time bringup from scratch on a Debian-based system like Ubuntu are as follows:
+
+1. Install the [GitHub CLI](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
+2. Run the following shell commands:
+
+```{code-block} console
+sudo apt-get update
+sudo apt-get install -y gh git curl direnv
+gh auth login -w -p https # log in with GitHub CLI and authenticate git
+cd ~
+gh repo clone ROAR-QUTRC/perseus-v2 # download the repository
+cd perseus-v2
+./software/scripts/nix-setup.sh
+```
+
+3. Restart your shell
+4. Run `cd ~/perseus-v2`
+5. Accept all config when prompted with `y`
+6. Wait for the downloads (and potentially builds)
+7. Run `nix build`
+8. You're done! If there were no errors, the built rover workspace is now available under the `perseus-v2/result` symlink folder.
 
 ## Debugging
 

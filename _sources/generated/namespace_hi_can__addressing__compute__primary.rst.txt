@@ -1,0 +1,20 @@
+
+.. _namespace_hi_can__addressing__compute__primary:
+
+Namespace hi_can::addressing::compute::primary
+==============================================
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1ad9778028f48093137dc9c9e928101ce8`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a068449a5aa1f70dc817ae2d80e760928`

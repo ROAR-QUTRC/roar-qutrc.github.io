@@ -24,3 +24,4 @@ Class Documentation
    :members:
    :protected-members:
    :undoc-members:
+   :allow-dot-graphs:

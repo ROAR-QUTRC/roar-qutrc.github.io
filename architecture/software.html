@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#core" class="md-skip">
+        <a href="#cmake-build-infrastructure" class="md-skip">
           Skip to content
         </a>
       
@@ -272,6 +272,22 @@
 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/nix-basics.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix Basics</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -281,7 +297,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -289,14 +305,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../architecture.html"><span class="md-ellipsis">Architecture</span></a>
           
-            <label for="__nav_4">
+            <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Architecture" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Architecture</span>
         </label>
@@ -352,15 +368,30 @@
   
   
   
-  
-    <li class="md-nav__item">
-      <a href="hardware.html" class="md-nav__link">
-        <span class="md-ellipsis">Hardware</span>
-      </a>
-    </li>
-  
-
-            
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="hardware.html"><span class="md-ellipsis">Hardware</span></a>
+          
+            <label for="__nav_5_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Hardware" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Hardware</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -369,10 +400,18 @@
   
   
     <li class="md-nav__item">
-      <a href="network.html" class="md-nav__link">
+      <a href="hardware/network.html" class="md-nav__link">
         <span class="md-ellipsis">Network</span>
       </a>
     </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
   
 
             
@@ -432,8 +471,123 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#cmake-build-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">CMake Build Infrastructure</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#core" class="md-nav__link">
     <span class="md-ellipsis">Core</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#native-programs" class="md-nav__link">
+    <span class="md-ellipsis">Native Programs</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-software" class="md-nav__link">
+    <span class="md-ellipsis">ROS2 Software</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS2 Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#perseus-bringup" class="md-nav__link">
+    <span class="md-ellipsis">perseus_<wbr>bringup</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">hardware_<wbr>interfaces</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-devices" class="md-nav__link">
+    <span class="md-ellipsis">input_<wbr>devices</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autonomy" class="md-nav__link">
+    <span class="md-ellipsis">autonomy</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-libraries" class="md-nav__link">
+    <span class="md-ellipsis">Shared Libraries</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared Libraries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hi-can" class="md-nav__link">
+    <span class="md-ellipsis">Hi-<wbr>CAN</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-ui" class="md-nav__link">
+    <span class="md-ellipsis">Web UI</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">Frontend</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">Backend</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    <span class="md-ellipsis">Firmware</span>
   </a>
   
 </li>
@@ -467,7 +621,164 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../maintenance.html"><span class="md-ellipsis">Maintenance</span></a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Maintenance" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Maintenance</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/nix.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix Build System</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../standards.html"><span class="md-ellipsis">Standards</span></a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Standards" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Standards</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/electronics.html" class="md-nav__link">
+        <span class="md-ellipsis">Electronics Design Guidelines</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software Standards</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
@@ -475,14 +786,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../challenge-breakdowns.html"><span class="md-ellipsis">Challenge Breakdowns</span></a>
           
-            <label for="__nav_5">
+            <label for="__nav_8">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Challenge Breakdowns" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Challenge Breakdowns</span>
         </label>
@@ -568,24 +879,24 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
       
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../standards.html"><span class="md-ellipsis">Standards</span></a>
+          <a href="../subsystems.html"><span class="md-ellipsis">Payload Subsystems</span></a>
           
-            <label for="__nav_6">
+            <label for="__nav_9">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" aria-label="Standards" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+      <nav class="md-nav" aria-label="Payload Subsystems" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Standards</span>
+          <span class="md-ellipsis">Payload Subsystems</span>
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -596,23 +907,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../standards/electronics.html" class="md-nav__link">
-        <span class="md-ellipsis">Electronics Design Guidelines</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../standards/software.html" class="md-nav__link">
-        <span class="md-ellipsis">Software Standards</span>
+      <a href="../subsystems/excavation-construction.html" class="md-nav__link">
+        <span class="md-ellipsis">Excavation &amp; Construction</span>
       </a>
     </li>
   
@@ -639,93 +935,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../maintenance.html"><span class="md-ellipsis">Maintenance</span></a>
-          
-            <label for="__nav_7">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Maintenance" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Maintenance</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../maintenance/documentation.html" class="md-nav__link">
-        <span class="md-ellipsis">Documentation</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../maintenance/nix.html" class="md-nav__link">
-        <span class="md-ellipsis">Nix Build System</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../maintenance/software.html" class="md-nav__link">
-        <span class="md-ellipsis">Software</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
       
       
@@ -733,14 +943,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html"><span class="md-ellipsis">Generated Documentation</span></a>
           
-            <label for="__nav_8">
+            <label for="__nav_10">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Generated Documentation" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
+        <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Generated Documentation</span>
         </label>
@@ -755,7 +965,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1" type="checkbox" id="__nav_8_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
       
       
       
@@ -763,14 +973,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#full-api"><span class="md-ellipsis">Full API</span></a>
           
-            <label for="__nav_8_1">
+            <label for="__nav_10_1">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Full API" data-md-level="2">
-        <label class="md-nav__title" for="__nav_8_1">
+        <label class="md-nav__title" for="__nav_10_1">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Full API</span>
         </label>
@@ -785,7 +995,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_1" type="checkbox" id="__nav_8_1_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_1" type="checkbox" id="__nav_10_1_1" >
       
       
       
@@ -793,14 +1003,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#namespaces"><span class="md-ellipsis">Namespaces</span></a>
           
-            <label for="__nav_8_1_1">
+            <label for="__nav_10_1_1">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Namespaces" data-md-level="3">
-        <label class="md-nav__title" for="__nav_8_1_1">
+        <label class="md-nav__title" for="__nav_10_1_1">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Namespaces</span>
         </label>
@@ -828,8 +1038,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/namespace_hi_can__addresses.html" class="md-nav__link">
-        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addresses</span>
+      <a href="../generated/namespace_hi_can__addressing.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing</span>
       </a>
     </li>
   
@@ -843,8 +1053,263 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/namespace_hi_can__addresses__drive.html" class="md-nav__link">
-        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addresses::<wbr>drive</span>
+      <a href="../generated/namespace_hi_can__addressing__compute.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>compute</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__compute__primary.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>primary</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__drive__vesc.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>vesc</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__excavation.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>excavation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__excavation__arm.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>arm</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__post_landing.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>post_<wbr>landing</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__power.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__power__battery.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>battery</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__power__distribution.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>distribution</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__space_resources.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>space_<wbr>resources</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__drive__vesc.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>drive::<wbr>vesc</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__excavation.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>excavation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__power.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>power</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__power__bms.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>power::<wbr>bms</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__power__distribution.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>power::<wbr>distribution</span>
       </a>
     </li>
   
@@ -918,6 +1383,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../generated/namespace_std.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace std</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../generated/namespace_std__chrono.html" class="md-nav__link">
         <span class="md-ellipsis">Namespace std::<wbr>chrono</span>
       </a>
@@ -958,7 +1438,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_2" type="checkbox" id="__nav_8_1_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_2" type="checkbox" id="__nav_10_1_2" >
       
       
       
@@ -966,14 +1446,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#classes-and-structs"><span class="md-ellipsis">Classes and Structs</span></a>
           
-            <label for="__nav_8_1_2">
+            <label for="__nav_10_1_2">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Classes and Structs" data-md-level="3">
-        <label class="md-nav__title" for="__nav_8_1_2">
+        <label class="md-nav__title" for="__nav_10_1_2">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Classes and Structs</span>
         </label>
@@ -986,8 +1466,83 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/structhi__can_1_1hi__can__address__t.html" class="md-nav__link">
-        <span class="md-ellipsis">Struct hi_<wbr>can_<wbr>address_<wbr>t</span>
+      <a href="../generated/structcan__data.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct can_<wbr>data</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1drive_1_1vesc_1_1address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1filter__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct filter_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1flagged__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct flagged_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1standard__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct standard_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1structured__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct structured_<wbr>address_<wbr>t</span>
       </a>
     </li>
   
@@ -1061,8 +1616,38 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/structhi__can_1_1vesc__address__t.html" class="md-nav__link">
-        <span class="md-ellipsis">Struct vesc_<wbr>address_<wbr>t</span>
+      <a href="../generated/structhi__can_1_1parameter_1_1drive_1_1vesc_1_1type__1__status.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct type_<wbr>1_<wbr>status</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1parameter_1_1power_1_1bms_1_1pack__status.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct pack_<wbr>status</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1parameter_1_1power_1_1distribution_1_1bus__status__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct bus_<wbr>status_<wbr>t</span>
       </a>
     </li>
   
@@ -1236,7 +1821,120 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_3" type="checkbox" id="__nav_8_1_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_3" type="checkbox" id="__nav_10_1_3" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html#enums"><span class="md-ellipsis">Enums</span></a>
+          
+            <label for="__nav_10_1_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Enums" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Enums</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1ad9778028f48093137dc9c9e928101ce8.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1a587c9924e5280b1e6daa60a7ce545bae.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum command_<wbr>id</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1a1d7845f6f062d8186155f002c8ef3efc.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1a41e9d2d33b7b14732d5bef920b7b2a45.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1a6dab62ddb95bf2ef584d217d2b23c8d7.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_4" type="checkbox" id="__nav_10_1_4" >
       
       
       
@@ -1244,14 +1942,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#functions"><span class="md-ellipsis">Functions</span></a>
           
-            <label for="__nav_8_1_3">
+            <label for="__nav_10_1_4">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Functions" data-md-level="3">
-        <label class="md-nav__title" for="__nav_8_1_3">
+        <label class="md-nav__title" for="__nav_10_1_4">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Functions</span>
         </label>
@@ -1409,7 +2107,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_4" type="checkbox" id="__nav_8_1_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_5" type="checkbox" id="__nav_10_1_5" >
       
       
       
@@ -1417,14 +2115,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#variables"><span class="md-ellipsis">Variables</span></a>
           
-            <label for="__nav_8_1_4">
+            <label for="__nav_10_1_5">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Variables" data-md-level="3">
-        <label class="md-nav__title" for="__nav_8_1_4">
+        <label class="md-nav__title" for="__nav_10_1_5">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Variables</span>
         </label>
@@ -1437,8 +2135,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1a11b2a494674a863c29c6d715fe2466b4.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>DEVICE_<wbr>ADDRESS_<wbr>BITS</span>
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1aa091a14167833a5feb90ae52c9145883.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>ADDRESS_<wbr>LENGTH</span>
       </a>
     </li>
   
@@ -1452,8 +2150,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1a364c367bf6a56754de22c9859ead7400.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>DEVICE_<wbr>ADDRESS_<wbr>POS</span>
+      <a href="../generated/variable_hi__can__address_8hpp_1a068449a5aa1f70dc817ae2d80e760928.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>primary::<wbr>SUBSYSTEM_<wbr>ID</span>
       </a>
     </li>
   
@@ -1467,8 +2165,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1ac8af06649fc39c8bf2436a2c694f9637.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>GROUP_<wbr>ADDRESS_<wbr>BITS</span>
+      <a href="../generated/variable_hi__can__address_8hpp_1a1a7c390fab55cb7c1d7c10e121a5fd34.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>SYSTEM_<wbr>ID</span>
       </a>
     </li>
   
@@ -1482,8 +2180,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1aa12904cb0c25680c3a0bc8925b6eb1ab.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>GROUP_<wbr>ADDRESS_<wbr>POS</span>
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1ad86de3cedb0b8bbb9bc759451873ad11.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>ADDRESS_<wbr>BITS</span>
       </a>
     </li>
   
@@ -1497,8 +2195,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1a4961cd9591efc9d7b2e7e88376b296c8.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>PARAM_<wbr>ADDRESS_<wbr>BITS</span>
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a6c041c4a8553ad2114c15eacf45d0205.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>ADDRESS_<wbr>POS</span>
       </a>
     </li>
   
@@ -1512,8 +2210,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1a7d68852f262a651b52d2072ea845b591.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>PARAM_<wbr>ADDRESS_<wbr>POS</span>
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1ac322f9294bece9ce67133ddbb80df288.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>MASK</span>
       </a>
     </li>
   
@@ -1527,8 +2225,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1a2a3c59bbddf1b8c55f99b8978f09b698.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      <a href="../generated/variable_hi__can__address_8hpp_1a0d01c2cb90a043121dbe8b56af90fa83.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>SYSTEM_<wbr>ID</span>
       </a>
     </li>
   
@@ -1542,8 +2240,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1a5edcf9ed31e4efd3ecba03a271149211.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      <a href="../generated/variable_hi__can__address_8hpp_1a4924080e76dc4b566bad723c8cc4b9dd.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>vesc::<wbr>SUBSYSTEM_<wbr>ID</span>
       </a>
     </li>
   
@@ -1557,8 +2255,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1ac8a4454e71b1b1d188a764261097cbfd.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      <a href="../generated/variable_hi__can__address_8hpp_1a1ef708c6102d776a9a011e248d030113.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>arm::<wbr>SUBSYSTEM_<wbr>ID</span>
       </a>
     </li>
   
@@ -1572,8 +2270,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1afe870a8a642fcd625137e014ae2682ef.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>CANLIB_<wbr>SYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      <a href="../generated/variable_hi__can__address_8hpp_1a5c3c47d0be025ac00c78848776f80c8c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>SYSTEM_<wbr>ID</span>
       </a>
     </li>
   
@@ -1587,8 +2285,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1aa5c8e0fa3786193c03f0c3f2bb4806ba.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>MAX_<wbr>ADDRESS</span>
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a6c34d360313543a2c1c8fd14386f7772.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>ADDRESS_<wbr>BITS</span>
       </a>
     </li>
   
@@ -1602,8 +2300,308 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/variable_hi__can__address_8hpp_1a65803fac77b2aac606188789d4b39408.html" class="md-nav__link">
-        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>MAX_<wbr>PACKET_<wbr>LEN</span>
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a13de8c21b3e561a8fbafba7d638a2283.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a50cee4fc019ae0a6ad9cbde6e18b3881.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a7bfd19cb87264fd68ce01b05b6d9e82b.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MASK_<wbr>ALL</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1ab76e652957fa643c2c2ea829b2ec4747.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MASK_<wbr>NONE</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a6372ba8ceb7b37c468fa77a3e86f123a.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>ADDRESS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a974d7cb9eb755009501603e338770b66.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>PACKET_<wbr>LEN</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a07e099cc9cb44b06a21e455efaf09b0c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>SHORT_<wbr>ADDRESS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a3e17bdad632e40df9a440dd1d52bfec4.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a6630cf54dd47345fcad6003c8ea66635.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a2c76499f5abcad988bf6a82d813a014b.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a7588b4ec8c02cad1ce9e7753ada80a89.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>post_<wbr>landing::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1ac8a6474f7069c5c260214c2f00dc8ff9.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>battery::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a0ce7aa474754e3973599792a7cecf700.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>distribution::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1ad7353975acf630d2df6bdac74d39f78e.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1aca2d4f6b2059e0fccdb5de20389b48ee.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>space_<wbr>resources::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1aeb12a56bb11ff2a7e5a52ec4d0f9cc3c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a7feda373e031e192d511b16ba365781f.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a447d637b419fbb8f5393f456a03c9d46.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a80ccca00c971afb280ade8018c8f6e05.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a3cf2ed0e7d75f8054666c04e65e305b3.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1aed9a6e8268e842dbc31df5763e58cfdc.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>MASK</span>
       </a>
     </li>
   
@@ -1627,7 +2625,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1_5" type="checkbox" id="__nav_8_1_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_6" type="checkbox" id="__nav_10_1_6" >
       
       
       
@@ -1635,14 +2633,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../generated/index.html#typedefs"><span class="md-ellipsis">Typedefs</span></a>
           
-            <label for="__nav_8_1_5">
+            <label for="__nav_10_1_6">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Typedefs" data-md-level="3">
-        <label class="md-nav__title" for="__nav_8_1_5">
+        <label class="md-nav__title" for="__nav_10_1_6">
           <span class="md-nav__icon md-icon"></span>
           <span class="md-ellipsis">Typedefs</span>
         </label>
@@ -1655,8 +2653,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../generated/typedef_hi__can__address_8hpp_1a1f6ef01d3aeb03e825cc2e90973ff3b9.html" class="md-nav__link">
-        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>can_<wbr>address_<wbr>t</span>
+      <a href="../generated/typedef_namespacehi__can_1_1addressing_1acd08f57a9d5d7a07492cd9c3ea3756ce.html" class="md-nav__link">
+        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>addressing::<wbr>mask_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/typedef_namespacehi__can_1_1addressing_1a1790497c7a43f6e573f400d4899ea5c1.html" class="md-nav__link">
+        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>addressing::<wbr>raw_<wbr>address_<wbr>t</span>
       </a>
     </li>
   
@@ -1712,8 +2725,123 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#cmake-build-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">CMake Build Infrastructure</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#core" class="md-nav__link">
     <span class="md-ellipsis">Core</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#native-programs" class="md-nav__link">
+    <span class="md-ellipsis">Native Programs</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-software" class="md-nav__link">
+    <span class="md-ellipsis">ROS2 Software</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS2 Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#perseus-bringup" class="md-nav__link">
+    <span class="md-ellipsis">perseus_<wbr>bringup</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">hardware_<wbr>interfaces</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-devices" class="md-nav__link">
+    <span class="md-ellipsis">input_<wbr>devices</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autonomy" class="md-nav__link">
+    <span class="md-ellipsis">autonomy</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-libraries" class="md-nav__link">
+    <span class="md-ellipsis">Shared Libraries</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared Libraries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hi-can" class="md-nav__link">
+    <span class="md-ellipsis">Hi-<wbr>CAN</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-ui" class="md-nav__link">
+    <span class="md-ellipsis">Web UI</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">Frontend</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">Backend</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware" class="md-nav__link">
+    <span class="md-ellipsis">Firmware</span>
   </a>
   
 </li>
@@ -1738,10 +2866,73 @@
   </a>
 
 <h1 id="software">Software<a class="headerlink" href="#software" title="Link to this heading">¶</a></h1>
-<p>The software on the rover is split into multiple semi-independent “major projects”, each of which contains several sub-projects.</p>
+<p>The software on the rover is split into the core software (mainly ROS2 code), the web control UI, and firmware.
+Since the web UI runs on a completely different stack to the rest of the rover code, it just made more sense to separate it out and treat it separately.
+Firmware is compiled completely separately to the rest of the stack, so also needs to be split out (although it does share some libraries with the core software).</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>If you want to read through project usage, that’ll be documented either in the source code (particularly for libraries) and as such be visible in the <a class="reference internal" href="../generated/index.html"><span class="std std-doc">generated documentation</span></a>, or in a README file in the project’s directory.</p>
+</div>
+<h2 id="cmake-build-infrastructure">CMake Build Infrastructure<a class="headerlink" href="#cmake-build-infrastructure" title="Link to this heading">¶</a></h2>
+<p>This project’s C++ code (excluding the firmware) is actually targeted at being built in two different ways - first by using Nix, and second by using ordinary <code class="docutils literal notranslate"><span class="pre">cmake</span></code> and <code class="docutils literal notranslate"><span class="pre">make</span></code> commands, both of which have slightly different environments.</p>
+<p>The first major difference between Nix and standard builds is handling dependencies.
+When the project is built using Nix, all of the dependencies that a target specifies are made available to it like they’ve been installed and the project can build with no particular extra steps.
+However, when built through CMake normally, the individual projects need to manually add the subdirectories of their dependencies.
+They can detect whether the packages is present (installed) using the <code class="docutils literal notranslate"><span class="pre">find_package</span></code> command, and only attempt to manually include their dependencies if they aren’t already available.</p>
+<p>The other major change is related to the <a class="reference external" href="https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html">build type</a>.
+When you run CMake manually, there is by default no <code class="docutils literal notranslate"><span class="pre">CMAKE_BUILD_TYPE</span></code> specified.
+In this instance, the projects have some additional config in their <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> files to default to the <code class="docutils literal notranslate"><span class="pre">Debug</span></code> release type.
+Nix builds, by contrast, <em>specify</em> the <code class="docutils literal notranslate"><span class="pre">Release</span></code> build type.
+The reason this is important is because these projects add the <code class="docutils literal notranslate"><span class="pre">-Werror</span></code> to the GCC build flags for <code class="docutils literal notranslate"><span class="pre">Release</span></code> builds, thus enforcing the <a class="reference internal" href="../standards/software.html#warnings-are-not-acceptable"><span class="std std-ref">no warnings</span></a> section of the software standards.</p>
+<p>If you’re curious as to what all this looks like in practice, check out the <code class="docutils literal notranslate"><span class="pre">software/templates/</span></code> directory.</p>
 <h2 id="core">Core<a class="headerlink" href="#core" title="Link to this heading">¶</a></h2>
-<p>The first (and largest!) is the main codebase which runs everything.
-This is mostly ROS2 code, and is located in <code class="docutils literal notranslate"><span class="pre">software/ros_ws/src</span></code>.</p>
+<p>This is mostly ROS code, and is located in <code class="docutils literal notranslate"><span class="pre">software/ros_ws/src/</span></code>.
+Since it’s a ROS2 project, it’s comprised of code in two languages - C++ and Python.
+Although, as detailed in the <a class="reference internal" href="../standards/software.html"><span class="std std-doc">standards</span></a>, we try to keep all the software to C++, there are some cases for which Python just makes more sense (such as input handling - see the <code class="docutils literal notranslate"><span class="pre">input_devices</span></code> package).
+The C++ code is all built using <a class="reference external" href="https://cmake.org/">CMake</a> since that’s what ROS2 uses by default, and extending that to non-ROS code allows easy interoperability, as you’ll see shortly.</p>
+<p>Internally, the code is split into several sections:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../generated/dir_native.html#dir-native"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">software/native/</span></code></span></a>: Programs which run natively, independent of ROS</p></li>
+<li><p><a class="reference internal" href="../generated/dir_ros_ws.html#dir-ros-ws"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">software/ros_ws/</span></code></span></a>: Workspace containing ROS2 code</p></li>
+<li><p><a class="reference internal" href="../generated/dir_shared.html#dir-shared"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">software/shared/</span></code></span></a>: Shared libraries between native and ROS2 code, and sometimes firmware too</p></li>
+</ul>
+<h3 id="native-programs">Native Programs<a class="headerlink" href="#native-programs" title="Link to this heading">¶</a></h3>
+<p>Currently, there’s nothing of note in this category.</p>
+<h3 id="ros2-software">ROS2 Software<a class="headerlink" href="#ros2-software" title="Link to this heading">¶</a></h3>
+<p>This is the digital heart of the rover, and contains pretty much everything which runs its day-to-day operations.
+By convention for ROS2 projects, all the actual code in this directory is located under the <code class="docutils literal notranslate"><span class="pre">src/</span></code> subdirectory - everything else in <code class="docutils literal notranslate"><span class="pre">ros_ws/</span></code> is build infrastructure.
+The most important packages are are detailed below - if you want more information, there should be <code class="docutils literal notranslate"><span class="pre">README</span></code> files in each package’s source directory.</p>
+<h4 id="perseus-bringup"><code class="docutils literal notranslate"><span class="pre">perseus_bringup</span></code><a class="headerlink" href="#perseus-bringup" title="Link to this heading">¶</a></h4>
+<p>This is a “meta-package” which depends on the other packages and contains launch files for the main tasks needed to bring up the rover.</p>
+<h4 id="hardware-interfaces"><code class="docutils literal notranslate"><span class="pre">hardware_interfaces</span></code><a class="headerlink" href="#hardware-interfaces" title="Link to this heading">¶</a></h4>
+<p>This contains implementations of all hardware-specific tasks, and should be one of the only places in the ROS code which interacts directly with the real world.
+If hardware-specific code is distributed throughout the codebase, it makes mocking for tests and simulation much more difficult than it needs to be.
+There are two types of output inside this package: <a class="reference external" href="https://control.ros.org/rolling/doc/ros2_control/hardware_interface/doc/hardware_components_userdoc.html">Hardware Components</a> for <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> and follow its spec, and <a class="reference external" href="https://docs.ros.org/en/humble/Concepts/Basic/About-Nodes.html" title="ROS 2 Documentation: Humble">nodes</a> which interact with other software using either <a class="reference external" href="https://docs.ros.org/en/humble/Concepts/Basic/About-Topics.html" title="ROS 2 Documentation: Humble">topics</a>, <a class="reference external" href="https://docs.ros.org/en/humble/Concepts/Basic/About-Actions.html" title="ROS 2 Documentation: Humble">actions</a>, or <a class="reference external" href="https://docs.ros.org/en/humble/Concepts/Basic/About-Services.html" title="ROS 2 Documentation: Humble">services</a>.</p>
+<p>The reason for using <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> instead of standard nodes and topics is very simple: Speed.
+<code class="docutils literal notranslate"><span class="pre">ros2_control</span></code>, rather than launching ROS2 nodes, calls functions directly.
+Whilst this can make implementation harder to understand than something similar based on topics, the advantages vastly outweigh the slight additional complexity, especially given its excellent documentation, and the wealth of resources dedicated to explaining it.</p>
+<h4 id="input-devices"><code class="docutils literal notranslate"><span class="pre">input_devices</span></code><a class="headerlink" href="#input-devices" title="Link to this heading">¶</a></h4>
+<p>This package is the other place which should contain software which interacts directly with the real world, and contains nodes which handle reading input from various devices in the real world.
+The nodes in this package then publish data which <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> reads in, processes with a controller, and feeds to the relevant hardware interface(s).</p>
+<h4 id="autonomy"><code class="docutils literal notranslate"><span class="pre">autonomy</span></code><a class="headerlink" href="#autonomy" title="Link to this heading">¶</a></h4>
+<p>This package contains the core mapping and autonomous navigation functionality for the rover, as well as the mapping functionality and configuration.
+It also implements the fail-over functionality which handles autonomous recovery on disconnection or network failure.</p>
+<h3 id="shared-libraries">Shared Libraries<a class="headerlink" href="#shared-libraries" title="Link to this heading">¶</a></h3>
+<h4 id="hi-can">Hi-CAN<a class="headerlink" href="#hi-can" title="Link to this heading">¶</a></h4>
+<p>Abbreviated from “hierarchical CAN”, Hi-CAN is the library implementing the standards laid out <a class="reference internal" href="can-bus.html"><span class="std std-doc">here</span></a>, and is shared across ROS and native code, as well as firmware.
+The main library contains the code defining the main interfaces with which code will interact with the library, as well as all of the devices on the bus and their parameters.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>Since this particular library is shared between both the ROS code <em>and</em> the firmware, it needs to be written in pure C++ (no external dependencies).</p>
+</div>
+<p>However, this on its own is not particularly useful - which is where implementations come in.
+The <code class="docutils literal notranslate"><span class="pre">hi-can-raw</span></code> library implements <a class="desctype reference internal" href="../generated/classhi__can_1_1FilteredCanInterface.html#_CPPv4N6hi_can20FilteredCanInterfaceE" title="hi_can::FilteredCanInterface (C++ class) — Inheritence diagram for hi_can::FilteredCanInterface:"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">hi_can::FilteredCanInterface</span></code></a> using the Linux SocketCAN <a class="reference external" href="https://docs.kernel.org/networking/can.html#raw-protocol-sockets-with-can-filters-sock-raw"><code class="docutils literal notranslate"><span class="pre">RAW_CAN</span></code></a> interface, and is what most code uses to interface with the CAN bus.
+The <code class="docutils literal notranslate"><span class="pre">hi-can-net</span></code> library is currently unused, but may become an implementation of <a class="desctype reference internal" href="../generated/classhi__can_1_1CanInterface.html#_CPPv4N6hi_can12CanInterfaceE" title="hi_can::CanInterface (C++ class) — Inheritence diagram for hi_can::CanInterface:"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">hi_can::CanInterface</span></code></a> which forwards all traffic over a network connection.</p>
+<h2 id="web-ui">Web UI<a class="headerlink" href="#web-ui" title="Link to this heading">¶</a></h2>
+<p>The other project is the rover’s web control UI - since it’s a completely different tech stack, it ends up being almost entirely independent of the rover core software.</p>
+<h3 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Link to this heading">¶</a></h3>
+<h3 id="backend">Backend<a class="headerlink" href="#backend" title="Link to this heading">¶</a></h3>
+<h2 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Link to this heading">¶</a></h2>
 
 
 
@@ -1784,13 +2975,13 @@ This is mostly ROS2 code, and is located in <code class="docutils literal notran
       
       
         
-        <a href="../challenge-breakdowns.html" class="md-footer__link md-footer__link--next" aria-label="Next: Challenge Breakdowns" rel="next">
+        <a href="../maintenance.html" class="md-footer__link md-footer__link--next" aria-label="Next: Maintenance" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Challenge Breakdowns
+              Maintenance
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1838,6 +3029,9 @@ This is mostly ROS2 code, and is located in <code class="docutils literal notran
         <script src="../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
         <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+        <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+        <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+        <script defer="defer" src="../_static/tippy/architecture/software.9a3903ca-6dcb-454e-97ea-a4819939c0ac.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

@@ -1,0 +1,22 @@
+
+.. _namespace_hi_can__addressing__power:
+
+Namespace hi_can::addressing::power
+===================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__addressing__power__battery`
+
+- :ref:`namespace_hi_can__addressing__power__distribution`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1ad7353975acf630d2df6bdac74d39f78e`

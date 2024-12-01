@@ -1,0 +1,14 @@
+.. _exhale_variable_namespacehi__can_1_1addressing_1a447d637b419fbb8f5393f456a03c9d46:
+
+Variable hi_can::addressing::SUBSYSTEM_MASK
+===========================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::SUBSYSTEM_MASK
+   :project: rover

@@ -3,7 +3,7 @@
 Class Packet
 ============
 
-- Defined in :ref:`file_shared_hi-can-lib_include_hi_can_packet.hpp`
+- Defined in :ref:`file_shared_hi-can_include_hi_can_packet.hpp`
 
 
 Class Documentation
@@ -15,3 +15,4 @@ Class Documentation
    :members:
    :protected-members:
    :undoc-members:
+   :allow-dot-graphs:

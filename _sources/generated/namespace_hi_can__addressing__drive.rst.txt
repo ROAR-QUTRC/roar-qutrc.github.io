@@ -1,0 +1,20 @@
+
+.. _namespace_hi_can__addressing__drive:
+
+Namespace hi_can::addressing::drive
+===================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__addressing__drive__vesc`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a0d01c2cb90a043121dbe8b56af90fa83`

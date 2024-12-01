@@ -1,0 +1,14 @@
+.. _exhale_variable_hi__can__address_8hpp_1a4924080e76dc4b566bad723c8cc4b9dd:
+
+Variable hi_can::addressing::drive::vesc::SUBSYSTEM_ID
+======================================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::drive::vesc::SUBSYSTEM_ID
+   :project: rover

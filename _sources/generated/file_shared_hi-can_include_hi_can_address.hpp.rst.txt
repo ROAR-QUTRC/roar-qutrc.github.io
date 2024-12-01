@@ -1,0 +1,177 @@
+
+.. _file_shared_hi-can_include_hi_can_address.hpp:
+
+File hi_can_address.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_hi-can_include>` (``shared/hi-can/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/hi-can/include/hi_can_address.hpp``)
+---------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstddef``
+
+- ``cstdint``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_shared_hi-can_include_hi_can.hpp`
+
+- :ref:`file_shared_hi-can_include_hi_can_packet.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can`
+
+- :ref:`namespace_hi_can__addressing`
+
+- :ref:`namespace_hi_can__addressing__compute`
+
+- :ref:`namespace_hi_can__addressing__compute__primary`
+
+- :ref:`namespace_hi_can__addressing__drive`
+
+- :ref:`namespace_hi_can__addressing__drive__vesc`
+
+- :ref:`namespace_hi_can__addressing__excavation`
+
+- :ref:`namespace_hi_can__addressing__excavation__arm`
+
+- :ref:`namespace_hi_can__addressing__post_landing`
+
+- :ref:`namespace_hi_can__addressing__power`
+
+- :ref:`namespace_hi_can__addressing__power__battery`
+
+- :ref:`namespace_hi_can__addressing__power__distribution`
+
+- :ref:`namespace_hi_can__addressing__space_resources`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1addressing_1_1drive_1_1vesc_1_1address__t`
+
+- :ref:`exhale_struct_structhi__can_1_1addressing_1_1filter__t`
+
+- :ref:`exhale_struct_structhi__can_1_1addressing_1_1flagged__address__t`
+
+- :ref:`exhale_struct_structhi__can_1_1addressing_1_1standard__address__t`
+
+- :ref:`exhale_struct_structhi__can_1_1addressing_1_1structured__address__t`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1ad9778028f48093137dc9c9e928101ce8`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a587c9924e5280b1e6daa60a7ce545bae`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a1d7845f6f062d8186155f002c8ef3efc`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a41e9d2d33b7b14732d5bef920b7b2a45`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a6dab62ddb95bf2ef584d217d2b23c8d7`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespacehi__can_1_1addressing_1acd08f57a9d5d7a07492cd9c3ea3756ce`
+
+- :ref:`exhale_typedef_namespacehi__can_1_1addressing_1a1790497c7a43f6e573f400d4899ea5c1`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1aa091a14167833a5feb90ae52c9145883`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a068449a5aa1f70dc817ae2d80e760928`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a1a7c390fab55cb7c1d7c10e121a5fd34`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1ad86de3cedb0b8bbb9bc759451873ad11`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a6c041c4a8553ad2114c15eacf45d0205`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1ac322f9294bece9ce67133ddbb80df288`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a0d01c2cb90a043121dbe8b56af90fa83`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a4924080e76dc4b566bad723c8cc4b9dd`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a1ef708c6102d776a9a011e248d030113`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a5c3c47d0be025ac00c78848776f80c8c`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a6c34d360313543a2c1c8fd14386f7772`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a13de8c21b3e561a8fbafba7d638a2283`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a50cee4fc019ae0a6ad9cbde6e18b3881`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a7bfd19cb87264fd68ce01b05b6d9e82b`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1ab76e652957fa643c2c2ea829b2ec4747`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a6372ba8ceb7b37c468fa77a3e86f123a`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a974d7cb9eb755009501603e338770b66`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a07e099cc9cb44b06a21e455efaf09b0c`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a3e17bdad632e40df9a440dd1d52bfec4`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a6630cf54dd47345fcad6003c8ea66635`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a2c76499f5abcad988bf6a82d813a014b`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a7588b4ec8c02cad1ce9e7753ada80a89`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1ac8a6474f7069c5c260214c2f00dc8ff9`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a0ce7aa474754e3973599792a7cecf700`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1ad7353975acf630d2df6bdac74d39f78e`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1aca2d4f6b2059e0fccdb5de20389b48ee`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1aeb12a56bb11ff2a7e5a52ec4d0f9cc3c`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a7feda373e031e192d511b16ba365781f`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a447d637b419fbb8f5393f456a03c9d46`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a80ccca00c971afb280ade8018c8f6e05`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1a3cf2ed0e7d75f8054666c04e65e305b3`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1aed9a6e8268e842dbc31df5763e58cfdc`
+

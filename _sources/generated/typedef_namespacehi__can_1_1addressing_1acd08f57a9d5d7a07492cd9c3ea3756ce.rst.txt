@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespacehi__can_1_1addressing_1acd08f57a9d5d7a07492cd9c3ea3756ce:
+
+Typedef hi_can::addressing::mask_t
+==================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: hi_can::addressing::mask_t
+   :project: rover

@@ -1,0 +1,14 @@
+.. _exhale_variable_namespacehi__can_1_1addressing_1a3e17bdad632e40df9a440dd1d52bfec4:
+
+Variable hi_can::addressing::PARAM_ADDRESS_BITS
+===============================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::PARAM_ADDRESS_BITS
+   :project: rover

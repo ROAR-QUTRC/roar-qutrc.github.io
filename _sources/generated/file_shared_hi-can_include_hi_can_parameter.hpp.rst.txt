@@ -1,0 +1,60 @@
+
+.. _file_shared_hi-can_include_hi_can_parameter.hpp:
+
+File hi_can_parameter.hpp
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_hi-can_include>` (``shared/hi-can/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/hi-can/include/hi_can_parameter.hpp``)
+-----------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstdint``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can`
+
+- :ref:`namespace_hi_can__parameter`
+
+- :ref:`namespace_hi_can__parameter__drive`
+
+- :ref:`namespace_hi_can__parameter__drive__vesc`
+
+- :ref:`namespace_hi_can__parameter__excavation`
+
+- :ref:`namespace_hi_can__parameter__power`
+
+- :ref:`namespace_hi_can__parameter__power__bms`
+
+- :ref:`namespace_hi_can__parameter__power__distribution`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1parameter_1_1drive_1_1vesc_1_1type__1__status`
+
+- :ref:`exhale_struct_structhi__can_1_1parameter_1_1power_1_1bms_1_1pack__status`
+
+- :ref:`exhale_struct_structhi__can_1_1parameter_1_1power_1_1distribution_1_1bus__status__t`
+

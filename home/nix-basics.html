@@ -1,0 +1,3386 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../_static/Logo-Simple.png">
+    
+    
+      
+        <title>Nix Basics - Perseus V2  documentation</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.a61c166bfce23889e.min.css?v=9f78bb6a" />
+        <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+        <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=f454e25b" />
+        <link rel="stylesheet" type="text/css" href="../_static/css/fonts.css?v=eaf47ec1" />
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nix-nixlang-and-nixpkgs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Perseus V2  documentation" class="md-header__button md-logo" aria-label="Perseus V2  documentation" data-md-component="logo">
+      <img src="../_static/Rover-Logo.svg" alt="logo">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Perseus V2  documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Nix Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ROAR-QUTRC/perseus-v2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Perseus V2
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Perseus V2  documentation" class="md-nav__button md-logo" aria-label="Perseus V2  documentation" data-md-component="logo">
+      <img src="../_static/Rover-Logo.svg" alt="logo">
+    </a>
+    Perseus V2  documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ROAR-QUTRC/perseus-v2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Perseus V2
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        <span class="md-ellipsis">Home</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started.html" class="md-nav__link">
+        <span class="md-ellipsis">Getting Started</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="documentation-development.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation Development</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Nix Basics</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Nix Basics</span>
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Nix Basics</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nix-nixlang-and-nixpkgs" class="md-nav__link">
+    <span class="md-ellipsis">Nix, nixlang, and nixpkgs?</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    <span class="md-ellipsis">Basic Usage</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-build-command" class="md-nav__link">
+    <span class="md-ellipsis">The build command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-develop-command" class="md-nav__link">
+    <span class="md-ellipsis">The develop command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-run-command" class="md-nav__link">
+    <span class="md-ellipsis">The run command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-shell-command" class="md-nav__link">
+    <span class="md-ellipsis">The shell command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nix-command-targets" class="md-nav__link">
+    <span class="md-ellipsis">Nix command targets</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nix-flakes" class="md-nav__link">
+    <span class="md-ellipsis">Nix Flakes</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nix Flakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">Packages</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-shells" class="md-nav__link">
+    <span class="md-ellipsis">Development shells</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applications" class="md-nav__link">
+    <span class="md-ellipsis">Applications</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nixlang-basics" class="md-nav__link">
+    <span class="md-ellipsis">Nixlang basics</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nixlang basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">Basic Syntax</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">Examples</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">Comments</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">Numbers</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Numbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integers" class="md-nav__link">
+    <span class="md-ellipsis">Integers</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floating-point-numbers" class="md-nav__link">
+    <span class="md-ellipsis">Floating-<wbr>point numbers</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">Strings</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-substitution" class="md-nav__link">
+    <span class="md-ellipsis">String substitution</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-concatenation" class="md-nav__link">
+    <span class="md-ellipsis">String concatenation</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">Functions</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">Glossary</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../architecture.html"><span class="md-ellipsis">Architecture</span></a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Architecture" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Architecture</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/can-bus.html" class="md-nav__link">
+        <span class="md-ellipsis">CAN Bus</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/ci-cd.html" class="md-nav__link">
+        <span class="md-ellipsis">CI/CD</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../architecture/hardware.html"><span class="md-ellipsis">Hardware</span></a>
+          
+            <label for="__nav_5_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Hardware" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Hardware</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/hardware/network.html" class="md-nav__link">
+        <span class="md-ellipsis">Network</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/nix.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../maintenance.html"><span class="md-ellipsis">Maintenance</span></a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Maintenance" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Maintenance</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/nix.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix Build System</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../standards.html"><span class="md-ellipsis">Standards</span></a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Standards" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Standards</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/electronics.html" class="md-nav__link">
+        <span class="md-ellipsis">Electronics Design Guidelines</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software Standards</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../challenge-breakdowns.html"><span class="md-ellipsis">Challenge Breakdowns</span></a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Challenge Breakdowns" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Challenge Breakdowns</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/autonomy-mapping.html" class="md-nav__link">
+        <span class="md-ellipsis">Autonomy &amp; Mapping</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/excavation-construction.html" class="md-nav__link">
+        <span class="md-ellipsis">Excavation &amp; Construction</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/post-landing.html" class="md-nav__link">
+        <span class="md-ellipsis">Post-<wbr>Landing</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/space-resources.html" class="md-nav__link">
+        <span class="md-ellipsis">Space Resources</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../subsystems.html"><span class="md-ellipsis">Payload Subsystems</span></a>
+          
+            <label for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Payload Subsystems" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Payload Subsystems</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subsystems/excavation-construction.html" class="md-nav__link">
+        <span class="md-ellipsis">Excavation &amp; Construction</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html"><span class="md-ellipsis">Generated Documentation</span></a>
+          
+            <label for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Generated Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Generated Documentation</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html#full-api"><span class="md-ellipsis">Full API</span></a>
+          
+            <label for="__nav_10_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Full API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Full API</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_1" type="checkbox" id="__nav_10_1_1" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html#namespaces"><span class="md-ellipsis">Namespaces</span></a>
+          
+            <label for="__nav_10_1_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Namespaces" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Namespaces</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__compute.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>compute</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__compute__primary.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>primary</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__drive__vesc.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>vesc</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__excavation.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>excavation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__excavation__arm.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>arm</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__post_landing.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>post_<wbr>landing</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__power.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__power__battery.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>battery</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__power__distribution.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>distribution</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__addressing__space_resources.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>space_<wbr>resources</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__drive__vesc.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>drive::<wbr>vesc</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__excavation.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>excavation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__power.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>power</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__power__bms.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>power::<wbr>bms</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_hi_can__parameter__power__distribution.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameter::<wbr>power::<wbr>distribution</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_input_devices.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_input_devices__generic_controller.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices::<wbr>generic_<wbr>controller</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_input_devices__xbox_controller.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices::<wbr>xbox_<wbr>controller</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_mapping_using_slam_toolbox.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace mapping_<wbr>using_<wbr>slam_<wbr>toolbox</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_std.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace std</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_std__chrono.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace std::<wbr>chrono</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/namespace_xbox_controller_launch.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace xbox_<wbr>controller_<wbr>launch</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_2" type="checkbox" id="__nav_10_1_2" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html#classes-and-structs"><span class="md-ellipsis">Classes and Structs</span></a>
+          
+            <label for="__nav_10_1_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Classes and Structs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Classes and Structs</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structcan__data.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct can_<wbr>data</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1drive_1_1vesc_1_1address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1filter__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct filter_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1flagged__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct flagged_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1standard__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct standard_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1addressing_1_1structured__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct structured_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1PacketManager_1_1callback__config__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>callback_<wbr>config_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1PacketManager_1_1callback__data__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>callback_<wbr>data_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1PacketManager_1_1transmit__config__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>transmit_<wbr>config_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1PacketManager_1_1transmit__data__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>transmit_<wbr>data_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1parameter_1_1drive_1_1vesc_1_1type__1__status.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct type_<wbr>1_<wbr>status</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1parameter_1_1power_1_1bms_1_1pack__status.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct pack_<wbr>status</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/structhi__can_1_1parameter_1_1power_1_1distribution_1_1bus__status__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct bus_<wbr>status_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classFdWrapper.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Fd<wbr>Wrapper</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classhi__can_1_1CanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classhi__can_1_1FilteredCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Filtered<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classhi__can_1_1NetworkClient.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Network<wbr>Client</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classhi__can_1_1NetworkServer.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Network<wbr>Server</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classhi__can_1_1Packet.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Packet</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classhi__can_1_1PacketManager.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Packet<wbr>Manager</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classhi__can_1_1RawCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Raw<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classhi__can_1_1SoftwareFilteredCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Software<wbr>Filtered<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/classinput__devices_1_1xbox__controller_1_1XboxControllerNode.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Xbox<wbr>Controller<wbr>Node</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_3" type="checkbox" id="__nav_10_1_3" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html#enums"><span class="md-ellipsis">Enums</span></a>
+          
+            <label for="__nav_10_1_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Enums" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Enums</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1ad9778028f48093137dc9c9e928101ce8.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1a587c9924e5280b1e6daa60a7ce545bae.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum command_<wbr>id</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1a1d7845f6f062d8186155f002c8ef3efc.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1a41e9d2d33b7b14732d5bef920b7b2a45.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/enum_hi__can__address_8hpp_1a6dab62ddb95bf2ef584d217d2b23c8d7.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_4" type="checkbox" id="__nav_10_1_4" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html#functions"><span class="md-ellipsis">Functions</span></a>
+          
+            <label for="__nav_10_1_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Functions" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Functions</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_generic__controller_8py_1a51d704bdb6e79170e29fdaf7a3bee9da.html" class="md-nav__link">
+        <span class="md-ellipsis">Function input_<wbr>devices::<wbr>generic_<wbr>controller::<wbr>main</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_xbox__controller_8py_1a00ebf7d3afacd199ace117b0e26d69f0.html" class="md-nav__link">
+        <span class="md-ellipsis">Function input_<wbr>devices::<wbr>xbox_<wbr>controller::<wbr>main</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4.html" class="md-nav__link">
+        <span class="md-ellipsis">Function main<wbr>()</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_beacon_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+        <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_drive_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+        <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_excavation_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html" class="md-nav__link">
+        <span class="md-ellipsis">Function main<wbr>(int, char **)</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_mapping__using__slam__toolbox_8launch_8py_1a67bcf68dadb3392668e2da8da65c5d90.html" class="md-nav__link">
+        <span class="md-ellipsis">Function mapping_<wbr>using_<wbr>slam_<wbr>toolbox::<wbr>generate_<wbr>launch_<wbr>description</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_fd__wrapper_8cpp_1ae18e498ea5e0f56245f661e154bf496b.html" class="md-nav__link">
+        <span class="md-ellipsis">Function swap</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/function_xbox__controller__launch_8py_1a1458a93322ee60e3c8ae88e415588a05.html" class="md-nav__link">
+        <span class="md-ellipsis">Function xbox_<wbr>controller_<wbr>launch::<wbr>generate_<wbr>launch_<wbr>description</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_5" type="checkbox" id="__nav_10_1_5" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html#variables"><span class="md-ellipsis">Variables</span></a>
+          
+            <label for="__nav_10_1_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Variables" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Variables</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1aa091a14167833a5feb90ae52c9145883.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>ADDRESS_<wbr>LENGTH</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a068449a5aa1f70dc817ae2d80e760928.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>primary::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a1a7c390fab55cb7c1d7c10e121a5fd34.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1ad86de3cedb0b8bbb9bc759451873ad11.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a6c041c4a8553ad2114c15eacf45d0205.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1ac322f9294bece9ce67133ddbb80df288.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a0d01c2cb90a043121dbe8b56af90fa83.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a4924080e76dc4b566bad723c8cc4b9dd.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>vesc::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a1ef708c6102d776a9a011e248d030113.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>arm::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a5c3c47d0be025ac00c78848776f80c8c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a6c34d360313543a2c1c8fd14386f7772.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a13de8c21b3e561a8fbafba7d638a2283.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a50cee4fc019ae0a6ad9cbde6e18b3881.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a7bfd19cb87264fd68ce01b05b6d9e82b.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MASK_<wbr>ALL</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1ab76e652957fa643c2c2ea829b2ec4747.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MASK_<wbr>NONE</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a6372ba8ceb7b37c468fa77a3e86f123a.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>ADDRESS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a974d7cb9eb755009501603e338770b66.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>PACKET_<wbr>LEN</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a07e099cc9cb44b06a21e455efaf09b0c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>SHORT_<wbr>ADDRESS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a3e17bdad632e40df9a440dd1d52bfec4.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a6630cf54dd47345fcad6003c8ea66635.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a2c76499f5abcad988bf6a82d813a014b.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a7588b4ec8c02cad1ce9e7753ada80a89.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>post_<wbr>landing::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1ac8a6474f7069c5c260214c2f00dc8ff9.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>battery::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1a0ce7aa474754e3973599792a7cecf700.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>distribution::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1ad7353975acf630d2df6bdac74d39f78e.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_hi__can__address_8hpp_1aca2d4f6b2059e0fccdb5de20389b48ee.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>space_<wbr>resources::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1aeb12a56bb11ff2a7e5a52ec4d0f9cc3c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a7feda373e031e192d511b16ba365781f.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a447d637b419fbb8f5393f456a03c9d46.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a80ccca00c971afb280ade8018c8f6e05.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1a3cf2ed0e7d75f8054666c04e65e305b3.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/variable_namespacehi__can_1_1addressing_1aed9a6e8268e842dbc31df5763e58cfdc.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_6" type="checkbox" id="__nav_10_1_6" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../generated/index.html#typedefs"><span class="md-ellipsis">Typedefs</span></a>
+          
+            <label for="__nav_10_1_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Typedefs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Typedefs</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/typedef_namespacehi__can_1_1addressing_1acd08f57a9d5d7a07492cd9c3ea3756ce.html" class="md-nav__link">
+        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>addressing::<wbr>mask_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generated/typedef_namespacehi__can_1_1addressing_1a1790497c7a43f6e573f400d4899ea5c1.html" class="md-nav__link">
+        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>addressing::<wbr>raw_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Nix Basics</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nix-nixlang-and-nixpkgs" class="md-nav__link">
+    <span class="md-ellipsis">Nix, nixlang, and nixpkgs?</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    <span class="md-ellipsis">Basic Usage</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-build-command" class="md-nav__link">
+    <span class="md-ellipsis">The build command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-develop-command" class="md-nav__link">
+    <span class="md-ellipsis">The develop command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-run-command" class="md-nav__link">
+    <span class="md-ellipsis">The run command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-shell-command" class="md-nav__link">
+    <span class="md-ellipsis">The shell command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nix-command-targets" class="md-nav__link">
+    <span class="md-ellipsis">Nix command targets</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nix-flakes" class="md-nav__link">
+    <span class="md-ellipsis">Nix Flakes</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nix Flakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">Packages</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-shells" class="md-nav__link">
+    <span class="md-ellipsis">Development shells</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applications" class="md-nav__link">
+    <span class="md-ellipsis">Applications</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nixlang-basics" class="md-nav__link">
+    <span class="md-ellipsis">Nixlang basics</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nixlang basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">Basic Syntax</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">Examples</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">Comments</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">Numbers</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Numbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integers" class="md-nav__link">
+    <span class="md-ellipsis">Integers</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floating-point-numbers" class="md-nav__link">
+    <span class="md-ellipsis">Floating-<wbr>point numbers</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">Strings</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-substitution" class="md-nav__link">
+    <span class="md-ellipsis">String substitution</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-concatenation" class="md-nav__link">
+    <span class="md-ellipsis">String concatenation</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">Functions</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">Glossary</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+  <a href="https://github.com/ROAR-QUTRC/perseus-v2/edit/main/docs/source/home/nix-basics.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+  </a>
+
+<h1 id="nix-basics">Nix Basics<a class="headerlink" href="#nix-basics" title="Link to this heading">¶</a></h1>
+<p>As you’ve almost certainly read by now in at least one place, this project is built using <a class="reference external" href="https://nixos.org/">Nix</a>, allowing for fully declarative package and environment setup.
+Whilst this provides massive advantages for reproducibility and ease of environment setup, that doesn’t help if you don’t know how to use it - which this document attempts to remedy.</p>
+<h2 id="nix-nixlang-and-nixpkgs">Nix, nixlang, and nixpkgs?<a class="headerlink" href="#nix-nixlang-and-nixpkgs" title="Link to this heading">¶</a></h2>
+<p>Unfortunately, the name Nix has been used to refer to multiple things.
+The first is Nix the command-line tool - this is how you get it to do things.
+The next is <a class="reference external" href="https://github.com/NixOS/nixpkgs"><code class="docutils literal notranslate"><span class="pre">nixpkgs</span></code></a> - this is a GitHub repository containing the packaging instructions for every package available by default in Nix.
+Then we come to the confusing part - the Nix <em><a class="reference internal" href="#term-nixlang" title="nixlang (glossary term)"><span class="xref std std-term">language</span></a></em>, Nix <em><a class="reference internal" href="#term-Nix-file" title="Nix file (glossary term)"><span class="xref std std-term">files</span></a></em>, and Nix <em><a class="reference internal" href="#term-Nix-expression" title="Nix expression (glossary term)"><span class="xref std std-term">expressions</span></a></em>.
+To simplify matters, the Nix language will be referred to as nixlang after this point.
+Nix <em>files</em> are simply files with a <code class="docutils literal notranslate"><span class="pre">.nix</span></code> extension containing a Nix <em>expression</em>.
+Finally, Nix <em>expressions</em> are simply pieces of nixlang code which can be evaluated.</p>
+<h2 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Link to this heading">¶</a></h2>
+<p>In this project, you will almost always be using one of a few commands: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>, <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code>, <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code>, and <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code>.
+They all share similar syntax, because they operate on the same data, just in different ways.
+Since Nix is <em><a class="reference internal" href="#term-declarative-programming" title="declarative programming (glossary term)"><span class="xref std std-term">declarative</span></a></em> and <em>configuration-based</em>, you need to tell it <em>where</em> that configuration it should act upon is.
+This is the next argument after the command to run, and should point to the root of this repository (or one of its subdirectories) <a class="footnote-reference brackets" href="#nix-search" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.
+For example, if your current working directory is the repository root, and you run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.</span></code> <a class="footnote-reference brackets" href="#shell-dot" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>, it will build the <em>default</em> output of this repository - which is the workspace with everything built and ready to run.
+If you’re located in the <em>parent directory</em> of the repository, you would instead run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">./perseus-v2</span></code>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>The leading <code class="docutils literal notranslate"><span class="pre">./</span></code> (or <code class="docutils literal notranslate"><span class="pre">../</span></code>) in this case is important!
+Without it, Nix will try to resolve the location by searching through a list of predefined locations, which typically isn’t what you want (except for the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code> command).</p>
+</div>
+<p>However, both of those examples are using the <em>default output</em> of the project’s <a class="reference internal" href="#nix-flakes">flake file</a>.
+If you want to select a <em>different</em> output, you append a <code class="docutils literal notranslate"><span class="pre">#</span></code> symbol and the <a class="reference internal" href="#term-Nix-attribute" title="Nix attribute (glossary term)"><span class="xref std std-term">attribute</span></a> to select to the path to the repo.
+Again assuming you’re in the repo root, if you wanted to build the project documentation instead, you would run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span></code>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>Particularly for <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>, if you want to see logs in real time instead of running the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">log</span></code> command after the fact, add the <code class="docutils literal notranslate"><span class="pre">-L</span></code> flag.
+Just beware that this will output logs for <em>every</em> step of the process, so if you’re doing a major (re-)build, you may get a lot of logs from dependencies which you don’t necessarily want to see.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>If you’re just running <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">COMMAND</span> <span class="pre">.</span></code> or <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">COMMAND</span> <span class="pre">.#something</span></code>, you can actually exclude the <code class="docutils literal notranslate"><span class="pre">.</span></code> specifying the current directory, since that’s where Nix searches first.
+It’s just been included in this documentation to make things clearer.</p>
+</div>
+<h3 id="the-build-command">The <code class="docutils literal notranslate"><span class="pre">build</span></code> command<a class="headerlink" href="#the-build-command" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">build</span></code> Nix sub-command is used whenever you want to, well, <em>build</em> an output.
+Nix will run everything to build the output, and if everything succeeds, it’ll generate a <code class="docutils literal notranslate"><span class="pre">result</span></code> symlink <a class="footnote-reference brackets" href="#store-immutability" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a> in the directory where you ran the command.
+That symlink points to the output of the build, which could be either a file or a directory (but is usually a directory).
+Any <a class="reference internal" href="#term-Nix-derivation" title="Nix derivation (glossary term)"><span class="xref std std-term">Nix derivation</span></a> can be built using this command.</p>
+<h3 id="the-develop-command">The <code class="docutils literal notranslate"><span class="pre">develop</span></code> command<a class="headerlink" href="#the-develop-command" title="Link to this heading">¶</a></h3>
+<p>This does pretty much what you think it does - it drops you into a development environment.
+Much like the <code class="docutils literal notranslate"><span class="pre">build</span></code> command, you give the <code class="docutils literal notranslate"><span class="pre">develop</span></code> command a derivation to target - it will first search through the local flake’s development shell outputs (this allows customising the development shells, like is done in this project - otherwise it’s what you need to build the package and <em>only</em> what you need to build the package), before searching through the ordinary package outputs.
+It will then drop you into a Bash shell with all the build dependencies available and requisite environment variables set <a class="footnote-reference brackets" href="#env-variables" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.
+You can also configure commands to be run on entry, which allows you to do things like print out status information, or set up shell autocomplete.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>This is what <code class="docutils literal notranslate"><span class="pre">direnv</span></code> is configured to use for this particular project - it creates a <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> shell, records the changes made to environment variables, then applies those changes to your shell environment when you change directory into this project.
+Unfortunately, it <em>only</em> transfers environment variable changes, not shell commands, which is why autocomplete is sometimes broken in a <code class="docutils literal notranslate"><span class="pre">direnv</span></code>-powered dev shell, but not in a true <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> shell.</p>
+</div>
+<h3 id="the-run-command">The <code class="docutils literal notranslate"><span class="pre">run</span></code> command<a class="headerlink" href="#the-run-command" title="Link to this heading">¶</a></h3>
+<p>Next up: The <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code> command does pretty much what you’d expect it to - it runs a program!
+If there’s an application defined for the output name you give, it’ll run that.
+Otherwise, it’ll search through the normal package outputs for something by that name and will attempt to run it instead.
+In this case, it will only succeed if the package outputs an executable file of the same name as the package to <code class="docutils literal notranslate"><span class="pre">$out/bin/</span></code>, or it explicitly defines which program is the main one.
+You can pass arguments to the executed application after a <code class="docutils literal notranslate"><span class="pre">--</span></code> in the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code> command, like so: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">.#example-program</span> <span class="pre">--</span> <span class="pre">--argument-to-program</span> <span class="pre">another_program_argument</span></code><a class="footnote-reference brackets" href="#nix-run-args" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>.</p>
+<h3 id="the-shell-command">The <code class="docutils literal notranslate"><span class="pre">shell</span></code> command<a class="headerlink" href="#the-shell-command" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code> command is in some ways similar to the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> command - it drops you into a shell with the specified packages.
+It takes any number of arguments, each of which is a package which will be available.
+For example, if you ran <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span> <span class="pre">.#rosCore</span> <span class="pre">.#pkgs.net-can-server</span></code>, you would have the outputs from <code class="docutils literal notranslate"><span class="pre">rosCore</span></code> and <code class="docutils literal notranslate"><span class="pre">pkgs.net-can-server</span></code> from the current directory’s flake available in your shell.</p>
+<h3 id="nix-command-targets">Nix command targets<a class="headerlink" href="#nix-command-targets" title="Link to this heading">¶</a></h3>
+<p>All the <code class="docutils literal notranslate"><span class="pre">nix</span></code> commands documented above take what Nix calls “<a class="reference external" href="https://nix.dev/manual/nix/latest/command-ref/new-cli/nix#installables">installables</a>” as their “targets”.
+In most cases, this is a flake output from the local directory, but it can also be something selected from any location which contains a <a class="reference internal" href="#nix-flakes"><code class="docutils literal notranslate"><span class="pre">flake.nix</span></code></a> file.
+You can use a filesystem path (like <code class="docutils literal notranslate"><span class="pre">.</span></code> or <code class="docutils literal notranslate"><span class="pre">~/perseus-v2</span></code>), <code class="docutils literal notranslate"><span class="pre">nixpkgs</span></code> (or a branch), or even fetch a repository from GitHub (like <code class="docutils literal notranslate"><span class="pre">github:github:wentasah/ros2nix</span></code>).</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">nixpkgs</span></code> input is special syntax, since normally you’d have to enter the full path <code class="docutils literal notranslate"><span class="pre">github:NixOS/nixpkgs</span></code>.
+You can search for what’s available in the <a class="reference external" href="https://search.nixos.org/packages">official search</a> (we’re using the unstable branch, but most of the time that’s only minor version number changes), but the results from <a class="reference external" href="https://mynixos.com/">MyNixOS</a> can sometimes be better.
+Both searches show the executables available in a package, though sometimes the MyNixOS search doesn’t manage to pick them all up.
+If you can’t find something, try searching both of them.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>You can use the syntax <code class="docutils literal notranslate"><span class="pre">location/BRANCH[#PACKAGE]</span></code> to use a flake from a specific git branch, tag, or commit if the flake was fetched from a Git repository.
+This is particularly useful to select the latest version from <code class="docutils literal notranslate"><span class="pre">nixpkgs-unstable</span></code>.</p>
+<div class="example admonition">
+<p class="admonition-title">Example</p>
+<p><code class="docutils literal notranslate"><span class="pre">nixpkgs/nixpkgs-unstable#uv</span></code> would select the latest version available in <code class="docutils literal notranslate"><span class="pre">nixpkgs</span></code> of the <code class="docutils literal notranslate"><span class="pre">uv</span></code> package.</p>
+</div>
+</div>
+<h2 id="nix-flakes">Nix Flakes<a class="headerlink" href="#nix-flakes" title="Link to this heading">¶</a></h2>
+<p>A <a class="reference internal" href="#term-Nix-flake" title="Nix flake (glossary term)"><span class="xref std std-term">Nix flake</span></a> is a way of writing Nix expressions which has a standard syntax, as well as providing a way to lock inputs to specific versions, enhancing reproducibility.
+Whilst you can read the <a class="reference external" href="https://nixos.wiki/wiki/Flakes">wiki</a> if you’re interested in the exact syntax, the basics of what it is and its most important outputs are covered here.
+The first thing you need to know is that it’s how you interact with almost all of the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">SUBCOMMAND</span></code> commands - most of them target either a flake’s inputs or outputs.
+Its outputs are most commonly either <a class="reference internal" href="#term-Nix-package" title="Nix package (glossary term)"><span class="xref std std-term">packages</span></a>, development shells, or applications.</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>Flakes can define a default output for any of their major output types, which will be targeted if no name is given.
+For example, <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.</span></code> can be rewritten as <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#default</span></code>.</p>
+</div>
+<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Link to this heading">¶</a></h3>
+<p>A <a class="reference internal" href="#term-Nix-package" title="Nix package (glossary term)"><span class="xref std std-term">Nix package</span></a> is most commonly used to build binary (that is, program) outputs.
+However, it can also contain other packages (using what are called <code class="docutils literal notranslate"><span class="pre">passthru</span></code> attributes).
+For example, in this project, although <code class="docutils literal notranslate"><span class="pre">tools</span></code> is a package in the flake, it also contains other packages (like <code class="docutils literal notranslate"><span class="pre">tools.treefmt-write-config</span></code>).
+These are what the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> and <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code> commands target.</p>
+<h3 id="development-shells">Development shells<a class="headerlink" href="#development-shells" title="Link to this heading">¶</a></h3>
+<p>These are what <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> attempts to target first, before using the build environment of the package outputs.
+This allows defining custom “packages” with custom build environments, so you can fine-tune your dev shell environment.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>This very project does this!
+Without it, not all ROS2 package dependencies would be available in the dev shell.</p>
+</div>
+<h3 id="applications">Applications<a class="headerlink" href="#applications" title="Link to this heading">¶</a></h3>
+<p>Applications are what <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code> attempts to target first, before falling back to standard packages.
+They’re effectively pre-packaged commands/shell scripts which get run in your shell.</p>
+<h2 id="nixlang-basics">Nixlang basics<a class="headerlink" href="#nixlang-basics" title="Link to this heading">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Attention</p>
+<p>If you’re not writing Nix code or digging into how this project is set up, you can skip this section.</p>
+</div>
+<p>You can mostly think of nixlang like “JSON with functions”.
+It has all the usual types: ints, floating-point numbers, strings, lists (arrays), and sets (like a JSON object - named key-value pairs), as well as first-class support for file paths (relative to the directory of the file the path is in), as well as functions.
+Most of the complexity of Nix isn’t in the language itself, but rather in the tooling and conventions that have been built up around it.</p>
+<h3 id="basic-syntax">Basic Syntax<a class="headerlink" href="#basic-syntax" title="Link to this heading">¶</a></h3>
+<p>Expressions end with semicolons (<code class="docutils literal notranslate"><span class="pre">;</span></code>).</p>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h3>
+<p>If you’re curious about anything, check out the <a class="reference external" href="https://nix.dev/manual/nix/latest/introduction">Nix manual</a>.</p>
+<h4 id="comments">Comments<a class="headerlink" href="#comments" title="Link to this heading">¶</a></h4>
+<p>Comments in nix start with a hash (<code class="docutils literal notranslate"><span class="pre">#</span></code>) symbol.
+Unfortunately, there is no option for multi-line comments at this time.</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># This is a comment</span>
+</code></pre></div>
+</div>
+<h4 id="numbers">Numbers<a class="headerlink" href="#numbers" title="Link to this heading">¶</a></h4>
+<p>Numbers work exactly how you expect.
+They support all the standard mathematical operators: <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>, and <code class="docutils literal notranslate"><span class="pre">/</span></code>.</p>
+<h5 id="integers">Integers<a class="headerlink" href="#integers" title="Link to this heading">¶</a></h5>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="mi">123</span>
+</code></pre></div>
+</div>
+<h5 id="floating-point-numbers">Floating-point numbers<a class="headerlink" href="#floating-point-numbers" title="Link to this heading">¶</a></h5>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="mf">12.345</span>
+</code></pre></div>
+</div>
+<h4 id="strings">Strings<a class="headerlink" href="#strings" title="Link to this heading">¶</a></h4>
+<p>They are normally defined using double quotes (<code class="docutils literal notranslate"><span class="pre">&quot;</span></code>), with the standard rules about escaping special characters with backslashes (<code class="docutils literal notranslate"><span class="pre">\</span></code>).
+However, due to string interpolation, you must also escape the dollar (<code class="docutils literal notranslate"><span class="pre">$</span></code>) character with a backslash as well.</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="s2">&quot;foo bar baz&quot;</span>
+</code></pre></div>
+</div>
+<p>However, for multi-line strings, you can use two single quotes (<code class="docutils literal notranslate"><span class="pre">''</span></code>):</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># The newlines in this string will be preserved</span>
+<span class="s s-Multiline">&#39;&#39;</span>
+<span class="s s-Multiline">    foo</span>
+<span class="s s-Multiline">    bar</span>
+<span class="s s-Multiline">    baz</span>
+<span class="s s-Multiline">&#39;&#39;</span>
+</code></pre></div>
+</div>
+<p>See the relevant <a class="reference external" href="https://nix.dev/manual/nix/latest/language/string-literals.html">section</a> of the Nix manual for escaping characters here.</p>
+<h5 id="string-substitution">String substitution<a class="headerlink" href="#string-substitution" title="Link to this heading">¶</a></h5>
+<p>In Nix, you can perform string interpolation with the following syntax:</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="ss">foo</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span><span class="p">;</span>
+<span class="ss">bar</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">${</span>foo<span class="si">}</span><span class="s2"> baz&quot;</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Important</p>
+<p>The previous example, and any other examples which define multiple variables are not valid standalone Nix code.
+They would need to be part of a set or a let-in block to be valid, since a Nix file can only output a single expression.</p>
+</div>
+<p>In the above example, the contents of the string <code class="docutils literal notranslate"><span class="pre">bar</span></code> would be interpolated, and its final value would be <code class="docutils literal notranslate"><span class="pre">&quot;test</span> <span class="pre">baz&quot;</span></code> after the insertion of the string <code class="docutils literal notranslate"><span class="pre">foo</span></code>.
+This syntax can also be used when selecting or defining attributes of a set:</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="ss">foo</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="ss">bar</span> <span class="o">=</span> <span class="s2">&quot;baz&quot;</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="ss">str</span> <span class="o">=</span> <span class="s2">&quot;bar&quot;</span><span class="p">;</span>
+<span class="ss">quux</span> <span class="o">=</span> foo<span class="o">.</span><span class="si">${</span>str<span class="si">}</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<p>For the above example, the variable <code class="docutils literal notranslate"><span class="pre">quux</span></code> would be assigned the value of <code class="docutils literal notranslate"><span class="pre">foo.bar</span></code> - in this case the string <code class="docutils literal notranslate"><span class="pre">&quot;baz&quot;</span></code>.</p>
+<h5 id="string-concatenation">String concatenation<a class="headerlink" href="#string-concatenation" title="Link to this heading">¶</a></h5>
+<p>Like most other languages, Nix supports using <code class="docutils literal notranslate"><span class="pre">+</span></code> to concatenate strings.</p>
+<h4 id="functions">Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h4>
+<p>Functions are defined with the following syntax:</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code>input<span class="p">:</span> output<span class="p">;</span>
+</code></pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">output</span></code> is some Nix expression which may depend on <code class="docutils literal notranslate"><span class="pre">input</span></code>.
+In Nix, functions can only have a single parameter - which can quickly become a problem.
+There exists a solution to this, however: Create a function which returns a function!
+This pattern is called <a class="reference external" href="https://en.wikipedia.org/wiki/Currying">currying</a>:</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># The brackets here are optional and normally omitted</span>
+parameter-1<span class="p">:</span> <span class="p">(</span>parameter-2<span class="p">:</span> output<span class="p">);</span>
+</code></pre></div>
+</div>
+<p>Here, <code class="docutils literal notranslate"><span class="pre">output</span></code> can depend on both <code class="docutils literal notranslate"><span class="pre">parameter-1</span></code> <em>and</em> <code class="docutils literal notranslate"><span class="pre">parameter-2</span></code>.</p>
+<p>Functions are called with the syntax <code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">argument</span></code>:</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="ss">double</span> <span class="o">=</span> input<span class="p">:</span> input <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+<span class="ss">number</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
+<span class="ss">doubled-number</span> <span class="o">=</span> double number<span class="p">;</span>
+</code></pre></div>
+</div>
+<p>Since brackets aren’t required, this can quickly get confusing.</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># Use currying to define a function with multiple arguments</span>
+<span class="ss">fancy-operation</span> <span class="o">=</span> a<span class="p">:</span> b<span class="p">:</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> a<span class="p">)</span> <span class="o">+</span> b<span class="p">;</span>
+<span class="ss">result</span> <span class="o">=</span> <span class="p">(</span>fancy-operation <span class="mi">2</span><span class="p">)</span> <span class="mi">5</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<p>In the above code, the function <code class="docutils literal notranslate"><span class="pre">fancy-operation</span></code> is defined, which takes a parameter <code class="docutils literal notranslate"><span class="pre">a</span></code> and returns another function.
+When evaluated in the above example, it would return the following function:</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code>b<span class="p">:</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> b<span class="p">;</span>
+</code></pre></div>
+</div>
+<p>Which is then also called with the argument <code class="docutils literal notranslate"><span class="pre">5</span></code>, resulting in the output <code class="docutils literal notranslate"><span class="pre">9</span></code>.
+As with defining the function, the brackets to show the order of operations are optional when calling it, and the following would be syntactically equivalent, although much more confusing (and unfortunately, more common):</p>
+<div class="highlight-nix notranslate"><div class="highlight"><pre><span></span><code><span class="ss">result</span> <span class="o">=</span> fancy-operation <span class="mi">2</span> <span class="mi">5</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<h2 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Link to this heading">¶</a></h2>
+<dl class="simple myst glossary">
+<dt id="term-Nix-file">Nix file<a class="headerlink" href="#term-Nix-file" title="Permalink to this definition">¶</a></dt><dd><p>A file ending with <code class="docutils literal notranslate"><span class="pre">.nix</span></code> containing a <a class="reference internal" href="#term-Nix-expression" title="Nix expression (glossary term)"><span class="xref std std-term">Nix expression</span></a>.</p>
+</dd>
+<dt id="term-Nix-expression">Nix expression<a class="headerlink" href="#term-Nix-expression" title="Permalink to this definition">¶</a></dt><dd><p>A piece of <a class="reference internal" href="#term-nixlang" title="nixlang (glossary term)"><span class="xref std std-term">nixlang</span></a> code.</p>
+</dd>
+<dt id="term-nixlang">nixlang<a class="headerlink" href="#term-nixlang" title="Permalink to this definition">¶</a></dt><dd><p>The language (also called Nix) which the Nix <em>program</em> evaluates.</p>
+</dd>
+<dt id="term-derivation">derivation<a class="headerlink" href="#term-derivation" title="Permalink to this definition">¶</a></dt><dd><p>See <a class="reference internal" href="#term-Nix-derivation" title="Nix derivation (glossary term)"><span class="xref std std-term">Nix derivation</span></a>.</p>
+</dd>
+<dt id="term-Nix-derivation">Nix derivation<a class="headerlink" href="#term-Nix-derivation" title="Permalink to this definition">¶</a></dt><dd><p>A Nix <em>build task</em> containing all instructions and information to build a <a class="reference internal" href="#term-Nix-package" title="Nix package (glossary term)"><span class="xref std std-term">Nix package</span></a>.</p>
+</dd>
+<dt id="term-declarative-programming">declarative programming<a class="headerlink" href="#term-declarative-programming" title="Permalink to this definition">¶</a></dt><dd><p>Declarative programming is a style of programming where everything you <em>want to happen</em> is described, not <em>how to do it</em>.
+This is in contrast to <a class="reference internal" href="#term-imperative-programming" title="imperative programming (glossary term)"><span class="xref std std-term">imperative programming</span></a>.</p>
+</dd>
+<dt id="term-imperative-programming">imperative programming<a class="headerlink" href="#term-imperative-programming" title="Permalink to this definition">¶</a></dt><dd><p>Imperative programming is what you’re most likely used to.
+In this style, you describe a <em>sequence of commands</em> which you want to be executed in that order.
+See also <a class="reference internal" href="#term-declarative-programming" title="declarative programming (glossary term)"><span class="xref std std-term">declarative programming</span></a>.</p>
+</dd>
+<dt id="term-Nix-flake">Nix flake<a class="headerlink" href="#term-Nix-flake" title="Permalink to this definition">¶</a></dt><dd><p>A Nix flake is a standardised way of writing a Nix expression, which also has dependencies version-pinned in a lockfile.</p>
+</dd>
+<dt id="term-Nix-attribute">Nix attribute<a class="headerlink" href="#term-Nix-attribute" title="Permalink to this definition">¶</a></dt><dd><p>A member of a Nix set.</p>
+<p>For example, the following set contains the attributes <code class="docutils literal notranslate"><span class="pre">foo</span></code> and <code class="docutils literal notranslate"><span class="pre">bar</span></code>: <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">foo</span> <span class="pre">=</span> <span class="pre">&quot;baz&quot;;</span> <span class="pre">bar</span> <span class="pre">=</span> <span class="pre">&quot;quux&quot;;</span> <span class="pre">}</span></code></p>
+</dd>
+<dt id="term-Nix-package">Nix package<a class="headerlink" href="#term-Nix-package" title="Permalink to this definition">¶</a></dt><dd><p>The output of a <a class="reference internal" href="#term-Nix-derivation" title="Nix derivation (glossary term)"><span class="xref std std-term">Nix derivation</span></a>.
+Most commonly binary (program) outputs under <code class="docutils literal notranslate"><span class="pre">$out/bin/</span></code>, as well as library outputs under <code class="docutils literal notranslate"><span class="pre">$out/lib/</span></code> and man pages.</p>
+</dd>
+</dl>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="nix-search" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Technically, it needs to point to a directory containing a <code class="docutils literal notranslate"><span class="pre">flake.nix</span></code> file (or one of its subdirectories - it’ll search upwards), and since this project’s <code class="docutils literal notranslate"><span class="pre">flake.nix</span></code> is in the repository root, that’s why it needs to point there.
+Since it searches upwards, running <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">COMMAND</span> <span class="pre">.#blah</span></code> works no matter what directory you’re in, as long as you’re inside the repo.</p>
+</aside>
+<aside class="footnote brackets" id="shell-dot" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p><code class="docutils literal notranslate"><span class="pre">.</span></code> in the context of paths just means “the current directory”, and <code class="docutils literal notranslate"><span class="pre">..</span></code> means “the parent directory”.</p>
+</aside>
+<aside class="footnote brackets" id="store-immutability" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>Nix has the concept of a <em>store</em> (located at <code class="docutils literal notranslate"><span class="pre">/nix/store/</span></code>), which is where it keeps everything.
+This store is <em>immutable</em>, meaning it can’t be changed, and the <code class="docutils literal notranslate"><span class="pre">result</span></code> symlink points to something in here.
+Everything Nix builds (or downloads) ends up in the store, and making liberal use of symlinks to files here is how Nix keeps everything isolated.
+This does mean that store sizes can end up quite large if you don’t run garbage collection, though.</p>
+</aside>
+<aside class="footnote brackets" id="env-variables" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>It makes packages available by appending them to your shell <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.
+When your shell looks for an executable, it searches through all the directories in your <code class="docutils literal notranslate"><span class="pre">PATH</span></code>, so by appending (or prefixing) directories to it, Nix can make programs available.</p>
+</aside>
+<aside class="footnote brackets" id="nix-run-args" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
+<p>If the arguments to be passed don’t start with the double dash, you can actually omit the separating <code class="docutils literal notranslate"><span class="pre">--</span></code>.
+For example, you could run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">.#docs.decompress</span> <span class="pre">result/docs.7z</span> <span class="pre">decompressed-docs/</span></code> and everything after the derivation to execute will be passed in as arguments to the executable built by the derivation <code class="docutils literal notranslate"><span class="pre">.#docs.decompress</span></code>.</p>
+</aside>
+</aside>
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="documentation-development.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Documentation Development" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Documentation Development
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../architecture.html" class="md-footer__link md-footer__link--next" aria-label="Next: Architecture" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Architecture
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2024, ROAR Team.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    8.1.3.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.highlight", "search.share", "toc.follow", "toc.sticky"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+      
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+        <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+        <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+        <script defer="defer" src="../_static/tippy/home/nix-basics.8c08785e-88e7-49a7-9f8b-66187d5ff580.js"></script>
+        <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
+    
+  </body>
+</html>

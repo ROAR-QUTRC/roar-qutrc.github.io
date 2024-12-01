@@ -1,0 +1,14 @@
+.. _exhale_variable_namespacehi__can_1_1addressing_1a6c34d360313543a2c1c8fd14386f7772:
+
+Variable hi_can::addressing::GROUP_ADDRESS_BITS
+===============================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::GROUP_ADDRESS_BITS
+   :project: rover

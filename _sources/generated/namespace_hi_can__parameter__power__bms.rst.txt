@@ -1,0 +1,13 @@
+
+.. _namespace_hi_can__parameter__power__bms:
+
+Namespace hi_can::parameter::power::bms
+=======================================
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1parameter_1_1power_1_1bms_1_1pack__status`
