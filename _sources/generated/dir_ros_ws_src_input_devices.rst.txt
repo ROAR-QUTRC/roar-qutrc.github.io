@@ -16,7 +16,6 @@ Subdirectories
 --------------
 
 - :ref:`dir_ros_ws_src_input_devices_input_devices`
-- :ref:`dir_ros_ws_src_input_devices_launch`
 
 
 

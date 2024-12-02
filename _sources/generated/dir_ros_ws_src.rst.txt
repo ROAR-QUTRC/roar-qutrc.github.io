@@ -15,7 +15,6 @@ Directory src
 Subdirectories
 --------------
 
-- :ref:`dir_ros_ws_src_autonomy`
 - :ref:`dir_ros_ws_src_hardware_interfaces`
 - :ref:`dir_ros_ws_src_input_devices`
 

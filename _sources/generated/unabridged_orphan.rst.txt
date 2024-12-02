@@ -36,16 +36,6 @@ Directories
 .. toctree::
    :maxdepth: 5
 
-   dir_ros_ws_src_autonomy.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   dir_ros_ws_src_autonomy_launch.rst
-
-.. toctree::
-   :maxdepth: 5
-
    dir_ros_ws_src_hardware_interfaces.rst
 
 .. toctree::
@@ -62,11 +52,6 @@ Directories
    :maxdepth: 5
 
    dir_ros_ws_src_input_devices_input_devices.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   dir_ros_ws_src_input_devices_launch.rst
 
 .. toctree::
    :maxdepth: 5
@@ -225,14 +210,4 @@ Files
 .. toctree::
    :maxdepth: 5
 
-   file_ros_ws_src_autonomy_launch_mapping_using_slam_toolbox.launch.py.rst
-
-.. toctree::
-   :maxdepth: 5
-
    file_ros_ws_src_input_devices_input_devices_xbox_controller.py.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file_ros_ws_src_input_devices_launch_xbox_controller_launch.py.rst

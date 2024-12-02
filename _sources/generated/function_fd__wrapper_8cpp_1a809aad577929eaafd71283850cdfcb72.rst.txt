@@ -1,0 +1,14 @@
+.. _exhale_function_fd__wrapper_8cpp_1a809aad577929eaafd71283850cdfcb72:
+
+Function swap
+=============
+
+- Defined in :ref:`file_shared_fd-wrapper_src_fd_wrapper.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: swap(FdWrapper&, FdWrapper&)
+   :project: rover

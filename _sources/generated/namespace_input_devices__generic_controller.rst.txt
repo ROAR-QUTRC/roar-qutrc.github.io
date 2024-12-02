@@ -4,10 +4,3 @@
 Namespace input_devices::generic_controller
 ===========================================
 
-
-
-Functions
----------
-
-
-- :ref:`exhale_function_generic__controller_8py_1a51d704bdb6e79170e29fdaf7a3bee9da`
