@@ -511,11 +511,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#build-artifacts" class="md-nav__link">
-    <span class="md-ellipsis">Build artifacts</span>
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">Packages</span>
   </a>
   
-    <nav class="md-nav" aria-label="Build artifacts">
+    <nav class="md-nav" aria-label="Packages">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -635,6 +635,26 @@
           <li class="md-nav__item">
   <a href="#docs-setup" class="md-nav__link">
     <span class="md-ellipsis">docs.<wbr>setup</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-shells" class="md-nav__link">
+    <span class="md-ellipsis">Development shells</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development shells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id1" class="md-nav__link">
+    <span class="md-ellipsis">docs</span>
   </a>
   
 </li>
@@ -2995,11 +3015,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#build-artifacts" class="md-nav__link">
-    <span class="md-ellipsis">Build artifacts</span>
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">Packages</span>
   </a>
   
-    <nav class="md-nav" aria-label="Build artifacts">
+    <nav class="md-nav" aria-label="Packages">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3128,6 +3148,26 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#development-shells" class="md-nav__link">
+    <span class="md-ellipsis">Development shells</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development shells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id1" class="md-nav__link">
+    <span class="md-ellipsis">docs</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3245,9 +3285,10 @@ Using it with the GitHub Checkout Action leaves the checked out repo in the work
 <p>Finally, to make the deployment, the workflow replaces the contents of the checked out repo with the built static documentation from <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span></code>, then commits and pushes the documentation to the website repo.
 Once this runs, the automated deployment is complete, and all going well, the new website is live!</p>
 <h2 id="nix-outputs">Nix outputs<a class="headerlink" href="#nix-outputs" title="Link to this heading">¶</a></h2>
-<p>This section documents the outputs made available from the project <code class="docutils literal notranslate"><span class="pre">flake.nix</span></code>.</p>
-<h3 id="build-artifacts">Build artifacts<a class="headerlink" href="#build-artifacts" title="Link to this heading">¶</a></h3>
-<p>Available using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#name</span></code>.</p>
+<p>This section documents the outputs made available from the project <code class="docutils literal notranslate"><span class="pre">flake.nix</span></code>.
+See <a class="reference internal" href="../home/nix-basics.html"><span class="std std-doc">Nix Basics</span></a> for more information.</p>
+<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Link to this heading">¶</a></h3>
+<p>Intended for use with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>.</p>
 <h4 id="docs"><code class="docutils literal notranslate"><span class="pre">docs</span></code><a class="headerlink" href="#docs" title="Link to this heading">¶</a></h4>
 <p>The final built documentation.
 Contains a <code class="docutils literal notranslate"><span class="pre">html/</span></code> directory with the built static site ready to be served in it.</p>
@@ -3286,7 +3327,7 @@ Contains a single file <code class="docutils literal notranslate"><span class="p
 <p>Not intended for direct use.
 This is the development shell environment for use with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code>.</p>
 <h3 id="executables">Executables<a class="headerlink" href="#executables" title="Link to this heading">¶</a></h3>
-<p>Run using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">.#name</span></code>.</p>
+<p>Intended for use with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code>.</p>
 <h4 id="docs-decompress"><code class="docutils literal notranslate"><span class="pre">docs.decompress</span></code><a class="headerlink" href="#docs-decompress" title="Link to this heading">¶</a></h4>
 <p>A wrapper script around <code class="docutils literal notranslate"><span class="pre">p7zip</span></code> which provides the arguments to decompress the file built by <code class="docutils literal notranslate"><span class="pre">docs.compressed</span></code> correctly.</p>
 <h5 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Link to this heading">¶</a></h5>
@@ -3335,6 +3376,11 @@ Double check it before you commit your changes.</p>
 <h4 id="docs-setup"><code class="docutils literal notranslate"><span class="pre">docs.setup</span></code><a class="headerlink" href="#docs-setup" title="Link to this heading">¶</a></h4>
 <p>A script which needs to be run before running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> from a dev shell.
 It builds the documentation figures from <code class="docutils literal notranslate"><span class="pre">docs.figures</span></code> and copies them into <code class="docutils literal notranslate"><span class="pre">docs/source/generated</span></code> so that Sphinx can use them.</p>
+<h3 id="development-shells">Development shells<a class="headerlink" href="#development-shells" title="Link to this heading">¶</a></h3>
+<p>Intended for use with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code>.</p>
+<h4 id="id1"><code class="docutils literal notranslate"><span class="pre">docs</span></code><a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
+<p>Development environment for the documentation with a fully set up Python environment and all dependencies needed to build it.</p>
+<p>Also aliased at <code class="docutils literal notranslate"><span class="pre">docs.shell</span></code>.</p>
 <h2 id="credits">Credits<a class="headerlink" href="#credits" title="Link to this heading">¶</a></h2>
 <p>This documentation is loosely based off of Rohit Gaswami’s blog posts documenting <a class="reference external" href="https://rgoswami.me/posts/doc-cpp-dox-sph-exhale/">setting up</a> Sphinx, Breathe, and Exhale, as well as the follow-up detailing <a class="reference external" href="https://rgoswami.me/posts/pub-doc-cpp-dox-sph-nix/">publishing</a> them with Nix.</p>
 
@@ -3435,7 +3481,7 @@ It builds the documentation figures from <code class="docutils literal notransla
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/architecture/documentation.e4be8c25-51af-426a-94be-f2fda612e9a1.js"></script>
+        <script defer="defer" src="../_static/tippy/architecture/documentation.8cb5b95b-980c-4b84-9c3a-7988c4ed2214.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

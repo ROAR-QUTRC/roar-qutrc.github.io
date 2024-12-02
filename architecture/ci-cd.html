@@ -2718,7 +2718,18 @@ Since this project is built with Nix, all dependencies fixed and known ahead-of-
 <p>Continuous Deployment is exactly what it sounds like - automatically <em>deploying</em> a project to production after the continuous <em>delivery</em> process of the pipeline finishes its build.
 For this project, we aren’t employing continuous deployment for anything but the docs website - see the <a class="reference internal" href="documentation.html"><span class="std std-doc">documentation architecture</span></a> for details on that.</p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Link to this heading">¶</a></h2>
-<p>The CI/CD pipeline for this project is run entirely using <a class="reference external" href="https://docs.github.com/en/actions">GitHub Actions</a>.</p>
+<p>The CI/CD pipeline for this project is run entirely using <a class="reference external" href="https://docs.github.com/en/actions">GitHub Actions</a>.
+The typical workflow looks something like this:</p>
+<ol class="arabic simple">
+<li><p>Check out the repo with <a class="reference external" href="https://github.com/actions/checkout"><code class="docutils literal notranslate"><span class="pre">actions/checkout</span></code></a></p></li>
+<li><p>Install Nix with <a class="reference external" href="https://github.com/nixbuild/nix-quick-install-action"><code class="docutils literal notranslate"><span class="pre">nixbuild/nix-quick-install-action</span></code></a></p></li>
+<li><p>Set up Nix output caching with <a class="reference external" href="https://github.com/DeterminateSystems/magic-nix-cache-action"><code class="docutils literal notranslate"><span class="pre">DeterminateSystems/magic-nix-cache-action</span></code></a></p></li>
+<li><p>(Optionally) Run some kind of update with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code> and commit it back to the repo</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">-L</span></code> (or <code class="docutils literal notranslate"><span class="pre">check</span></code>) on the output - adding the <code class="docutils literal notranslate"><span class="pre">-L</span></code> flag enables logging into the shell and makes it easier to debug when things go wrong</p></li>
+<li><p>If that succeeds, the builds are passing!</p></li>
+<li><p>(Optionally) Upload to cachix using one of the scripts in <code class="docutils literal notranslate"><span class="pre">software/scripts</span></code></p></li>
+</ol>
+<p>If you’re curious about any specific workflow, they’re all well commented.</p>
 
 
 
@@ -2817,7 +2828,7 @@ For this project, we aren’t employing continuous deployment for anything but t
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/architecture/ci-cd.6ed6aba9-ca48-471e-8d7a-3038a3ded731.js"></script>
+        <script defer="defer" src="../_static/tippy/architecture/ci-cd.451c04d3-052c-45ec-8451-6923e859aa5e.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

@@ -3041,13 +3041,14 @@ If you want to select a <em>different</em> output, you append a <code class="doc
 Again assuming you’re in the repo root, if you wanted to build the project documentation instead, you would run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span></code>.</p>
 <div class="tip admonition">
 <p class="admonition-title">Tip</p>
-<p>Particularly for <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>, if you want to see logs in real time instead of running the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">log</span></code> command after the fact, add the <code class="docutils literal notranslate"><span class="pre">-L</span></code> flag.
+<p>For any <code class="docutils literal notranslate"><span class="pre">nix</span></code> command (and particularly <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>), if you want to see logs in real time instead of running the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">log</span></code> command after the fact, add the <code class="docutils literal notranslate"><span class="pre">-L</span></code> flag.
 Just beware that this will output logs for <em>every</em> step of the process, so if you’re doing a major (re-)build, you may get a lot of logs from dependencies which you don’t necessarily want to see.</p>
 </div>
 <div class="tip admonition">
 <p class="admonition-title">Tip</p>
-<p>If you’re just running <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">COMMAND</span> <span class="pre">.</span></code> or <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">COMMAND</span> <span class="pre">.#something</span></code>, you can actually exclude the <code class="docutils literal notranslate"><span class="pre">.</span></code> specifying the current directory, since that’s where Nix searches first.
-It’s just been included in this documentation to make things clearer.</p>
+<p>If you’re just running <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.</span></code> or <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#something</span></code>, you can actually exclude the <code class="docutils literal notranslate"><span class="pre">.</span></code> specifying the current directory, since that’s where Nix searches first.
+It’s just been included in this documentation to make things clearer.
+The <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code> and <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> commands have slightly different semantics if you do this - they’ll search through output packages first, instead of dev shells or applications, which isn’t normally what you want.</p>
 </div>
 <h3 id="the-build-command">The <code class="docutils literal notranslate"><span class="pre">build</span></code> command<a class="headerlink" href="#the-build-command" title="Link to this heading">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">build</span></code> Nix sub-command is used whenever you want to, well, <em>build</em> an output.
@@ -3093,6 +3094,13 @@ This is particularly useful to select the latest version from <code class="docut
 <p class="admonition-title">Example</p>
 <p><code class="docutils literal notranslate"><span class="pre">nixpkgs/nixpkgs-unstable#uv</span></code> would select the latest version available in <code class="docutils literal notranslate"><span class="pre">nixpkgs</span></code> of the <code class="docutils literal notranslate"><span class="pre">uv</span></code> package.</p>
 </div>
+</div>
+<p>Every <a class="reference internal" href="../architecture.html"><span class="std std-doc">architecture</span></a> document contains a “Nix outputs” section if applicable detailing the available outputs to use.</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>You can override the default search behaviour of the commands if you wish.
+Although <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> searches for packages, you can build a dev shell with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#devShells.NAME</span></code>, and an application with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#applications.NAME</span></code>.
+You can also use the same syntax with the other commands to, for example, run a package directly instead of an application with the same name.</p>
 </div>
 <h2 id="nix-flakes">Nix Flakes<a class="headerlink" href="#nix-flakes" title="Link to this heading">¶</a></h2>
 <p>A <a class="reference internal" href="#term-Nix-flake" title="Nix flake (glossary term)"><span class="xref std std-term">Nix flake</span></a> is a way of writing Nix expressions which has a standard syntax, as well as providing a way to lock inputs to specific versions, enhancing reproducibility.
@@ -3379,7 +3387,7 @@ For example, you could run <code class="docutils literal notranslate"><span clas
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/home/nix-basics.8c08785e-88e7-49a7-9f8b-66187d5ff580.js"></script>
+        <script defer="defer" src="../_static/tippy/home/nix-basics.57f85718-4aab-46a0-93e4-ecaa52998934.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
