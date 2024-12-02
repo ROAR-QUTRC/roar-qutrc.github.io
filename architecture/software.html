@@ -622,6 +622,48 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pkgs" class="md-nav__link">
+    <span class="md-ellipsis">pkgs</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pkgs-rospackages-rosdistro" class="md-nav__link">
+    <span class="md-ellipsis">pkgs.<wbr>ros<wbr>Packages.<wbr>$<wbr>{ros<wbr>Distro}</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pkgs-ros" class="md-nav__link">
+    <span class="md-ellipsis">pkgs.<wbr>ros</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-treefmt-write-config" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>treefmt-<wbr>write-<wbr>config</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-treefmt-build" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>treefmt-<wbr>build</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-scripts" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>scripts</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -645,6 +687,27 @@
           <li class="md-nav__item">
   <a href="#ros2" class="md-nav__link">
     <span class="md-ellipsis">ros2</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean" class="md-nav__link">
+    <span class="md-ellipsis">clean</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-scripts-clean" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>scripts.<wbr>clean</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-scripts-cachix-push" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>scripts.<wbr>cachix-<wbr>push</span>
   </a>
   
 </li>
@@ -2970,6 +3033,48 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pkgs" class="md-nav__link">
+    <span class="md-ellipsis">pkgs</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pkgs-rospackages-rosdistro" class="md-nav__link">
+    <span class="md-ellipsis">pkgs.<wbr>ros<wbr>Packages.<wbr>$<wbr>{ros<wbr>Distro}</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pkgs-ros" class="md-nav__link">
+    <span class="md-ellipsis">pkgs.<wbr>ros</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-treefmt-write-config" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>treefmt-<wbr>write-<wbr>config</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-treefmt-build" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>treefmt-<wbr>build</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-scripts" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>scripts</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2993,6 +3098,27 @@
           <li class="md-nav__item">
   <a href="#ros2" class="md-nav__link">
     <span class="md-ellipsis">ros2</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean" class="md-nav__link">
+    <span class="md-ellipsis">clean</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-scripts-clean" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>scripts.<wbr>clean</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-scripts-cachix-push" class="md-nav__link">
+    <span class="md-ellipsis">tools.<wbr>scripts.<wbr>cachix-<wbr>push</span>
   </a>
   
 </li>
@@ -3130,12 +3256,50 @@ See <a class="reference internal" href="../home/nix-basics.html"><span class="st
 <p>A package containing all core software.</p>
 <h4 id="simulation"><code class="docutils literal notranslate"><span class="pre">simulation</span></code><a class="headerlink" href="#simulation" title="Link to this heading">¶</a></h4>
 <p>Same as the <code class="docutils literal notranslate"><span class="pre">default</span></code> package, but contains everything needed to run simulation as well.</p>
+<h4 id="pkgs"><code class="docutils literal notranslate"><span class="pre">pkgs</span></code><a class="headerlink" href="#pkgs" title="Link to this heading">¶</a></h4>
+<p>This is the entire <code class="docutils literal notranslate"><span class="pre">nixpkgs</span></code> output, as well as all project package outputs (through overlays).
+Having it available can make certain debugging easier.</p>
+<p>Specific useful packages/package sets are documented below.</p>
+<h4 id="pkgs-rospackages-rosdistro"><code class="docutils literal notranslate"><span class="pre">pkgs.rosPackages.${rosDistro}</span></code><a class="headerlink" href="#pkgs-rospackages-rosdistro" title="Link to this heading">¶</a></h4>
+<p>All ROS packages for a specific distro.
+Packages which contain spaces or underscores in their name have those replaced with dashes.
+The packages for the project’s target distro will also be modified to add all the ROS2 packages in this workspace - for example, if targeting ROS2 Humble, the autonomy package would be accessible under <code class="docutils literal notranslate"><span class="pre">pkgs.rosPackages.humble.autonomy</span></code>.</p>
+<div class="example admonition">
+<p class="admonition-title">Example</p>
+<p>To use <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> from ROS Rolling Ridley: <code class="docutils literal notranslate"><span class="pre">pkgs.rosPackages.rolling.ros2-control</span></code>.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>If you use these packages with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code>, be aware that packages which apply modifications to the ROS2 CLI may not add the verb correctly.</p>
+</div>
+<h4 id="pkgs-ros"><code class="docutils literal notranslate"><span class="pre">pkgs.ros</span></code><a class="headerlink" href="#pkgs-ros" title="Link to this heading">¶</a></h4>
+<p>The entire ROS package set of the distro we’re using.
+Includes the packages in development.
+This is the recommended way to access packages in development if you want to pull specific ones out for <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> or <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">shell</span></code>.</p>
+<div class="example admonition">
+<p class="admonition-title">Example</p>
+<p>To use the workspace <code class="docutils literal notranslate"><span class="pre">autonomy</span></code> package: <code class="docutils literal notranslate"><span class="pre">pkgs.ros.autonomy</span></code>.</p>
+</div>
+<h4 id="tools-treefmt-write-config"><code class="docutils literal notranslate"><span class="pre">tools.treefmt-write-config</span></code><a class="headerlink" href="#tools-treefmt-write-config" title="Link to this heading">¶</a></h4>
+<p>Intended for use with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code>.
+Writes the configuration generated by <a class="reference external" href="https://github.com/numtide/treefmt-nix"><code class="docutils literal notranslate"><span class="pre">treefmt-nix</span></code></a> to <code class="docutils literal notranslate"><span class="pre">treefmt.toml</span></code> in the repo root.</p>
+<h4 id="tools-treefmt-build"><code class="docutils literal notranslate"><span class="pre">tools.treefmt-build</span></code><a class="headerlink" href="#tools-treefmt-build" title="Link to this heading">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">treefmtEval.config.build</span></code> set generated by <a class="reference external" href="https://github.com/numtide/treefmt-nix"><code class="docutils literal notranslate"><span class="pre">treefmt-nix</span></code></a>.</p>
+<h4 id="tools-scripts"><code class="docutils literal notranslate"><span class="pre">tools.scripts</span></code><a class="headerlink" href="#tools-scripts" title="Link to this heading">¶</a></h4>
+<p>Scripts intended for use with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code>.
+Also available at <code class="docutils literal notranslate"><span class="pre">pkgs.scripts</span></code> (due to being applied as an overlay).</p>
 <h3 id="executables">Executables<a class="headerlink" href="#executables" title="Link to this heading">¶</a></h3>
 <p>Intended for use with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span></code>.</p>
 <h4 id="id1"><code class="docutils literal notranslate"><span class="pre">default</span></code><a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
 <p>Currently just for testing. Will eventually run the main bringup launch file.</p>
 <h4 id="ros2"><code class="docutils literal notranslate"><span class="pre">ros2</span></code><a class="headerlink" href="#ros2" title="Link to this heading">¶</a></h4>
 <p>ROS2 core executable from the <code class="docutils literal notranslate"><span class="pre">default</span></code> package.</p>
+<h4 id="clean"><code class="docutils literal notranslate"><span class="pre">clean</span></code><a class="headerlink" href="#clean" title="Link to this heading">¶</a></h4>
+<p>Convenience alias of <a class="reference internal" href="#tools-scripts-clean"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">tools.scripts.clean</span></code></span></a></p>
+<h4 id="tools-scripts-clean"><code class="docutils literal notranslate"><span class="pre">tools.scripts.clean</span></code><a class="headerlink" href="#tools-scripts-clean" title="Link to this heading">¶</a></h4>
+<p>Runs <code class="docutils literal notranslate"><span class="pre">software/scripts/clean.sh</span></code> to remove all generated/build directories.</p>
+<h4 id="tools-scripts-cachix-push"><code class="docutils literal notranslate"><span class="pre">tools.scripts.cachix-push</span></code><a class="headerlink" href="#tools-scripts-cachix-push" title="Link to this heading">¶</a></h4>
+<p>Push <code class="docutils literal notranslate"><span class="pre">default</span></code>, <code class="docutils literal notranslate"><span class="pre">simulation</span></code>, and <code class="docutils literal notranslate"><span class="pre">docs</span></code> packages and dev shells to Cachix, as well as some of the outputs of <code class="docutils literal notranslate"><span class="pre">tools.scripts</span></code>.</p>
 <h3 id="development-shells">Development shells<a class="headerlink" href="#development-shells" title="Link to this heading">¶</a></h3>
 <p>Intended for use with <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code>.</p>
 <h4 id="id2"><code class="docutils literal notranslate"><span class="pre">default</span></code><a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
@@ -3240,7 +3404,7 @@ See <a class="reference internal" href="../home/nix-basics.html"><span class="st
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/architecture/software.66a040df-7f67-4f43-a265-5be4228ddd5c.js"></script>
+        <script defer="defer" src="../_static/tippy/architecture/software.20d346ef-c247-49b7-9c65-54bb60533250.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
