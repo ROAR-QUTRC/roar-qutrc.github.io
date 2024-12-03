@@ -5,6 +5,11 @@ Namespace hi_can::addressing::power
 ===================================
 
 
+Namespace containing all addresses in the power system. 
+
+
+
+
 
 Namespaces
 ----------
@@ -19,4 +24,4 @@ Variables
 ---------
 
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1ad7353975acf630d2df6bdac74d39f78e`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1ad7353975acf630d2df6bdac74d39f78e`

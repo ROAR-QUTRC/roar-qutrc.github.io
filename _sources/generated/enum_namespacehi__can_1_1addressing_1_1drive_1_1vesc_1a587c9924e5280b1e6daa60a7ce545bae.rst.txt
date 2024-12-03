@@ -1,0 +1,14 @@
+.. _exhale_enum_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a587c9924e5280b1e6daa60a7ce545bae:
+
+Enum command_id
+===============
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::drive::vesc::command_id
+   :project: rover

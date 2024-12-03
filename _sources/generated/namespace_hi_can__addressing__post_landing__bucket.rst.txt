@@ -1,0 +1,18 @@
+
+.. _namespace_hi_can__addressing__post_landing__bucket:
+
+Namespace hi_can::addressing::post_landing::bucket
+==================================================
+
+
+Namespace containing all addresses in the bucket subsystem. 
+
+
+
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1post__landing_1_1bucket_1ae823d256b66487db9e536d7259fcccf3`

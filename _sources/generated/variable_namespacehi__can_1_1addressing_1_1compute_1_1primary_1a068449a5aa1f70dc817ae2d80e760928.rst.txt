@@ -1,0 +1,14 @@
+.. _exhale_variable_namespacehi__can_1_1addressing_1_1compute_1_1primary_1a068449a5aa1f70dc817ae2d80e760928:
+
+Variable hi_can::addressing::compute::primary::SUBSYSTEM_ID
+===========================================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::compute::primary::SUBSYSTEM_ID
+   :project: rover

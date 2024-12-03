@@ -59,6 +59,8 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__post_landing`
 
+- :ref:`namespace_hi_can__addressing__post_landing__bucket`
+
 - :ref:`namespace_hi_can__addressing__power`
 
 - :ref:`namespace_hi_can__addressing__power__battery`
@@ -87,15 +89,15 @@ Enums
 -----
 
 
-- :ref:`exhale_enum_hi__can__address_8hpp_1ad9778028f48093137dc9c9e928101ce8`
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1compute_1_1primary_1ad9778028f48093137dc9c9e928101ce8`
 
-- :ref:`exhale_enum_hi__can__address_8hpp_1a587c9924e5280b1e6daa60a7ce545bae`
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a587c9924e5280b1e6daa60a7ce545bae`
 
-- :ref:`exhale_enum_hi__can__address_8hpp_1a1d7845f6f062d8186155f002c8ef3efc`
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a1d7845f6f062d8186155f002c8ef3efc`
 
-- :ref:`exhale_enum_hi__can__address_8hpp_1a41e9d2d33b7b14732d5bef920b7b2a45`
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1battery_1a41e9d2d33b7b14732d5bef920b7b2a45`
 
-- :ref:`exhale_enum_hi__can__address_8hpp_1a6dab62ddb95bf2ef584d217d2b23c8d7`
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a6dab62ddb95bf2ef584d217d2b23c8d7`
 
 
 Typedefs
@@ -113,9 +115,9 @@ Variables
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1aa091a14167833a5feb90ae52c9145883`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a068449a5aa1f70dc817ae2d80e760928`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1compute_1_1primary_1a068449a5aa1f70dc817ae2d80e760928`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a1a7c390fab55cb7c1d7c10e121a5fd34`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1compute_1a1a7c390fab55cb7c1d7c10e121a5fd34`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1ad86de3cedb0b8bbb9bc759451873ad11`
 
@@ -123,13 +125,13 @@ Variables
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1ac322f9294bece9ce67133ddbb80df288`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a0d01c2cb90a043121dbe8b56af90fa83`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1drive_1a0d01c2cb90a043121dbe8b56af90fa83`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a4924080e76dc4b566bad723c8cc4b9dd`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a4924080e76dc4b566bad723c8cc4b9dd`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a1ef708c6102d776a9a011e248d030113`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1_1arm_1a1ef708c6102d776a9a011e248d030113`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a5c3c47d0be025ac00c78848776f80c8c`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1a5c3c47d0be025ac00c78848776f80c8c`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1a6c34d360313543a2c1c8fd14386f7772`
 
@@ -153,15 +155,17 @@ Variables
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1a2c76499f5abcad988bf6a82d813a014b`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a7588b4ec8c02cad1ce9e7753ada80a89`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1post__landing_1_1bucket_1ae823d256b66487db9e536d7259fcccf3`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1ac8a6474f7069c5c260214c2f00dc8ff9`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1post__landing_1a7588b4ec8c02cad1ce9e7753ada80a89`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a0ce7aa474754e3973599792a7cecf700`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1_1battery_1ac8a6474f7069c5c260214c2f00dc8ff9`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1ad7353975acf630d2df6bdac74d39f78e`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a0ce7aa474754e3973599792a7cecf700`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1aca2d4f6b2059e0fccdb5de20389b48ee`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1ad7353975acf630d2df6bdac74d39f78e`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1space__resources_1aca2d4f6b2059e0fccdb5de20389b48ee`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1aeb12a56bb11ff2a7e5a52ec4d0f9cc3c`
 

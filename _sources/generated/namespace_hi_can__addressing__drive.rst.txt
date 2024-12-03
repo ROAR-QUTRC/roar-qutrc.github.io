@@ -5,6 +5,11 @@ Namespace hi_can::addressing::drive
 ===================================
 
 
+Namespace containing all addresses in the drive system. 
+
+
+
+
 
 Namespaces
 ----------
@@ -17,4 +22,4 @@ Variables
 ---------
 
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a0d01c2cb90a043121dbe8b56af90fa83`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1drive_1a0d01c2cb90a043121dbe8b56af90fa83`

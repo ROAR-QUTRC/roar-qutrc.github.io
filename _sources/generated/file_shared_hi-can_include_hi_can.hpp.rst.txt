@@ -78,3 +78,10 @@ Classes
 
 - :ref:`exhale_class_classhi__can_1_1SoftwareFilteredCanInterface`
 
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespacehi__can_1a024d30e162a189788c628e9bd48a8d75`
+

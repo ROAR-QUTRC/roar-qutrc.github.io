@@ -5,6 +5,11 @@ Namespace hi_can::addressing::compute
 =====================================
 
 
+Namespace containing all addresses in the compute system. 
+
+
+
+
 
 Namespaces
 ----------
@@ -17,4 +22,4 @@ Variables
 ---------
 
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a1a7c390fab55cb7c1d7c10e121a5fd34`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1compute_1a1a7c390fab55cb7c1d7c10e121a5fd34`

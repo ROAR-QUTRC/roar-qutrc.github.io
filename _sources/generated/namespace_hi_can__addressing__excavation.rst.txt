@@ -5,6 +5,11 @@ Namespace hi_can::addressing::excavation
 ========================================
 
 
+Namespace containing all addresses in the excavation system. 
+
+
+
+
 
 Namespaces
 ----------
@@ -17,4 +22,4 @@ Variables
 ---------
 
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a5c3c47d0be025ac00c78848776f80c8c`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1a5c3c47d0be025ac00c78848776f80c8c`

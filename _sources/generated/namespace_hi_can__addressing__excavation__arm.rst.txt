@@ -5,9 +5,14 @@ Namespace hi_can::addressing::excavation::arm
 =============================================
 
 
+Namespace containing all addresses in the arm subsystem. 
+
+
+
+
 
 Variables
 ---------
 
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a1ef708c6102d776a9a011e248d030113`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1_1arm_1a1ef708c6102d776a9a011e248d030113`

@@ -13,6 +13,7 @@ Derived Types
 *************
 
 - ``public hi_can::addressing::drive::vesc::address_t`` (:ref:`exhale_struct_structhi__can_1_1addressing_1_1drive_1_1vesc_1_1address__t`)
+- ``public hi_can::addressing::flagged_address_t`` (:ref:`exhale_struct_structhi__can_1_1addressing_1_1flagged__address__t`)
 - ``public hi_can::addressing::standard_address_t`` (:ref:`exhale_struct_structhi__can_1_1addressing_1_1standard__address__t`)
 
 
