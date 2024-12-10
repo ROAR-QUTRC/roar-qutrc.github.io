@@ -34,6 +34,8 @@ Included By
 
 - :ref:`file_native_net-can-server_src_main.cpp`
 
+- :ref:`file_ros_ws_src_perseus_hardware_src_vesc_system.cpp`
+
 - :ref:`file_shared_hi-can-raw_src_hi_can_raw.cpp`
 
 

@@ -1,0 +1,38 @@
+
+.. _file_ros_ws_src_perseus_hardware_src_vesc_system.cpp:
+
+File vesc_system.cpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_hardware_src>` (``ros_ws/src/perseus_hardware/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/perseus_hardware/src/vesc_system.cpp``)
+----------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``hardware_interface/types/hardware_interface_type_values.hpp``
+
+- ``hi_can_raw.hpp`` (:ref:`file_shared_hi-can-raw_include_hi_can_raw.hpp`)
+
+- ``pluginlib/pluginlib/class_list_macros.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``system_common.hpp`` (:ref:`file_ros_ws_src_perseus_hardware_priv_include_system_common.hpp`)
+
+- ``vesc_system.hpp`` (:ref:`file_ros_ws_src_perseus_hardware_include_vesc_system.hpp`)
+
+
+
+
+

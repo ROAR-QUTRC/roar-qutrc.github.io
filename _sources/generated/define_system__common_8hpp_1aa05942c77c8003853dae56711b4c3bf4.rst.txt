@@ -1,0 +1,14 @@
+.. _exhale_define_system__common_8hpp_1aa05942c77c8003853dae56711b4c3bf4:
+
+Define CHECK_INTERFACE_NAME
+===========================
+
+- Defined in :ref:`file_ros_ws_src_perseus_hardware_priv_include_system_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CHECK_INTERFACE_NAME
+   :project: rover

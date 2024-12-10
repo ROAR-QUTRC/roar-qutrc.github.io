@@ -1,0 +1,74 @@
+
+.. _file_ros_ws_src_perseus_hardware_include_vesc_system.hpp:
+
+File vesc_system.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_hardware_include>` (``ros_ws/src/perseus_hardware/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/perseus_hardware/include/vesc_system.hpp``)
+--------------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``hardware_interface/handle.hpp``
+
+- ``hardware_interface/hardware_info.hpp``
+
+- ``hardware_interface/system_interface.hpp``
+
+- ``hardware_interface/types/hardware_interface_return_values.hpp``
+
+- ``hi_can.hpp`` (:ref:`file_shared_hi-can_include_hi_can.hpp`)
+
+- ``optional``
+
+- ``rclcpp/clock.hpp``
+
+- ``rclcpp/duration.hpp``
+
+- ``rclcpp/logger.hpp``
+
+- ``rclcpp/macros.hpp``
+
+- ``rclcpp/time.hpp``
+
+- ``rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp``
+
+- ``rclcpp_lifecycle/state.hpp``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ros_ws_src_perseus_hardware_src_vesc_system.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_perseus_hardware`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classperseus__hardware_1_1VescSystemHardware`
+

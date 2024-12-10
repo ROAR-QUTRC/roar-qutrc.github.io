@@ -38,11 +38,7 @@ Included By
 -----------
 
 
-- :ref:`file_ros_ws_src_hardware_interfaces_src_beacon.cpp`
-
-- :ref:`file_ros_ws_src_hardware_interfaces_src_drive.cpp`
-
-- :ref:`file_ros_ws_src_hardware_interfaces_src_excavation.cpp`
+- :ref:`file_ros_ws_src_perseus_hardware_include_vesc_system.hpp`
 
 - :ref:`file_shared_hi-can-raw_include_hi_can_raw.hpp`
 

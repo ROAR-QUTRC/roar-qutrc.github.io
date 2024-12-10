@@ -36,22 +36,32 @@ Directories
 .. toctree::
    :maxdepth: 5
 
-   dir_ros_ws_src_hardware_interfaces.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   dir_ros_ws_src_hardware_interfaces_src.rst
-
-.. toctree::
-   :maxdepth: 5
-
    dir_ros_ws_src_input_devices.rst
 
 .. toctree::
    :maxdepth: 5
 
    dir_ros_ws_src_input_devices_input_devices.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_hardware.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_hardware_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_hardware_priv_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_hardware_src.rst
 
 .. toctree::
    :maxdepth: 5
@@ -125,21 +135,6 @@ Files
 .. toctree::
    :maxdepth: 5
 
-   file_ros_ws_src_hardware_interfaces_src_beacon.cpp.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file_ros_ws_src_hardware_interfaces_src_drive.cpp.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file_ros_ws_src_hardware_interfaces_src_excavation.cpp.rst
-
-.. toctree::
-   :maxdepth: 5
-
    file_shared_fd-wrapper_src_fd_wrapper.cpp.rst
 
 .. toctree::
@@ -206,6 +201,36 @@ Files
    :maxdepth: 5
 
    file_native_net-can-server_src_main.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_hardware_src_mcb_system.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_hardware_include_mcb_system.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_hardware_src_system_common.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_hardware_priv_include_system_common.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_hardware_src_vesc_system.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_hardware_include_vesc_system.hpp.rst
 
 .. toctree::
    :maxdepth: 5

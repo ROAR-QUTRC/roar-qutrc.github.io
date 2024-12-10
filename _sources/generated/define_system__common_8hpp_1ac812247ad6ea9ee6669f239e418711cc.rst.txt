@@ -1,0 +1,14 @@
+.. _exhale_define_system__common_8hpp_1ac812247ad6ea9ee6669f239e418711cc:
+
+Define CHECK_HARDWARE_PARAMETER_EXISTS
+======================================
+
+- Defined in :ref:`file_ros_ws_src_perseus_hardware_priv_include_system_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CHECK_HARDWARE_PARAMETER_EXISTS
+   :project: rover
