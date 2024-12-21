@@ -4414,6 +4414,12 @@ The nodes in this package then publish data which <code class="docutils literal 
 <h4 id="autonomy"><code class="docutils literal notranslate"><span class="pre">autonomy</span></code><a class="headerlink" href="#autonomy" title="Link to this heading">¶</a></h4>
 <p>This package contains the core mapping and autonomous navigation functionality for the rover, as well as the mapping functionality and configuration.
 It also implements the fail-over functionality which handles autonomous recovery on disconnection or network failure.</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>The ROS2 build system <code class="docutils literal notranslate"><span class="pre">colcon</span></code> can fail to rebuild cached outputs after events such as a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> or when a non-ROS dependency changes, which may result in <code class="docutils literal notranslate"><span class="pre">colcon</span> <span class="pre">build</span></code> incorrectly failing.
+The solution is to clean the workspace (<code class="docutils literal notranslate"><span class="pre">colcon</span> <span class="pre">clean</span> <span class="pre">workspace</span> <span class="pre">-y</span></code> or <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">.#clean</span></code>) and then re-run <code class="docutils literal notranslate"><span class="pre">colcon</span> <span class="pre">build</span></code>.
+To ensure that this doesn’t happen at all, run a clean after every git pull or after changing any code outside of <code class="docutils literal notranslate"><span class="pre">software/ros_ws/src</span></code>.</p>
+</div>
 <h3 id="shared-libraries">Shared Libraries<a class="headerlink" href="#shared-libraries" title="Link to this heading">¶</a></h3>
 <h4 id="hi-can">Hi-CAN<a class="headerlink" href="#hi-can" title="Link to this heading">¶</a></h4>
 <p>Abbreviated from “hierarchical CAN”, Hi-CAN is the library implementing the standards laid out <a class="reference internal" href="can-bus.html"><span class="std std-doc">here</span></a>, and is shared across ROS and native code, as well as firmware.
@@ -4599,7 +4605,7 @@ Contact James N if you need one.</p>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/architecture/software.3a1bf4b9-8fd7-477c-af18-471decb3fe0f.js"></script>
+        <script defer="defer" src="../_static/tippy/architecture/software.f93ca369-0e24-4ca3-8e65-ed192c24740d.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

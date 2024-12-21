@@ -84,6 +84,12 @@ The nodes in this package then publish data which `ros2_control` reads in, proce
 This package contains the core mapping and autonomous navigation functionality for the rover, as well as the mapping functionality and configuration.
 It also implements the fail-over functionality which handles autonomous recovery on disconnection or network failure.
 
+:::{tip}
+The ROS2 build system `colcon` can fail to rebuild cached outputs after events such as a `git pull` or when a non-ROS dependency changes, which may result in `colcon build` incorrectly failing.
+The solution is to clean the workspace (`colcon clean workspace -y` or `nix run .#clean`) and then re-run `colcon build`.
+To ensure that this doesn't happen at all, run a clean after every git pull or after changing any code outside of `software/ros_ws/src`.
+:::
+
 ### Shared Libraries
 
 #### Hi-CAN
