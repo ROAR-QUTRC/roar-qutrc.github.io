@@ -10,7 +10,7 @@ Directory native
 Subdirectories
 --------------
 
-- :ref:`dir_native_net-can-server`
+- :ref:`dir_native_hi-can-common`
 
 
 

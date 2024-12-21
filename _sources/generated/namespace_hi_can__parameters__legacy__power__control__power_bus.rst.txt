@@ -1,0 +1,6 @@
+
+.. _namespace_hi_can__parameters__legacy__power__control__power_bus:
+
+Namespace hi_can::parameters::legacy::power::control::power_bus
+===============================================================
+

@@ -32,10 +32,3 @@ Includes
 
 
 
-
-Namespaces
-----------
-
-
-- :ref:`namespace_std__chrono`
-

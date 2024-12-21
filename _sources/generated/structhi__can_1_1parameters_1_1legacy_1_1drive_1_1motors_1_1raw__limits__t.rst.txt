@@ -1,0 +1,18 @@
+.. _exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__limits__t:
+
+Struct raw_limits_t
+===================
+
+- Defined in :ref:`file_shared_hi-can_src_hi_can_parameter.cpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: hi_can::parameters::legacy::drive::motors::raw_limits_t
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

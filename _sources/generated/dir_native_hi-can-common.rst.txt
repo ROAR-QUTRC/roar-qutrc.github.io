@@ -1,0 +1,21 @@
+.. _dir_native_hi-can-common:
+
+
+Directory hi-can-common
+=======================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_native>` (``native``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``native/hi-can-common``
+
+Subdirectories
+--------------
+
+- :ref:`dir_native_hi-can-common_src`
+
+
+

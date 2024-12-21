@@ -1,0 +1,14 @@
+.. _exhale_enum_hi__can__address_8hpp_1a468ead8338f7113f6101a5cd5d96b946:
+
+Enum device
+===========
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::legacy::drive::motors::device
+   :project: rover

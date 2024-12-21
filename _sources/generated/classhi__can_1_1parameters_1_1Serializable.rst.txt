@@ -1,0 +1,27 @@
+.. _exhale_class_classhi__can_1_1parameters_1_1Serializable:
+
+Class Serializable
+==================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_parameter.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public hi_can::parameters::BidirectionalSerializable`` (:ref:`exhale_class_classhi__can_1_1parameters_1_1BidirectionalSerializable`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: hi_can::parameters::Serializable
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

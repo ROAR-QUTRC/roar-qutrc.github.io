@@ -20,6 +20,8 @@ Includes
 --------
 
 
+- ``compare``
+
 - ``cstddef``
 
 - ``cstdint``
@@ -33,6 +35,8 @@ Included By
 - :ref:`file_shared_hi-can_include_hi_can.hpp`
 
 - :ref:`file_shared_hi-can_include_hi_can_packet.hpp`
+
+- :ref:`file_shared_hi-can_include_hi_can_parameter.hpp`
 
 
 
@@ -57,6 +61,26 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__excavation__arm`
 
+- :ref:`namespace_hi_can__addressing__legacy`
+
+- :ref:`namespace_hi_can__addressing__legacy__drive`
+
+- :ref:`namespace_hi_can__addressing__legacy__drive__motors`
+
+- :ref:`namespace_hi_can__addressing__legacy__drive__motors__esc`
+
+- :ref:`namespace_hi_can__addressing__legacy__drive__motors__mcb`
+
+- :ref:`namespace_hi_can__addressing__legacy__power`
+
+- :ref:`namespace_hi_can__addressing__legacy__power__control`
+
+- :ref:`namespace_hi_can__addressing__legacy__power__control__contactor`
+
+- :ref:`namespace_hi_can__addressing__legacy__power__control__power_bus`
+
+- :ref:`namespace_hi_can__addressing__legacy__power__control__rcb`
+
 - :ref:`namespace_hi_can__addressing__post_landing`
 
 - :ref:`namespace_hi_can__addressing__post_landing__bucket`
@@ -69,6 +93,8 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__space_resources`
 
+- :ref:`namespace_hi_can__addressing__status`
+
 
 Classes
 -------
@@ -79,6 +105,8 @@ Classes
 - :ref:`exhale_struct_structhi__can_1_1addressing_1_1filter__t`
 
 - :ref:`exhale_struct_structhi__can_1_1addressing_1_1flagged__address__t`
+
+- :ref:`exhale_struct_structhi__can_1_1addressing_1_1legacy_1_1address__t`
 
 - :ref:`exhale_struct_structhi__can_1_1addressing_1_1standard__address__t`
 
@@ -95,9 +123,25 @@ Enums
 
 - :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a1d7845f6f062d8186155f002c8ef3efc`
 
+- :ref:`exhale_enum_hi__can__address_8hpp_1a468ead8338f7113f6101a5cd5d96b946`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a15a2f4306e27071d6cef346536d76a3c`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a76f1376e6eedc8edd2545395a783b7a9`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a8d941d3717ff37bf763b49693edaa9b0`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a311c71b52a95d100edcec4a20d537576`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1af67fa7703eb5d1aa28c7f0a0b57ca69f`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a0d3b3602e86aad5293497c304d184620`
+
 - :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1battery_1a41e9d2d33b7b14732d5bef920b7b2a45`
 
 - :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a6dab62ddb95bf2ef584d217d2b23c8d7`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1adbe96e609f3873565715e2efcd81737f`
 
 
 Typedefs
@@ -139,6 +183,16 @@ Variables
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1a50cee4fc019ae0a6ad9cbde6e18b3881`
 
+- :ref:`exhale_variable_hi__can__address_8hpp_1ad576a65cf9b051ee66d62006a9639297`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a58b134a3cb39a37a85a725d05048f6aa`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a91e259388c868dd8eb77c8c5c4cc12c2`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a6f7508b644fa7855e3cf9504e5987176`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a5f2e6e7e8f83289f14c77c93568185e7`
+
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1a7bfd19cb87264fd68ce01b05b6d9e82b`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1ab76e652957fa643c2c2ea829b2ec4747`
@@ -166,6 +220,8 @@ Variables
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1ad7353975acf630d2df6bdac74d39f78e`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1space__resources_1aca2d4f6b2059e0fccdb5de20389b48ee`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a139e5d0c279410b75d2bb44b343eb913`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1aeb12a56bb11ff2a7e5a52ec4d0f9cc3c`
 

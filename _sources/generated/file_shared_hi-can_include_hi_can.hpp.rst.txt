@@ -20,15 +20,11 @@ Includes
 --------
 
 
-- ``chrono``
-
-- ``functional``
-
 - ``hi_can_address.hpp`` (:ref:`file_shared_hi-can_include_hi_can_address.hpp`)
 
 - ``hi_can_packet.hpp`` (:ref:`file_shared_hi-can_include_hi_can_packet.hpp`)
 
-- ``map``
+- ``hi_can_parameter.hpp`` (:ref:`file_shared_hi-can_include_hi_can_parameter.hpp`)
 
 - ``set``
 
@@ -38,11 +34,13 @@ Included By
 -----------
 
 
-- :ref:`file_ros_ws_src_perseus_hardware_include_vesc_system.hpp`
-
 - :ref:`file_shared_hi-can-raw_include_hi_can_raw.hpp`
 
+- :ref:`file_shared_hi-can_include_hi_can_parameter.hpp`
+
 - :ref:`file_shared_hi-can_src_hi_can.cpp`
+
+- :ref:`file_shared_hi-can_src_hi_can_packet.cpp`
 
 
 
@@ -58,26 +56,9 @@ Classes
 -------
 
 
-- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1callback__config__t`
-
-- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1callback__data__t`
-
-- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmit__config__t`
-
-- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmit__data__t`
-
 - :ref:`exhale_class_classhi__can_1_1CanInterface`
 
 - :ref:`exhale_class_classhi__can_1_1FilteredCanInterface`
 
-- :ref:`exhale_class_classhi__can_1_1PacketManager`
-
 - :ref:`exhale_class_classhi__can_1_1SoftwareFilteredCanInterface`
-
-
-Typedefs
---------
-
-
-- :ref:`exhale_typedef_namespacehi__can_1a024d30e162a189788c628e9bd48a8d75`
 

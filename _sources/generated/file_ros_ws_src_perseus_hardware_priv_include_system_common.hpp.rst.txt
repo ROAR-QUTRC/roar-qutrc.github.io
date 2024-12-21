@@ -32,6 +32,8 @@ Included By
 -----------
 
 
+- :ref:`file_ros_ws_src_perseus_hardware_src_mcb_system.cpp`
+
 - :ref:`file_ros_ws_src_perseus_hardware_src_vesc_system.cpp`
 
 
@@ -41,9 +43,11 @@ Defines
 -------
 
 
-- :ref:`exhale_define_system__common_8hpp_1ac812247ad6ea9ee6669f239e418711cc`
+- :ref:`exhale_define_system__common_8hpp_1a417298553ea35552b7592f1ecb3e2208`
 
-- :ref:`exhale_define_system__common_8hpp_1a75d0cb44b5f16b3118b6fd390434e253`
+- :ref:`exhale_define_system__common_8hpp_1aa1bf1022fc280243d95456456ff53632`
+
+- :ref:`exhale_define_system__common_8hpp_1ac812247ad6ea9ee6669f239e418711cc`
 
 - :ref:`exhale_define_system__common_8hpp_1aa05942c77c8003853dae56711b4c3bf4`
 

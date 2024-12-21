@@ -17,7 +17,7 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing`
 
-- :ref:`namespace_hi_can__parameter`
+- :ref:`namespace_hi_can__parameters`
 
 
 Classes
@@ -28,9 +28,9 @@ Classes
 
 - :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1callback__data__t`
 
-- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmit__config__t`
+- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmission__config__t`
 
-- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmit__data__t`
+- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmission__data__t`
 
 - :ref:`exhale_class_classhi__can_1_1CanInterface`
 

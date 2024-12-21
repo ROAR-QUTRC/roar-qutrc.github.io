@@ -1,0 +1,32 @@
+
+.. _namespace_hi_can__parameters__legacy__drive__motors:
+
+Namespace hi_can::parameters::legacy::drive::motors
+===================================================
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1limits__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__limits__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__speed__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__status__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1speed__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1status__t`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1EscParameterGroup`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_hi__can__parameter_8hpp_1a93ae02b9024768272d9dfaabda0b84ad`

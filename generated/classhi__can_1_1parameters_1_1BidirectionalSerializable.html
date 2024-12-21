@@ -1,0 +1,4525 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../_static/Logo-Simple.png">
+    
+    
+      
+        <title>Class BidirectionalSerializable - Perseus V2  documentation</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+    
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.a61c166bfce23889e.min.css?v=9f78bb6a" />
+        <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+        <link rel="stylesheet" type="text/css" href="../_static/css/graph-fix.css?v=9fb375ba" />
+        <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=f454e25b" />
+        <link rel="stylesheet" type="text/css" href="../_static/css/fonts.css?v=eaf47ec1" />
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inheritance-relationships" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Perseus V2  documentation" class="md-header__button md-logo" aria-label="Perseus V2  documentation" data-md-component="logo">
+      <img src="../_static/Rover-Logo.svg" alt="logo">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Perseus V2  documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class BidirectionalSerializable
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ROAR-QUTRC/perseus-v2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Perseus V2
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Perseus V2  documentation" class="md-nav__button md-logo" aria-label="Perseus V2  documentation" data-md-component="logo">
+      <img src="../_static/Rover-Logo.svg" alt="logo">
+    </a>
+    Perseus V2  documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ROAR-QUTRC/perseus-v2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Perseus V2
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        <span class="md-ellipsis">Home</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/getting-started.html" class="md-nav__link">
+        <span class="md-ellipsis">Getting Started</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/documentation-development.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation Development</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/nix-basics.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix Basics</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../architecture.html"><span class="md-ellipsis">Architecture</span></a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Architecture" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Architecture</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/can-bus.html" class="md-nav__link">
+        <span class="md-ellipsis">CAN Bus</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/ci-cd.html" class="md-nav__link">
+        <span class="md-ellipsis">CI/CD</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../architecture/hardware.html"><span class="md-ellipsis">Hardware</span></a>
+          
+            <label for="__nav_5_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Hardware" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Hardware</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/hardware/network.html" class="md-nav__link">
+        <span class="md-ellipsis">Network</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/nix.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../maintenance.html"><span class="md-ellipsis">Maintenance</span></a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Maintenance" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Maintenance</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/github-repo.html" class="md-nav__link">
+        <span class="md-ellipsis">Git<wbr>Hub Repository Maintenance</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/nix.html" class="md-nav__link">
+        <span class="md-ellipsis">Nix Build System</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../standards.html"><span class="md-ellipsis">Standards</span></a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Standards" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Standards</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/electronics.html" class="md-nav__link">
+        <span class="md-ellipsis">Electronics Design Guidelines</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/software.html" class="md-nav__link">
+        <span class="md-ellipsis">Software Standards</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../challenge-breakdowns.html"><span class="md-ellipsis">Challenge Breakdowns</span></a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Challenge Breakdowns" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Challenge Breakdowns</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/autonomy-mapping.html" class="md-nav__link">
+        <span class="md-ellipsis">Autonomy &amp; Mapping</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/excavation-construction.html" class="md-nav__link">
+        <span class="md-ellipsis">Excavation &amp; Construction</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/post-landing.html" class="md-nav__link">
+        <span class="md-ellipsis">Post-<wbr>Landing</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenge-breakdowns/space-resources.html" class="md-nav__link">
+        <span class="md-ellipsis">Space Resources Task Points Summary</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../subsystems.html"><span class="md-ellipsis">Payload Subsystems</span></a>
+          
+            <label for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Payload Subsystems" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Payload Subsystems</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subsystems/excavation-construction.html" class="md-nav__link">
+        <span class="md-ellipsis">Excavation &amp; Construction</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html"><span class="md-ellipsis">Generated Documentation</span></a>
+          
+            <label for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Generated Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Generated Documentation</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#full-api"><span class="md-ellipsis">Full API</span></a>
+          
+            <label for="__nav_10_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Full API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Full API</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_1" type="checkbox" id="__nav_10_1_1" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#namespaces"><span class="md-ellipsis">Namespaces</span></a>
+          
+            <label for="__nav_10_1_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Namespaces" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Namespaces</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hardware_interface.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hardware_<wbr>interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__compute.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>compute</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__compute__primary.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>primary</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__drive__vesc.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>vesc</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__excavation.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>excavation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__excavation__arm.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>arm</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__drive__motors.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>drive::<wbr>motors</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__drive__motors__esc.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>drive::<wbr>motors::<wbr>esc</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__drive__motors__mcb.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>drive::<wbr>motors::<wbr>mcb</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__power.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>power</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__power__control.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>power::<wbr>control</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__power__control__contactor.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>power::<wbr>control::<wbr>contactor</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__power__control__power_bus.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>power::<wbr>control::<wbr>power_<wbr>bus</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__legacy__power__control__rcb.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>power::<wbr>control::<wbr>rcb</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__post_landing.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>post_<wbr>landing</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__post_landing__bucket.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>post_<wbr>landing::<wbr>bucket</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__power.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__power__battery.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>battery</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__power__distribution.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>distribution</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__space_resources.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>space_<wbr>resources</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__addressing__status.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>addressing::<wbr>status</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__drive__vesc.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>drive::<wbr>vesc</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__excavation.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>excavation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__legacy.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>legacy</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__legacy__drive.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>legacy::<wbr>drive</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__legacy__drive__motors.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>legacy::<wbr>drive::<wbr>motors</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__legacy__power.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>legacy::<wbr>power</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__legacy__power__control.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>legacy::<wbr>power::<wbr>control</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__legacy__power__control__contactor.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>legacy::<wbr>power::<wbr>control::<wbr>contactor</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__legacy__power__control__power_bus.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>legacy::<wbr>power::<wbr>control::<wbr>power_<wbr>bus</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__power.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>power</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__power__bms.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>power::<wbr>bms</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_hi_can__parameters__power__distribution.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace hi_<wbr>can::<wbr>parameters::<wbr>power::<wbr>distribution</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_input_devices.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_input_devices__generic_controller.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices::<wbr>generic_<wbr>controller</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_input_devices__xbox_controller.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace input_<wbr>devices::<wbr>xbox_<wbr>controller</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_perseus_hardware.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace perseus_<wbr>hardware</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_std__chrono.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace std::<wbr>chrono</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namespace_std__chrono_literals.html" class="md-nav__link">
+        <span class="md-ellipsis">Namespace std::<wbr>chrono_<wbr>literals</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_2" type="checkbox" id="__nav_10_1_2" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#classes-and-structs"><span class="md-ellipsis">Classes and Structs</span></a>
+          
+            <label for="__nav_10_1_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Classes and Structs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Classes and Structs</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1addressing_1_1drive_1_1vesc_1_1address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1addressing_1_1filter__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct filter_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1addressing_1_1flagged__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct flagged_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1addressing_1_1legacy_1_1address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1addressing_1_1standard__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct standard_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1addressing_1_1structured__address__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct structured_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1PacketManager_1_1callback__config__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>callback_<wbr>config_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1PacketManager_1_1callback__data__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>callback_<wbr>data_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1PacketManager_1_1transmission__config__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>transmission_<wbr>config_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1PacketManager_1_1transmission__data__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct Packet<wbr>Manager::<wbr>transmission_<wbr>data_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__1__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>status_<wbr>1_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__2__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>status_<wbr>2_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__3__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>status_<wbr>3_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__4__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>status_<wbr>4_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__5__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>status_<wbr>5_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__6__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>status_<wbr>6_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Template Struct scaled_<wbr>int32_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__brake__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>brake_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__brake__rel__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>current_<wbr>brake_<wbr>rel_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__handbrake__rel__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>current_<wbr>handbrake_<wbr>rel_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__handbrake__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>current_<wbr>handbrake_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__rel__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>current_<wbr>rel_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>current_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__duty__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>duty_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__pos__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>pos_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__rpm__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct set_<wbr>rpm_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__1__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct status_<wbr>1_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__2__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct status_<wbr>2_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__3__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct status_<wbr>3_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__4__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct status_<wbr>4_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__5__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct status_<wbr>5_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__6__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct status_<wbr>6_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1limits__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct limits_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__limits__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>limits_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__speed__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>speed_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__status__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct raw_<wbr>status_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1speed__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct speed_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1status__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct status_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1power_1_1bms_1_1pack__status.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct pack_<wbr>status</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structhi__can_1_1parameters_1_1power_1_1distribution_1_1bus__status__t.html" class="md-nav__link">
+        <span class="md-ellipsis">Struct bus_<wbr>status_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classFdWrapper.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Fd<wbr>Wrapper</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1CanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1FilteredCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Filtered<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1NetworkClient.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Network<wbr>Client</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1NetworkServer.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Network<wbr>Server</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1Packet.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Packet</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1PacketManager.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Packet<wbr>Manager</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Class Bidirectional<wbr>Serializable</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Class Bidirectional<wbr>Serializable</span>
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Class Bidirectional<wbr>Serializable</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance-relationships" class="md-nav__link">
+    <span class="md-ellipsis">Inheritance Relationships</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inheritance Relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-types" class="md-nav__link">
+    <span class="md-ellipsis">Base Types</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derived-types" class="md-nav__link">
+    <span class="md-ellipsis">Derived Types</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-documentation" class="md-nav__link">
+    <span class="md-ellipsis">Class Documentation</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_CPPv4N6hi_can10parameters25BidirectionalSerializableE" class="md-nav__link">
+    <span class="md-ellipsis">Bidirectional<wbr>Serializable</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1parameters_1_1Deserializable.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Deserializable</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1parameters_1_1drive_1_1vesc_1_1VescParameterGroup.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Vesc<wbr>Parameter<wbr>Group</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1EscParameterGroup.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Esc<wbr>Parameter<wbr>Group</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1parameters_1_1ParameterGroup.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Parameter<wbr>Group</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1parameters_1_1Serializable.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Serializable</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1RawCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Raw<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classhi__can_1_1SoftwareFilteredCanInterface.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Software<wbr>Filtered<wbr>Can<wbr>Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classinput__devices_1_1xbox__controller_1_1XboxControllerNode.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Xbox<wbr>Controller<wbr>Node</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classperseus__hardware_1_1McbSystemHardware.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Mcb<wbr>System<wbr>Hardware</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classperseus__hardware_1_1VescSystemHardware.html" class="md-nav__link">
+        <span class="md-ellipsis">Class Vesc<wbr>System<wbr>Hardware</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_3" type="checkbox" id="__nav_10_1_3" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#enums"><span class="md-ellipsis">Enums</span></a>
+          
+            <label for="__nav_10_1_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Enums" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Enums</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_namespacehi__can_1_1addressing_1_1compute_1_1primary_1ad9778028f48093137dc9c9e928101ce8.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a587c9924e5280b1e6daa60a7ce545bae.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum command_<wbr>id</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a1d7845f6f062d8186155f002c8ef3efc.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__address_8hpp_1a468ead8338f7113f6101a5cd5d96b946.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__address_8hpp_1a15a2f4306e27071d6cef346536d76a3c.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum parameter</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__address_8hpp_1a76f1376e6eedc8edd2545395a783b7a9.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum groups</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__address_8hpp_1a8d941d3717ff37bf763b49693edaa9b0.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum parameter</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__address_8hpp_1a311c71b52a95d100edcec4a20d537576.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__address_8hpp_1af67fa7703eb5d1aa28c7f0a0b57ca69f.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum parameter</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__address_8hpp_1a0d3b3602e86aad5293497c304d184620.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum groups</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_namespacehi__can_1_1addressing_1_1power_1_1battery_1a41e9d2d33b7b14732d5bef920b7b2a45.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a6dab62ddb95bf2ef584d217d2b23c8d7.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum device</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__address_8hpp_1adbe96e609f3873565715e2efcd81737f.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum parameter</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enum_hi__can__parameter_8hpp_1a93ae02b9024768272d9dfaabda0b84ad.html" class="md-nav__link">
+        <span class="md-ellipsis">Enum motor_<wbr>direction</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_4" type="checkbox" id="__nav_10_1_4" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#functions"><span class="md-ellipsis">Functions</span></a>
+          
+            <label for="__nav_10_1_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Functions" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Functions</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="function_fd__wrapper_8cpp_1a809aad577929eaafd71283850cdfcb72.html" class="md-nav__link">
+        <span class="md-ellipsis">Function swap</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_5" type="checkbox" id="__nav_10_1_5" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#variables"><span class="md-ellipsis">Variables</span></a>
+          
+            <label for="__nav_10_1_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Variables" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Variables</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1aa091a14167833a5feb90ae52c9145883.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>ADDRESS_<wbr>LENGTH</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1compute_1_1primary_1a068449a5aa1f70dc817ae2d80e760928.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>primary::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1compute_1a1a7c390fab55cb7c1d7c10e121a5fd34.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>compute::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1ad86de3cedb0b8bbb9bc759451873ad11.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a6c041c4a8553ad2114c15eacf45d0205.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1ac322f9294bece9ce67133ddbb80df288.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>DEVICE_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1drive_1a0d01c2cb90a043121dbe8b56af90fa83.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a4924080e76dc4b566bad723c8cc4b9dd.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>drive::<wbr>vesc::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1excavation_1_1arm_1a1ef708c6102d776a9a011e248d030113.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>arm::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1excavation_1a5c3c47d0be025ac00c78848776f80c8c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>excavation::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a6c34d360313543a2c1c8fd14386f7772.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a13de8c21b3e561a8fbafba7d638a2283.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a50cee4fc019ae0a6ad9cbde6e18b3881.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>GROUP_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1ad576a65cf9b051ee66d62006a9639297.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>drive::<wbr>motors::<wbr>esc::<wbr>esc</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a58b134a3cb39a37a85a725d05048f6aa.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>drive::<wbr>motors::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a91e259388c868dd8eb77c8c5c4cc12c2.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>drive::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a6f7508b644fa7855e3cf9504e5987176.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>power::<wbr>control::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a5f2e6e7e8f83289f14c77c93568185e7.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>legacy::<wbr>power::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a7bfd19cb87264fd68ce01b05b6d9e82b.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MASK_<wbr>ALL</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1ab76e652957fa643c2c2ea829b2ec4747.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MASK_<wbr>NONE</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a6372ba8ceb7b37c468fa77a3e86f123a.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>ADDRESS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a974d7cb9eb755009501603e338770b66.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>PACKET_<wbr>LEN</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a07e099cc9cb44b06a21e455efaf09b0c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>MAX_<wbr>SHORT_<wbr>ADDRESS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a3e17bdad632e40df9a440dd1d52bfec4.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a6630cf54dd47345fcad6003c8ea66635.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a2c76499f5abcad988bf6a82d813a014b.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>PARAM_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1post__landing_1_1bucket_1ae823d256b66487db9e536d7259fcccf3.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>post_<wbr>landing::<wbr>bucket::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1post__landing_1a7588b4ec8c02cad1ce9e7753ada80a89.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>post_<wbr>landing::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1power_1_1battery_1ac8a6474f7069c5c260214c2f00dc8ff9.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>battery::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a0ce7aa474754e3973599792a7cecf700.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>distribution::<wbr>SUBSYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1power_1ad7353975acf630d2df6bdac74d39f78e.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>power::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1_1space__resources_1aca2d4f6b2059e0fccdb5de20389b48ee.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>space_<wbr>resources::<wbr>SYSTEM_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_hi__can__address_8hpp_1a139e5d0c279410b75d2bb44b343eb913.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>status::<wbr>GROUP_<wbr>ID</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1aeb12a56bb11ff2a7e5a52ec4d0f9cc3c.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a7feda373e031e192d511b16ba365781f.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a447d637b419fbb8f5393f456a03c9d46.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SUBSYSTEM_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a80ccca00c971afb280ade8018c8f6e05.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>ADDRESS_<wbr>BITS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1a3cf2ed0e7d75f8054666c04e65e305b3.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>ADDRESS_<wbr>POS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variable_namespacehi__can_1_1addressing_1aed9a6e8268e842dbc31df5763e58cfdc.html" class="md-nav__link">
+        <span class="md-ellipsis">Variable hi_<wbr>can::<wbr>addressing::<wbr>SYSTEM_<wbr>MASK</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_6" type="checkbox" id="__nav_10_1_6" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#defines"><span class="md-ellipsis">Defines</span></a>
+          
+            <label for="__nav_10_1_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Defines" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Defines</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_system__common_8hpp_1a417298553ea35552b7592f1ecb3e2208.html" class="md-nav__link">
+        <span class="md-ellipsis">Define CHECK_<wbr>EQ_<wbr>INTERFACE_<wbr>COUNT</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_system__common_8hpp_1aa1bf1022fc280243d95456456ff53632.html" class="md-nav__link">
+        <span class="md-ellipsis">Define CHECK_<wbr>GE_<wbr>INTERFACE_<wbr>COUNT</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_system__common_8hpp_1ac812247ad6ea9ee6669f239e418711cc.html" class="md-nav__link">
+        <span class="md-ellipsis">Define CHECK_<wbr>HARDWARE_<wbr>PARAMETER_<wbr>EXISTS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_system__common_8hpp_1aa05942c77c8003853dae56711b4c3bf4.html" class="md-nav__link">
+        <span class="md-ellipsis">Define CHECK_<wbr>INTERFACE_<wbr>NAME</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_system__common_8hpp_1a217b314d6ba97b344124cbfb8dbf29a3.html" class="md-nav__link">
+        <span class="md-ellipsis">Define CHECK_<wbr>PARAMETER_<wbr>EXISTS</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_hi__can__parameter_8cpp_1abceb973815d8c0a602a7eda514d618d4.html" class="md-nav__link">
+        <span class="md-ellipsis">Define DESERIALIZE_<wbr>BOILERPLATE</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_mcb__system_8cpp_1ac9c0e661e902f4df0e0a0b776f528a55.html" class="md-nav__link">
+        <span class="md-ellipsis">Define GEARBOX_<wbr>RATIO</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_vesc__system_8cpp_1ac9c0e661e902f4df0e0a0b776f528a55.html" class="md-nav__link">
+        <span class="md-ellipsis">Define GEARBOX_<wbr>RATIO</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_hi__can__packet_8cpp_1adf94d853dce7b9ca2ca8ea918e278863.html" class="md-nav__link">
+        <span class="md-ellipsis">Define MISSED_<wbr>PACKET_<wbr>TIMEOUT_<wbr>COUNT</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="define_hi__can__parameter_8cpp_1ab1d21892a8363550ad40a410f1ec6b29.html" class="md-nav__link">
+        <span class="md-ellipsis">Define SERIALIZE_<wbr>BOILERPLATE</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1_7" type="checkbox" id="__nav_10_1_7" >
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html#typedefs"><span class="md-ellipsis">Typedefs</span></a>
+          
+            <label for="__nav_10_1_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Typedefs" data-md-level="3">
+        <label class="md-nav__title" for="__nav_10_1_7">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Typedefs</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="typedef_namespacehi__can_1_1addressing_1acd08f57a9d5d7a07492cd9c3ea3756ce.html" class="md-nav__link">
+        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>addressing::<wbr>mask_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="typedef_namespacehi__can_1_1addressing_1a1790497c7a43f6e573f400d4899ea5c1.html" class="md-nav__link">
+        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>addressing::<wbr>raw_<wbr>address_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="typedef_namespacehi__can_1a024d30e162a189788c628e9bd48a8d75.html" class="md-nav__link">
+        <span class="md-ellipsis">Typedef hi_<wbr>can::<wbr>packet_<wbr>callback_<wbr>t</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Class Bidirectional<wbr>Serializable</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance-relationships" class="md-nav__link">
+    <span class="md-ellipsis">Inheritance Relationships</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inheritance Relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-types" class="md-nav__link">
+    <span class="md-ellipsis">Base Types</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derived-types" class="md-nav__link">
+    <span class="md-ellipsis">Derived Types</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-documentation" class="md-nav__link">
+    <span class="md-ellipsis">Class Documentation</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_CPPv4N6hi_can10parameters25BidirectionalSerializableE" class="md-nav__link">
+    <span class="md-ellipsis">Bidirectional<wbr>Serializable</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+  <a href="https://github.com/ROAR-QUTRC/perseus-v2/edit/main/docs/source/generated/classhi__can_1_1parameters_1_1BidirectionalSerializable.rst" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+  </a>
+
+<h1 id="class-bidirectionalserializable"><span id="exhale-class-classhi-can-1-1parameters-1-1bidirectionalserializable"></span>Class BidirectionalSerializable<a class="headerlink" href="#class-bidirectionalserializable" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_shared_hi-can_include_hi_can_parameter.hpp.html#file-shared-hi-can-include-hi-can-parameter-hpp"><span class="std std-ref">File hi_can_parameter.hpp</span></a></p></li>
+</ul>
+<h2 id="inheritance-relationships">Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Link to this heading">¶</a></h2>
+<h3 id="base-types">Base Types<a class="headerlink" href="#base-types" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::Serializable</span></code> (<a class="reference internal" href="classhi__can_1_1parameters_1_1Serializable.html#exhale-class-classhi-can-1-1parameters-1-1serializable"><span class="std std-ref">Class Serializable</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::Deserializable</span></code> (<a class="reference internal" href="classhi__can_1_1parameters_1_1Deserializable.html#exhale-class-classhi-can-1-1parameters-1-1deserializable"><span class="std std-ref">Class Deserializable</span></a>)</p></li>
+</ul>
+<h3 id="derived-types">Derived Types<a class="headerlink" href="#derived-types" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::scaled_int32_t&lt;</span> <span class="pre">1000.0</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1scaled-int32-t"><span class="std std-ref">Template Struct scaled_int32_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::scaled_int32_t&lt;</span> <span class="pre">100000.0</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1scaled-int32-t"><span class="std std-ref">Template Struct scaled_int32_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::scaled_int32_t&lt;</span> <span class="pre">1000000.0</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1scaled-int32-t"><span class="std std-ref">Template Struct scaled_int32_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::scaled_int32_t&lt;</span> <span class="pre">1.0</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1scaled-int32-t"><span class="std std-ref">Template Struct scaled_int32_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::scaled_int32_t&lt;</span> <span class="pre">scalingFactor</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1scaled-int32-t"><span class="std std-ref">Template Struct scaled_int32_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::status_1_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__1__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1status-1-t"><span class="std std-ref">Struct status_1_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::status_2_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__2__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1status-2-t"><span class="std std-ref">Struct status_2_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::status_3_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__3__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1status-3-t"><span class="std std-ref">Struct status_3_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::status_4_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__4__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1status-4-t"><span class="std std-ref">Struct status_4_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::status_5_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__5__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1status-5-t"><span class="std std-ref">Struct status_5_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::drive::vesc::status_6_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__6__t.html#exhale-struct-structhi-can-1-1parameters-1-1drive-1-1vesc-1-1status-6-t"><span class="std std-ref">Struct status_6_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::legacy::drive::motors::limits_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1limits__t.html#exhale-struct-structhi-can-1-1parameters-1-1legacy-1-1drive-1-1motors-1-1limits-t"><span class="std std-ref">Struct limits_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::legacy::drive::motors::speed_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1speed__t.html#exhale-struct-structhi-can-1-1parameters-1-1legacy-1-1drive-1-1motors-1-1speed-t"><span class="std std-ref">Struct speed_t</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">hi_can::parameters::legacy::drive::motors::status_t</span></code> (<a class="reference internal" href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1status__t.html#exhale-struct-structhi-can-1-1parameters-1-1legacy-1-1drive-1-1motors-1-1status-t"><span class="std std-ref">Struct status_t</span></a>)</p></li>
+</ul>
+<h2 id="class-documentation">Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading">¶</a></h2>
+<dl class="cpp class objdesc">
+<dt class="sig sig-object highlight sig-wrap cpp" id="_CPPv4N6hi_can10parameters25BidirectionalSerializableE">
+<span id="_CPPv3N6hi_can10parameters25BidirectionalSerializableE"></span><span id="_CPPv2N6hi_can10parameters25BidirectionalSerializableE"></span><span id="hi_can::parameters::BidirectionalSerializable"></span><span class="target" id="classhi__can_1_1parameters_1_1BidirectionalSerializable"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BidirectionalSerializable</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hi_can</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">parameters</span></span><span class="p"><span class="pre">::</span></span><a class="desctype reference internal" href="classhi__can_1_1parameters_1_1Serializable.html#_CPPv4N6hi_can10parameters12SerializableE" title="hi_can::parameters::Serializable (C++ class) — Inheritence diagram for hi_can::parameters::Serializable:"><span class="n"><span class="pre">Serializable</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hi_can</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">parameters</span></span><span class="p"><span class="pre">::</span></span><a class="desctype reference internal" href="classhi__can_1_1parameters_1_1Deserializable.html#_CPPv4N6hi_can10parameters14DeserializableE" title="hi_can::parameters::Deserializable (C++ class) — Inheritence diagram for hi_can::parameters::Deserializable:"><span class="n"><span class="pre">Deserializable</span></span></a><a class="headerlink" href="#_CPPv4N6hi_can10parameters25BidirectionalSerializableE" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Inheritence diagram for hi_can::parameters::BidirectionalSerializable:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0.00 0.00 5028.75 260.00" class="graphviz" style="width: 314.3125rem;height: 16.25rem;">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+
+<g id="node1" class="node">
+<title>1</title>
+<g id="a_node1"><a>
+<polygon fill="#bfbfbf" points="3000.62,-108 2711.62,-108 2711.62,-72 3000.62,-72 3000.62,-108" style="stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2856.12" y="-85.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::BidirectionalSerializable</text>
+<title>hi_can::parameters::BidirectionalSerializable</title></a>
+</g>
+</g>
+
+<g id="node2" class="node">
+<title>3</title>
+<g id="a_node2"><a>
+<polygon points="2850.75,-36 2625.5,-36 2625.5,0 2850.75,0 2850.75,-36" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2738.12" y="-13.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::Deserializable</text>
+<title>hi_can::parameters::Deserializable</title></a>
+</g>
+</g>
+
+<g id="edge2" class="edge">
+<title>1-&gt;3</title>
+<g id="a_edge2"><a>
+<path fill="none" d="M2826.65,-71.52C2811.62,-62.6 2793.13,-51.63 2776.95,-42.03" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2778.91,-39.12 2768.52,-37.03 2775.34,-45.15 2778.91,-39.12" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node3" class="node">
+<title>2</title>
+<g id="a_node3"><a>
+<polygon points="3079.62,-36 2868.62,-36 2868.62,0 3079.62,0 3079.62,-36" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2974.12" y="-13.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::Serializable</text>
+<title>hi_can::parameters::Serializable</title></a>
+</g>
+</g>
+
+<g id="edge1" class="edge">
+<title>1-&gt;2</title>
+<g id="a_edge1"><a>
+<path fill="none" d="M2885.6,-71.52C2900.63,-62.6 2919.12,-51.63 2935.3,-42.03" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2936.91,-45.15 2943.73,-37.03 2933.34,-39.12 2936.91,-45.15" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node4" class="node">
+<title>17</title>
+<g id="a_node4"><a>
+<polygon points="550.5,-180 143.75,-180 143.75,-144 550.5,-144 550.5,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="347.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::scaled_int32_t&lt; scalingFactor &gt;</text>
+<title>hi_can::parameters::drive::vesc::scaled_int32_t&lt; scalingFactor &gt;</title></a>
+</g>
+</g>
+
+<g id="edge3" class="edge">
+<title>17-&gt;1</title>
+<g id="a_edge3"><a>
+<path fill="none" d="M550.77,-144.45C553.57,-144.29 556.36,-144.14 559.12,-144 1363.7,-102.49 2328.47,-93.49 2699.88,-91.54" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2699.73,-95.04 2709.72,-91.49 2699.7,-88.04 2699.73,-95.04" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node5" class="node">
+<title>15</title>
+<g id="a_node5"><a>
+<polygon points="911.62,-180 568.62,-180 568.62,-144 911.62,-144 911.62,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="740.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1.0 &gt;</text>
+<title>hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1.0 &gt;</title></a>
+</g>
+</g>
+
+<g id="edge4" class="edge">
+<title>15-&gt;1</title>
+<g id="a_edge4"><a>
+<path fill="none" d="M912.08,-144.51C914.78,-144.33 917.46,-144.16 920.12,-144 1581.12,-103.78 2370.94,-94.08 2700.13,-91.74" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2699.68,-95.24 2709.66,-91.67 2699.63,-88.24 2699.68,-95.24" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node6" class="node">
+<title>4</title>
+<g id="a_node6"><a>
+<polygon points="1294.88,-180 929.38,-180 929.38,-144 1294.88,-144 1294.88,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="1112.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1000.0 &gt;</text>
+<title>hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1000.0 &gt;</title></a>
+</g>
+</g>
+
+<g id="edge5" class="edge">
+<title>4-&gt;1</title>
+<g id="a_edge5"><a>
+<path fill="none" d="M1295.25,-152.04C1351.94,-149.35 1414.61,-146.46 1472.12,-144 1917.45,-124.96 2443.51,-105.7 2699.9,-96.53" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2699.77,-100.04 2709.64,-96.18 2699.52,-93.04 2699.77,-100.04" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node7" class="node">
+<title>8</title>
+<g id="a_node7"><a>
+<polygon points="1861.38,-180 1480.88,-180 1480.88,-144 1861.38,-144 1861.38,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="1671.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::scaled_int32_t&lt; 100000.0 &gt;</text>
+<title>hi_can::parameters::drive::vesc::scaled_int32_t&lt; 100000.0 &gt;</title></a>
+</g>
+</g>
+
+<g id="edge6" class="edge">
+<title>8-&gt;1</title>
+<g id="a_edge6"><a>
+<path fill="none" d="M1861.76,-144.59C1864.57,-144.39 1867.36,-144.19 1870.12,-144 2163.14,-123.61 2505.6,-106.78 2700.07,-97.87" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2700.17,-101.37 2710,-97.41 2699.86,-94.37 2700.17,-101.37" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node8" class="node">
+<title>13</title>
+<g id="a_node8"><a>
+<polygon points="2267.12,-180 1879.12,-180 1879.12,-144 2267.12,-144 2267.12,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2073.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1000000.0 &gt;</text>
+<title>hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1000000.0 &gt;</title></a>
+</g>
+</g>
+
+<g id="edge7" class="edge">
+<title>13-&gt;1</title>
+<g id="a_edge7"><a>
+<path fill="none" d="M2267.43,-143.63C2400.86,-131.7 2575.65,-116.07 2700.02,-104.96" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2699.99,-108.47 2709.64,-104.1 2699.37,-101.5 2699.99,-108.47" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node9" class="node">
+<title>5</title>
+<g id="a_node9"><a>
+<polygon points="569.5,-252 288.75,-252 288.75,-216 569.5,-216 569.5,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="429.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_brake_t</text>
+<title>hi_can::parameters::drive::vesc::set_brake_t</title></a>
+</g>
+</g>
+
+<g id="edge8" class="edge">
+<title>5-&gt;4</title>
+<g id="a_edge8"><a>
+<path fill="none" d="M569.89,-216.88C572.66,-216.58 575.41,-216.29 578.12,-216 690.63,-204 816.57,-191.46 917.88,-181.59" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="918.05,-185.09 927.66,-180.64 917.37,-178.12 918.05,-185.09" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node10" class="node">
+<title>9</title>
+<g id="a_node10"><a>
+<polygon points="1629.25,-252 1275,-252 1275,-216 1629.25,-216 1629.25,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="1452.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_current_brake_rel_t</text>
+<title>hi_can::parameters::drive::vesc::set_current_brake_rel_t</title></a>
+</g>
+</g>
+
+<g id="edge9" class="edge">
+<title>9-&gt;8</title>
+<g id="a_edge9"><a>
+<path fill="none" d="M1506.82,-215.52C1536.86,-205.92 1574.3,-193.95 1605.85,-183.86" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="1606.84,-187.22 1615.3,-180.84 1604.71,-180.55 1606.84,-187.22" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node11" class="node">
+<title>10</title>
+<g id="a_node11"><a>
+<polygon points="2031.25,-252 1647,-252 1647,-216 2031.25,-216 2031.25,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="1839.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_current_handbrake_rel_t</text>
+<title>hi_can::parameters::drive::vesc::set_current_handbrake_rel_t</title></a>
+</g>
+</g>
+
+<g id="edge10" class="edge">
+<title>10-&gt;8</title>
+<g id="a_edge10"><a>
+<path fill="none" d="M1797.16,-215.52C1774.83,-206.21 1747.15,-194.68 1723.43,-184.79" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="1724.82,-181.58 1714.24,-180.96 1722.12,-188.04 1724.82,-181.58" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node12" class="node">
+<title>6</title>
+<g id="a_node12"><a>
+<polygon points="949,-252 587.25,-252 587.25,-216 949,-216 949,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="768.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_current_handbrake_t</text>
+<title>hi_can::parameters::drive::vesc::set_current_handbrake_t</title></a>
+</g>
+</g>
+
+<g id="edge11" class="edge">
+<title>6-&gt;4</title>
+<g id="a_edge11"><a>
+<path fill="none" d="M854.04,-215.52C903.08,-205.54 964.7,-193 1015.43,-182.68" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="1015.82,-186.17 1024.93,-180.74 1014.43,-179.31 1015.82,-186.17" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node13" class="node">
+<title>11</title>
+<g id="a_node13"><a>
+<polygon points="2362.62,-252 2049.62,-252 2049.62,-216 2362.62,-216 2362.62,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2206.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_current_rel_t</text>
+<title>hi_can::parameters::drive::vesc::set_current_rel_t</title></a>
+</g>
+</g>
+
+<g id="edge12" class="edge">
+<title>11-&gt;8</title>
+<g id="a_edge12"><a>
+<path fill="none" d="M2072.5,-215.52C1994.32,-205.29 1895.57,-192.37 1815.59,-181.9" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="1816.3,-178.47 1805.94,-180.64 1815.4,-185.41 1816.3,-178.47" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node14" class="node">
+<title>7</title>
+<g id="a_node14"><a>
+<polygon points="1257.38,-252 966.88,-252 966.88,-216 1257.38,-216 1257.38,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="1112.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_current_t</text>
+<title>hi_can::parameters::drive::vesc::set_current_t</title></a>
+</g>
+</g>
+
+<g id="edge13" class="edge">
+<title>7-&gt;4</title>
+<g id="a_edge13"><a>
+<path fill="none" d="M1112.12,-215.7C1112.12,-208.41 1112.12,-199.73 1112.12,-191.54" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="1115.63,-191.62 1112.13,-181.62 1108.63,-191.62 1115.63,-191.62" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node15" class="node">
+<title>12</title>
+<g id="a_node15"><a>
+<polygon points="2652,-252 2380.25,-252 2380.25,-216 2652,-216 2652,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2516.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_duty_t</text>
+<title>hi_can::parameters::drive::vesc::set_duty_t</title></a>
+</g>
+</g>
+
+<g id="edge14" class="edge">
+<title>12-&gt;8</title>
+<g id="a_edge14"><a>
+<path fill="none" d="M2379.92,-216.85C2376.96,-216.56 2374.03,-216.27 2371.12,-216 2152.56,-195.35 2094.59,-197.42 1873.13,-180.23" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="1873.52,-176.75 1863.28,-179.46 1872.97,-183.73 1873.52,-176.75" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node16" class="node">
+<title>14</title>
+<g id="a_node16"><a>
+<polygon points="2936.38,-252 2669.88,-252 2669.88,-216 2936.38,-216 2936.38,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2803.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_pos_t</text>
+<title>hi_can::parameters::drive::vesc::set_pos_t</title></a>
+</g>
+</g>
+
+<g id="edge15" class="edge">
+<title>14-&gt;13</title>
+<g id="a_edge15"><a>
+<path fill="none" d="M2669.73,-216.92C2666.84,-216.6 2663.96,-216.3 2661.12,-216 2589.23,-208.46 2418.05,-193.14 2278.82,-180.9" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2279.36,-177.43 2269.09,-180.04 2278.74,-184.41 2279.36,-177.43" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node17" class="node">
+<title>16</title>
+<g id="a_node17"><a>
+<polygon points="270.25,-252 0,-252 0,-216 270.25,-216 270.25,-252" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="135.12" y="-229.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::set_rpm_t</text>
+<title>hi_can::parameters::drive::vesc::set_rpm_t</title></a>
+</g>
+</g>
+
+<g id="edge16" class="edge">
+<title>16-&gt;15</title>
+<g id="a_edge16"><a>
+<path fill="none" d="M270.58,-217.11C273.79,-216.74 276.98,-216.37 280.12,-216 378.33,-204.59 488.34,-191.91 576.15,-181.81" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="576.53,-185.29 586.06,-180.67 575.73,-178.34 576.53,-185.29" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node18" class="node">
+<title>18</title>
+<g id="a_node18"><a>
+<polygon points="2557,-180 2285.25,-180 2285.25,-144 2557,-144 2557,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2421.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::status_1_t</text>
+<title>hi_can::parameters::drive::vesc::status_1_t</title></a>
+</g>
+</g>
+
+<g id="edge17" class="edge">
+<title>18-&gt;1</title>
+<g id="a_edge17"><a>
+<path fill="none" d="M2529.77,-143.52C2592.69,-133.39 2671.99,-120.63 2736.66,-110.22" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2736.92,-113.73 2746.24,-108.68 2735.81,-106.82 2736.92,-113.73" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node19" class="node">
+<title>19</title>
+<g id="a_node19"><a>
+<polygon points="2847,-180 2575.25,-180 2575.25,-144 2847,-144 2847,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="2711.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::status_2_t</text>
+<title>hi_can::parameters::drive::vesc::status_2_t</title></a>
+</g>
+</g>
+
+<g id="edge18" class="edge">
+<title>19-&gt;1</title>
+<g id="a_edge18"><a>
+<path fill="none" d="M2747.34,-143.52C2766.27,-134.38 2789.65,-123.09 2809.87,-113.33" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2811.27,-116.54 2818.76,-109.04 2808.23,-110.24 2811.27,-116.54" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node20" class="node">
+<title>20</title>
+<g id="a_node20"><a>
+<polygon points="3137,-180 2865.25,-180 2865.25,-144 3137,-144 3137,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="3001.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::status_3_t</text>
+<title>hi_can::parameters::drive::vesc::status_3_t</title></a>
+</g>
+</g>
+
+<g id="edge19" class="edge">
+<title>20-&gt;1</title>
+<g id="a_edge19"><a>
+<path fill="none" d="M2964.91,-143.52C2945.98,-134.38 2922.6,-123.09 2902.38,-113.33" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2904.02,-110.24 2893.49,-109.04 2900.98,-116.54 2904.02,-110.24" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node21" class="node">
+<title>21</title>
+<g id="a_node21"><a>
+<polygon points="3427,-180 3155.25,-180 3155.25,-144 3427,-144 3427,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="3291.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::status_4_t</text>
+<title>hi_can::parameters::drive::vesc::status_4_t</title></a>
+</g>
+</g>
+
+<g id="edge20" class="edge">
+<title>21-&gt;1</title>
+<g id="a_edge20"><a>
+<path fill="none" d="M3182.48,-143.52C3119.56,-133.39 3040.26,-120.63 2975.59,-110.22" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="2976.44,-106.82 2966.01,-108.68 2975.33,-113.73 2976.44,-106.82" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node22" class="node">
+<title>22</title>
+<g id="a_node22"><a>
+<polygon points="3717,-180 3445.25,-180 3445.25,-144 3717,-144 3717,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="3581.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::status_5_t</text>
+<title>hi_can::parameters::drive::vesc::status_5_t</title></a>
+</g>
+</g>
+
+<g id="edge21" class="edge">
+<title>22-&gt;1</title>
+<g id="a_edge21"><a>
+<path fill="none" d="M3444.91,-144.93C3441.96,-144.61 3439.02,-144.3 3436.12,-144 3292.67,-129.04 3129,-114.29 3012.18,-104.17" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="3012.8,-100.71 3002.54,-103.34 3012.2,-107.69 3012.8,-100.71" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node23" class="node">
+<title>23</title>
+<g id="a_node23"><a>
+<polygon points="4007,-180 3735.25,-180 3735.25,-144 4007,-144 4007,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="3871.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::drive::vesc::status_6_t</text>
+<title>hi_can::parameters::drive::vesc::status_6_t</title></a>
+</g>
+</g>
+
+<g id="edge22" class="edge">
+<title>23-&gt;1</title>
+<g id="a_edge22"><a>
+<path fill="none" d="M3734.92,-144.81C3731.96,-144.53 3729.03,-144.26 3726.12,-144 3476.87,-121.81 3186.61,-106.18 3012.32,-97.88" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="3012.68,-94.4 3002.52,-97.42 3012.35,-101.39 3012.68,-94.4" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node24" class="node">
+<title>24</title>
+<g id="a_node24"><a>
+<polygon points="4343.25,-180 4025,-180 4025,-144 4343.25,-144 4343.25,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="4184.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::legacy::drive::motors::limits_t</text>
+<title>hi_can::parameters::legacy::drive::motors::limits_t</title></a>
+</g>
+</g>
+
+<g id="edge23" class="edge">
+<title>24-&gt;1</title>
+<g id="a_edge23"><a>
+<path fill="none" d="M4024.53,-144.64C4021.71,-144.42 4018.9,-144.2 4016.12,-144 3657.44,-117.68 3235.34,-102.3 3012.4,-95.4" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="3012.57,-91.91 3002.46,-95.1 3012.35,-98.9 3012.57,-91.91" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node25" class="node">
+<title>25</title>
+<g id="a_node25"><a>
+<polygon points="4681,-180 4361.25,-180 4361.25,-144 4681,-144 4681,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="4521.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::legacy::drive::motors::speed_t</text>
+<title>hi_can::parameters::legacy::drive::motors::speed_t</title></a>
+</g>
+</g>
+
+<g id="edge24" class="edge">
+<title>25-&gt;1</title>
+<g id="a_edge24"><a>
+<path fill="none" d="M4361.03,-144.63C4358.04,-144.41 4355.07,-144.2 4352.12,-144 3863.82,-110.83 3284.35,-97.78 3012.11,-93.2" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="3012.53,-89.7 3002.48,-93.04 3012.42,-96.7 3012.53,-89.7" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node26" class="node">
+<title>26</title>
+<g id="a_node26"><a>
+<polygon points="5020.75,-180 4699.5,-180 4699.5,-144 5020.75,-144 5020.75,-180" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="4860.12" y="-157.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::legacy::drive::motors::status_t</text>
+<title>hi_can::parameters::legacy::drive::motors::status_t</title></a>
+</g>
+</g>
+
+<g id="edge25" class="edge">
+<title>26-&gt;1</title>
+<g id="a_edge25"><a>
+<path fill="none" d="M4699.08,-144.6C4696.07,-144.39 4693.08,-144.19 4690.12,-144 4069.48,-104.05 3328.73,-94.21 3012.1,-91.79" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="3012.56,-88.29 3002.53,-91.72 3012.51,-95.29 3012.56,-88.29" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+</g>
+</svg></div>
+</figure>
+<p>Collaboration diagram for hi_can::parameters::BidirectionalSerializable:</p>
+<figure class="align-default">
+<div align="center" class="align-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0.00 0.00 462.12 116.00" class="graphviz" style="width: 28.875rem;height: 7.25rem;">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+
+<g id="node1" class="node">
+<title>1</title>
+<g id="a_node1"><a>
+<polygon fill="#bfbfbf" points="375.12,-108 86.12,-108 86.12,-72 375.12,-72 375.12,-108" style="stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="230.62" y="-85.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::BidirectionalSerializable</text>
+<title>hi_can::parameters::BidirectionalSerializable</title></a>
+</g>
+</g>
+
+<g id="node2" class="node">
+<title>3</title>
+<g id="a_node2"><a>
+<polygon points="225.25,-36 0,-36 0,0 225.25,0 225.25,-36" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="112.62" y="-13.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::Deserializable</text>
+<title>hi_can::parameters::Deserializable</title></a>
+</g>
+</g>
+
+<g id="edge2" class="edge">
+<title>1-&gt;3</title>
+<g id="a_edge2"><a>
+<path fill="none" d="M201.15,-71.52C186.12,-62.6 167.63,-51.63 151.45,-42.03" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="153.41,-39.12 143.02,-37.03 149.84,-45.15 153.41,-39.12" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+
+<g id="node3" class="node">
+<title>2</title>
+<g id="a_node3"><a>
+<polygon points="454.12,-36 243.12,-36 243.12,0 454.12,0 454.12,-36" style="fill: var(--md-graphviz-node-bg-color);stroke: var(--md-graphviz-node-fg-color);" />
+<text text-anchor="middle" x="348.62" y="-13.72" font-size="12.00" style="fill: var(--md-code-fg-color);font-family: var(--md-text-font-family);--md-graphviz-hover-color: var(--md-graphviz-a-hover-color);">hi_can::parameters::Serializable</text>
+<title>hi_can::parameters::Serializable</title></a>
+</g>
+</g>
+
+<g id="edge1" class="edge">
+<title>1-&gt;2</title>
+<g id="a_edge1"><a>
+<path fill="none" d="M260.1,-71.52C275.13,-62.6 293.62,-51.63 309.8,-42.03" style="stroke: var(--md-graphviz-edge-color);" />
+<polygon points="311.41,-45.15 318.23,-37.03 307.84,-39.12 311.41,-45.15" style="fill: var(--md-graphviz-edge-color);stroke: var(--md-graphviz-edge-color);" />
+<title>public-inheritance</title></a>
+</g>
+</g>
+</g>
+</svg></div>
+</figure>
+<p>Subclassed by <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t"><span class="std std-ref">hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1000.0 &gt;</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t"><span class="std std-ref">hi_can::parameters::drive::vesc::scaled_int32_t&lt; 100000.0 &gt;</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t"><span class="std std-ref">hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1000000.0 &gt;</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t"><span class="std std-ref">hi_can::parameters::drive::vesc::scaled_int32_t&lt; 1.0 &gt;</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t"><span class="std std-ref">hi_can::parameters::drive::vesc::scaled_int32_t&lt; scalingFactor &gt;</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__1__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__1__t"><span class="std std-ref">hi_can::parameters::drive::vesc::status_1_t</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__2__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__2__t"><span class="std std-ref">hi_can::parameters::drive::vesc::status_2_t</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__3__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__3__t"><span class="std std-ref">hi_can::parameters::drive::vesc::status_3_t</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__4__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__4__t"><span class="std std-ref">hi_can::parameters::drive::vesc::status_4_t</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__5__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__5__t"><span class="std std-ref">hi_can::parameters::drive::vesc::status_5_t</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__6__t.html#structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__6__t"><span class="std std-ref">hi_can::parameters::drive::vesc::status_6_t</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1limits__t.html#structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1limits__t"><span class="std std-ref">hi_can::parameters::legacy::drive::motors::limits_t</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1speed__t.html#structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1speed__t"><span class="std std-ref">hi_can::parameters::legacy::drive::motors::speed_t</span></a>, <a class="reference internal" href="structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1status__t.html#structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1status__t"><span class="std std-ref">hi_can::parameters::legacy::drive::motors::status_t</span></a></p>
+</dd></dl>
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="classhi__can_1_1PacketManager.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Class PacketManager" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Class PacketManager
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="classhi__can_1_1parameters_1_1Deserializable.html" class="md-footer__link md-footer__link--next" aria-label="Next: Class Deserializable" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Class Deserializable
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2024, ROAR Team.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    8.1.3.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "search.highlight", "search.share", "toc.follow", "toc.sticky"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+      
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+        <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+        <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+        <script defer="defer" src="../_static/tippy/generated/classhi__can_1_1parameters_1_1BidirectionalSerializable.5a499f4b-4592-422b-9b47-e7b580c85f94.js"></script>
+        <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
+    
+  </body>
+</html>

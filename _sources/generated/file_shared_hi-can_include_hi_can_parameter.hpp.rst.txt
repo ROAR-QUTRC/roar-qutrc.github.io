@@ -20,9 +20,35 @@ Includes
 --------
 
 
+- ``chrono``
+
+- ``cmath``
+
 - ``cstdint``
 
+- ``hi_can.hpp`` (:ref:`file_shared_hi-can_include_hi_can.hpp`)
 
+- ``hi_can_address.hpp`` (:ref:`file_shared_hi-can_include_hi_can_address.hpp`)
+
+- ``netinet/in.h``
+
+- ``optional``
+
+- ``tuple``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_shared_hi-can_include_hi_can.hpp`
+
+- :ref:`file_shared_hi-can_src_hi_can_packet.cpp`
+
+- :ref:`file_shared_hi-can_src_hi_can_parameter.cpp`
 
 
 
@@ -33,28 +59,97 @@ Namespaces
 
 - :ref:`namespace_hi_can`
 
-- :ref:`namespace_hi_can__parameter`
+- :ref:`namespace_hi_can__parameters`
 
-- :ref:`namespace_hi_can__parameter__drive`
+- :ref:`namespace_hi_can__parameters__drive`
 
-- :ref:`namespace_hi_can__parameter__drive__vesc`
+- :ref:`namespace_hi_can__parameters__drive__vesc`
 
-- :ref:`namespace_hi_can__parameter__excavation`
+- :ref:`namespace_hi_can__parameters__excavation`
 
-- :ref:`namespace_hi_can__parameter__power`
+- :ref:`namespace_hi_can__parameters__legacy`
 
-- :ref:`namespace_hi_can__parameter__power__bms`
+- :ref:`namespace_hi_can__parameters__legacy__drive`
 
-- :ref:`namespace_hi_can__parameter__power__distribution`
+- :ref:`namespace_hi_can__parameters__legacy__drive__motors`
+
+- :ref:`namespace_hi_can__parameters__legacy__power`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control__contactor`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control__power_bus`
+
+- :ref:`namespace_hi_can__parameters__power`
+
+- :ref:`namespace_hi_can__parameters__power__bms`
+
+- :ref:`namespace_hi_can__parameters__power__distribution`
 
 
 Classes
 -------
 
 
-- :ref:`exhale_struct_structhi__can_1_1parameter_1_1drive_1_1vesc_1_1type__1__status`
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t`
 
-- :ref:`exhale_struct_structhi__can_1_1parameter_1_1power_1_1bms_1_1pack__status`
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__brake__t`
 
-- :ref:`exhale_struct_structhi__can_1_1parameter_1_1power_1_1distribution_1_1bus__status__t`
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__brake__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__handbrake__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__handbrake__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__duty__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__pos__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__rpm__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__1__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__2__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__3__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__4__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__5__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__6__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1limits__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1speed__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1status__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1power_1_1bms_1_1pack__status`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1power_1_1distribution_1_1bus__status__t`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1BidirectionalSerializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1Deserializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1drive_1_1vesc_1_1VescParameterGroup`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1EscParameterGroup`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1ParameterGroup`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1Serializable`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_hi__can__parameter_8hpp_1a93ae02b9024768272d9dfaabda0b84ad`
 

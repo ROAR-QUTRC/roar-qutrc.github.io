@@ -18,5 +18,6 @@ Files
 
 - :ref:`file_shared_hi-can_src_hi_can.cpp`
 - :ref:`file_shared_hi-can_src_hi_can_packet.cpp`
+- :ref:`file_shared_hi-can_src_hi_can_parameter.cpp`
 
 

@@ -1,0 +1,57 @@
+
+.. _namespace_hi_can__parameters__drive__vesc:
+
+Namespace hi_can::parameters::drive::vesc
+=========================================
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__1__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__2__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__3__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__4__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__5__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__6__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__brake__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__brake__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__handbrake__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__handbrake__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__duty__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__pos__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__rpm__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__1__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__2__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__3__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__4__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__5__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__6__t`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1drive_1_1vesc_1_1VescParameterGroup`

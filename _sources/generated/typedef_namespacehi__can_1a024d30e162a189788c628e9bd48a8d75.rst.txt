@@ -3,7 +3,7 @@
 Typedef hi_can::packet_callback_t
 =================================
 
-- Defined in :ref:`file_shared_hi-can_include_hi_can.hpp`
+- Defined in :ref:`file_shared_hi-can_include_hi_can_packet.hpp`
 
 
 Typedef Documentation

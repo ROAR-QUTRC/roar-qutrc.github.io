@@ -16,12 +16,12 @@ Directories
 .. toctree::
    :maxdepth: 5
 
-   dir_native_net-can-server.rst
+   dir_native_hi-can-common.rst
 
 .. toctree::
    :maxdepth: 5
 
-   dir_native_net-can-server_src.rst
+   dir_native_hi-can-common_src.rst
 
 .. toctree::
    :maxdepth: 5
@@ -185,6 +185,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_shared_hi-can_src_hi_can_parameter.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_shared_hi-can_include_hi_can_parameter.hpp.rst
 
 .. toctree::
@@ -200,7 +205,7 @@ Files
 .. toctree::
    :maxdepth: 5
 
-   file_native_net-can-server_src_main.cpp.rst
+   file_native_hi-can-common_src_main.cpp.rst
 
 .. toctree::
    :maxdepth: 5

@@ -1,0 +1,6 @@
+
+.. _namespace_hi_can__parameters__legacy__power__control__contactor:
+
+Namespace hi_can::parameters::legacy::power::control::contactor
+===============================================================
+

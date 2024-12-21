@@ -1,0 +1,28 @@
+.. _exhale_class_classhi__can_1_1parameters_1_1ParameterGroup:
+
+Class ParameterGroup
+====================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_parameter.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public hi_can::parameters::drive::vesc::VescParameterGroup`` (:ref:`exhale_class_classhi__can_1_1parameters_1_1drive_1_1vesc_1_1VescParameterGroup`)
+- ``public hi_can::parameters::legacy::drive::motors::EscParameterGroup`` (:ref:`exhale_class_classhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1EscParameterGroup`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: hi_can::parameters::ParameterGroup
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

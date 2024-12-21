@@ -1,0 +1,14 @@
+.. _exhale_define_hi__can__packet_8cpp_1adf94d853dce7b9ca2ca8ea918e278863:
+
+Define MISSED_PACKET_TIMEOUT_COUNT
+==================================
+
+- Defined in :ref:`file_shared_hi-can_src_hi_can_packet.cpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MISSED_PACKET_TIMEOUT_COUNT
+   :project: rover

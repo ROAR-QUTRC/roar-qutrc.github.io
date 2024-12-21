@@ -3,7 +3,7 @@
 Class PacketManager
 ===================
 
-- Defined in :ref:`file_shared_hi-can_include_hi_can.hpp`
+- Defined in :ref:`file_shared_hi-can_include_hi_can_packet.hpp`
 
 
 Nested Relationships
@@ -15,8 +15,8 @@ Nested Types
 
 - :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1callback__config__t`
 - :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1callback__data__t`
-- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmit__config__t`
-- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmit__data__t`
+- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmission__config__t`
+- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmission__data__t`
 
 
 Class Documentation

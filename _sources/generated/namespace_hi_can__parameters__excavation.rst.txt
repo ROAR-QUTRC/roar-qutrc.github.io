@@ -1,0 +1,6 @@
+
+.. _namespace_hi_can__parameters__excavation:
+
+Namespace hi_can::parameters::excavation
+========================================
+

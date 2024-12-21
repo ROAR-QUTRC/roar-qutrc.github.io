@@ -1,0 +1,14 @@
+.. _exhale_variable_hi__can__address_8hpp_1a5f2e6e7e8f83289f14c77c93568185e7:
+
+Variable hi_can::addressing::legacy::power::SYSTEM_ID
+=====================================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::legacy::power::SYSTEM_ID
+   :project: rover

@@ -1,0 +1,81 @@
+
+.. _file_shared_hi-can_src_hi_can_parameter.cpp:
+
+File hi_can_parameter.cpp
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_hi-can_src>` (``shared/hi-can/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/hi-can/src/hi_can_parameter.cpp``)
+-------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``hi_can_parameter.hpp`` (:ref:`file_shared_hi-can_include_hi_can_parameter.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can`
+
+- :ref:`namespace_hi_can__parameters`
+
+- :ref:`namespace_hi_can__parameters__drive`
+
+- :ref:`namespace_hi_can__parameters__drive__vesc`
+
+- :ref:`namespace_hi_can__parameters__legacy`
+
+- :ref:`namespace_hi_can__parameters__legacy__drive`
+
+- :ref:`namespace_hi_can__parameters__legacy__drive__motors`
+
+- :ref:`namespace_std__chrono_literals`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__1__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__2__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__3__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__4__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__5__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__6__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__limits__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__speed__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__status__t`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_hi__can__parameter_8cpp_1abceb973815d8c0a602a7eda514d618d4`
+
+- :ref:`exhale_define_hi__can__parameter_8cpp_1ab1d21892a8363550ad40a410f1ec6b29`
+

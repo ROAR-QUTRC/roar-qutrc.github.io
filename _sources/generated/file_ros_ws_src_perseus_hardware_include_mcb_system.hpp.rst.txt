@@ -28,6 +28,10 @@ Includes
 
 - ``hardware_interface/types/hardware_interface_return_values.hpp``
 
+- ``hi_can_raw.hpp`` (:ref:`file_shared_hi-can-raw_include_hi_can_raw.hpp`)
+
+- ``optional``
+
 - ``rclcpp/clock.hpp``
 
 - ``rclcpp/duration.hpp``
