@@ -1,0 +1,21 @@
+.. _dir_ros_ws_src_perseus_sensors_src_m2m2_lidar:
+
+
+Directory m2m2_lidar
+====================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_sensors_src>` (``ros_ws/src/perseus_sensors/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``ros_ws/src/perseus_sensors/src/m2m2_lidar``
+
+
+Files
+-----
+
+- :ref:`file_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp`
+
+

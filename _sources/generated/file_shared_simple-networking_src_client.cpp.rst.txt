@@ -1,0 +1,54 @@
+
+.. _file_shared_simple-networking_src_client.cpp:
+
+File client.cpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_simple-networking_src>` (``shared/simple-networking/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/simple-networking/src/client.cpp``)
+--------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``arpa/inet.h``
+
+- ``cassert``
+
+- ``cstring``
+
+- ``format``
+
+- ``iostream``
+
+- ``net/if.h``
+
+- ``netdb.h``
+
+- ``netinet/in.h``
+
+- ``simple_networking/client.hpp`` (:ref:`file_shared_simple-networking_include_simple_networking_client.hpp`)
+
+- ``stdexcept``
+
+- ``sys/socket.h``
+
+- ``sys/types.h``
+
+- ``unistd.h``
+
+
+
+
+

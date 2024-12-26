@@ -14,6 +14,8 @@ Subdirectories
 - :ref:`dir_shared_hi-can`
 - :ref:`dir_shared_hi-can-net`
 - :ref:`dir_shared_hi-can-raw`
+- :ref:`dir_shared_ptr-wrapper`
+- :ref:`dir_shared_simple-networking`
 
 
 

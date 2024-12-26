@@ -1,0 +1,68 @@
+
+.. _file_shared_simple-networking_include_simple_networking_client.hpp:
+
+File client.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_simple-networking_include_simple_networking>` (``shared/simple-networking/include/simple_networking``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/simple-networking/include/simple_networking/client.hpp``)
+------------------------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``core.hpp`` (:ref:`file_shared_simple-networking_include_simple_networking_core.hpp`)
+
+- ``cstdint``
+
+- ``fd_wrapper.hpp`` (:ref:`file_shared_fd-wrapper_include_fd_wrapper.hpp`)
+
+- ``functional``
+
+- ``netdb.h``
+
+- ``optional``
+
+- ``ptr_wrapper.hpp`` (:ref:`file_shared_ptr-wrapper_include_ptr_wrapper.hpp`)
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_shared_simple-networking_include_simple_networking.hpp`
+
+- :ref:`file_shared_simple-networking_src_client.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_networking`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structnetworking_1_1socket__config__handlers__t`
+
+- :ref:`exhale_class_classnetworking_1_1Client`
+

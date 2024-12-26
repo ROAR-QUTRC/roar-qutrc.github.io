@@ -45,8 +45,6 @@ Namespaces
 
 - :ref:`namespace_hi_can__parameters__legacy__drive__motors`
 
-- :ref:`namespace_std__chrono_literals`
-
 
 Classes
 -------

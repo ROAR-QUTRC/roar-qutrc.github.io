@@ -1,0 +1,26 @@
+.. _dir_shared_simple-networking_include:
+
+
+Directory include
+=================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_simple-networking>` (``shared/simple-networking``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``shared/simple-networking/include``
+
+Subdirectories
+--------------
+
+- :ref:`dir_shared_simple-networking_include_simple_networking`
+
+
+Files
+-----
+
+- :ref:`file_shared_simple-networking_include_simple_networking.hpp`
+
+

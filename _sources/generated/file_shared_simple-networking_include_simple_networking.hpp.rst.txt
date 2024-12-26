@@ -1,0 +1,28 @@
+
+.. _file_shared_simple-networking_include_simple_networking.hpp:
+
+File simple_networking.hpp
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_simple-networking_include>` (``shared/simple-networking/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/simple-networking/include/simple_networking.hpp``)
+-----------------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``simple_networking/client.hpp`` (:ref:`file_shared_simple-networking_include_simple_networking_client.hpp`)
+
+
+
+
+

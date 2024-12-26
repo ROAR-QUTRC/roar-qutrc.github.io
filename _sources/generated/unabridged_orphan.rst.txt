@@ -66,6 +66,31 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_perseus_sensors.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_sensors_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_sensors_include_m2m2_lidar.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_sensors_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_sensors_src_m2m2_lidar.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_shared.rst
 
 .. toctree::
@@ -128,9 +153,59 @@ Directories
 
    dir_shared_hi-can_src.rst
 
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_ptr-wrapper.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_ptr-wrapper_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_ptr-wrapper_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_simple-networking.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_simple-networking_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_simple-networking_include_simple_networking.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_simple-networking_src.rst
+
 Files
 *****
 
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_simple-networking_src_client.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_simple-networking_include_simple_networking_client.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_simple-networking_include_simple_networking_core.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -205,6 +280,16 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_sensors_include_m2m2_lidar_m2m2_lidar.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_native_hi-can-common_src_main.cpp.rst
 
 .. toctree::
@@ -216,6 +301,21 @@ Files
    :maxdepth: 5
 
    file_ros_ws_src_perseus_hardware_include_mcb_system.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_ptr-wrapper_src_ptr_wrapper.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_ptr-wrapper_include_ptr_wrapper.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_simple-networking_include_simple_networking.hpp.rst
 
 .. toctree::
    :maxdepth: 5

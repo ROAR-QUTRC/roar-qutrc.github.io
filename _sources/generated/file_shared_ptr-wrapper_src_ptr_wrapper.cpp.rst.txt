@@ -1,0 +1,28 @@
+
+.. _file_shared_ptr-wrapper_src_ptr_wrapper.cpp:
+
+File ptr_wrapper.cpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_ptr-wrapper_src>` (``shared/ptr-wrapper/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/ptr-wrapper/src/ptr_wrapper.cpp``)
+-------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``ptr_wrapper.hpp`` (:ref:`file_shared_ptr-wrapper_include_ptr_wrapper.hpp`)
+
+
+
+
+
