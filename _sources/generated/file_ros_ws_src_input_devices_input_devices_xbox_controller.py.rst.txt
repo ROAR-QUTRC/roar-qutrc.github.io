@@ -34,5 +34,5 @@ Classes
 -------
 
 
-- :ref:`exhale_class_classinput__devices_1_1xbox__controller_1_1XboxControllerNode`
+- :ref:`exhale_class_classinput__devices_1_1xbox__controller_1_1XboxController`
 
