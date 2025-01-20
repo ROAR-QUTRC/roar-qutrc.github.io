@@ -20,6 +20,8 @@ Includes
 --------
 
 
+- ``cassert``
+
 - ``chrono``
 
 - ``cmath``
@@ -35,6 +37,10 @@ Includes
 - ``sensor_msgs/msg/imu.hpp``
 
 - ``sensor_msgs/msg/laser_scan.hpp``
+
+- ``simple_networking/client.hpp`` (:ref:`file_shared_simple-networking_include_simple_networking_client.hpp`)
+
+- ``stdexcept``
 
 - ``string``
 

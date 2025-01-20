@@ -44,6 +44,10 @@ Included By
 -----------
 
 
+- :ref:`file_ros_ws_src_perseus_sensors_include_m2m2_lidar_m2m2_lidar.hpp`
+
+- :ref:`file_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp`
+
 - :ref:`file_shared_simple-networking_include_simple_networking.hpp`
 
 - :ref:`file_shared_simple-networking_src_client.cpp`

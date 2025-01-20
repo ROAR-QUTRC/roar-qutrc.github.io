@@ -91,7 +91,7 @@ Includes
 
 - ``bit``
 
-- ``m2m2_lidar.hpp`` (:ref:`file_ros_ws_src_perseus_sensors_include_m2m2_lidar_m2m2_lidar.hpp`)
+- ``m2m2_lidar/m2m2_lidar.hpp`` (:ref:`file_ros_ws_src_perseus_sensors_include_m2m2_lidar_m2m2_lidar.hpp`)
 
 - ``netdb.h``
 
@@ -104,6 +104,8 @@ Includes
 - ``rclcpp/rclcpp.hpp``
 
 - ``sensor_msgs/msg/laser_scan.hpp``
+
+- ``simple_networking/client.hpp`` (:ref:`file_shared_simple-networking_include_simple_networking_client.hpp`)
 
 - ``sys/socket.h``
 

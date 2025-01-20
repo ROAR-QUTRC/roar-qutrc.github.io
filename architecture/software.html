@@ -561,6 +561,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#simple-networking" class="md-nav__link">
+    <span class="md-ellipsis">Simple-<wbr>networking</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4283,6 +4290,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#simple-networking" class="md-nav__link">
+    <span class="md-ellipsis">Simple-<wbr>networking</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4549,6 +4563,10 @@ The C++ code is all built using <a class="reference external" href="https://cmak
 <p>This is the digital heart of the rover, and contains pretty much everything which runs its day-to-day operations.
 By convention for ROS2 projects, all the actual code in this directory is located under the <code class="docutils literal notranslate"><span class="pre">src/</span></code> subdirectory - everything else in <code class="docutils literal notranslate"><span class="pre">ros_ws/</span></code> is build infrastructure.
 The most important packages are are detailed below - if you want more information, there should be <code class="docutils literal notranslate"><span class="pre">README</span></code> files in each package’s source directory.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>When creating a new ROS2 package you must stage the ROS2 package in git (locally) before attempting to build with nix. Failure to add to git will result in nix not being able to see the new ROS2 package and your nix build will fail.</p>
+</div>
 <h4 id="perseus"><code class="docutils literal notranslate"><span class="pre">perseus</span></code><a class="headerlink" href="#perseus" title="Link to this heading">¶</a></h4>
 <p>This is a “meta-package” which depends on the other packages and contains ROS2 launch files for the main tasks needed to bring up the rover.</p>
 <h4 id="perseus-hardware"><code class="docutils literal notranslate"><span class="pre">perseus_hardware</span></code><a class="headerlink" href="#perseus-hardware" title="Link to this heading">¶</a></h4>
@@ -4571,6 +4589,10 @@ The solution is to clean the workspace (<code class="docutils literal notranslat
 To ensure that this doesn’t happen at all, run a clean after every git pull or after changing any code outside of <code class="docutils literal notranslate"><span class="pre">software/ros_ws/src</span></code>.</p>
 </div>
 <h3 id="shared-libraries">Shared Libraries<a class="headerlink" href="#shared-libraries" title="Link to this heading">¶</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>Shared libraries can be made available to your ROS2 package and nodes by including them as a dependency in your package’s package.xml and then running the script ‘<a class="reference external" href="http://nix-package.sh">nix-package.sh</a>’</p>
+</div>
 <h4 id="hi-can">Hi-CAN<a class="headerlink" href="#hi-can" title="Link to this heading">¶</a></h4>
 <p>Abbreviated from “hierarchical CAN”, Hi-CAN is the library implementing the standards laid out <a class="reference internal" href="can-bus.html"><span class="std std-doc">here</span></a>, and is shared across ROS and native code, as well as firmware.
 The main library contains the code defining the main interfaces with which code will interact with the library, as well as all of the devices on the bus and their parameters.</p>
@@ -4581,6 +4603,14 @@ The main library contains the code defining the main interfaces with which code 
 <p>However, this on its own is not particularly useful - which is where implementations come in.
 The <code class="docutils literal notranslate"><span class="pre">hi-can-raw</span></code> library implements <a class="desctype reference internal" href="../generated/classhi__can_1_1FilteredCanInterface.html#_CPPv4N6hi_can20FilteredCanInterfaceE" title="hi_can::FilteredCanInterface (C++ class) — Inheritence diagram for hi_can::FilteredCanInterface:"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">hi_can::FilteredCanInterface</span></code></a> using the Linux SocketCAN <a class="reference external" href="https://docs.kernel.org/networking/can.html#raw-protocol-sockets-with-can-filters-sock-raw"><code class="docutils literal notranslate"><span class="pre">RAW_CAN</span></code></a> interface, and is what most code uses to interface with the CAN bus.
 The <code class="docutils literal notranslate"><span class="pre">hi-can-net</span></code> library is currently unused, but may become an implementation of <a class="desctype reference internal" href="../generated/classhi__can_1_1CanInterface.html#_CPPv4N6hi_can12CanInterfaceE" title="hi_can::CanInterface (C++ class) — Inheritence diagram for hi_can::CanInterface:"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">hi_can::CanInterface</span></code></a> which forwards all traffic over a network connection.</p>
+<h4 id="simple-networking">Simple-networking<a class="headerlink" href="#simple-networking" title="Link to this heading">¶</a></h4>
+<p>The simple-networking library provides a modern C++ implementation for handling network socket communications, with a primary focus on client-side operations.</p>
+<p>It offers an object-oriented wrapper around traditional POSIX socket operations, supporting both TCP and UDP protocols. The library implements RAII principles through its Client class, which manages socket creation, configuration, connection and cleanup while providing exception-based error handling for robust failure management.</p>
+<p>The library distinguishes itself through flexible socket configuration using handler callbacks, support for custom bind addresses and a clean abstraction over low-level socket operations. It provides convenient methods for transmitting and receiving both string and binary data, with support for both blocking and non-blocking operations. Error handling is comprehensive, with descriptive error messages that include both the operation context and underlying system error details.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>This library is not used for ROS2 communications, it exists for scenarios such as a creating a ROS2 driver node which needs to interface with a specific sensor via ethernet.</p>
+</div>
 <h2 id="web-ui">Web UI<a class="headerlink" href="#web-ui" title="Link to this heading">¶</a></h2>
 <p>The other project is the rover’s web control UI - since it’s a completely different tech stack, it ends up being almost entirely independent of the rover core software.</p>
 <h3 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Link to this heading">¶</a></h3>
@@ -4755,7 +4785,7 @@ Contact James N if you need one.</p>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/architecture/software.87f379f9-c54d-45c5-87a2-16ae88870d1f.js"></script>
+        <script defer="defer" src="../_static/tippy/architecture/software.8bb8970b-feb8-4a20-aa99-1f5a7e880b45.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
