@@ -579,24 +579,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#web-ui" class="md-nav__link">
-    <span class="md-ellipsis">Web UI</span>
+  <a href="#perseus-ui" class="md-nav__link">
+    <span class="md-ellipsis">Perseus-<wbr>UI</span>
   </a>
   
-    <nav class="md-nav" aria-label="Web UI">
+    <nav class="md-nav" aria-label="Perseus-UI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#frontend" class="md-nav__link">
-    <span class="md-ellipsis">Frontend</span>
+  <a href="#running-perseus-ui" class="md-nav__link">
+    <span class="md-ellipsis">Running Perseus-<wbr>UI</span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#backend" class="md-nav__link">
-    <span class="md-ellipsis">Backend</span>
+  <a href="#developing-for-the-ui" class="md-nav__link">
+    <span class="md-ellipsis">Developing for the UI</span>
   </a>
+  
+    <nav class="md-nav" aria-label="Developing for the UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client" class="md-nav__link">
+    <span class="md-ellipsis">Client</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    <span class="md-ellipsis">Server</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#widgets" class="md-nav__link">
+    <span class="md-ellipsis">Widgets</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -4308,24 +4335,51 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#web-ui" class="md-nav__link">
-    <span class="md-ellipsis">Web UI</span>
+  <a href="#perseus-ui" class="md-nav__link">
+    <span class="md-ellipsis">Perseus-<wbr>UI</span>
   </a>
   
-    <nav class="md-nav" aria-label="Web UI">
+    <nav class="md-nav" aria-label="Perseus-UI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#frontend" class="md-nav__link">
-    <span class="md-ellipsis">Frontend</span>
+  <a href="#running-perseus-ui" class="md-nav__link">
+    <span class="md-ellipsis">Running Perseus-<wbr>UI</span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#backend" class="md-nav__link">
-    <span class="md-ellipsis">Backend</span>
+  <a href="#developing-for-the-ui" class="md-nav__link">
+    <span class="md-ellipsis">Developing for the UI</span>
   </a>
+  
+    <nav class="md-nav" aria-label="Developing for the UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client" class="md-nav__link">
+    <span class="md-ellipsis">Client</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    <span class="md-ellipsis">Server</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#widgets" class="md-nav__link">
+    <span class="md-ellipsis">Widgets</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -4605,16 +4659,114 @@ The <code class="docutils literal notranslate"><span class="pre">hi-can-raw</spa
 The <code class="docutils literal notranslate"><span class="pre">hi-can-net</span></code> library is currently unused, but may become an implementation of <a class="desctype reference internal" href="../generated/classhi__can_1_1CanInterface.html#_CPPv4N6hi_can12CanInterfaceE" title="hi_can::CanInterface (C++ class) — Inheritence diagram for hi_can::CanInterface:"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">hi_can::CanInterface</span></code></a> which forwards all traffic over a network connection.</p>
 <h4 id="simple-networking">Simple-networking<a class="headerlink" href="#simple-networking" title="Link to this heading">¶</a></h4>
 <p>The simple-networking library provides a modern C++ implementation for handling network socket communications, with a primary focus on client-side operations.</p>
-<p>It offers an object-oriented wrapper around traditional POSIX socket operations, supporting both TCP and UDP protocols. The library implements RAII principles through its Client class, which manages socket creation, configuration, connection and cleanup while providing exception-based error handling for robust failure management.</p>
+<p>It offers an object-oriented wrapper around traditional POSIX socket operations, supporting both TCP and UDP protocols. The library implements RAII principles through its <a class="desctype reference internal" href="../generated/classnetworking_1_1Client.html#_CPPv4N10networking6ClientE" title="networking::Client (C++ class) — A RAII wrapper around network sockets providing a simple interface for sending and receiving data."><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">networking::Client</span></code></a> class, which manages socket creation, configuration, connection and cleanup while providing exception-based error handling for robust failure management.</p>
 <p>The library distinguishes itself through flexible socket configuration using handler callbacks, support for custom bind addresses and a clean abstraction over low-level socket operations. It provides convenient methods for transmitting and receiving both string and binary data, with support for both blocking and non-blocking operations. Error handling is comprehensive, with descriptive error messages that include both the operation context and underlying system error details.</p>
 <div class="warning admonition">
 <p class="admonition-title">Warning</p>
 <p>This library is not used for ROS2 communications, it exists for scenarios such as a creating a ROS2 driver node which needs to interface with a specific sensor via ethernet.</p>
 </div>
-<h2 id="web-ui">Web UI<a class="headerlink" href="#web-ui" title="Link to this heading">¶</a></h2>
-<p>The other project is the rover’s web control UI - since it’s a completely different tech stack, it ends up being almost entirely independent of the rover core software.</p>
-<h3 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Link to this heading">¶</a></h3>
-<h3 id="backend">Backend<a class="headerlink" href="#backend" title="Link to this heading">¶</a></h3>
+<h2 id="perseus-ui">Perseus-UI<a class="headerlink" href="#perseus-ui" title="Link to this heading">¶</a></h2>
+<p>The Perseus-UI is a web UI that is almost entirely independent of the rover core software. The UI is a SvelteKit + Vite app with an injected Node.js server. There are two main components to Perseus-UI:</p>
+<ul class="simple">
+<li><p>Widgets -&gt; Typically a single svelte component that provide an interface for a specific functionality on the rover.</p></li>
+<li><p>Layouts -&gt; A group of widgets that are regularly used together.</p></li>
+</ul>
+<h3 id="running-perseus-ui">Running Perseus-UI<a class="headerlink" href="#running-perseus-ui" title="Link to this heading">¶</a></h3>
+<p>The Rover UI uses SvelteKit meaning that it does not need a server to be run and can be started by running these commands in the root directory:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><code>yarn<span class="w"> </span><span class="c1"># This installs dependencies</span>
+yarn<span class="w"> </span>build<span class="w"> </span><span class="c1"># Build the server</span>
+yarn<span class="w"> </span>start<span class="w"> </span><span class="c1"># Runs the built server on port 3000</span>
+</code></pre></div>
+</div>
+<p><strong>Note:</strong> Any hydration related errors can be ignored</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>If you don’t have node/yarn I’d recommend these steps:</p>
+<p>Install node version manager with this script (you will need to restart your shell once its installed):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">curl</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="w"> </span><span class="n">https</span><span class="o">:</span><span class="c1">//raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash</span>
+</code></pre></div>
+</div>
+<p>Install the latest lts version of node:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">nvm</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">--</span><span class="n">lts</span>
+</code></pre></div>
+</div>
+<p>If you have other versions of node already installed check the <a class="reference external" href="https://github.com/nvm-sh/nvm">nvm docs</a> on how to setup environments or change the active node version.</p>
+<p>Finally, install yarn with:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">npm</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">--</span><span class="n">global</span><span class="w"> </span><span class="n">yarn</span>
+</code></pre></div>
+</div>
+</div>
+<h3 id="developing-for-the-ui">Developing for the UI<a class="headerlink" href="#developing-for-the-ui" title="Link to this heading">¶</a></h3>
+<h4 id="client">Client<a class="headerlink" href="#client" title="Link to this heading">¶</a></h4>
+<p>The UI library used is <a class="reference external" href="https://next.shadcn-svelte.com">shadcn-svelte</a>, with <a class="reference external" href="https://robotwebtools.github.io/roslibjs/index.html">roslibjs</a> used for communication with the ROS stack.</p>
+<h4 id="server">Server<a class="headerlink" href="#server" title="Link to this heading">¶</a></h4>
+<p>SvelteKit provides a number of methods of assisting with server communication, however I would recommend using the node server and WebSockets to prevent weird bugs from components re-rendering. Since Svelte doesn’t provide a native interface for creating custom node servers an injected server is used. For development and testing use write your node server code in the vite plugin inside <code class="docutils literal notranslate"><span class="pre">vite.config.ts</span></code> and copy this code into <code class="docutils literal notranslate"><span class="pre">web-ui/src/server/server.js</span></code> for production (alternatively create a new file that exports a function and call it in both then develop from that file).</p>
+<h4 id="widgets">Widgets<a class="headerlink" href="#widgets" title="Link to this heading">¶</a></h4>
+<p>To begin developing a widget run the command: <code class="docutils literal notranslate"><span class="pre">./create-widget.sh</span> <span class="pre">&lt;file-name&gt;</span></code>. The <code class="docutils literal notranslate"><span class="pre">file-name</span></code> argument is just the name of the file that contains the widget and <strong>NOT</strong> the widget name. This should generate a new file <code class="docutils literal notranslate"><span class="pre">/src/lib/widgets&lt;file-name&gt;.svelte</span></code> with this template contents:</p>
+<div class="highlight-svelte notranslate"><div class="highlight"><pre><span></span><code>&lt;script lang=&quot;ts&quot; module&gt;
+	import type { WidgetSettingsType } from &#39;$lib/scripts/state.svelte&#39;;
+
+	export const name = &#39;New Widget&#39;;
+
+	export const settings: WidgetSettingsType = $state&lt;WidgetSettingsType&gt;({
+		groups: {}
+	});
+&lt;/script&gt;
+
+&lt;script lang=&quot;ts&quot;&gt;
+	// Widget logic goes here
+&lt;/script&gt;
+
+&lt;p&gt;New component&lt;/p&gt;
+</code></pre></div>
+</div>
+<ul>
+<li><p>The first script tag with the <code class="docutils literal notranslate"><span class="pre">module</span></code> property is a server only module. This is used here as it is only run once when the component is first loaded and it also allows for exports that are used to expose some properties. You likely will not need to write your own code here.</p>
+<ul>
+<li><p><strong>name -</strong> This string is the unique name of the widget that will be displayed at the top of the widget and is used to ensure duplicates of widgets are not loaded.</p></li>
+<li><p><strong>settings -</strong> This is the object that structures the settings/state panel of each widget, this will automatically update across all connected devices when saved and will persist between sessions. Here is an example settings object and how to access the value of each setting:</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">settings</span><span class="o">:</span><span class="w"> </span><span class="kt">WidgetSettingsType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$state</span><span class="o">&lt;</span><span class="nx">WidgetSettingsType</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">groups</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">general</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">textSetting</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// options are: text, number, switch, select, button</span>
+<span class="w">        </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Some text&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// This is a default value</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">hereIsAButton</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;button&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">action</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="c1">// action is executed on button press</span>
+<span class="w">          </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Button clicked&quot;</span><span class="p">);</span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;Success&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// string return value is printed in a toast</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">Advanced</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">booleanSwitch</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;switch&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;This is a switch&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// fields with descriptions get a question mark next to their label</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">selectOptions</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;select&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">options</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Option 1&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Option 2&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="p">{</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Option 3&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="p">});</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">groups</span><span class="p">.</span><span class="nx">Advanced</span><span class="p">.</span><span class="nx">booleanSwitch</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span><span class="w"> </span><span class="c1">// logs the state of the switch</span>
+</code></pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>The second script tag is where your code should go as it is run client side when the component is rendered. The settings can be accessed here without an import and to listen for changes wrap the value you want to check in either a <code class="docutils literal notranslate"><span class="pre">$derived</span></code> or <code class="docutils literal notranslate"><span class="pre">$effect</span></code> rune. Furthermore, use <code class="docutils literal notranslate"><span class="pre">toast('message')</span></code> to send a toast from your widget.</p></li>
+<li><p>The remainder of the file is where mark down goes. Tailwind classes can be used on widgets for styling or a <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;&lt;/style&gt;</span></code> block, although the former is strongly preferred if possible.</p></li>
+</ul>
 <h2 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Link to this heading">¶</a></h2>
 <h2 id="nix-outputs">Nix outputs<a class="headerlink" href="#nix-outputs" title="Link to this heading">¶</a></h2>
 <p>This section documents the outputs made available from the project <code class="docutils literal notranslate"><span class="pre">flake.nix</span></code>.
@@ -4785,7 +4937,7 @@ Contact James N if you need one.</p>
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/architecture/software.8bb8970b-feb8-4a20-aa99-1f5a7e880b45.js"></script>
+        <script defer="defer" src="../_static/tippy/architecture/software.a6f0e4a3-8e18-4333-9fdd-ab2973bd3226.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

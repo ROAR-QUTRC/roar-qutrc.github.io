@@ -20,6 +20,8 @@ Includes
 --------
 
 
+- ``algorithm``
+
 - ``cassert``
 
 - ``chrono``
@@ -30,7 +32,11 @@ Includes
 
 - ``nlohmann/json.hpp``
 
+- ``numbers``
+
 - ``optional``
+
+- ``ranges``
 
 - ``rclcpp/rclcpp.hpp``
 
