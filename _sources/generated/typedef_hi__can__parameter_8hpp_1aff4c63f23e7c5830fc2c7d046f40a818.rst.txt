@@ -1,0 +1,14 @@
+.. _exhale_typedef_hi__can__parameter_8hpp_1aff4c63f23e7c5830fc2c7d046f40a818:
+
+Typedef hi_can::parameters::legacy::drive::motors::status_t
+===========================================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_parameter.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: hi_can::parameters::legacy::drive::motors::status_t
+   :project: rover

@@ -1,0 +1,20 @@
+
+.. _namespace_hi_can__addressing__legacy__excavation:
+
+Namespace hi_can::addressing::legacy::excavation
+================================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__addressing__legacy__excavation__bucket`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a240d4207438ab668397de14ab620ff92`

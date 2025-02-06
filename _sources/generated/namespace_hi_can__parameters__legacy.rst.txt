@@ -12,4 +12,6 @@ Namespaces
 
 - :ref:`namespace_hi_can__parameters__legacy__drive`
 
+- :ref:`namespace_hi_can__parameters__legacy__excavation`
+
 - :ref:`namespace_hi_can__parameters__legacy__power`

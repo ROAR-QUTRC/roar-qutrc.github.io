@@ -1,0 +1,21 @@
+.. _dir_ros_ws_src_perseus_payloads_include_bucket_controller:
+
+
+Directory bucket_controller
+===========================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_payloads_include>` (``ros_ws/src/perseus_payloads/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``ros_ws/src/perseus_payloads/include/bucket_controller``
+
+
+Files
+-----
+
+- :ref:`file_ros_ws_src_perseus_payloads_include_bucket_controller_bucket_controller.hpp`
+
+

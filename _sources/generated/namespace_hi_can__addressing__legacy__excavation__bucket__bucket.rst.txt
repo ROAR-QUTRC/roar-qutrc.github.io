@@ -1,0 +1,15 @@
+
+.. _namespace_hi_can__addressing__legacy__excavation__bucket__bucket:
+
+Namespace hi_can::addressing::legacy::excavation::bucket::bucket
+================================================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__addressing__legacy__excavation__bucket__bucket__manipulation`
+
+- :ref:`namespace_hi_can__addressing__legacy__excavation__bucket__bucket__motors`

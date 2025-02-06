@@ -66,6 +66,51 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_perseus_payloads.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_payloads_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_payloads_include_arm_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_payloads_include_bucket_controller.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_payloads_include_bucket_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_payloads_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_payloads_src_arm_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_payloads_src_bucket_controller.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_payloads_src_bucket_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ros_ws_src_perseus_sensors.rst
 
 .. toctree::
@@ -195,6 +240,36 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ros_ws_src_perseus_payloads_src_arm_driver_arm_driver.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_payloads_include_arm_driver_arm_driver.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_payloads_src_bucket_controller_bucket_controller.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_payloads_include_bucket_controller_bucket_controller.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_payloads_src_bucket_driver_bucket_driver.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_payloads_include_bucket_driver_bucket_driver.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_shared_simple-networking_src_client.cpp.rst
 
 .. toctree::
@@ -316,11 +391,6 @@ Files
    :maxdepth: 5
 
    file_shared_simple-networking_include_simple_networking.hpp.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file_ros_ws_src_perseus_hardware_src_system_common.cpp.rst
 
 .. toctree::
    :maxdepth: 5

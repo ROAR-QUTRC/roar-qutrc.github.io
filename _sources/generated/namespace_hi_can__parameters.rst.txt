@@ -23,6 +23,12 @@ Classes
 -------
 
 
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int16__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1wrapped__value__t`
+
 - :ref:`exhale_class_classhi__can_1_1parameters_1_1BidirectionalSerializable`
 
 - :ref:`exhale_class_classhi__can_1_1parameters_1_1Deserializable`
@@ -30,3 +36,5 @@ Classes
 - :ref:`exhale_class_classhi__can_1_1parameters_1_1ParameterGroup`
 
 - :ref:`exhale_class_classhi__can_1_1parameters_1_1Serializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1SimpleSerializable`

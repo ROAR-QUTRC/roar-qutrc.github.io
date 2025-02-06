@@ -12,7 +12,7 @@ Inheritance Relationships
 Base Type
 *********
 
-- ``public hi_can::parameters::drive::vesc::scaled_int32_t< 1000.0 >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t`)
+- ``public hi_can::parameters::scaled_int32_t< 1000.0 >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`)
 
 
 Struct Documentation

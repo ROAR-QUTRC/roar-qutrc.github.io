@@ -17,7 +17,6 @@ Files
 -----
 
 - :ref:`file_ros_ws_src_perseus_hardware_src_mcb_system.cpp`
-- :ref:`file_ros_ws_src_perseus_hardware_src_system_common.cpp`
 - :ref:`file_ros_ws_src_perseus_hardware_src_vesc_system.cpp`
 
 

@@ -17,6 +17,8 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__legacy__drive`
 
+- :ref:`namespace_hi_can__addressing__legacy__excavation`
+
 - :ref:`namespace_hi_can__addressing__legacy__power`
 
 

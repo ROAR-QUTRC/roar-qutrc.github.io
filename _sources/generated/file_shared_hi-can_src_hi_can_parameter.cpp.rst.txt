@@ -62,18 +62,3 @@ Classes
 
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__6__t`
 
-- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__limits__t`
-
-- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__speed__t`
-
-- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1raw__status__t`
-
-
-Defines
--------
-
-
-- :ref:`exhale_define_hi__can__parameter_8cpp_1abceb973815d8c0a602a7eda514d618d4`
-
-- :ref:`exhale_define_hi__can__parameter_8cpp_1ab1d21892a8363550ad40a410f1ec6b29`
-

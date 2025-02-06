@@ -22,8 +22,6 @@ Classes
 
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1raw__status__6__t`
 
-- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1scaled__int32__t`
-
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__brake__t`
 
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__brake__rel__t`

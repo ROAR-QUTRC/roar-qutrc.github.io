@@ -71,6 +71,16 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__legacy__drive__motors__mcb`
 
+- :ref:`namespace_hi_can__addressing__legacy__excavation`
+
+- :ref:`namespace_hi_can__addressing__legacy__excavation__bucket`
+
+- :ref:`namespace_hi_can__addressing__legacy__excavation__bucket__bucket`
+
+- :ref:`namespace_hi_can__addressing__legacy__excavation__bucket__bucket__manipulation`
+
+- :ref:`namespace_hi_can__addressing__legacy__excavation__bucket__bucket__motors`
+
 - :ref:`namespace_hi_can__addressing__legacy__power`
 
 - :ref:`namespace_hi_can__addressing__legacy__power__control`
@@ -128,6 +138,12 @@ Enums
 - :ref:`exhale_enum_hi__can__address_8hpp_1a15a2f4306e27071d6cef346536d76a3c`
 
 - :ref:`exhale_enum_hi__can__address_8hpp_1a76f1376e6eedc8edd2545395a783b7a9`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1af4988aa97879122ec38e23d01d578e40`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1acffbb1dbe6cdb953aab2c7deb4a5f676`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a81eae665d41d6d342150ce8f83573f6b`
 
 - :ref:`exhale_enum_hi__can__address_8hpp_1a8d941d3717ff37bf763b49693edaa9b0`
 
@@ -188,6 +204,14 @@ Variables
 - :ref:`exhale_variable_hi__can__address_8hpp_1a58b134a3cb39a37a85a725d05048f6aa`
 
 - :ref:`exhale_variable_hi__can__address_8hpp_1a91e259388c868dd8eb77c8c5c4cc12c2`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1aede42147adf41c960bdc93592573f055`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a64bfd77beba676e4e440668ac995f8f6`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1abb129177b4f0f1d42242953a7d1815d7`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a240d4207438ab668397de14ab620ff92`
 
 - :ref:`exhale_variable_hi__can__address_8hpp_1a6f7508b644fa7855e3cf9504e5987176`
 

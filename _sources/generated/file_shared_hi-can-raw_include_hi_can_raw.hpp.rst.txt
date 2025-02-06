@@ -42,6 +42,8 @@ Included By
 
 - :ref:`file_ros_ws_src_perseus_hardware_src_vesc_system.cpp`
 
+- :ref:`file_ros_ws_src_perseus_payloads_include_bucket_driver_bucket_driver.hpp`
+
 - :ref:`file_shared_hi-can-raw_src_hi_can_raw.cpp`
 
 
