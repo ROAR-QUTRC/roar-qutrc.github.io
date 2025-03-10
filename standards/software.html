@@ -6031,7 +6031,8 @@ If you don’t fully understand some of the topics being referenced, feel free t
 </code></pre></div>
 </div>
 <h4 id="booleans">Booleans<a class="headerlink" href="#booleans" title="Link to this heading">¶</a></h4>
-<p>Boolean (true/false) variables should have a verb prefix indicating that they are a boolean, and what it does.</p>
+<p>Boolean (true/false) variables should be unambiguous in their naming such that you know exactly what it represents by looking at it.
+In most cases, this means that they should have a verb prefix indicating that they are a boolean, and what it does.</p>
 <h5 id="id3">Acceptable<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h5>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">isValid</span><span class="p">;</span>
 <span class="kt">bool</span><span class="w"> </span><span class="n">shouldExit</span><span class="p">;</span>
@@ -6042,6 +6043,20 @@ If you don’t fully understand some of the topics being referenced, feel free t
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">valid</span><span class="p">;</span>
 <span class="kt">bool</span><span class="w"> </span><span class="n">exit</span><span class="p">;</span>
 <span class="kt">bool</span><span class="w"> </span><span class="n">settings</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<p>However, in some cases (such as as members of an appropriately named <code class="docutils literal notranslate"><span class="pre">struct</span></code>), it may be appropriate to omit a prefix.
+For example, the following code is acceptable as they are part of a status flag register struct:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">fet_status_t</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">alertAsserted</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">ddsgAsserted</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">dchtAsserted</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">preDischargeFetOn</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">dischargeFetOn</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">preChargeFetOn</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">chargeFetOn</span><span class="p">;</span>
+<span class="p">};</span>
 </code></pre></div>
 </div>
 <h4 id="constants">Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h4>
@@ -6078,7 +6093,9 @@ If you don’t fully understand some of the topics being referenced, feel free t
 </code></pre></div>
 </div>
 <h4 id="member-ordering">Member Ordering<a class="headerlink" href="#member-ordering" title="Link to this heading">¶</a></h4>
-<p>Methods and variables inside a class should be ordered as so:</p>
+<p>Methods and variables inside a class should be ordered as follows.
+Constants have been excluded from the list, as it may make sense to place them before <em>or</em> after type definitions under different circumstances.
+However, either way, they should come before any functions are defined.</p>
 <h5 id="public">Public<a class="headerlink" href="#public" title="Link to this heading">¶</a></h5>
 <ul class="simple">
 <li><p>Types</p></li>
@@ -6863,7 +6880,7 @@ These are just a few examples, but in short, consider whether the type you’re 
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/standards/software.a998dd07-838e-4dd0-b93f-56f464026467.js"></script>
+        <script defer="defer" src="../_static/tippy/standards/software.bc8bb29a-f6e4-4686-ac74-85b7c79db113.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
