@@ -46,6 +46,31 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_perseus_can_if.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_can_if_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_can_if_include_rcb_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_can_if_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_can_if_src_rcb_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ros_ws_src_perseus_hardware.rst
 
 .. toctree::
@@ -386,6 +411,16 @@ Files
    :maxdepth: 5
 
    file_shared_ptr-wrapper_include_ptr_wrapper.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_can_if_src_rcb_driver_rcb_driver.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_can_if_include_rcb_driver_rcb_driver.hpp.rst
 
 .. toctree::
    :maxdepth: 5

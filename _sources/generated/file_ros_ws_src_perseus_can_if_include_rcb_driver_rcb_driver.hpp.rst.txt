@@ -1,0 +1,47 @@
+
+.. _file_ros_ws_src_perseus_can_if_include_rcb_driver_rcb_driver.hpp:
+
+File rcb_driver.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_can_if_include_rcb_driver>` (``ros_ws/src/perseus_can_if/include/rcb_driver``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/perseus_can_if/include/rcb_driver/rcb_driver.hpp``)
+----------------------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+- ``hi_can_raw.hpp`` (:ref:`file_shared_hi-can-raw_include_hi_can_raw.hpp`)
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``std_msgs/msg/string.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ros_ws_src_perseus_can_if_src_rcb_driver_rcb_driver.cpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classRcbDriver`
+

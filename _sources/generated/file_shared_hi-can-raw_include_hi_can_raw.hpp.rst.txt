@@ -34,6 +34,8 @@ Included By
 
 - :ref:`file_native_hi-can-common_src_main.cpp`
 
+- :ref:`file_ros_ws_src_perseus_can_if_include_rcb_driver_rcb_driver.hpp`
+
 - :ref:`file_ros_ws_src_perseus_hardware_include_mcb_system.hpp`
 
 - :ref:`file_ros_ws_src_perseus_hardware_include_vesc_system.hpp`

@@ -1,0 +1,27 @@
+.. _exhale_class_classRcbDriver:
+
+Class RcbDriver
+===============
+
+- Defined in :ref:`file_ros_ws_src_perseus_can_if_include_rcb_driver_rcb_driver.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public rclcpp::Node``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: RcbDriver
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:
