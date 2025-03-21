@@ -45,6 +45,12 @@ Namespaces
 
 - :ref:`namespace_hi_can__parameters__legacy__drive__motors`
 
+- :ref:`namespace_hi_can__parameters__legacy__power`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control__power_bus`
+
 
 Classes
 -------

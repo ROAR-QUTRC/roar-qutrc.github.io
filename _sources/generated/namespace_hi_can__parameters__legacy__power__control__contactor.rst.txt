@@ -4,3 +4,17 @@
 Namespace hi_can::parameters::legacy::power::control::contactor
 ===============================================================
 
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1power_1_1control_1_1contactor_1_1__control__t`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1a968f6e3ed2e9132a4f62299c41d3f847`
