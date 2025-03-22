@@ -1,0 +1,92 @@
+
+.. _file_shared_crc_src_crc.c:
+
+File crc.c
+==========
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_crc_src>` (``shared/crc/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/crc/src/crc.c``)
+-------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``crc.h`` (:ref:`file_shared_crc_include_crc.h`)
+
+- ``stdbool.h``
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_crc_8c_1a4858b9d7c3de1b495bbe17bec7431f74`
+
+- :ref:`exhale_function_crc_8c_1a6236a17e7dce909c53f1c745320f07c9`
+
+- :ref:`exhale_function_crc_8c_1add632ea5d295b99477e080f0b43fad96`
+
+- :ref:`exhale_function_crc_8c_1ad419399176549f11dd593806bad90e01`
+
+- :ref:`exhale_function_crc_8c_1a96932cb3363a45d548cbe2e721162109`
+
+- :ref:`exhale_function_crc_8c_1ace579c372800bcfd7324cac3b903915a`
+
+- :ref:`exhale_function_crc_8c_1a5ddc78b24b3c1e9796699dd668181f8b`
+
+- :ref:`exhale_function_crc_8c_1a2c4729c4b0adfd1f71429fc0b0172398`
+
+- :ref:`exhale_function_crc_8c_1a8658afefdeeb2e628b8aa90f9d438ae7`
+
+- :ref:`exhale_function_crc_8c_1a3c12f0818605bd012cde2c4be174c548`
+
+- :ref:`exhale_function_crc_8c_1a395638c8a62eb7195910e4c413af16fd`
+
+- :ref:`exhale_function_crc_8c_1a3b8e824052e6e558b20df20fd69bdcf7`
+
+- :ref:`exhale_function_crc_8c_1aaf5308d5705156f7b0db4e8c47798c2b`
+
+- :ref:`exhale_function_crc_8c_1a9c9cb6683d86722227b4308c8fbc59c2`
+
+- :ref:`exhale_function_crc_8c_1a3edf1c57e590ad5c034a47cd3151f7a8`
+
+- :ref:`exhale_function_crc_8c_1a095182282bf0b9e52d1fea49ea5649a0`
+
+- :ref:`exhale_function_crc_8c_1a8fe705b923a80447e88e782a1be9edcd`
+
+- :ref:`exhale_function_crc_8c_1a4243ed2b25f18f10f611147a1e8eaa53`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_crc_8c_1a019500d63a82ba17f1145bab3e72076f`
+
+- :ref:`exhale_variable_crc_8c_1a648daa21eea2a03fd7fcb765130d36dd`
+
+- :ref:`exhale_variable_crc_8c_1a266e3e85fe311b72db53788cc79e5c49`
+
+- :ref:`exhale_variable_crc_8c_1a3f46fa9fa68cc1dfec28c40a8f40e00f`
+
+- :ref:`exhale_variable_crc_8c_1a22233e392ac16166010bf96a0c83a236`
+
+- :ref:`exhale_variable_crc_8c_1abe10d4a55d9947e0b3d4e9a61af43328`
+
+- :ref:`exhale_variable_crc_8c_1acf44a92642bc2fa2e1c436410f27ca4a`
+
+- :ref:`exhale_variable_crc_8c_1af32fa52207eabb2e252269ac6578e5a5`
+

@@ -1,0 +1,21 @@
+.. _dir_shared_crc_src:
+
+
+Directory src
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_crc>` (``shared/crc``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``shared/crc/src``
+
+
+Files
+-----
+
+- :ref:`file_shared_crc_src_crc.c`
+
+

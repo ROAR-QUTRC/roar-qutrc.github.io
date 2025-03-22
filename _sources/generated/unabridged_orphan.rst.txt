@@ -166,6 +166,21 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_shared_crc.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_crc_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_crc_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_shared_fd-wrapper.rst
 
 .. toctree::
@@ -258,6 +273,21 @@ Directories
 
    dir_shared_simple-networking_src.rst
 
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_type-demangle.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_type-demangle_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_shared_type-demangle_src.rst
+
 Files
 *****
 
@@ -306,6 +336,16 @@ Files
    :maxdepth: 5
 
    file_shared_simple-networking_include_simple_networking_core.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_crc_src_crc.c.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_crc_include_crc.h.rst
 
 .. toctree::
    :maxdepth: 5
@@ -431,6 +471,16 @@ Files
    :maxdepth: 5
 
    file_ros_ws_src_perseus_hardware_priv_include_system_common.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_type-demangle_src_type_demangle.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_shared_type-demangle_include_type_demangle.hpp.rst
 
 .. toctree::
    :maxdepth: 5

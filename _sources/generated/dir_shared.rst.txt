@@ -10,12 +10,14 @@ Directory shared
 Subdirectories
 --------------
 
+- :ref:`dir_shared_crc`
 - :ref:`dir_shared_fd-wrapper`
 - :ref:`dir_shared_hi-can`
 - :ref:`dir_shared_hi-can-net`
 - :ref:`dir_shared_hi-can-raw`
 - :ref:`dir_shared_ptr-wrapper`
 - :ref:`dir_shared_simple-networking`
+- :ref:`dir_shared_type-demangle`
 
 
 

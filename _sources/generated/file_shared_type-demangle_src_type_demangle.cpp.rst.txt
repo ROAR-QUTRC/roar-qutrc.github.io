@@ -1,0 +1,35 @@
+
+.. _file_shared_type-demangle_src_type_demangle.cpp:
+
+File type_demangle.cpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_shared_type-demangle_src>` (``shared/type-demangle/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``shared/type-demangle/src/type_demangle.cpp``)
+-----------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``type_demangle.hpp`` (:ref:`file_shared_type-demangle_include_type_demangle.hpp`)
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_type__demangle_8cpp_1a979982102c0dbd9e9c970d56c96481e3`
+

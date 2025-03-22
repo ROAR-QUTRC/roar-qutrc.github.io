@@ -1,0 +1,14 @@
+.. _exhale_function_type__demangle_8hpp_1a979982102c0dbd9e9c970d56c96481e3:
+
+Function demangle(const char \*)
+================================
+
+- Defined in :ref:`file_shared_type-demangle_include_type_demangle.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: demangle(const char *)
+   :project: rover
