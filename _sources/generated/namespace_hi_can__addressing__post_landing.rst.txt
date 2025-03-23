@@ -11,13 +11,6 @@ Namespace containing all addresses in the post-landing system.
 
 
 
-Namespaces
-----------
-
-
-- :ref:`namespace_hi_can__addressing__post_landing__bucket`
-
-
 Variables
 ---------
 

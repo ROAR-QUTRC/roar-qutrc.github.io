@@ -21,6 +21,7 @@ Derived Types
 
 - ``public hi_can::parameters::SimpleSerializable< _speed_t >`` (:ref:`exhale_class_classhi__can_1_1parameters_1_1SimpleSerializable`)
 - ``public hi_can::parameters::SimpleSerializable< _status_t >`` (:ref:`exhale_class_classhi__can_1_1parameters_1_1SimpleSerializable`)
+- ``public hi_can::parameters::scaled_int16_t< 1.0 >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int16__t`)
 - ``public hi_can::parameters::scaled_int32_t< 1000.0 >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`)
 - ``public hi_can::parameters::scaled_int32_t< 100000.0 >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`)
 - ``public hi_can::parameters::scaled_int32_t< 1000000.0 >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`)

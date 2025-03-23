@@ -1,0 +1,14 @@
+.. _exhale_variable_hi__can__address_8hpp_1ac7e2296fe9a0f3832d1a16d3faab9b2d:
+
+Variable hi_can::addressing::shared::lifter_platform::SUBSYSTEM_ID
+==================================================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::shared::lifter_platform::SUBSYSTEM_ID
+   :project: rover

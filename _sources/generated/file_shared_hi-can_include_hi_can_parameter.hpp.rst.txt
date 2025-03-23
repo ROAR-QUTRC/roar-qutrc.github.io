@@ -91,6 +91,14 @@ Namespaces
 
 - :ref:`namespace_hi_can__parameters__power__distribution`
 
+- :ref:`namespace_hi_can__parameters__shared`
+
+- :ref:`namespace_hi_can__parameters__shared__lifter_platform`
+
+- :ref:`namespace_hi_can__parameters__shared__lifter_platform__lifter`
+
+- :ref:`namespace_hi_can__parameters__shared__lifter_platform__lifter__motor`
+
 
 Classes
 -------
@@ -149,6 +157,8 @@ Classes
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int16__t`
 
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1shared_1_1lifter__platform_1_1lifter_1_1motor_1_1speed__t`
 
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1wrapped__value__t`
 

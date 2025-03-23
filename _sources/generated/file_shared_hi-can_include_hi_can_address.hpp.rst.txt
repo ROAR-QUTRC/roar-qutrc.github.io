@@ -93,13 +93,19 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__post_landing`
 
-- :ref:`namespace_hi_can__addressing__post_landing__bucket`
-
 - :ref:`namespace_hi_can__addressing__power`
 
 - :ref:`namespace_hi_can__addressing__power__battery`
 
 - :ref:`namespace_hi_can__addressing__power__distribution`
+
+- :ref:`namespace_hi_can__addressing__shared`
+
+- :ref:`namespace_hi_can__addressing__shared__lifter_platform`
+
+- :ref:`namespace_hi_can__addressing__shared__lifter_platform__lifter`
+
+- :ref:`namespace_hi_can__addressing__shared__lifter_platform__lifter__motor`
 
 - :ref:`namespace_hi_can__addressing__space_resources`
 
@@ -156,6 +162,8 @@ Enums
 - :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1battery_1a41e9d2d33b7b14732d5bef920b7b2a45`
 
 - :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a6dab62ddb95bf2ef584d217d2b23c8d7`
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a44158a84172d2876e9cf41fee432c0dc`
 
 - :ref:`exhale_enum_hi__can__address_8hpp_1adbe96e609f3873565715e2efcd81737f`
 
@@ -233,8 +241,6 @@ Variables
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1a2c76499f5abcad988bf6a82d813a014b`
 
-- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1post__landing_1_1bucket_1ae823d256b66487db9e536d7259fcccf3`
-
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1post__landing_1a7588b4ec8c02cad1ce9e7753ada80a89`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1_1battery_1ac8a6474f7069c5c260214c2f00dc8ff9`
@@ -242,6 +248,14 @@ Variables
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a0ce7aa474754e3973599792a7cecf700`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1ad7353975acf630d2df6bdac74d39f78e`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a3925b647919faaccd8d465c51508b057`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a92defde2cd143dc9e4df84d87f199506`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1ac7e2296fe9a0f3832d1a16d3faab9b2d`
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a589c2b17cefc91283cf8ca3a90028c2c`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1space__resources_1aca2d4f6b2059e0fccdb5de20389b48ee`
 

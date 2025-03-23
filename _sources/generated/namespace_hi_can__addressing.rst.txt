@@ -27,6 +27,8 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__power`
 
+- :ref:`namespace_hi_can__addressing__shared`
+
 - :ref:`namespace_hi_can__addressing__space_resources`
 
 - :ref:`namespace_hi_can__addressing__status`
