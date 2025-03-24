@@ -28,6 +28,10 @@ Includes
 
 - ``std_msgs/msg/string.hpp``
 
+- ``string``
+
+- ``tuple``
+
 
 
 Included By
