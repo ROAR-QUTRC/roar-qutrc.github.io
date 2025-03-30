@@ -1,0 +1,24 @@
+.. _exhale_class_classGenericController_1_1AxisParser:
+
+Class GenericController::AxisParser
+===================================
+
+- Defined in :ref:`file_ros_ws_src_perseus_input_include_generic_controller_generic_controller.hpp`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classGenericController`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: GenericController::AxisParser
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

@@ -101,6 +101,31 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_perseus_input.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_input_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_input_include_generic_controller.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_input_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_input_src_generic_controller.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ros_ws_src_perseus_payloads.rst
 
 .. toctree::
@@ -366,6 +391,16 @@ Files
    :maxdepth: 5
 
    file_shared_fd-wrapper_include_fd_wrapper.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_input_src_generic_controller_generic_controller.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_input_include_generic_controller_generic_controller.hpp.rst
 
 .. toctree::
    :maxdepth: 5
