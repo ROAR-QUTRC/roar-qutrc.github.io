@@ -17,5 +17,6 @@ Files
 -----
 
 - :ref:`file_ros_ws_src_autonomy_src_odom_tester.cpp`
+- :ref:`file_ros_ws_src_autonomy_src_topic_remapper.cpp`
 
 

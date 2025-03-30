@@ -490,6 +490,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ros_ws_src_autonomy_src_topic_remapper.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_shared_type-demangle_src_type_demangle.cpp.rst
 
 .. toctree::
