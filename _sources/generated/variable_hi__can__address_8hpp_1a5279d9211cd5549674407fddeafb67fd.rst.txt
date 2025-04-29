@@ -1,0 +1,14 @@
+.. _exhale_variable_hi__can__address_8hpp_1a5279d9211cd5549674407fddeafb67fd:
+
+Variable hi_can::addressing::shared::elevator::elevator::DEVICE_ADDRESS
+=======================================================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::shared::elevator::elevator::DEVICE_ADDRESS
+   :project: rover

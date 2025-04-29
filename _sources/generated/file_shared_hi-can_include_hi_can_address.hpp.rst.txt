@@ -101,11 +101,11 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__shared`
 
-- :ref:`namespace_hi_can__addressing__shared__lifter_platform`
+- :ref:`namespace_hi_can__addressing__shared__elevator`
 
-- :ref:`namespace_hi_can__addressing__shared__lifter_platform__lifter`
+- :ref:`namespace_hi_can__addressing__shared__elevator__elevator`
 
-- :ref:`namespace_hi_can__addressing__shared__lifter_platform__lifter__motor`
+- :ref:`namespace_hi_can__addressing__shared__elevator__elevator__motor`
 
 - :ref:`namespace_hi_can__addressing__space_resources`
 
@@ -163,7 +163,7 @@ Enums
 
 - :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a6dab62ddb95bf2ef584d217d2b23c8d7`
 
-- :ref:`exhale_enum_hi__can__address_8hpp_1a44158a84172d2876e9cf41fee432c0dc`
+- :ref:`exhale_enum_hi__can__address_8hpp_1a5ea4e6bf50c902df64bb40abcedd1898`
 
 - :ref:`exhale_enum_hi__can__address_8hpp_1adbe96e609f3873565715e2efcd81737f`
 
@@ -249,11 +249,11 @@ Variables
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1ad7353975acf630d2df6bdac74d39f78e`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a3925b647919faaccd8d465c51508b057`
+- :ref:`exhale_variable_hi__can__address_8hpp_1a5279d9211cd5549674407fddeafb67fd`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1a92defde2cd143dc9e4df84d87f199506`
+- :ref:`exhale_variable_hi__can__address_8hpp_1abbac1ad06bedba3b2268790ddf85fb6b`
 
-- :ref:`exhale_variable_hi__can__address_8hpp_1ac7e2296fe9a0f3832d1a16d3faab9b2d`
+- :ref:`exhale_variable_hi__can__address_8hpp_1a8967ec77023111b22e5d8486c40509de`
 
 - :ref:`exhale_variable_hi__can__address_8hpp_1a589c2b17cefc91283cf8ca3a90028c2c`
 

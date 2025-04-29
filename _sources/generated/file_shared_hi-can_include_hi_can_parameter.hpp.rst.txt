@@ -93,11 +93,11 @@ Namespaces
 
 - :ref:`namespace_hi_can__parameters__shared`
 
-- :ref:`namespace_hi_can__parameters__shared__lifter_platform`
+- :ref:`namespace_hi_can__parameters__shared__elevator`
 
-- :ref:`namespace_hi_can__parameters__shared__lifter_platform__lifter`
+- :ref:`namespace_hi_can__parameters__shared__elevator__elevator`
 
-- :ref:`namespace_hi_can__parameters__shared__lifter_platform__lifter__motor`
+- :ref:`namespace_hi_can__parameters__shared__elevator__elevator__motor`
 
 
 Classes
@@ -158,7 +158,7 @@ Classes
 
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`
 
-- :ref:`exhale_struct_structhi__can_1_1parameters_1_1shared_1_1lifter__platform_1_1lifter_1_1motor_1_1speed__t`
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1shared_1_1elevator_1_1elevator_1_1motor_1_1speed__t`
 
 - :ref:`exhale_struct_structhi__can_1_1parameters_1_1wrapped__value__t`
 
@@ -186,6 +186,15 @@ Enums
 - :ref:`exhale_enum_hi__can__parameter_8hpp_1a93ae02b9024768272d9dfaabda0b84ad`
 
 - :ref:`exhale_enum_hi__can__parameter_8hpp_1afcf09325a137a3ee0d979f7cc66fdaa5`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_hi__can__parameter_8hpp_1a5fcdabb4d708d24e801855450cf98740`
+
+- :ref:`exhale_define_hi__can__parameter_8hpp_1ace158cff566cf7f91032a6c83ad50263`
 
 
 Typedefs

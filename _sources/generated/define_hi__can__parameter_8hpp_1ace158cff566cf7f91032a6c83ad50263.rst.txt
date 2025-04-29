@@ -1,0 +1,14 @@
+.. _exhale_define_hi__can__parameter_8hpp_1ace158cff566cf7f91032a6c83ad50263:
+
+Define HI_CAN_PARAM_DECLARE_SCALED_INT32_T
+==========================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_parameter.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: HI_CAN_PARAM_DECLARE_SCALED_INT32_T
+   :project: rover

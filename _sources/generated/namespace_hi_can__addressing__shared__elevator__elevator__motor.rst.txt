@@ -1,0 +1,20 @@
+
+.. _namespace_hi_can__addressing__shared__elevator__elevator__motor:
+
+Namespace hi_can::addressing::shared::elevator::elevator::motor
+===============================================================
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1a5ea4e6bf50c902df64bb40abcedd1898`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1abbac1ad06bedba3b2268790ddf85fb6b`

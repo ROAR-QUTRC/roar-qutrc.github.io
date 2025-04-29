@@ -10,7 +10,7 @@ Namespaces
 ----------
 
 
-- :ref:`namespace_hi_can__addressing__shared__lifter_platform`
+- :ref:`namespace_hi_can__addressing__shared__elevator`
 
 
 Variables
