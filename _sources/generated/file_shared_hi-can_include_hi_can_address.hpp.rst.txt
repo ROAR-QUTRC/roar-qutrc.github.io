@@ -32,6 +32,8 @@ Included By
 -----------
 
 
+- :ref:`file_ros_ws_src_perseus_payloads_src_bucket_driver_bucket_driver.cpp`
+
 - :ref:`file_shared_hi-can_include_hi_can.hpp`
 
 - :ref:`file_shared_hi-can_include_hi_can_packet.hpp`
@@ -59,7 +61,9 @@ Namespaces
 
 - :ref:`namespace_hi_can__addressing__excavation`
 
-- :ref:`namespace_hi_can__addressing__excavation__arm`
+- :ref:`namespace_hi_can__addressing__excavation__bucket`
+
+- :ref:`namespace_hi_can__addressing__excavation__bucket__controller`
 
 - :ref:`namespace_hi_can__addressing__legacy`
 
@@ -139,6 +143,14 @@ Enums
 
 - :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a1d7845f6f062d8186155f002c8ef3efc`
 
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1a8c0e04570ac1d2c08b785a6188cb8053`
+
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1a1626ff7a74a536c8790b3f20ec2ba29e`
+
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1af838c75d9d87344640979dce03e5c8ea`
+
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1a0f18b96cbbb3f9e84c858359a7c79bfe`
+
 - :ref:`exhale_enum_hi__can__address_8hpp_1a468ead8338f7113f6101a5cd5d96b946`
 
 - :ref:`exhale_enum_hi__can__address_8hpp_1a15a2f4306e27071d6cef346536d76a3c`
@@ -197,7 +209,9 @@ Variables
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1drive_1_1vesc_1a4924080e76dc4b566bad723c8cc4b9dd`
 
-- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1_1arm_1a1ef708c6102d776a9a011e248d030113`
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1ad156a86dcde32618318a46536d975016`
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1af4697f9c58d4fff8712edd7e217b0654`
 
 - :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1a5c3c47d0be025ac00c78848776f80c8c`
 

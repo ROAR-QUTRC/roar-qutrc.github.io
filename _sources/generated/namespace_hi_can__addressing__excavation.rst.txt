@@ -15,7 +15,7 @@ Namespaces
 ----------
 
 
-- :ref:`namespace_hi_can__addressing__excavation__arm`
+- :ref:`namespace_hi_can__addressing__excavation__bucket`
 
 
 Variables

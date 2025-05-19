@@ -1,0 +1,14 @@
+.. _exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1a1626ff7a74a536c8790b3f20ec2ba29e:
+
+Enum bank_parameter
+===================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::excavation::bucket::controller::bank_parameter
+   :project: rover

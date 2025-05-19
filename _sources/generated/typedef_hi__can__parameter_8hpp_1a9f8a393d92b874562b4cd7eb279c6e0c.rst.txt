@@ -1,0 +1,14 @@
+.. _exhale_typedef_hi__can__parameter_8hpp_1a9f8a393d92b874562b4cd7eb279c6e0c:
+
+Typedef hi_can::parameters::excavation::bucket::controller::current_t
+=====================================================================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_parameter.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: hi_can::parameters::excavation::bucket::controller::current_t
+   :project: rover

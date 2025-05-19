@@ -1,0 +1,14 @@
+.. _exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1a0f18b96cbbb3f9e84c858359a7c79bfe:
+
+Enum magnet_parameter
+=====================
+
+- Defined in :ref:`file_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::excavation::bucket::controller::magnet_parameter
+   :project: rover

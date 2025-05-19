@@ -4,3 +4,10 @@
 Namespace hi_can::parameters::excavation
 ========================================
 
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__parameters__excavation__bucket`

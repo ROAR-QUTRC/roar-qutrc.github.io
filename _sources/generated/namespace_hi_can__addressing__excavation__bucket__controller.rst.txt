@@ -1,0 +1,31 @@
+
+.. _namespace_hi_can__addressing__excavation__bucket__controller:
+
+Namespace hi_can::addressing::excavation::bucket::controller
+============================================================
+
+
+Namespace containing all addresses for the bucket controller. 
+
+
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1a8c0e04570ac1d2c08b785a6188cb8053`
+
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1a1626ff7a74a536c8790b3f20ec2ba29e`
+
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1af838c75d9d87344640979dce03e5c8ea`
+
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1a0f18b96cbbb3f9e84c858359a7c79bfe`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1ad156a86dcde32618318a46536d975016`

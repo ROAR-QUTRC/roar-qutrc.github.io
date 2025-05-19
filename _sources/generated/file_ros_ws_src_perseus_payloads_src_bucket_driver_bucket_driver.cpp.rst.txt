@@ -26,6 +26,8 @@ Includes
 
 - ``cstdint``
 
+- ``hi_can_address.hpp`` (:ref:`file_shared_hi-can_include_hi_can_address.hpp`)
+
 
 
 

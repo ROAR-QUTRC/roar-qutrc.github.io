@@ -1,0 +1,13 @@
+
+.. _namespace_hi_can__parameters__excavation__bucket:
+
+Namespace hi_can::parameters::excavation::bucket
+================================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__parameters__excavation__bucket__controller`
