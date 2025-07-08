@@ -960,6 +960,39 @@
     <span class="md-ellipsis">Widgets</span>
   </a>
   
+    <nav class="md-nav" aria-label="Widgets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#widget-manager-internals" class="md-nav__link">
+    <span class="md-ellipsis">Widget manager internals</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webrtc-videos" class="md-nav__link">
+    <span class="md-ellipsis">Web<wbr>RTC Videos</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WebRTC Videos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera-server" class="md-nav__link">
+    <span class="md-ellipsis">Camera server</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -972,13 +1005,6 @@
         <li class="md-nav__item">
   <a href="#can-bus-interface" class="md-nav__link">
     <span class="md-ellipsis">CAN Bus Interface</span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#web-ui-internal" class="md-nav__link">
-    <span class="md-ellipsis">Web UI Internal</span>
   </a>
   
 </li>
@@ -5907,6 +5933,39 @@
     <span class="md-ellipsis">Widgets</span>
   </a>
   
+    <nav class="md-nav" aria-label="Widgets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#widget-manager-internals" class="md-nav__link">
+    <span class="md-ellipsis">Widget manager internals</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webrtc-videos" class="md-nav__link">
+    <span class="md-ellipsis">Web<wbr>RTC Videos</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WebRTC Videos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera-server" class="md-nav__link">
+    <span class="md-ellipsis">Camera server</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5919,13 +5978,6 @@
         <li class="md-nav__item">
   <a href="#can-bus-interface" class="md-nav__link">
     <span class="md-ellipsis">CAN Bus Interface</span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#web-ui-internal" class="md-nav__link">
-    <span class="md-ellipsis">Web UI Internal</span>
   </a>
   
 </li>
@@ -5951,6 +6003,10 @@
 
 <h1 id="web-ui">Web UI<a class="headerlink" href="#web-ui" title="Link to this heading">¶</a></h1>
 <p>External libraries will not be documented here: The UI library used is <a class="reference external" href="https://next.shadcn-svelte.com">shadcn-svelte</a>, with <a class="reference external" href="https://robotwebtools.github.io/roslibjs/index.html">roslibjs</a> used for communication with the ROS stack.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>All file paths in this page are relative to the root of the Web UI project (<code class="docutils literal notranslate"><span class="pre">perseus-v2/software/web-ui</span></code>)</p>
+</div>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Link to this heading">¶</a></h2>
 <p>SvelteKit provides a number of methods of assisting with server communication, however I would recommend using the node server and WebSockets to prevent weird bugs from components re-rendering. Since Svelte doesn’t provide a native interface for creating custom node servers an injected server is used. For development and testing use write your node server code in the vite plugin inside <code class="docutils literal notranslate"><span class="pre">vite.config.ts</span></code> and copy this code into <code class="docutils literal notranslate"><span class="pre">web-ui/src/server/server.js</span></code> for production (alternatively create a new file that exports a function and call it in both then develop from that file).</p>
 <h2 id="widgets">Widgets<a class="headerlink" href="#widgets" title="Link to this heading">¶</a></h2>
@@ -6019,9 +6075,102 @@
 <li><p>The second script tag is where your code should go as it is run client side when the component is rendered. The settings can be accessed here without an import and to listen for changes wrap the value you want to check in either a <code class="docutils literal notranslate"><span class="pre">$derived</span></code> or <code class="docutils literal notranslate"><span class="pre">$effect</span></code> rune. Furthermore, use <code class="docutils literal notranslate"><span class="pre">toast('message')</span></code> to send a toast from your widget.</p></li>
 <li><p>The remainder of the file is where mark down goes. Tailwind classes can be used on widgets for styling or a <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;&lt;/style&gt;</span></code> block, although the former is strongly preferred if possible.</p></li>
 </ul>
+<h3 id="widget-manager-internals">Widget manager internals<a class="headerlink" href="#widget-manager-internals" title="Link to this heading">¶</a></h3>
+<p>Internally the widgets are made up of several components:</p>
+<ul class="simple">
+<li><p>The custom widget components (found in: <code class="docutils literal notranslate"><span class="pre">/src/lib/widgets/</span></code>)</p></li>
+<li><p>Widget state script (<code class="docutils literal notranslate"><span class="pre">/src/lib/scripts/state.svelte.ts</span></code>)</p></li>
+<li><p>Widget canvas (<code class="docutils literal notranslate"><span class="pre">/src/lib/components/widget-canvas.svelte</span></code>)</p></li>
+<li><p>Widget wrapper (<code class="docutils literal notranslate"><span class="pre">/src/lib/components/widget.svelte</span></code>)</p></li>
+</ul>
+<p><strong>Custom Widget Components</strong>
+All the files in the top level of the <code class="docutils literal notranslate"><span class="pre">/src/lib/widgets/</span></code> directory are loaded as widgets by the server script in <code class="docutils literal notranslate"><span class="pre">+layout.svelte</span></code> before being converted to fit the widget type defined as:</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">WidgetType</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">description?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">group?</span><span class="o">:</span><span class="w"> </span><span class="kt">WidgetGroupType</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">isRosDependent?</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">component</span><span class="o">:</span><span class="w"> </span><span class="kt">Component</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">settings</span><span class="o">:</span><span class="w"> </span><span class="kt">WidgetSettingsType</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">layoutProps</span><span class="o">?:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">x</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">y</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">w</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">h</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+<span class="p">}</span>
+
+<span class="c1">// represents the settings of the widget</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">WidgetSettingsType</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">groups</span><span class="o">:</span><span class="w"> </span><span class="kt">Record</span><span class="o">&lt;</span>
+<span class="w">    </span><span class="kt">string</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">Record</span><span class="o">&lt;</span>
+<span class="w">      </span><span class="kt">string</span><span class="p">,</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;number&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;select&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;switch&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;button&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;readonly&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">description?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">value?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">options</span><span class="o">?:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">}[];</span><span class="w"> </span><span class="c1">// these are not saved as options are typically session dependent</span>
+<span class="w">        </span><span class="nx">disabled?</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+<span class="w">        </span><span class="nx">action</span><span class="o">?:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="o">&gt;</span>
+<span class="w">  </span><span class="o">&gt;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p><strong>Widget state</strong>
+This file holds the reactive state of the layouts and widgets. The main function it exports is <code class="docutils literal notranslate"><span class="pre">getWidgetsByLayoutId</span></code> which is used to get a list of the widgets currently in use. Additionally, since the widget’s persistent state is stored in the layout database, it uses the loaded widgets as a template and populates them using the saved state data.</p>
+<p><strong>Widget canvas</strong>
+The widget canvas is responsible for the drag and drop functionality of the Web UI. The drag and drop engine is <a class="reference external" href="https://github.com/cuire/svelte-grid-extended">svelte-grid-extended</a> which uses svelte 4.2. While this library works, future releases of Svelte might drop support for this in which case it will need to be ported, rewritten, or replaced.
+Each widget has its location saved to the database on every movement.</p>
+<p><strong>Widget wrapper</strong>
+This component does two things, create an instance of the custom widget component and generate the widget settings menu from the <code class="docutils literal notranslate"><span class="pre">WidgetSettingsType</span></code> instance.</p>
+<h2 id="webrtc-videos">WebRTC Videos<a class="headerlink" href="#webrtc-videos" title="Link to this heading">¶</a></h2>
+<h3 id="camera-server">Camera server<a class="headerlink" href="#camera-server" title="Link to this heading">¶</a></h3>
+<p>The function of the camera server is to:</p>
+<ul class="simple">
+<li><p>Provide an interface to connected linux video devices</p></li>
+<li><p>Generate Gstreamer pipelines and manage instances</p></li>
+<li><p>Communicate with the main web server</p></li>
+</ul>
+<p><strong>Linux device interface:</strong>
+In the folder: <code class="docutils literal notranslate"><span class="pre">/dev/v4l/by-id/</span></code> each camera has its ID listed. A node file watcher is used to get a live list of devices in this folder allowing for connect and disconnect handling.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Each video device has 2 files associated with it. The one with the suffix <code class="docutils literal notranslate"><span class="pre">-index0</span></code> is the correct one and all other only contain meta data about the camera.</p>
+</div>
+<p><strong>Gstreamer pipelines</strong>
+Each Gstreamer instance is tracked with the videos resolution and transform so the server known when a restart is necessary. Each pipeline uses these plugins: <code class="docutils literal notranslate"><span class="pre">webrtcsink</span></code>, <code class="docutils literal notranslate"><span class="pre">v4l2src</span></code>, <code class="docutils literal notranslate"><span class="pre">videoflip</span></code>, <code class="docutils literal notranslate"><span class="pre">videoconvert</span></code> to apply all the required processing as seen in this example pipeline:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">gst</span><span class="o">-</span><span class="n">launch1</span><span class="mf">.0</span><span class="w"> </span><span class="n">webrtcsink</span><span class="w"> </span><span class="n">stun</span><span class="o">-</span><span class="n">server</span><span class="o">=</span><span class="nb">NULL</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="n">ws</span><span class="w"> </span><span class="n">signaller</span><span class="o">::</span><span class="n">uri</span><span class="o">=</span><span class="s">&quot;ws://{web server host}:8443&quot;</span><span class="w"> </span><span class="n">meta</span><span class="o">=</span><span class="s">&quot;meta,device={device name}&quot;</span><span class="w"> </span><span class="n">v4l2src</span><span class="w"> </span><span class="n">device</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">v4l</span><span class="o">/</span><span class="n">by</span><span class="o">-</span><span class="n">id</span><span class="o">/</span><span class="p">{</span><span class="n">device</span><span class="w"> </span><span class="n">name</span><span class="p">}</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">video</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">raw</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">320</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">240</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">videoconvert</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">videoconvert</span><span class="w"> </span><span class="n">method</span><span class="o">=</span><span class="n">none</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">ws</span><span class="p">.</span>
+</code></pre></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">signaller::uri=&quot;ws://hostname:8443&quot;</span></code> property sets the signalling server to location as it is run by the main web server. Furthermore, the <code class="docutils literal notranslate"><span class="pre">meta</span></code> property assigns meta data to each WebRTC stream allowing the stream origin to be determined.</p>
+</div>
+<p><strong>Web server communication</strong>
+The communication with the web server is conducted via a WebSocket with the goal of sending information about the available devices to the client and then initialising requested streams. All messages are sent using the following interface.</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">CameraEventType</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;camera&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">action</span><span class="o">:</span>
+<span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;group-description&quot;</span>
+<span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;kill&quot;</span>
+<span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;request-groups&quot;</span>
+<span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;request-stream&quot;</span>
+<span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;group-terminated&quot;</span>
+<span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;device-disconnect&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">devices?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[];</span>
+<span class="w">    </span><span class="nx">resolution</span><span class="o">?:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">};</span>
+<span class="w">    </span><span class="nx">transform?</span><span class="o">:</span><span class="w"> </span><span class="kt">videoTransformType</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">forceRestart?</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
 <h2 id="ros2-interface">ROS2 Interface<a class="headerlink" href="#ros2-interface" title="Link to this heading">¶</a></h2>
 <h2 id="can-bus-interface">CAN Bus Interface<a class="headerlink" href="#can-bus-interface" title="Link to this heading">¶</a></h2>
-<h2 id="web-ui-internal">Web UI Internal<a class="headerlink" href="#web-ui-internal" title="Link to this heading">¶</a></h2>
 
 
 
@@ -6120,7 +6269,7 @@
         <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../../_static/tippy/development/software/web-ui.ec017597-fb98-4d48-aac6-da736957aeb3.js"></script>
+        <script defer="defer" src="../../_static/tippy/development/software/web-ui.0554451c-e2b9-40cd-a155-f9a99e4fe47c.js"></script>
         <script src="../../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

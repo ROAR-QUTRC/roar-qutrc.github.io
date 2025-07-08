@@ -364,8 +364,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#power-on-sequence" class="md-nav__link">
-    <span class="md-ellipsis">Power on Sequence</span>
+  <a href="#power-on-rover-control-board" class="md-nav__link">
+    <span class="md-ellipsis">Power on Rover Control Board</span>
   </a>
   
 </li>
@@ -5969,8 +5969,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#power-on-sequence" class="md-nav__link">
-    <span class="md-ellipsis">Power on Sequence</span>
+  <a href="#power-on-rover-control-board" class="md-nav__link">
+    <span class="md-ellipsis">Power on Rover Control Board</span>
   </a>
   
 </li>
@@ -6068,12 +6068,41 @@
 <li><p>Verify that the drive stop is “up”. This means that it is level with the top of the panel it is mounted in.</p></li>
 <li><p>Connect the battery’s XT90 connecter to the power meter inside of Perseus.</p></li>
 </ol>
-<h3 id="power-on-sequence">Power on Sequence<a class="headerlink" href="#power-on-sequence" title="Link to this heading">¶</a></h3>
+<h3 id="power-on-rover-control-board">Power on Rover Control Board<a class="headerlink" href="#power-on-rover-control-board" title="Link to this heading">¶</a></h3>
+<p>The Rover Control Board (RCB) is the large purple PCB. To power the RCB press and hold the power button until the contactor is enabled. This should take about one second and will make an audible click when the contactor is engaged. Once the power button is flashing blue, the rover control board is powered.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>The power button has three status modes:</p>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>State</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Off</p></td>
+<td><p>Contactor is disabled</p></td>
+</tr>
+<tr class="row-odd"><td><p>Flashing</p></td>
+<td><p>Contactor is enabled without compute</p></td>
+</tr>
+<tr class="row-even"><td><p>Solid</p></td>
+<td><p>Compute is enabled</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <ol class="arabic simple">
 <li><p>Press and hold the power button until the contactor is enabled. This should take about one second and will make an audible click when the contactor has been engaged.</p></li>
-<li><p>Once the light towers top most band is lit green the rover is successfully powered on.</p></li>
+<li><p>Once the power button is flashing blue the rover control board is successfully powered on.</p></li>
 </ol>
 <h3 id="power-rover-systems">Power Rover Systems<a class="headerlink" href="#power-rover-systems" title="Link to this heading">¶</a></h3>
+<div class="info admonition">
+<p class="admonition-title">Info</p>
+<p>Each bus has an orange and red LED next to its terminal to display status.
+These are not controlled with software and instead directly display hardware status. The red button indicates the precharge status, and the orange button indicates whether the bus is connected.</p>
+<p>If the orange LED is on, then the bus is powered. The red LED should periodically flash when attempting to precharge. In a worst-case situation, the red LED may be solidly lit, signifying a major fault, and the rover must be e-stopped IMMEDIATELY.</p>
+</div>
 <h4 id="compute-power">Compute Power<a class="headerlink" href="#compute-power" title="Link to this heading">¶</a></h4>
 <p>Once Perseus is powered the first bus that should be powered is compute as this is required for powering on subsequent busses. This is done by pressing the power button once and waiting for the compute bus LED on the RCB to light. Before compute can be powered off the orin MUST be powered off with the command <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">poweroff</span></code>, then to power off this bus you must hold down the power button.</p>
 <h4 id="bus-power">Bus Power<a class="headerlink" href="#bus-power" title="Link to this heading">¶</a></h4>
@@ -6216,7 +6245,7 @@
         <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../../_static/tippy/home/perseus-operation/power-on.56b8859d-9772-48b7-b2aa-b774090f3c5f.js"></script>
+        <script defer="defer" src="../../_static/tippy/home/perseus-operation/power-on.d3304d66-6457-41bd-b696-065aba519e21.js"></script>
         <script src="../../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
