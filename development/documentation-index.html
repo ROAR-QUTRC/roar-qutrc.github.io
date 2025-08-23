@@ -6008,6 +6008,13 @@ The first is to use <code class="docutils literal notranslate"><span class="pre"
 The second is to enter a <em>development shell</em> using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> - if you want slightly faster builds, you’re modifying Python dependencies, or you’re tinkering with the build toolchain, this is what you’ll need.</p>
 <h3 id="using-nix-build">Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code><a class="headerlink" href="#using-nix-build" title="Link to this heading">¶</a></h3>
 <p>To build the documentation, simply run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span></code> - the output will be in the <code class="docutils literal notranslate"><span class="pre">result</span></code> symlink in the directory where you ran the command.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>A quick start to view changes locally is to run the following commands from the /perseus-v2 directory</p>
+<p>nix build .#docs</p>
+<p>nix run nixpkgs#darkhttpd – ./result/html/</p>
+<p>…and then view the ‘127.0.0.1:8080’ or ‘localhost:8080’ in a browser</p>
+</div>
 <h3 id="using-nix-develop">Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code><a class="headerlink" href="#using-nix-develop" title="Link to this heading">¶</a></h3>
 <h4 id="building">Building<a class="headerlink" href="#building" title="Link to this heading">¶</a></h4>
 <ol class="arabic simple" start="0">
@@ -6142,7 +6149,7 @@ You may have to experiment with using either <code class="docutils literal notra
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/development/documentation-index.6d47a328-924f-4db3-9771-f1add6eee68e.js"></script>
+        <script defer="defer" src="../_static/tippy/development/documentation-index.acf20086-f139-45d4-991f-421b078c053c.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
