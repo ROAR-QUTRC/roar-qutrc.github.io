@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1aac9e0beff4adafcac72d5561b9148326:
+
+Variable perseus::servo::register_addr::LOCK
+============================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::LOCK
+   :project: rover

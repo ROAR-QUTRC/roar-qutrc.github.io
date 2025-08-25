@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1a8e20844869092cbca812e32ec9197a8a:
+
+Function exportCalibrationData
+==============================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: exportCalibrationData(const std::vector<ServoData>&, const std::vector<ServoData>&, const std::string&, const std::string&)
+   :project: rover

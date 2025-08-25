@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1adc1bd09aeddd9b080e2949c02e076ddb:
+
+Variable perseus::servo::limits::MAX_TORQUE
+===========================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::limits::MAX_TORQUE
+   :project: rover

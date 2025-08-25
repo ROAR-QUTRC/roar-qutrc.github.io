@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1a64ce021e540191b5f797b273601a058b:
+
+Function findSerialPorts
+========================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: findSerialPorts()
+   :project: rover

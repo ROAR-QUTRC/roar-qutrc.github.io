@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1a953d79bb644de47e0dab07c23eaee6bb:
+
+Function getWorkingDirectory
+============================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: getWorkingDirectory()
+   :project: rover

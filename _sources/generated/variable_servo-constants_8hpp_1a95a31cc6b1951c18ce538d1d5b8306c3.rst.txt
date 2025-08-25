@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1a95a31cc6b1951c18ce538d1d5b8306c3:
+
+Variable perseus::servo::timing::PORT_SETTLE_TIME
+=================================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::timing::PORT_SETTLE_TIME
+   :project: rover

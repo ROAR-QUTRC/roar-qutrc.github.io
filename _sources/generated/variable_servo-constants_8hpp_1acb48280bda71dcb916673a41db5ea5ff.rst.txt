@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1acb48280bda71dcb916673a41db5ea5ff:
+
+Variable perseus::servo::register_addr::POSITION_OFFSET
+=======================================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::POSITION_OFFSET
+   :project: rover

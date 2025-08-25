@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1a3e467e09b9e8495b75e926851b5f05d0:
+
+Function loadCalibrationData
+============================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: loadCalibrationData(std::vector<ServoData>&, std::vector<ServoData>&, const std::string&)
+   :project: rover

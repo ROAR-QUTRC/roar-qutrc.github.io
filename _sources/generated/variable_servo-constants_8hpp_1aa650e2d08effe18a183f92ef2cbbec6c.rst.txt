@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1aa650e2d08effe18a183f92ef2cbbec6c:
+
+Variable perseus::servo::register_addr::ACCELERATION
+====================================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::ACCELERATION
+   :project: rover

@@ -11,6 +11,21 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_arm-teleop-direct.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_arm-teleop-direct_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_arm-teleop-direct_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_native.rst
 
 .. toctree::
@@ -475,6 +490,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_arm-teleop-direct_src_main.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_native_hi-can-common_src_main.cpp.rst
 
 .. toctree::
@@ -495,6 +515,16 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_arm-teleop-direct_src_perseus-arm-teleop.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_arm-teleop-direct_include_perseus-arm-teleop.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_shared_ptr-wrapper_src_ptr_wrapper.cpp.rst
 
 .. toctree::
@@ -511,6 +541,11 @@ Files
    :maxdepth: 5
 
    file_ros_ws_src_perseus_can_if_include_rcb_driver_rcb_driver.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_arm-teleop-direct_include_servo-constants.hpp.rst
 
 .. toctree::
    :maxdepth: 5

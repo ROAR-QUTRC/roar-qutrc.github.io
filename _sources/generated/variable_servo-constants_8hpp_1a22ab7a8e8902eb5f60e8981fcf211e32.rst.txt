@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1a22ab7a8e8902eb5f60e8981fcf211e32:
+
+Variable perseus::servo::register_addr::TORQUE_ENABLE
+=====================================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::TORQUE_ENABLE
+   :project: rover

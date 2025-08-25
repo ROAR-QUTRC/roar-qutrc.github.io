@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1a973e46319bf04e4db7002b2831365e37:
+
+Variable perseus::servo::error_bits::OVERHEATING
+================================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::error_bits::OVERHEATING
+   :project: rover

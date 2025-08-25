@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1ad9540592f2876f29617a86e6bed6b993:
+
+Variable perseus::servo::register_addr::MAX_POSITION_LIMIT
+==========================================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::MAX_POSITION_LIMIT
+   :project: rover

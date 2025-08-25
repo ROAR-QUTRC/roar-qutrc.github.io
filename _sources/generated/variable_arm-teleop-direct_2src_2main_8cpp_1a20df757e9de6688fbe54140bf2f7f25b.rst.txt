@@ -1,0 +1,14 @@
+.. _exhale_variable_arm-teleop-direct_2src_2main_8cpp_1a20df757e9de6688fbe54140bf2f7f25b:
+
+Variable reader1_ptr
+====================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: reader1_ptr
+   :project: rover

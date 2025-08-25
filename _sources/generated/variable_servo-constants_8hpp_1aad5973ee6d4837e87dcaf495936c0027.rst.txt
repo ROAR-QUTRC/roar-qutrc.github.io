@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1aad5973ee6d4837e87dcaf495936c0027:
+
+Variable perseus::servo::register_addr::MAX_TEMPERATURE_LIMIT
+=============================================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::MAX_TEMPERATURE_LIMIT
+   :project: rover

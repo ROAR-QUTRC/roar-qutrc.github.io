@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1a20ec6d52d642ab8bab9c399012d7ecae:
+
+Variable perseus::servo::instruction::PING
+==========================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::instruction::PING
+   :project: rover

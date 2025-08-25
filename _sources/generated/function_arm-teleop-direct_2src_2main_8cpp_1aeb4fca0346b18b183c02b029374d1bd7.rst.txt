@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1aeb4fca0346b18b183c02b029374d1bd7:
+
+Function scalePosition
+======================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: scalePosition(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)
+   :project: rover

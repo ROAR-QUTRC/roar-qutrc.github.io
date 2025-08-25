@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1adbea1cc171c9c9aee5651a4f6b69a441:
+
+Function displayTorqueBar
+=========================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: displayTorqueBar(WINDOW *, int, int, int16_t)
+   :project: rover

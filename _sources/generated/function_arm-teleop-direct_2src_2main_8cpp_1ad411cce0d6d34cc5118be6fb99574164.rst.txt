@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1ad411cce0d6d34cc5118be6fb99574164:
+
+Function selectSerialPorts
+==========================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: selectSerialPorts(const std::vector<std::string>&)
+   :project: rover

@@ -1,0 +1,14 @@
+.. _exhale_variable_arm-teleop-direct_2src_2main_8cpp_1a1a367d849492f4e270387560e7578de1:
+
+Variable ncurses_win
+====================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ncurses_win
+   :project: rover

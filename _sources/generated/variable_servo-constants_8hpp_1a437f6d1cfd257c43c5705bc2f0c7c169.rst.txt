@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1a437f6d1cfd257c43c5705bc2f0c7c169:
+
+Variable perseus::servo::instruction::REG_WRITE
+===============================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::instruction::REG_WRITE
+   :project: rover

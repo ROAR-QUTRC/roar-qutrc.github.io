@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1a6773756f94ef67637ed40551bc56113e:
+
+Variable perseus::servo::communication::DEFAULT_ACCELERATION
+============================================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::communication::DEFAULT_ACCELERATION
+   :project: rover

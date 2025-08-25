@@ -1,0 +1,112 @@
+
+.. _file_arm-teleop-direct_src_main.cpp:
+
+File main.cpp
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_arm-teleop-direct_src>` (``arm-teleop-direct/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``arm-teleop-direct/src/main.cpp``)
+-----------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``atomic``
+
+- ``chrono``
+
+- ``csignal``
+
+- ``curses.h``
+
+- ``filesystem``
+
+- ``fstream``
+
+- ``iomanip``
+
+- ``iostream``
+
+- ``perseus-arm-teleop.hpp`` (:ref:`file_arm-teleop-direct_include_perseus-arm-teleop.hpp`)
+
+- ``servo-constants.hpp`` (:ref:`file_arm-teleop-direct_include_servo-constants.hpp`)
+
+- ``sstream``
+
+- ``thread``
+
+- ``vector``
+
+- ``yaml-cpp/yaml.h``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structServoData`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a66260ac19f594000868485e6641f348d`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a53d027c895976bc295d491005f804ed8`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a53fdf0032448fbf335fc7f6d3643f426`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1adbea1cc171c9c9aee5651a4f6b69a441`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a8e20844869092cbca812e32ec9197a8a`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a64ce021e540191b5f797b273601a058b`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a953d79bb644de47e0dab07c23eaee6bb`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a3e467e09b9e8495b75e926851b5f05d0`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1af7c41795cade08431f93078ad7c2663e`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1aeb4fca0346b18b183c02b029374d1bd7`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1ad411cce0d6d34cc5118be6fb99574164`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a8ee3282bc313e547dbbb8d4f4010db61`
+
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a7351e517da9c5e7f86f8b985b570abcb`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_arm-teleop-direct_2src_2main_8cpp_1ac12ada52cce0209c33fe2e13ef32f799`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_arm-teleop-direct_2src_2main_8cpp_1a1a367d849492f4e270387560e7578de1`
+
+- :ref:`exhale_variable_arm-teleop-direct_2src_2main_8cpp_1a20df757e9de6688fbe54140bf2f7f25b`
+
+- :ref:`exhale_variable_arm-teleop-direct_2src_2main_8cpp_1ad2a218f555d44cf8a4c1cb57834fb09a`
+

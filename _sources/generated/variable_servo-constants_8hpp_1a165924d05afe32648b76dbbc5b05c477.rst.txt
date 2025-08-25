@@ -1,0 +1,14 @@
+.. _exhale_variable_servo-constants_8hpp_1a165924d05afe32648b76dbbc5b05c477:
+
+Variable perseus::servo::ui::TORQUE_BAR_WIDTH
+=============================================
+
+- Defined in :ref:`file_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::ui::TORQUE_BAR_WIDTH
+   :project: rover
