@@ -7572,12 +7572,21 @@ ros2<span class="w"> </span>control<span class="w"> </span>set_controller_state<
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>nix<span class="w"> </span>develop<span class="w"> </span>.#simulation
 <span class="nb">cd</span><span class="w"> </span>software/ros_ws
 <span class="nb">source</span><span class="w"> </span>install/setup.bash
-ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>--ros-args<span class="w"> </span>-r<span class="w"> </span>/cmd_vel:<span class="o">=</span>/cmd_vel_out
+ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>--ros-args<span class="w"> </span>-r<span class="w"> </span>/cmd_vel:<span class="o">=</span>/cmd_vel_out<span class="w"> </span>-p<span class="w"> </span>stamped:<span class="o">=</span><span class="nb">true</span>
 </code></pre></div>
 </div>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
 <h3 id="rover-not-moving-in-teleop">Rover Not Moving in Teleop<a class="headerlink" href="#rover-not-moving-in-teleop" title="Link to this heading">¶</a></h3>
 <p>If the rover doesn’t respond to keyboard commands:</p>
+<ol class="arabic simple" start="0">
+<li><p><strong>Workaround for broken ros controller</strong>:</p></li>
+</ol>
+<p>There is a bug being investigated where the ros2 controller daemon is non-responsive.</p>
+<p>Instead of activating the controller with “ros2 control set_controller_state diff_drive_base_controller active” use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>service<span class="w"> </span>call<span class="w"> </span>/controller_manager/switch_controller<span class="w"> </span>controller_manager_msgs/srv/SwitchController<span class="w"> </span><span class="s2">&quot;{activate_controllers: [&#39;diff_drive_base_controller&#39;], deactivate_controllers: [], strictness: 1, activate_asap: false, timeout: {sec: 5, nanosec: 0}}&quot;</span>
+</code></pre></div>
+</div>
+<p>This sets the state directly.</p>
 <ol class="arabic">
 <li><p><strong>Check if the controller is active</strong>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>control<span class="w"> </span>list_controllers
@@ -7707,7 +7716,7 @@ ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<spa
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/tutorials/running-simulation.31b0bee3-acfb-4c40-b01c-e3933458669d.js"></script>
+        <script defer="defer" src="../_static/tippy/tutorials/running-simulation.96e212ef-a01c-43c1-aa5f-68f3d4a32c67.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
