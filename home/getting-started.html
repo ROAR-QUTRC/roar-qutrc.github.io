@@ -7561,25 +7561,33 @@ Whilst this page will get you started, it is strongly recommended that you read 
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Log into GitHub: <code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">auth</span> <span class="pre">login</span> <span class="pre">-w</span> <span class="pre">-p</span> <span class="pre">https</span></code></p></li>
-<li><p>Clone the repo (into <code class="docutils literal notranslate"><span class="pre">~/perseus-v2</span></code>) and <code class="docutils literal notranslate"><span class="pre">cd</span></code> into it:</p></li>
+<li><p>Clone (means to download a copy from the server to your machine) the repository (often referred to as repo) into <code class="docutils literal notranslate"><span class="pre">~/perseus-v2</span></code> and <code class="docutils literal notranslate"><span class="pre">cd</span></code> (change directory) into it:</p></li>
 </ol>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">cd ~</span>
-<span class="go">gh repo clone ROAR-QUTRC/perseus-v2 # download the repository</span>
+<span class="go">gh repo clone ROAR-QUTRC/perseus-v2</span>
 <span class="go">cd perseus-v2</span>
 </code></pre></div>
 </div>
 <ol class="arabic simple" start="5">
 <li><p>Run the setup script (it will prompt you for sudo permissions):</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">`./software/scripts/nix-setup.sh`</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">./software/scripts/nix-setup.sh</span>
 </code></pre></div>
 </div>
 <ol class="arabic simple" start="6">
+<li><p>Skip this step if it ran without errors. If the script failed to run and suggests running with <code class="docutils literal notranslate"><span class="pre">--no-confirm</span></code>, try again like this:</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">./software/scripts/nix-setup.sh --no-confirm</span>
+</code></pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Accept all config options when prompted by typing <code class="docutils literal notranslate"><span class="pre">y</span></code>, then press enter</p></li>
 <li><p>Restart your shell</p></li>
 <li><p>Run <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/perseus-v2</span></code></p></li>
-<li><p>Accept all config options when prompted with <code class="docutils literal notranslate"><span class="pre">y</span></code></p></li>
 <li><p>Wait for the downloads (and potentially builds)</p></li>
+<li><p>If asked, accept all config options with <code class="docutils literal notranslate"><span class="pre">y</span></code></p></li>
 <li><p>Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> - this will attempt to build the workspace. If this succeeds, you’re done, and the built workspace is now available under the <code class="docutils literal notranslate"><span class="pre">./result</span></code> folder!</p></li>
+<li><p>If asked, accept all config options with <code class="docutils literal notranslate"><span class="pre">y</span></code></p></li>
 </ol>
 <h3 id="ide-setup">IDE Setup<a class="headerlink" href="#ide-setup" title="Link to this heading">¶</a></h3>
 <h4 id="vscode-recommended"><a class="reference external" href="https://code.visualstudio.com/">VSCode</a> (recommended)<a class="headerlink" href="#vscode-recommended" title="Link to this heading">¶</a></h4>
@@ -7792,7 +7800,7 @@ You’ll have to set up the hook yourself according to its <a class="reference e
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/home/getting-started.df33ad30-2d17-4838-a054-3da9af0e8693.js"></script>
+        <script defer="defer" src="../_static/tippy/home/getting-started.4ff45469-b4cf-4854-b769-fee575c2ddc7.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
