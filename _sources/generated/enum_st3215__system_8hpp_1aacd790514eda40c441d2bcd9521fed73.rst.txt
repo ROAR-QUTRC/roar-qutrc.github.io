@@ -1,0 +1,14 @@
+.. _exhale_enum_st3215__system_8hpp_1aacd790514eda40c441d2bcd9521fed73:
+
+Enum ServoErrorFlag
+===================
+
+- Defined in :ref:`file_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: perseus_lite_hardware::ServoErrorFlag
+   :project: rover

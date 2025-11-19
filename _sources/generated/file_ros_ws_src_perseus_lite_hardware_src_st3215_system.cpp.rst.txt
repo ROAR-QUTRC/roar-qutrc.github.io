@@ -1,0 +1,47 @@
+
+.. _file_ros_ws_src_perseus_lite_hardware_src_st3215_system.cpp:
+
+File st3215_system.cpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_lite_hardware_src>` (``ros_ws/src/perseus_lite_hardware/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/perseus_lite_hardware/src/st3215_system.cpp``)
+-----------------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``cmath``
+
+- ``hardware_interface/system_interface.hpp``
+
+- ``hardware_interface/types/hardware_interface_type_values.hpp``
+
+- ``pluginlib/class_list_macros.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``st3215_system.hpp`` (:ref:`file_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_perseus_lite_hardware`
+

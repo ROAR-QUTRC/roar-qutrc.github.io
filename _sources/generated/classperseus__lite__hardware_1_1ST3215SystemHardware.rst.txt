@@ -1,0 +1,37 @@
+.. _exhale_class_classperseus__lite__hardware_1_1ST3215SystemHardware:
+
+Class ST3215SystemHardware
+==========================
+
+- Defined in :ref:`file_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structperseus__lite__hardware_1_1ST3215SystemHardware_1_1ServoState`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public hardware_interface::SystemInterface``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: perseus_lite_hardware::ST3215SystemHardware
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

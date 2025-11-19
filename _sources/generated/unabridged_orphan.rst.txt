@@ -141,6 +141,21 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_perseus_lite_hardware.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_lite_hardware_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_lite_hardware_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ros_ws_src_perseus_payloads.rst
 
 .. toctree::
@@ -551,6 +566,16 @@ Files
    :maxdepth: 5
 
    file_shared_simple-networking_include_simple_networking.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_lite_hardware_src_st3215_system.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp.rst
 
 .. toctree::
    :maxdepth: 5

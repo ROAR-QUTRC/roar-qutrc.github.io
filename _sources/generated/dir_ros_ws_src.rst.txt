@@ -20,6 +20,7 @@ Subdirectories
 - :ref:`dir_ros_ws_src_perseus_can_if`
 - :ref:`dir_ros_ws_src_perseus_hardware`
 - :ref:`dir_ros_ws_src_perseus_input`
+- :ref:`dir_ros_ws_src_perseus_lite_hardware`
 - :ref:`dir_ros_ws_src_perseus_payloads`
 - :ref:`dir_ros_ws_src_perseus_sensors`
 
