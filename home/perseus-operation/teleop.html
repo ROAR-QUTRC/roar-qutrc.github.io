@@ -7997,7 +7997,7 @@ Sometimes you may need to re-pair, even if you’ve paired to it before.</p>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">type</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">xbox</span></code></p></td>
-<td><p>Controller type. Options: <code class="docutils literal notranslate"><span class="pre">xbox</span></code>, <code class="docutils literal notranslate"><span class="pre">8bitdo</span></code>.</p></td>
+<td><p>Controller type. Options: <code class="docutils literal notranslate"><span class="pre">xbox</span></code>, <code class="docutils literal notranslate"><span class="pre">8bitdo</span></code>, <code class="docutils literal notranslate"><span class="pre">logitech</span></code>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">wireless</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
@@ -8009,6 +8009,10 @@ Sometimes you may need to re-pair, even if you’ve paired to it before.</p>
 </tr>
 </tbody>
 </table>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>The logitech controller config file has been configured for a logitech wired F310, and the 8bitdo controller config file has been configured for an 8BitDo Ultimate 2C controller. These same configuration files might not work for other models.</p>
+</div>
 <p>Some example runs:</p>
 <p>Default: Xbox controller, wireless</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">nix run .#generic_controller</span>
@@ -8020,6 +8024,10 @@ Sometimes you may need to re-pair, even if you’ve paired to it before.</p>
 </div>
 <p>8BitDo controller, wireless</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">nix run .#generic_controller -- type:=8bitdo wireless:=true</span>
+</code></pre></div>
+</div>
+<p>Logitech controller, wired</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">nix run .#generic_controller -- type:=logitech wireless:=false</span>
 </code></pre></div>
 </div>
 <p>Use a custom config file</p>
@@ -8161,7 +8169,7 @@ The right trigger is for low-speed movement, and the left trigger is for high-sp
         <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../../_static/tippy/home/perseus-operation/teleop.1899791a-8114-4f67-bf5d-c5b84d552921.js"></script>
+        <script defer="defer" src="../../_static/tippy/home/perseus-operation/teleop.824146e0-1368-40ae-97e0-b628e89f5bb7.js"></script>
         <script src="../../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
