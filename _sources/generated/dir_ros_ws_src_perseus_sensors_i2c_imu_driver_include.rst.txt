@@ -1,0 +1,21 @@
+.. _dir_ros_ws_src_perseus_sensors_i2c_imu_driver_include:
+
+
+Directory include
+=================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_sensors_i2c_imu_driver>` (``ros_ws/src/perseus_sensors/i2c_imu_driver``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``ros_ws/src/perseus_sensors/i2c_imu_driver/include``
+
+Subdirectories
+--------------
+
+- :ref:`dir_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver`
+
+
+

@@ -1,0 +1,18 @@
+.. _exhale_struct_structi2c__imu__driver_1_1ImuData:
+
+Struct ImuData
+==============
+
+- Defined in :ref:`file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_data_types.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: i2c_imu_driver::ImuData
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

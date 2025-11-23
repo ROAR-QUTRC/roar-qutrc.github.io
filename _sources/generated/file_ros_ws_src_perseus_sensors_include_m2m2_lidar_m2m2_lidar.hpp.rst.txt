@@ -20,23 +20,11 @@ Includes
 --------
 
 
-- ``algorithm``
-
-- ``cassert``
-
-- ``chrono``
-
-- ``cmath``
-
-- ``iomanip``
+- ``cstdint``
 
 - ``nlohmann/json.hpp``
 
-- ``numbers``
-
 - ``optional``
-
-- ``ranges``
 
 - ``rclcpp/rclcpp.hpp``
 
@@ -46,11 +34,11 @@ Includes
 
 - ``simple_networking/client.hpp`` (:ref:`file_shared_simple-networking_include_simple_networking_client.hpp`)
 
-- ``stdexcept``
-
 - ``string``
 
-- ``thread``
+- ``string_view``
+
+- ``tuple``
 
 - ``vector``
 

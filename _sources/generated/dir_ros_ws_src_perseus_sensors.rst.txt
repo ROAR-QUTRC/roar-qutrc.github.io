@@ -15,6 +15,7 @@ Directory perseus_sensors
 Subdirectories
 --------------
 
+- :ref:`dir_ros_ws_src_perseus_sensors_i2c_imu_driver`
 - :ref:`dir_ros_ws_src_perseus_sensors_include`
 - :ref:`dir_ros_ws_src_perseus_sensors_src`
 

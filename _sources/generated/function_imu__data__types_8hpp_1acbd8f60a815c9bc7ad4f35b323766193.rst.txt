@@ -1,0 +1,14 @@
+.. _exhale_function_imu__data__types_8hpp_1acbd8f60a815c9bc7ad4f35b323766193:
+
+Function i2c_imu_driver::apply_calibration
+==========================================
+
+- Defined in :ref:`file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_data_types.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: i2c_imu_driver::apply_calibration(const ImuData&, double, double, double, double, double, double, double, double, double, double, double, double)
+   :project: rover

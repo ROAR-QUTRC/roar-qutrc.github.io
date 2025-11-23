@@ -1,0 +1,68 @@
+
+.. _file_ros_ws_src_perseus_sensors_i2c_imu_driver_src_imu_device_config.cpp:
+
+File imu_device_config.cpp
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_sensors_i2c_imu_driver_src>` (``ros_ws/src/perseus_sensors/i2c_imu_driver/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/perseus_sensors/i2c_imu_driver/src/imu_device_config.cpp``)
+------------------------------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``cmath``
+
+- ``i2c_imu_driver/imu_device_config.hpp`` (:ref:`file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_device_config.hpp`)
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_i2c_imu_driver`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1a94c4a93d669aeb8b7dd251a37bad154a`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1aa5729ae240b96bb3732bd332fb655b02`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1a3d4f131dada17f5f0262492418a1c306`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1ad6d31a262f3b5759d39d7eb257d3b641`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1a68ccef46766c66a5c1bf7c76970d09c7`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1aba4bb7f9d7d69de9616d97660269a054`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1a515ee01218cc434f100dc8459e590912`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1ae2742b8e8d00dbd7d413816e375d5354`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1a3ada98a684f15157ba170148caafba65`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1a28ab5c903f40346cad2e5f383cb84181`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1a383d208fcf6acfe07a5fe5029b8a3a83`
+
+- :ref:`exhale_variable_imu__device__config_8cpp_1ae97de7e53e568e4f58e40d3a82abb8ae`
+

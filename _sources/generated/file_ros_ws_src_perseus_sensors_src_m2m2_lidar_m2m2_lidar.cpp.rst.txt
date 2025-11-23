@@ -87,9 +87,19 @@ Includes
 --------
 
 
+- ``algorithm``
+
 - ``arpa/inet.h``
 
 - ``bit``
+
+- ``cassert``
+
+- ``chrono``
+
+- ``cmath``
+
+- ``iomanip``
 
 - ``m2m2_lidar/m2m2_lidar.hpp`` (:ref:`file_ros_ws_src_perseus_sensors_include_m2m2_lidar_m2m2_lidar.hpp`)
 
@@ -97,9 +107,13 @@ Includes
 
 - ``netinet/in.h``
 
+- ``numbers``
+
 - ``openssl/bio.h``
 
 - ``openssl/evp.h``
+
+- ``ranges``
 
 - ``rclcpp/rclcpp.hpp``
 
@@ -107,9 +121,13 @@ Includes
 
 - ``simple_networking/client.hpp`` (:ref:`file_shared_simple-networking_include_simple_networking_client.hpp`)
 
+- ``stdexcept``
+
 - ``sys/socket.h``
 
 - ``sys/types.h``
+
+- ``thread``
 
 - ``unistd.h``
 

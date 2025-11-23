@@ -1,0 +1,14 @@
+.. _exhale_variable_imu__device__config_8cpp_1a94c4a93d669aeb8b7dd251a37bad154a:
+
+Variable i2c_imu_driver::LSM6DS3_ACCEL_SCALE_FACTOR
+===================================================
+
+- Defined in :ref:`file_ros_ws_src_perseus_sensors_i2c_imu_driver_src_imu_device_config.cpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: i2c_imu_driver::LSM6DS3_ACCEL_SCALE_FACTOR
+   :project: rover

@@ -1,0 +1,62 @@
+
+.. _file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_device_config.hpp:
+
+File imu_device_config.hpp
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver>` (``ros_ws/src/perseus_sensors/i2c_imu_driver/include/i2c_imu_driver``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/perseus_sensors/i2c_imu_driver/include/i2c_imu_driver/imu_device_config.hpp``)
+-------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstdint``
+
+- ``functional``
+
+- ``optional``
+
+- ``string``
+
+- ``unordered_map``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_imu_node.hpp`
+
+- :ref:`file_ros_ws_src_perseus_sensors_i2c_imu_driver_src_imu_device_config.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_i2c_imu_driver`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structi2c__imu__driver_1_1ImuDeviceConfig`
+
+- :ref:`exhale_class_classi2c__imu__driver_1_1ImuDeviceRegistry`
+

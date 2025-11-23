@@ -206,6 +206,26 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_perseus_sensors_i2c_imu_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_sensors_i2c_imu_driver_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_sensors_i2c_imu_driver_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ros_ws_src_perseus_sensors_include.rst
 
 .. toctree::
@@ -495,6 +515,41 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ros_ws_src_perseus_sensors_i2c_imu_driver_src_i2c_device.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_device.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_sensors_i2c_imu_driver_src_i2c_imu_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_imu_node.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_data_types.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_sensors_i2c_imu_driver_src_imu_device_config.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_device_config.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp.rst
 
 .. toctree::
@@ -511,6 +566,11 @@ Files
    :maxdepth: 5
 
    file_native_hi-can-common_src_main.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_sensors_i2c_imu_driver_src_main.cpp.rst
 
 .. toctree::
    :maxdepth: 5
