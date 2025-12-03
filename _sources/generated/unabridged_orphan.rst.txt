@@ -246,6 +246,16 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_teleop_diagnostics.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_teleop_diagnostics_teleop_diagnostics.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_shared.rst
 
 .. toctree::
@@ -641,6 +651,11 @@ Files
    :maxdepth: 5
 
    file_ros_ws_src_perseus_hardware_priv_include_system_common.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py.rst
 
 .. toctree::
    :maxdepth: 5

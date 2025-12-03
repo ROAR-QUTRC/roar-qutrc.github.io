@@ -1,0 +1,45 @@
+
+.. _namespace_teleop_diagnostics__teleop_tui:
+
+Namespace teleop_diagnostics::teleop_tui
+========================================
+
+
+Detailed Description
+--------------------
+
+Teleop Diagnostics TUI - A comprehensive diagnostic tool for teleoperation debugging.
+
+Uses curses (standard library) for the terminal interface - no external dependencies.
+Falls back to simple text mode when no TTY is available.
+
+This tool provides a real-time view of:
+- Joystick raw input (axes and buttons)
+- Generic controller configuration and scaling
+- Velocity command chain (joy -> mux -> controller)
+- Wheel states (velocities, positions)
+- Twist mux priority and active source
+- Wheel axis configuration
+ 
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classteleop__diagnostics_1_1teleop__tui_1_1ControllerConfig`
+
+- :ref:`exhale_class_classteleop__diagnostics_1_1teleop__tui_1_1JoyData`
+
+- :ref:`exhale_class_classteleop__diagnostics_1_1teleop__tui_1_1RateCalculator`
+
+- :ref:`exhale_class_classteleop__diagnostics_1_1teleop__tui_1_1TeleopDiagnosticsNode`
+
+- :ref:`exhale_class_classteleop__diagnostics_1_1teleop__tui_1_1TeleopTUI`
+
+- :ref:`exhale_class_classteleop__diagnostics_1_1teleop__tui_1_1VelocityData`
+
+- :ref:`exhale_class_classteleop__diagnostics_1_1teleop__tui_1_1WheelData`

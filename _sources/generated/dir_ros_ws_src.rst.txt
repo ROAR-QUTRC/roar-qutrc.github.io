@@ -23,6 +23,7 @@ Subdirectories
 - :ref:`dir_ros_ws_src_perseus_lite_hardware`
 - :ref:`dir_ros_ws_src_perseus_payloads`
 - :ref:`dir_ros_ws_src_perseus_sensors`
+- :ref:`dir_ros_ws_src_teleop_diagnostics`
 
 
 
