@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1a3b6c524a5b9cbab5bdbd4af054c3521b:
+
+Function display_servo_values
+=============================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: display_servo_values(WINDOW *, const std::vector<ServoData>&, const std::vector<ServoData>&)
+   :project: rover

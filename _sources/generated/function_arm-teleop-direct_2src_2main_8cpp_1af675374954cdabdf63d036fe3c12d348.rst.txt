@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1af675374954cdabdf63d036fe3c12d348:
+
+Function signal_handler
+=======================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: signal_handler(int)
+   :project: rover

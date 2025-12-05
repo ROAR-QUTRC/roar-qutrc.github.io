@@ -196,9 +196,9 @@ Defines
 -------
 
 
-- :ref:`exhale_define_hi__can__parameter_8hpp_1a5fcdabb4d708d24e801855450cf98740`
+- :ref:`exhale_define_hi__can__parameter_8hpp_1a72179808b2f0413d1e6f008b46f4ad7c`
 
-- :ref:`exhale_define_hi__can__parameter_8hpp_1ace158cff566cf7f91032a6c83ad50263`
+- :ref:`exhale_define_hi__can__parameter_8hpp_1ab4c771eba1ed710c6b5d3ee907e755aa`
 
 
 Typedefs

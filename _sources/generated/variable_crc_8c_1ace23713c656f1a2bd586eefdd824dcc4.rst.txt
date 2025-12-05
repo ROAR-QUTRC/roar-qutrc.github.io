@@ -1,0 +1,14 @@
+.. _exhale_variable_crc_8c_1ace23713c656f1a2bd586eefdd824dcc4:
+
+Variable crc16_lookup_0x1021
+============================
+
+- Defined in :ref:`file_shared_crc_src_crc.c`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: crc16_lookup_0x1021
+   :project: rover

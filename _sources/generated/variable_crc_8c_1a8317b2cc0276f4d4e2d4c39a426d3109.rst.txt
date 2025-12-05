@@ -1,0 +1,14 @@
+.. _exhale_variable_crc_8c_1a8317b2cc0276f4d4e2d4c39a426d3109:
+
+Variable crc16_lookup_reflected_0x8005
+======================================
+
+- Defined in :ref:`file_shared_crc_src_crc.c`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: crc16_lookup_reflected_0x8005
+   :project: rover

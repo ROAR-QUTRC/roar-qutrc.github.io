@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1ace6c4bd0c81fe444bdb051c7f8c8bb09:
+
+Function display_progress_bar
+=============================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: display_progress_bar(WINDOW *, int, int, uint16_t, uint16_t, uint16_t)
+   :project: rover

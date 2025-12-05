@@ -1,0 +1,14 @@
+.. _exhale_function_arm-teleop-direct_2src_2main_8cpp_1a0ce6f23247bb5b182767ad8c65e1d0a1:
+
+Function disable_torque_and_cleanup
+===================================
+
+- Defined in :ref:`file_arm-teleop-direct_src_main.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: disable_torque_and_cleanup()
+   :project: rover

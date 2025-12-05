@@ -33,8 +33,8 @@ Derived Types
 - ``public hi_can::parameters::drive::vesc::status_4_t`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__4__t`)
 - ``public hi_can::parameters::drive::vesc::status_5_t`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__5__t`)
 - ``public hi_can::parameters::drive::vesc::status_6_t`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__6__t`)
-- ``public hi_can::parameters::scaled_int16_t< scalingFactor >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int16__t`)
-- ``public hi_can::parameters::scaled_int32_t< scalingFactor >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`)
+- ``public hi_can::parameters::scaled_int16_t< scaling_factor >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int16__t`)
+- ``public hi_can::parameters::scaled_int32_t< scaling_factor >`` (:ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`)
 
 
 Class Documentation

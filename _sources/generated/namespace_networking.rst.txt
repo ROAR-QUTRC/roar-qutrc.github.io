@@ -28,4 +28,4 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_core_8hpp_1a2856ad0034d53f79c4a5fc5394faf7bf`
+- :ref:`exhale_function_core_8hpp_1aba7339362833a8ae17a330c19b1d9272`

@@ -66,29 +66,29 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a66260ac19f594000868485e6641f348d`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a0ce6f23247bb5b182767ad8c65e1d0a1`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a53d027c895976bc295d491005f804ed8`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1ace6c4bd0c81fe444bdb051c7f8c8bb09`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a53fdf0032448fbf335fc7f6d3643f426`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a3b6c524a5b9cbab5bdbd4af054c3521b`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1adbea1cc171c9c9aee5651a4f6b69a441`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a2559cabbff26d948f795e3886111e4d2`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a8e20844869092cbca812e32ec9197a8a`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a870cfa1bbe33dd74b110e014f06efe78`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a64ce021e540191b5f797b273601a058b`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1af0c58fe4d8297fb235ee9f652f21112c`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a953d79bb644de47e0dab07c23eaee6bb`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a9f3e75b754c49f40680a22d149495dfe`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a3e467e09b9e8495b75e926851b5f05d0`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1acee585e8cce22b57c4f9c92031a53f91`
 
 - :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1af7c41795cade08431f93078ad7c2663e`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1aeb4fca0346b18b183c02b029374d1bd7`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a7d627672ebc7f4aad9ce31e19c8afd18`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1ad411cce0d6d34cc5118be6fb99574164`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1abda83ac353c73a11a3ff6592edd3e034`
 
-- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a8ee3282bc313e547dbbb8d4f4010db61`
+- :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1af675374954cdabdf63d036fe3c12d348`
 
 - :ref:`exhale_function_arm-teleop-direct_2src_2main_8cpp_1a7351e517da9c5e7f86f8b985b570abcb`
 
