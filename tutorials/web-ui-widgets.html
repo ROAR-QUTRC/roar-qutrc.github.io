@@ -13,7 +13,7 @@
     
     
       
-        <title>You First Web UI Widget - Perseus V2  documentation</title>
+        <title>Widget Tutorial - Perseus V2  documentation</title>
       
     
     
@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#creating-a-new-widget" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -86,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              You First Web UI Widget
+              Widget Tutorial
             
           </span>
         </div>
@@ -1456,9 +1461,149 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Widget Tutorial</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="#" class="md-nav__link md-nav__link--active">
-        <span class="md-ellipsis">You First Web UI Widget</span>
+        <span class="md-ellipsis">Widget Tutorial</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Widget Tutorial</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-widget" class="md-nav__link">
+    <span class="md-ellipsis">Creating a New Widget</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-markdown-and-styles" class="md-nav__link">
+    <span class="md-ellipsis">Adding Markdown and Styles</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Markdown and Styles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-shadcn" class="md-nav__link">
+    <span class="md-ellipsis">Using shadcn</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-time" class="md-nav__link">
+    <span class="md-ellipsis">Testing Time</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ros2-connections" class="md-nav__link">
+    <span class="md-ellipsis">ROS2 Connections</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS2 Connections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-the-ros2-bridge" class="md-nav__link">
+    <span class="md-ellipsis">Running the ROS2 Bridge</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-js-interface" class="md-nav__link">
+    <span class="md-ellipsis">Using the JS Interface</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">Putting it all Together</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-using-settings" class="md-nav__link">
+    <span class="md-ellipsis">Creating and Using Settings</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating and Using Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#send-enable-disable-switch" class="md-nav__link">
+    <span class="md-ellipsis">Send Enable/Disable Switch</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-topic-setting" class="md-nav__link">
+    <span class="md-ellipsis">Custom Topic Setting</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#congratulations" class="md-nav__link">
+    <span class="md-ellipsis">Congratulations</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Congratulations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-code" class="md-nav__link">
+    <span class="md-ellipsis">Full Code</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -8100,9 +8245,134 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Widget Tutorial</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-widget" class="md-nav__link">
+    <span class="md-ellipsis">Creating a New Widget</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-markdown-and-styles" class="md-nav__link">
+    <span class="md-ellipsis">Adding Markdown and Styles</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Markdown and Styles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-shadcn" class="md-nav__link">
+    <span class="md-ellipsis">Using shadcn</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-time" class="md-nav__link">
+    <span class="md-ellipsis">Testing Time</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ros2-connections" class="md-nav__link">
+    <span class="md-ellipsis">ROS2 Connections</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS2 Connections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-the-ros2-bridge" class="md-nav__link">
+    <span class="md-ellipsis">Running the ROS2 Bridge</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-js-interface" class="md-nav__link">
+    <span class="md-ellipsis">Using the JS Interface</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">Putting it all Together</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-using-settings" class="md-nav__link">
+    <span class="md-ellipsis">Creating and Using Settings</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating and Using Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#send-enable-disable-switch" class="md-nav__link">
+    <span class="md-ellipsis">Send Enable/Disable Switch</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-topic-setting" class="md-nav__link">
+    <span class="md-ellipsis">Custom Topic Setting</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#congratulations" class="md-nav__link">
+    <span class="md-ellipsis">Congratulations</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Congratulations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-code" class="md-nav__link">
+    <span class="md-ellipsis">Full Code</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -8121,7 +8391,321 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
   </a>
 
-<h1 id="you-first-web-ui-widget">You First Web UI Widget<a class="headerlink" href="#you-first-web-ui-widget" title="Link to this heading">¶</a></h1>
+<h1 id="widget-tutorial">Widget Tutorial<a class="headerlink" href="#widget-tutorial" title="Link to this heading">¶</a></h1>
+<p>This tutorial will show you how to make a basic ROS2 widget that interfaces with the <a class="reference external" href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">talker and listener</a> tutorial nodes.
+Before beginning this tutorial you must:</p>
+<ul class="simple">
+<li><p>Have read the R.O.A.R. software standards (General and Typescript sections)</p></li>
+<li><p>Have an understanding of <a class="reference external" href="https://svelte.dev">Svelte</a> and <a class="reference external" href="https://docs.ros.org/en/jazzy/index.html">ROS2</a></p></li>
+<li><p>Complete the <a class="reference internal" href="../home/getting-started.html"><span class="std std-doc">getting started</span></a> guide</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>All file paths mentioned in this tutorial are relative to the root of the Web-UI (<code class="docutils literal notranslate"><span class="pre">perseus-v2/software/web-ui</span></code>)</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Important</p>
+<p>Any development should be done in a branch! For more information visit <a class="reference internal" href="../standards/github.html"><span class="std std-doc">here</span></a></p>
+</div>
+<h2 id="creating-a-new-widget">Creating a New Widget<a class="headerlink" href="#creating-a-new-widget" title="Link to this heading">¶</a></h2>
+<p>Before we make any files, you should have a look at where widget files belong. They can all be found inside <code class="docutils literal notranslate"><span class="pre">src/lib/widgets/</span></code>. Any <code class="docutils literal notranslate"><span class="pre">.svelte</span></code> file in this directory is assumed to be a widget. All additional files (scripts and components) that belong to your widget should be placed inside a folder with the same name as your widget in this directory.</p>
+<p>To create a widget a script has been provided. From the root of the web-ui project run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">./create-widget.sh myFirstWidget</span>
+</code></pre></div>
+</div>
+<p>You should now have a new file in your project: <code class="docutils literal notranslate"><span class="pre">src/lib/widgets/myFirstWidget.svelte</span></code>. The last step is to edit the name and description export at the top of the file. You don’t have to worry about the other fields here yet, we’ll get to them later.</p>
+<h2 id="adding-markdown-and-styles">Adding Markdown and Styles<a class="headerlink" href="#adding-markdown-and-styles" title="Link to this heading">¶</a></h2>
+<p>Let’s add some HTML so we can see and send messages with ROS2 later on. To keep everything looking good and easy to recognise, we’ll make sure to use the <a class="reference external" href="https://www.shadcn-svelte.com/">shadcn</a> UI library for as much as we can. Let’s replace <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;New</span> <span class="pre">component&lt;/p&gt;</span></code> with the following code:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;flex h-full w-full flex-col&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;flex flex-row&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;message&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mb-2 mr-2&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Send<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ScrollArea</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;flex-1&quot;</span> <span class="na">orientation</span><span class="o">=</span><span class="s">&quot;vertical&quot;</span><span class="p">&gt;</span>
+    {#each [1, 2, 3] as message}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{message}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    {/each}
+  <span class="p">&lt;/</span><span class="nt">ScrollArea</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<h3 id="using-shadcn">Using shadcn<a class="headerlink" href="#using-shadcn" title="Link to this heading">¶</a></h3>
+<p>Due to how shadcn uses named and default exports the automatic imports for the <code class="docutils literal notranslate"><span class="pre">Input</span></code>, <code class="docutils literal notranslate"><span class="pre">Button</span></code> and <code class="docutils literal notranslate"><span class="pre">ScrollArea</span></code> might not be correct. Ensure new imports have been added to the client script (without the <code class="docutils literal notranslate"><span class="pre">module</span></code> flag) and that they match these:</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Input</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;$lib/components/ui/input/index.js&quot;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Button</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;$lib/components/ui/button/index.js&quot;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ScrollArea</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;$lib/components/ui/scroll-area/index.js&quot;</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Important</p>
+<p>When using custom components in markdown always use PascalCase and kebab-case for style class names as per the <a class="reference internal" href="../standards/software/typescript.html"><span class="std std-doc">standard</span></a>. Furthermore, always use tailwind classes when possible.</p>
+</div>
+<h2 id="testing-time">Testing Time<a class="headerlink" href="#testing-time" title="Link to this heading">¶</a></h2>
+<p>The time has come where you’re eager to checkout what your widget looks like! Testing in development is very easy, just run the command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">yarn dev</span>
+</code></pre></div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>If it’s your first time running the web-ui you will need to run the command <code class="docutils literal notranslate"><span class="pre">yarn</span></code> with no arguments to install dependencies</p>
+</div>
+<p>Once the development server is running, you can access it in a browser on the same machine from <a class="reference external" href="http://localhost:5173">http://localhost:5173</a> or on a different machine by replacing “localhost” with your devices ip address (both of these URL’s should be printed in the terminal once the dev server has been run).</p>
+<p>Finally, to actually see our new widget, press the add widget button in the top right and select the name you set at the start. The widget will appear very small to start with so I’d recommend resizing it.
+The only step that you’ll need to repeat next time is the <code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">dev</span></code> command, everything else will be setup and saved for next time.</p>
+<p>If you don’t see something like this then go back and double check you’ve done everything above correctly.
+<img alt="Example widget" src="../_images/Example-Widget.png" /></p>
+<h2 id="ros2-connections">ROS2 Connections<a class="headerlink" href="#ros2-connections" title="Link to this heading">¶</a></h2>
+<h3 id="running-the-ros2-bridge">Running the ROS2 Bridge<a class="headerlink" href="#running-the-ros2-bridge" title="Link to this heading">¶</a></h3>
+<p>Before we start writing code for connecting to the ROS2 bridge we need to run some ROS2 nodes!</p>
+<p>Development of ROS2 nodes is beyond the scope of this tutorial and for guidance you should consult the official documentation. We will still need something to test our widget with, my recommendation is to create new talker and listener nodes by following the tutorial linked above.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>Ensure you make the talker and listener inside <code class="docutils literal notranslate"><span class="pre">perseus-v2/software/ros_ws</span></code> and run all the following commands from inside the perseus-v2 repo aswell so you get access to the ROS2 Jazzy install we use for the rover.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>I would strongly recommend using a terminal multiplexer so each node can be run in the same terminal. My favourite is <a class="reference external" href="https://zellij.dev">zellij</a>.</p>
+</div>
+<p>Now that we have all the ROS2 nodes ready you can follow these steps to run them:</p>
+<ol class="arabic simple">
+<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">perseus-v2/software/ros_ws</span></code> in two terminal windows.</p></li>
+<li><p>Build and source the new talker and listener nodes in both terminal windows: <code class="docutils literal notranslate"><span class="pre">colcon</span> <span class="pre">build</span> <span class="pre">&amp;&amp;</span> <span class="pre">source</span> <span class="pre">install/setup.bash</span></code> (the suffix <code class="docutils literal notranslate"><span class="pre">.bash</span></code> may be different depending on your shell).</p></li>
+<li><p>Run the talker in one window and the listener in another using <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">run</span> <span class="pre">cpp_pubsub</span> <span class="pre">talker</span></code> and <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">run</span> <span class="pre">cpp_pubsub</span> <span class="pre">listener</span></code> respectively.</p></li>
+<li><p>In a new terminal window run <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">launch</span> <span class="pre">rosbridge_server</span> <span class="pre">rosbridge_websocket.xml</span></code> to start the ROS2 bridge.</p></li>
+</ol>
+<p>To check that it is all running correctly you should see 3 terminals similar to this:
+<img alt="Terminals" src="../_images/Terminals-Ros-Bridge.png" /></p>
+<h3 id="using-the-js-interface">Using the JS Interface<a class="headerlink" href="#using-the-js-interface" title="Link to this heading">¶</a></h3>
+<p>The main challenge when using <a class="reference external" href="https://robotwebtools.github.io/roslibjs/">roslibjs</a> with a component based framework is ensuring connections are managed correctly. So that you don’t have to worry about this a single connection is managed by the web ui that can be accessed using the <code class="docutils literal notranslate"><span class="pre">getRosConnection()</span></code> function.</p>
+<p>Before we write any code there are a few rules for the design patterns used when writing ROS2 code in a widget:</p>
+<ul class="simple">
+<li><p>Avoid making ROS2 related variables reactive as they will be assigned inside an <code class="docutils literal notranslate"><span class="pre">$effect</span></code>.</p></li>
+<li><p>Do NOT initialise anything related to ROS2 in the <code class="docutils literal notranslate"><span class="pre">onMount</span></code> hook, even if you really want to.</p></li>
+<li><p>Always set <code class="docutils literal notranslate"><span class="pre">isRosDependant</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> and <code class="docutils literal notranslate"><span class="pre">group</span></code> to <code class="docutils literal notranslate"><span class="pre">'ROS'</span></code> if using the <code class="docutils literal notranslate"><span class="pre">getRosConnection()</span></code> function.</p></li>
+<li><p>Dispose of all ROS2 resources you created in the function returned by the <code class="docutils literal notranslate"><span class="pre">onMount</span></code> hook (the return value is run on unmount).</p></li>
+</ul>
+<p>As per the third rule mentioned above, you should now uncomment and set the <code class="docutils literal notranslate"><span class="pre">group</span></code> and <code class="docutils literal notranslate"><span class="pre">isRosDependant</span></code> exports.</p>
+<p>Then it’s finally TypeScript time! Add the following to the client script tag in your widget. For more information on the pattern used here check out the <a class="reference internal" href="../development/software/web-ui.html"><span class="std std-doc">web ui development</span></a> docs.</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">onMount</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;svelte&quot;</span><span class="p">;</span>
+
+<span class="c1">// Type definition for ROS string message</span>
+<span class="kr">type</span><span class="w"> </span><span class="nx">StringMessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">};</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="kt">ROSLIB.Topic</span><span class="o">&lt;</span><span class="nx">StringMessage</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$state</span><span class="o">&lt;</span><span class="nb">Array</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;&gt;</span><span class="p">([]);</span><span class="w"> </span><span class="c1">// List of past messages</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$state</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Text input model</span>
+
+<span class="c1">// Using effect to reactively reinitialise after re/gaining connection</span>
+<span class="nx">$effect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">ros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getRosConnection</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">ros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Unsubscribe from previous topic if any</span>
+<span class="w">    </span><span class="nx">topic</span><span class="o">?</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span>
+
+<span class="w">    </span><span class="nx">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ROSLIB</span><span class="p">.</span><span class="nx">Topic</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">ros</span><span class="o">:</span><span class="w"> </span><span class="kt">ros</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;/topic&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">messageType</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;std_msgs/msg/String&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">});</span>
+
+<span class="w">    </span><span class="c1">// Add a subscription callback</span>
+<span class="w">    </span><span class="nx">topic</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">messages</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">data</span><span class="p">));</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">});</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">sendMessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="o">:</span><span class="w"> </span><span class="kt">Event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">input</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Create and send string message</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">input</span><span class="w"> </span><span class="p">};</span>
+<span class="w">  </span><span class="nx">topic</span><span class="o">?</span><span class="p">.</span><span class="nx">publish</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="nx">onMount</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Clean-up on unmount</span>
+<span class="w">    </span><span class="nx">topic</span><span class="o">?</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span>
+<span class="w">  </span><span class="p">};</span>
+<span class="p">});</span>
+</code></pre></div>
+</div>
+<h2 id="putting-it-all-together">Putting it all Together<a class="headerlink" href="#putting-it-all-together" title="Link to this heading">¶</a></h2>
+<p>Now that we’ve got some code to send an receive topic messages we can give our markdown some functionality.</p>
+<p>Let’s first replace <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code> in out <code class="docutils literal notranslate"><span class="pre">each</span> <span class="pre">...</span> <span class="pre">as</span></code> template with <code class="docutils literal notranslate"><span class="pre">messages</span></code>. Then add <code class="docutils literal notranslate"><span class="pre">bind:value={input}</span></code> to the <code class="docutils literal notranslate"><span class="pre">Input</span></code> element so we can access the value of the input field. Finally, to send the messages when the enter key is pressed add <code class="docutils literal notranslate"><span class="pre">onsubmit={sendMessage}</span></code> to the <code class="docutils literal notranslate"><span class="pre">form</span></code> element and <code class="docutils literal notranslate"><span class="pre">onclick={sendMessage}</span></code> to the <code class="docutils literal notranslate"><span class="pre">Button</span></code> element to register a click event handler.</p>
+<p>Congratulations! You should now have a functional widget that can send and receive ROS2 messages. Try sending some and watching the output appear in the terminal of the listener and your own widget!</p>
+<h2 id="creating-and-using-settings">Creating and Using Settings<a class="headerlink" href="#creating-and-using-settings" title="Link to this heading">¶</a></h2>
+<p>While the widget we’ve made works fine it doesn’t let you customise anything. Let’s fix this by creating some widget settings that let us enable/disable the sending function and another to set a custom topic to use.</p>
+<h3 id="send-enable-disable-switch">Send Enable/Disable Switch<a class="headerlink" href="#send-enable-disable-switch" title="Link to this heading">¶</a></h3>
+<p>Inside the <code class="docutils literal notranslate"><span class="pre">groups</span></code> property of the settings object add:</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><code><span class="nx">general</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">disableSendForm</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;switch&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;false&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>This defines a settings group called “general” with one option labelled “Disable send form” with a switch as it’s input.</p>
+<p>To apply this setting we can simply wrap the input form in a <code class="docutils literal notranslate"><span class="pre">{#if}</span></code> template:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><code>{#if settings.groups.general.disableSendForm.value === &#39;false&#39;}
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;flex flex-row&quot;</span> <span class="na">onsubmit</span><span class="o">=</span><span class="s">&quot;{sendMessage}&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;message&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mb-2 mr-2&quot;</span> <span class="na">bind:value</span><span class="o">=</span><span class="s">&quot;{input}&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;{sendMessage}&quot;</span><span class="p">&gt;</span>Send<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+{/if}
+</code></pre></div>
+</div>
+<h3 id="custom-topic-setting">Custom Topic Setting<a class="headerlink" href="#custom-topic-setting" title="Link to this heading">¶</a></h3>
+<p>Inside the <code class="docutils literal notranslate"><span class="pre">general</span></code> group we can add another setting:</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><code><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;text&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="p">},</span>
+</code></pre></div>
+</div>
+<p>Since the settings object is a state rune and our ROS2 topic is initialised in an effect we don’t need to do anything fancy to trigger updates. We just have to update how we initialise the <code class="docutils literal notranslate"><span class="pre">topic</span></code> variable:</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><code><span class="c1">// Using effect to reactively reinitialise after re/gaining connection</span>
+<span class="nx">$effect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">ros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getRosConnection</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">ros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Use a default value if custom topic is falsy</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">topicName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">settings</span><span class="p">.</span><span class="nx">groups</span><span class="p">.</span><span class="nx">general</span><span class="p">.</span><span class="nx">topic</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;/topic&quot;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="nx">ros</span><span class="p">.</span><span class="nx">getTopicType</span><span class="p">(</span><span class="nx">topicName</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kr">type</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">topicType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;std_msgs/msg/String&quot;</span><span class="p">;</span>
+
+<span class="w">      </span><span class="nx">topic</span><span class="o">?</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span><span class="w"> </span><span class="c1">// Unsubscribe from previous topic if any</span>
+
+<span class="w">      </span><span class="nx">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ROSLIB</span><span class="p">.</span><span class="nx">Topic</span><span class="p">({</span>
+<span class="w">        </span><span class="nx">ros</span><span class="o">:</span><span class="w"> </span><span class="kt">ros</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">topicName</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">messageType</span><span class="o">:</span><span class="w"> </span><span class="kt">topicType</span><span class="p">,</span>
+<span class="w">      </span><span class="p">});</span>
+
+<span class="w">      </span><span class="c1">// Add a subscription callback</span>
+<span class="w">      </span><span class="nx">topic</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">messages</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">data</span><span class="p">));</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+</div>
+<p>Now when you type a new topic name our widget will automatically try listening and publishing to that topic. The key word being “try” as we are currently not handling the event that the topic does not exist which would silently break the widget without an error. As an extension to this tutorial you should try and add some error handling (hint: check the other arguments of the ros.getTopicType function)</p>
+<h2 id="congratulations">Congratulations<a class="headerlink" href="#congratulations" title="Link to this heading">¶</a></h2>
+<p>You have now created your first widget for the web UI! For more examples and help checkout the other widgets that have already been made or send a message on discord.</p>
+<h3 id="full-code">Full Code<a class="headerlink" href="#full-code" title="Link to this heading">¶</a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;ts&quot;</span> <span class="na">module</span><span class="p">&gt;</span>
+<span class="w">  </span><span class="k">import</span><span class="w"> </span><span class="nx">type</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">WidgetGroupType</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">WidgetSettingsType</span><span class="p">,</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;$lib/scripts/state.svelte&quot;</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;New Widget&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Simple send and receive ros topic data widget. &quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">group</span><span class="o">:</span><span class="w"> </span><span class="nx">WidgetGroupType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;ROS&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">isRosDependent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">settings</span><span class="o">:</span><span class="w"> </span><span class="nx">WidgetSettingsType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$state</span><span class="o">&lt;</span><span class="nx">WidgetSettingsType</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">    </span><span class="nx">groups</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">general</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">disableSendForm</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;switch&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;ts&quot;</span><span class="p">&gt;</span>
+<span class="w">  </span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">getRosConnection</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;$lib/scripts/rosBridge.svelte&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">ROSLIB</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;roslib&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Input</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;$lib/components/ui/input/index.js&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Button</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;$lib/components/ui/button/index.js&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ScrollArea</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;$lib/components/ui/scroll-area/index.js&quot;</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">onMount</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;svelte&quot;</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Type definition for ROS string message</span>
+<span class="w">  </span><span class="nx">type</span><span class="w"> </span><span class="nx">StringMessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="nx">ROSLIB</span><span class="p">.</span><span class="nx">Topic</span><span class="o">&lt;</span><span class="nx">StringMessage</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$state</span><span class="o">&lt;</span><span class="nb">Array</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;&gt;</span><span class="p">([]);</span><span class="w"> </span><span class="c1">// List of past messages</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$state</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Text input model</span>
+
+<span class="w">  </span><span class="c1">// Using effect to reactively reinitialise after re/gaining connection</span>
+<span class="w">  </span><span class="nx">$effect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">ros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getRosConnection</span><span class="p">();</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">ros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Use a default value if custom topic is falsy</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">topicName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">settings</span><span class="p">.</span><span class="nx">groups</span><span class="p">.</span><span class="nx">general</span><span class="p">.</span><span class="nx">topic</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;/topic&quot;</span><span class="p">;</span>
+
+<span class="w">      </span><span class="nx">ros</span><span class="p">.</span><span class="nx">getTopicType</span><span class="p">(</span><span class="nx">topicName</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">topicType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">type</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;std_msgs/msg/String&quot;</span><span class="p">;</span>
+
+<span class="w">        </span><span class="nx">topic</span><span class="o">?</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span><span class="w"> </span><span class="c1">// Unsubscribe from previous topic if any</span>
+
+<span class="w">        </span><span class="nx">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ROSLIB</span><span class="p">.</span><span class="nx">Topic</span><span class="p">({</span>
+<span class="w">          </span><span class="nx">ros</span><span class="o">:</span><span class="w"> </span><span class="nx">ros</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="nx">topicName</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">messageType</span><span class="o">:</span><span class="w"> </span><span class="nx">topicType</span><span class="p">,</span>
+<span class="w">        </span><span class="p">});</span>
+
+<span class="w">        </span><span class="c1">// Add a subscription callback</span>
+<span class="w">        </span><span class="nx">topic</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">((</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">messages</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">data</span><span class="p">));</span>
+<span class="w">      </span><span class="p">});</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">topic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">});</span>
+
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">sendMessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="o">:</span><span class="w"> </span><span class="nx">Event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">input</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Create and send string message</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="p">};</span>
+<span class="w">    </span><span class="nx">topic</span><span class="o">?</span><span class="p">.</span><span class="nx">publish</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="nx">onMount</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Clean-up on unmount</span>
+<span class="w">      </span><span class="nx">topic</span><span class="o">?</span><span class="p">.</span><span class="nx">unsubscribe</span><span class="p">();</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;flex h-full w-full flex-col&quot;</span><span class="p">&gt;</span>
+  {#if settings.groups.general.disableSendForm.value === &#39;false&#39;}
+  <span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;flex flex-row&quot;</span> <span class="na">onsubmit</span><span class="o">=</span><span class="s">&quot;{sendMessage}&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;message&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mb-2 mr-2&quot;</span> <span class="na">bind:value</span><span class="o">=</span><span class="s">&quot;{input}&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;{sendMessage}&quot;</span><span class="p">&gt;</span>Send<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+  {/if}
+  <span class="p">&lt;</span><span class="nt">ScrollArea</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;flex-1&quot;</span> <span class="na">orientation</span><span class="o">=</span><span class="s">&quot;vertical&quot;</span><span class="p">&gt;</span>
+    {#each messages as message}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{message}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    {/each}
+  <span class="p">&lt;/</span><span class="nt">ScrollArea</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
 
 
 
@@ -8220,7 +8804,7 @@
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/tutorials/web-ui-widgets.57f828e5-68d0-4cb9-abef-5a83a5738fb4.js"></script>
+        <script defer="defer" src="../_static/tippy/tutorials/web-ui-widgets.fc8edc21-dced-43c8-aafa-2576de91ef60.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
