@@ -8805,7 +8805,7 @@ To actually generate the diagrams, the script uses <code class="docutils literal
 To avoid spinning up a virtual framebuffer for every single <code class="docutils literal notranslate"><span class="pre">drawio</span></code> call, the root <code class="docutils literal notranslate"><span class="pre">parallel</span></code> command is executed through <code class="docutils literal notranslate"><span class="pre">xvfb-run</span></code>, and the X11 environment is then inherited by all the script processes it runs.
 Finally, the aforementioned script does one thing - it takes in a source file path and an output directory, and then generates two SVG files from the diagram - one in light theme, and one in dark theme.</p>
 <h3 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Link to this heading">¶</a></h3>
-<p>As detailed in the <a class="reference internal" href="ci-cd.html"><span class="std std-doc">CI/CD Architecture</span></a> document, this entire project uses Nix for everything - and that extends to building in the CI/CD pipeline.
+<p>As detailed in the <a class="reference internal" href="ci-cd.html"><span class="std std-doc">CI/CD Systems</span></a> document, this entire project uses Nix for everything - and that extends to building in the CI/CD pipeline.
 However, that only covers the CI part of CI/CD - deployment needs its own handling.</p>
 <p>The built documentation is currently hosted using <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>, and as such requires a backing repository containing the contents which is located <a class="reference external" href="https://github.com/ROAR-QUTRC/roar-qutrc.github.io">here</a>.</p>
 <div class="note admonition">
@@ -8858,7 +8858,7 @@ For example, to include the above example figure in a standalone <a class="refer
 <p class="admonition-title">Note</p>
 <p>References in Sphinx without a leading slash are relative to the current directory!
 To reference relative to the project root (in the repo, <code class="docutils literal notranslate"><span class="pre">docs/source</span></code>), you need to make it an <em>absolute</em> path and start it with a slash.
-Not doing so makes it relative to the current directory of <em>this document</em> (<code class="docutils literal notranslate"><span class="pre">docs/source/architecture/</span></code>).</p>
+Not doing so makes it relative to the current directory of <em>this document</em> (<code class="docutils literal notranslate"><span class="pre">docs/source/systems/</span></code>).</p>
 </div>
 <h4 id="docs-compressed"><code class="docutils literal notranslate"><span class="pre">docs.compressed</span></code><a class="headerlink" href="#docs-compressed" title="Link to this heading">¶</a></h4>
 <p>The built documentation, compressed using <code class="docutils literal notranslate"><span class="pre">p7zip</span></code>.
@@ -9021,7 +9021,7 @@ It builds the documentation figures from <code class="docutils literal notransla
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/systems/documentation.36c4113a-b552-4f26-a88d-74e95ebe24f7.js"></script>
+        <script defer="defer" src="../_static/tippy/systems/documentation.9982af8d-9ea5-4d4e-ba87-60d2a91c8a3f.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
