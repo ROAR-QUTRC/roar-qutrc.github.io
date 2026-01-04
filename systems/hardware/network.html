@@ -581,6 +581,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    <span class="md-ellipsis">Devices</span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -652,6 +659,21 @@
     <li class="md-nav__item">
       <a href="../software/core.html" class="md-nav__link">
         <span class="md-ellipsis">Core</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/network-config.html" class="md-nav__link">
+        <span class="md-ellipsis">Network Configuration</span>
       </a>
     </li>
   
@@ -8216,6 +8238,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    <span class="md-ellipsis">Devices</span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8237,27 +8266,56 @@
 
 <h1 id="network">Network<a class="headerlink" href="#network" title="Link to this heading">¶</a></h1>
 <h2 id="tldr">TLDR<a class="headerlink" href="#tldr" title="Link to this heading">¶</a></h2>
-<p>Perseus assumes that it will connect to a wifi network with SSID: “QUTRC-ROAR”.</p>
-<p>All processes and nodes running should be able to operate via a network connection sharing a single 2.4GHz wifi connection with a 20MHz channel width.</p>
-<p>Whilst the rules allow for 40Mhz bonding interference is possible.</p>
-<p>Assuming 20MHz means 802.11g which is 54Mbps.</p>
-<p>This equates to a maximum usage network connection of 6.75 MBps.</p>
-<p>If bonding is used then 802.11n allows for up to 600 Mbps (this would require 4xMIMO) being 75MBps.</p>
+<p>Perseus assumes that it will connect to a wifi network with SSID: “QUTRC-ROAR-LOCAL”.
+All processes and nodes running should be able to operate via a network connection sharing a single 2.4 GHz wifi connection with a 20 MHz channel width.
+Whilst the rules allow for 40 Mhz bonding interference is possible.
+Assuming 20MHz means 802.11g which is 54 Mbps.
+This equates to a maximum usage network connection of 6.75 MBps.
+If bonding is used then 802.11n allows for up to 600 Mbps (this would require 4xMIMO) being 75 MBps.</p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Link to this heading">¶</a></h2>
 <p>Some of the software written for Perseus will operate better if details of the network Perseus operates on are known.
-This file seeks to capture these details</p>
+This file seeks to capture these details.</p>
 <h2 id="wifi-network-assumptions">Wifi Network Assumptions<a class="headerlink" href="#wifi-network-assumptions" title="Link to this heading">¶</a></h2>
-<p>The wifi network that Perseus can see has the following attributes
-SSID for 2.4Ghz: “QUTRC-ROAR”
-SSID for 5Ghz: “QUTRC-ROAR”
-Hard-wired ethernet operation also needs to be accommodated</p>
-<p>During competition:
-Either 20 Mhz band on nominated Channel 1 or Channel 11.
-OR
-40Mhz band on either 1-5 or 9-13</p>
-<p>During Practice:
-20 or 40 Mhz band centred on channel 6</p>
-<p>Assumption: All systems need to be able to concurrently operate on 20Mhz (Max ~97 Mbps)</p>
+<p>The wifi network that Perseus can see has the following attributes:</p>
+<p>SSID for 2.4Ghz and 5Ghz: “QUTRC-ROAR-LOCAL”</p>
+<p>Hard-wired ethernet operation also needs to be accommodated.</p>
+<p>During competition, either of:</p>
+<ul class="simple">
+<li><p>20 Mhz band on nominated Channel 1 or Channel 11</p></li>
+<li><p>40 Mhz band on either 1-5 or 9-13</p></li>
+</ul>
+<p>During Practice:</p>
+<ul class="simple">
+<li><p>20 or 40 Mhz band centred on channel 6</p></li>
+</ul>
+<p>Assumption: All systems need to be able to concurrently operate on 20 Mhz (Max ~97 Mbps)</p>
+<h2 id="devices">Devices<a class="headerlink" href="#devices" title="Link to this heading">¶</a></h2>
+<p>All networking devices used are Unifi (with the exception of the small PoE switch on Perseus itself).
+This is because the user interface is very comprehensive and easy to customise if/when we want to change something.
+The devices currently used (as of 23/12/2025) are:</p>
+<ol class="arabic simple">
+<li><p>Unifi Cloud Gateway Max (<a class="reference external" href="https://techspecs.ui.com/unifi/cloud-gateways/ucg-max?s=us">UCG Max</a>)
+<img alt="UCG Max" src="https://cdn.ecomm.ui.com/products/8cca3680-14a6-496a-af7d-beba49cea3f2/7c6f4e54-1f20-485a-a0f0-22e968b66a66.png" /></p></li>
+<li><p>Unifi Switch 8 Port PoE 150W (<a class="reference external" href="https://techspecs.ui.com/unifi/switching/us-8-150w?subcategory=all-switching">US 8 PoE</a>)
+<img alt="US 8 PoE" src="https://cdn.ecomm.ui.com/products/fdec2ee9-f41c-477c-8459-bc738780dd27/a74b1c79-80c4-492b-9c13-a11ca78bb4bd.png" /></p></li>
+<li><p>Unifi 7 Long Range Access Point (<a class="reference external" href="https://techspecs.ui.com/unifi/wifi/u7-lr?subcategory=all-wifi">U7 Long Range</a>)
+<img alt="U7 Long Range" src="https://cdn.ecomm.ui.com/products/7455fa2b-3074-47a0-b82f-a2cd701d4a8f/06752627-8180-42ea-afe3-4cfac57c10eb.png" /></p></li>
+<li><p>Unifi 7 Outdoor Antenna Access Point (<a class="reference external" href="https://techspecs.ui.com/unifi/wifi/u7-outdoor">U7 Outdoor</a>)
+<img alt="U7 Outdoor" src="https://cdn.ecomm.ui.com/products/62cc30b7-9559-480f-9668-b9edf40c0772/f2010c22-ff34-48e5-81f4-e7dad275d3c0.png" /></p></li>
+</ol>
+<p>Both the U7 Long Range and U7 Outdoor require Power over Ethernet.
+On-board Perseus, there is a small PoE switch that is used to power the U7 Long Range as well as connect Perseus’ devices together.
+At base station, the U7 Outdoor is connected into the US 8 PoE switch, which is able to deliver PoE+ to the U7 Outdoor.
+The US 8 PoE switch is connected directly into the UCG Max, which is the controller of the network.
+Laptops are connected into the UCG Max or the US 8 PoE switch via ethernet, or via WiFi into a separate access point (<a class="reference external" href="https://techspecs.ui.com/unifi/wifi/uap-ac-mesh?subcategory=all-wifi">AC Mesh</a> - optional).
+A phone is connected via ethernet (through a USB-C to ethernet adapter) into the WAN port of the UCG Max, and set to give the network internet from the phone’s data.</p>
+<p>The U7 Outdoor is highly directional, so it is pointed directly into the arena to get the best signal to the U7 Long Range.
+The omnidirectional antennae can be attached for a wider signal, but this reduces the range.</p>
+<p>When not at competition, the rover can use the Robots101 <a class="reference external" href="https://techspecs.ui.com/unifi/cloud-gateways/ux?subcategory=all-cloud-gateways">Unifi Express</a>.</p>
+<p><img alt="Unifi Express" src="https://cdn.ecomm.ui.com/products/4ed25b4c-db92-4b98-bbf3-b0989f007c0e/3ff34453-72fa-485e-b2fa-836b10dbc3be.png" /></p>
+<p>It is set up with the same SSID and password as the other Unifi hardware.
+It is plugged directly into the PoE switch on the rover, and can be used alone, without any of the other networking gear.
+It is powered through an XT30 to USB-C adapter attached to one of the XT30s in Perseus.</p>
 
 
 
@@ -8356,7 +8414,7 @@ OR
         <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../../_static/tippy/systems/hardware/network.2265f8ff-860d-4827-92bf-8ce8f769fad3.js"></script>
+        <script defer="defer" src="../../_static/tippy/systems/hardware/network.1c42cc09-36d7-4b3e-b3f0-b342b77ff7d3.js"></script>
         <script src="../../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
