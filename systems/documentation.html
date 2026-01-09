@@ -31,7 +31,6 @@
         <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.a61c166bfce23889e.min.css?v=9f78bb6a" />
         <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
         <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=f454e25b" />
-        <link rel="stylesheet" type="text/css" href="../_static/css/fonts.css?v=eaf47ec1" />
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -8790,11 +8789,11 @@ As such, the documentation pipeline which ends up generating these very webpages
 If you’re looking to start <em>writing</em> documentation, check out the <a class="reference internal" href="../maintenance/documentation.html"><span class="std std-doc">maintenance</span></a> page after reading through this one.</p>
 <h2 id="tech-stack">Tech Stack<a class="headerlink" href="#tech-stack" title="Link to this heading">¶</a></h2>
 <h3 id="core">Core<a class="headerlink" href="#core" title="Link to this heading">¶</a></h3>
-<p>This documentation is built using <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html" title="Sphinx 8.2.0">Sphinx</a> with a number of extensions.</p>
+<p>This documentation is built using <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html" title="Sphinx 9.1.0">Sphinx</a> with a number of extensions.</p>
 <h4 id="markdown-support">Markdown Support<a class="headerlink" href="#markdown-support" title="Link to this heading">¶</a></h4>
-<p>If you inspect the raw documentation, you’ll notice it’s written in Markdown, not the standard reStructuredText (ReST) that Sphinx expects - this is thanks to the <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/index.html" title="MyST Parser 4.0.0">MyST Parser</a>.
+<p>If you inspect the raw documentation, you’ll notice it’s written in Markdown, not the standard reStructuredText (ReST) that Sphinx expects - this is thanks to the <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/index.html" title="MyST Parser 4.0.1">MyST Parser</a>.
 This extension extends Sphinx to add Markdown parsing support.
-It also comes with a number of built-in <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/optional.html" title="MyST Parser 4.0.0">extensions</a> which can be enabled to extend its functionality on top of standard Markdown support.
+It also comes with a number of built-in <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/optional.html" title="MyST Parser 4.0.1">extensions</a> which can be enabled to extend its functionality on top of standard Markdown support.
 If you’re curious as to what this documentation uses, check out the list of them in <code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code>.</p>
 <h4 id="generated-documentation">Generated Documentation<a class="headerlink" href="#generated-documentation" title="Link to this heading">¶</a></h4>
 <p>Code (API) documentation is provided with Doxygen through the use of <a class="reference external" href="https://breathe.readthedocs.io/en/stable/index.html" title="Breathe v4.35.0">Breathe</a>, which acts as a bridge from the output Doxygen provides to ReST for Sphinx.
@@ -8816,9 +8815,9 @@ If it’s not listed here, all enabled extensions have a comment explaining what
 Since this project is built using Nix (more on that in the <a class="reference internal" href="#build-infrastructure">next section</a>), the entire software stack needs to run offline and therefore requires some extra configuration.
 The first offender is the Sphinx-Immaterial theme itself - it sources its font (<a class="reference external" href="https://fonts.google.com/specimen/Roboto">Roboto</a> by default) from Google’s CDNs - this is obviously incompatible with the sandboxing that Nix applies!
 As such, its <a class="reference external" href="https://jbms.github.io/sphinx-immaterial/customization.html#themeconf-font" title="Sphinx-Immaterial"><code class="docutils literal notranslate"><span class="pre">font</span></code></a> option has been set to <code class="docutils literal notranslate"><span class="pre">False</span></code> and the fonts are “self-hosted” in the <code class="docutils literal notranslate"><span class="pre">_static/fonts</span></code> directory.
-The other item on the list is <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html" title="Sphinx 8.2.0">intersphinx</a>, which provides all the cross-documentation linking you see even just on this very page.
+The other item on the list is <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html" title="Sphinx 9.1.0">intersphinx</a>, which provides all the cross-documentation linking you see even just on this very page.
 Since it normally tries to fetch <code class="docutils literal notranslate"><span class="pre">objects.inv</span></code> files (inventories of site content) from the sites themselves, this too needs to be set up locally.
-Thankfully, it’s as simple as pointing it to a locally cached file in its <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_mapping" title="Sphinx 8.2.0">mapping</a> rather than fetching the files every time the docs are built - they’re updated in the project’s <a class="reference internal" href="ci-cd.html"><span class="std std-doc">CI/CD</span></a> pipeline before building anyway, so they’ll always be correct.</p>
+Thankfully, it’s as simple as pointing it to a locally cached file in its <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_mapping" title="Sphinx 9.1.0">mapping</a> rather than fetching the files every time the docs are built - they’re updated in the project’s <a class="reference internal" href="ci-cd.html"><span class="std std-doc">CI/CD</span></a> pipeline before building anyway, so they’ll always be correct.</p>
 <h3 id="figures">Figures<a class="headerlink" href="#figures" title="Link to this heading">¶</a></h3>
 <p>The next item on the list is the embedded figures - you may notice that they look suspiciously like <a class="reference external" href="http://draw.io">draw.io</a> diagrams, and that’s because they are!
 This is detailed more in the next section, but they’re built using the tool’s command-line interface to SVGs, which can then be referenced directly in the docs like this:</p>
@@ -8887,7 +8886,7 @@ All file output names are in the format <code class="docutils literal notranslat
 <p>For example, an input file <code class="docutils literal notranslate"><span class="pre">example.drawio</span></code> would result in the output files <code class="docutils literal notranslate"><span class="pre">example.drawio.svg</span></code> and <code class="docutils literal notranslate"><span class="pre">example.drawio-dark.svg</span></code>.
 In the documentation build process (and when you run the <a class="reference internal" href="#docs-setup">setup script</a>), the SVG files are copied into <code class="docutils literal notranslate"><span class="pre">docs/source/generated</span></code> and can be referenced from there.
 Additionally, you should add the <code class="docutils literal notranslate"><span class="pre">has-dark-opt</span></code> class so that the theme switcher script can correctly modify the figure - due to transparent backgrounds, light mode figures are not usable in dark mode, and vice versa.
-For example, to include the above example figure in a standalone <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html" title="MyST Parser 4.0.0">block</a>, the Markdown code is:</p>
+For example, to include the above example figure in a standalone <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html" title="MyST Parser 4.0.1">block</a>, the Markdown code is:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><code>```{image} /generated/example.drawio.svg
 :alt: Example draw.io diagram
 :class: has-dark-opt
@@ -9066,7 +9065,7 @@ It builds the documentation figures from <code class="docutils literal notransla
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/systems/documentation.d716a513-ce93-47b0-864a-7d55f176a55a.js"></script>
+        <script defer="defer" src="../_static/tippy/systems/documentation.eea52f50-f290-4a8c-af8e-4a418714f292.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

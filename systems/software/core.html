@@ -31,7 +31,6 @@
         <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.a61c166bfce23889e.min.css?v=9f78bb6a" />
         <link rel="stylesheet" type="text/css" href="../../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=f454e25b" />
-        <link rel="stylesheet" type="text/css" href="../../_static/css/fonts.css?v=eaf47ec1" />
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -8384,7 +8383,7 @@ The most important packages are are detailed below - if you want more informatio
 <h3 id="perseus-hardware"><code class="docutils literal notranslate"><span class="pre">perseus_hardware</span></code><a class="headerlink" href="#perseus-hardware" title="Link to this heading">¶</a></h3>
 <p>This contains implementations of all hardware-specific interfaces and tasks, and should be one of the only places in the ROS code which interacts directly with the real world.
 If hardware-specific code is distributed throughout the codebase, it makes mocking for tests and simulation much more difficult than it needs to be.
-There are two types of output inside this package: <a class="reference external" href="https://control.ros.org/rolling/doc/ros2_control/hardware_interface/doc/hardware_components_userdoc.html">Hardware Components</a> for <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> and follow its spec, and <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Basic/About-Nodes.html" title="ROS 2 Documentation: Humble">nodes</a> which interact with other software using either <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Basic/About-Topics.html" title="ROS 2 Documentation: Humble">topics</a>, <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Basic/About-Actions.html" title="ROS 2 Documentation: Humble">actions</a>, or <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Basic/About-Services.html" title="ROS 2 Documentation: Humble">services</a>.</p>
+There are two types of output inside this package: <a class="reference external" href="https://control.ros.org/rolling/doc/ros2_control/hardware_interface/doc/hardware_components_userdoc.html">Hardware Components</a> for <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> and follow its spec, and <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Basic/About-Nodes.html" title="ROS 2 Documentation: Jazzy">nodes</a> which interact with other software using either <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Basic/About-Topics.html" title="ROS 2 Documentation: Jazzy">topics</a>, <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Basic/About-Actions.html" title="ROS 2 Documentation: Jazzy">actions</a>, or <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Basic/About-Services.html" title="ROS 2 Documentation: Jazzy">services</a>.</p>
 <p>The reason for using <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code> instead of standard nodes and topics is very simple: Speed.
 <code class="docutils literal notranslate"><span class="pre">ros2_control</span></code>, rather than launching ROS2 nodes, calls functions directly.
 Whilst this can make implementation harder to understand than something similar based on topics, the advantages vastly outweigh the slight additional complexity, especially given its excellent documentation, and the wealth of resources dedicated to explaining it.</p>
@@ -8521,7 +8520,7 @@ The <code class="docutils literal notranslate"><span class="pre">hi-can-net</spa
         <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../../_static/tippy/systems/software/core.23ddf267-8e3f-4f68-855d-043c61a7e584.js"></script>
+        <script defer="defer" src="../../_static/tippy/systems/software/core.18ecc7bd-1898-4b92-948d-1595a32ddae8.js"></script>
         <script src="../../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

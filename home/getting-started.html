@@ -31,7 +31,6 @@
         <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.a61c166bfce23889e.min.css?v=9f78bb6a" />
         <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
         <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=f454e25b" />
-        <link rel="stylesheet" type="text/css" href="../_static/css/fonts.css?v=eaf47ec1" />
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -8510,7 +8509,7 @@ If your software <em>doesn’t</em> meet these standards, we unfortunately won�
 <h2 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Link to this heading">¶</a></h2>
 <h3 id="ros2-nodes-can-t-see-each-other-on-the-network">ROS2 Nodes can’t see each other on the network<a class="headerlink" href="#ros2-nodes-can-t-see-each-other-on-the-network" title="Link to this heading">¶</a></h3>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">talker</span></code> and <code class="docutils literal notranslate"><span class="pre">listener</span></code> nodes from the <code class="docutils literal notranslate"><span class="pre">demo_nodes_cpp</span></code> package to test this, with the talker on one device and the listener on another.
-For some reason, the <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">multicast</span></code> commands mentioned in the standard ROS <a class="reference external" href="https://docs.ros.org/en/jazzy/How-To-Guides/Installation-Troubleshooting.html" title="ROS 2 Documentation: Humble">troubleshooting guide</a> use a different port to the actual ROS2 DDS communications layer, and as such is not a reliable way to test - hence the use of <code class="docutils literal notranslate"><span class="pre">talker</span></code> and <code class="docutils literal notranslate"><span class="pre">listener</span></code> nodes.
+For some reason, the <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">multicast</span></code> commands mentioned in the standard ROS <a class="reference external" href="https://docs.ros.org/en/jazzy/How-To-Guides/Installation-Troubleshooting.html" title="ROS 2 Documentation: Jazzy">troubleshooting guide</a> use a different port to the actual ROS2 DDS communications layer, and as such is not a reliable way to test - hence the use of <code class="docutils literal notranslate"><span class="pre">talker</span></code> and <code class="docutils literal notranslate"><span class="pre">listener</span></code> nodes.
 This is almost certainly caused by firewall issues - specifically, blocking DDS discovery.
 To allow ROS2 through the firewall on a system managed with <code class="docutils literal notranslate"><span class="pre">ufw</span></code>, run the following commands:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">sudo ufw allow in proto udp to 224.0.0.0/4</span>
@@ -8523,7 +8522,7 @@ You need to allow UDP traffic to and from the address <code class="docutils lite
 <p class="admonition-title">Note</p>
 <p>In some cases, you may need to allow specific UDP ports through the firewall as well - if you’re still having issues, let us know!
 We’ll help you debug it.
-You can find a calculator for the ports in use <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Domain-ID.html" title="ROS 2 Documentation: Humble">here</a> - just make sure to plug in the correct domain ID, as per the next section.</p>
+You can find a calculator for the ports in use <a class="reference external" href="https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Domain-ID.html" title="ROS 2 Documentation: Jazzy">here</a> - just make sure to plug in the correct domain ID, as per the next section.</p>
 </div>
 <h3 id="i-installed-ros2-the-normal-way">I installed ROS2 the normal way!<a class="headerlink" href="#i-installed-ros2-the-normal-way" title="Link to this heading">¶</a></h3>
 <p>Firstly, you should really be using the Nix setup as it manages dependencies for you automatically.
@@ -8659,7 +8658,7 @@ You’ll have to set up the hook yourself according to its <a class="reference e
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/home/getting-started.c776d825-6000-416c-81f3-3471e7d4e282.js"></script>
+        <script defer="defer" src="../_static/tippy/home/getting-started.ef3b3ae8-a144-43a0-af20-6a9da85cc728.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
