@@ -8791,9 +8791,9 @@ If you’re looking to start <em>writing</em> documentation, check out the <a cl
 <h3 id="core">Core<a class="headerlink" href="#core" title="Link to this heading">¶</a></h3>
 <p>This documentation is built using <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html" title="Sphinx 9.1.0">Sphinx</a> with a number of extensions.</p>
 <h4 id="markdown-support">Markdown Support<a class="headerlink" href="#markdown-support" title="Link to this heading">¶</a></h4>
-<p>If you inspect the raw documentation, you’ll notice it’s written in Markdown, not the standard reStructuredText (ReST) that Sphinx expects - this is thanks to the <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/index.html" title="MyST Parser 4.0.1">MyST Parser</a>.
+<p>If you inspect the raw documentation, you’ll notice it’s written in Markdown, not the standard reStructuredText (ReST) that Sphinx expects - this is thanks to the <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/index.html" title="MyST Parser 5.0.0">MyST Parser</a>.
 This extension extends Sphinx to add Markdown parsing support.
-It also comes with a number of built-in <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/optional.html" title="MyST Parser 4.0.1">extensions</a> which can be enabled to extend its functionality on top of standard Markdown support.
+It also comes with a number of built-in <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/optional.html" title="MyST Parser 5.0.0">extensions</a> which can be enabled to extend its functionality on top of standard Markdown support.
 If you’re curious as to what this documentation uses, check out the list of them in <code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code>.</p>
 <h4 id="generated-documentation">Generated Documentation<a class="headerlink" href="#generated-documentation" title="Link to this heading">¶</a></h4>
 <p>Code (API) documentation is provided with Doxygen through the use of <a class="reference external" href="https://breathe.readthedocs.io/en/stable/index.html" title="Breathe v4.35.0">Breathe</a>, which acts as a bridge from the output Doxygen provides to ReST for Sphinx.
@@ -8886,7 +8886,7 @@ All file output names are in the format <code class="docutils literal notranslat
 <p>For example, an input file <code class="docutils literal notranslate"><span class="pre">example.drawio</span></code> would result in the output files <code class="docutils literal notranslate"><span class="pre">example.drawio.svg</span></code> and <code class="docutils literal notranslate"><span class="pre">example.drawio-dark.svg</span></code>.
 In the documentation build process (and when you run the <a class="reference internal" href="#docs-setup">setup script</a>), the SVG files are copied into <code class="docutils literal notranslate"><span class="pre">docs/source/generated</span></code> and can be referenced from there.
 Additionally, you should add the <code class="docutils literal notranslate"><span class="pre">has-dark-opt</span></code> class so that the theme switcher script can correctly modify the figure - due to transparent backgrounds, light mode figures are not usable in dark mode, and vice versa.
-For example, to include the above example figure in a standalone <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html" title="MyST Parser 4.0.1">block</a>, the Markdown code is:</p>
+For example, to include the above example figure in a standalone <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html" title="MyST Parser 5.0.0">block</a>, the Markdown code is:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><code>```{image} /generated/example.drawio.svg
 :alt: Example draw.io diagram
 :class: has-dark-opt
@@ -9065,7 +9065,7 @@ It builds the documentation figures from <code class="docutils literal notransla
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/systems/documentation.eea52f50-f290-4a8c-af8e-4a418714f292.js"></script>
+        <script defer="defer" src="../_static/tippy/systems/documentation.fd151b6b-cf60-438f-b631-26c5910ba55b.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
