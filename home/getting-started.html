@@ -283,6 +283,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#curl-script" class="md-nav__link">
+    <span class="md-ellipsis">Curl script</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual" class="md-nav__link">
+    <span class="md-ellipsis">Manual</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ide-setup" class="md-nav__link">
     <span class="md-ellipsis">IDE Setup</span>
   </a>
@@ -8609,6 +8623,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#curl-script" class="md-nav__link">
+    <span class="md-ellipsis">Curl script</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual" class="md-nav__link">
+    <span class="md-ellipsis">Manual</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ide-setup" class="md-nav__link">
     <span class="md-ellipsis">IDE Setup</span>
   </a>
@@ -8724,6 +8752,20 @@
 <p>This project is built using <a class="reference external" href="https://nixos.org/">Nix</a>, which makes getting started quite easy - all you have to do is install Nix and <code class="docutils literal notranslate"><span class="pre">direnv</span></code>, and they take care of the rest.
 Whilst this page will get you started, it is strongly recommended that you read through <a class="reference internal" href="nix-basics.html"><span class="std std-doc">Nix Basics</span></a> after reading through this document so you understand how to use the tooling.</p>
 <h2 id="first-time-setup">First-time Setup<a class="headerlink" href="#first-time-setup" title="Link to this heading">¶</a></h2>
+<p>If you’re on a Debian-based distro (like Ubuntu), you can run the <code class="docutils literal notranslate"><span class="pre">member-setup.sh</span></code> script, which will automatically set everything up for you. If you’re not or you just want to, you can go through the steps manually (but you’ll have to adjust the apt commands to suit your distro).</p>
+<h3 id="curl-script">Curl script<a class="headerlink" href="#curl-script" title="Link to this heading">¶</a></h3>
+<p>First, make sure you have <code class="docutils literal notranslate"><span class="pre">curl</span></code> installed:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">sudo apt-get update</span>
+<span class="go">sudo apt-get install curl</span>
+</code></pre></div>
+</div>
+<p>Then, you can run this command (it will prompt you for sudo permissions):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">curl https://raw.githubusercontent.com/ROAR-QUTRC/perseus-v2/refs/heads/main/software/scripts/member-setup.sh | bash</span>
+</code></pre></div>
+</div>
+<p>Which automates the manual process described below. After you run this command, you may need to restart your shell to ensure <code class="docutils literal notranslate"><span class="pre">direnv</span></code> loads properly.
+The script clones the repo into your home directory (~), so if you want it installed elsewhere, you should do it manually.</p>
+<h3 id="manual">Manual<a class="headerlink" href="#manual" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Install the <a class="reference external" href="https://github.com/cli/cli/blob/trunk/docs/install_linux.md">GitHub CLI</a>.</p></li>
 <li><p>Run the following shell commands to install <code class="docutils literal notranslate"><span class="pre">curl</span></code> and <code class="docutils literal notranslate"><span class="pre">direnv</span></code> (this assumes a Debian-based distro like Ubuntu):</p></li>
@@ -8973,7 +9015,7 @@ You’ll have to set up the hook yourself according to its <a class="reference e
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/home/getting-started.f46d0385-2473-4407-80c9-40ad27c87635.js"></script>
+        <script defer="defer" src="../_static/tippy/home/getting-started.50f4e6f9-2ca5-4d40-b9ba-7dd08dcba1de.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

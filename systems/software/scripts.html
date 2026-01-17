@@ -694,6 +694,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#member-setup-sh" class="md-nav__link">
+    <span class="md-ellipsis">member-<wbr>setup.<wbr>sh</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#nix-packages-sh" class="md-nav__link">
     <span class="md-ellipsis">nix-<wbr>packages.<wbr>sh</span>
   </a>
@@ -8574,6 +8581,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#member-setup-sh" class="md-nav__link">
+    <span class="md-ellipsis">member-<wbr>setup.<wbr>sh</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#nix-packages-sh" class="md-nav__link">
     <span class="md-ellipsis">nix-<wbr>packages.<wbr>sh</span>
   </a>
@@ -8633,6 +8647,12 @@
 <li><p>Creates network rule files (can’t create these without sudo, but home-manager can edit them without sudo)</p></li>
 <li><p>Sets the CAN network send buffer length to be 128 (there was a buffer issue when running E&amp;C)</p></li>
 </ol>
+<h2 id="member-setup-sh"><a class="reference external" href="http://member-setup.sh">member-setup.sh</a><a class="headerlink" href="#member-setup-sh" title="Link to this heading">¶</a></h2>
+<p>This script should be run whenever installing the repo on a fresh device. It installs required packages (direnv, git, gh), clones the repo, runs <a class="reference external" href="http://nix-setup.sh">nix-setup.sh</a>, builds the nix packages, and restarts the shell. It is designed to be run by the command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">curl https://raw.githubusercontent.com/ROAR-QUTRC/perseus-v2/refs/heads/main/software/scripts/member-setup.sh | bash</span>
+</code></pre></div>
+</div>
+<p>Which gets the raw content of the .sh file and executes it by piping it directly into bash.</p>
 <h2 id="nix-packages-sh"><a class="reference external" href="http://nix-packages.sh">nix-packages.sh</a><a class="headerlink" href="#nix-packages-sh" title="Link to this heading">¶</a></h2>
 <p>This script should be run whenever the ros2 package dependencies (any package.xml files in the ros_ws folder) have been changed. It updates the nix packaging with the new dependencies and automatically commits the changes using git (use the <code class="docutils literal notranslate"><span class="pre">--no-commit</span></code> flag to not do this)</p>
 <h2 id="nix-setup-sh"><a class="reference external" href="http://nix-setup.sh">nix-setup.sh</a><a class="headerlink" href="#nix-setup-sh" title="Link to this heading">¶</a></h2>
@@ -8751,7 +8771,7 @@
         <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../../_static/tippy/systems/software/scripts.3188d992-fabf-4582-90c2-b621da7238fe.js"></script>
+        <script defer="defer" src="../../_static/tippy/systems/software/scripts.3985cd52-d830-4d1d-84c2-c98aad83011c.js"></script>
         <script src="../../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
