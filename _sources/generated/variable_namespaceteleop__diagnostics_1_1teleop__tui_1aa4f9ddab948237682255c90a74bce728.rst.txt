@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1aa4f9ddab948237682255c90a74bce728:
+
+Variable teleop_diagnostics::teleop_tui::SPEED_SLOW_THRESHOLD
+=============================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::SPEED_SLOW_THRESHOLD
+   :project: rover

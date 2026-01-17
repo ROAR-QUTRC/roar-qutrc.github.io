@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1ad8a07e784113856d1d705879ae6b6501:
+
+Variable teleop_diagnostics::teleop_tui::DEFAULT_WHEEL_RADIUS
+=============================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::DEFAULT_WHEEL_RADIUS
+   :project: rover

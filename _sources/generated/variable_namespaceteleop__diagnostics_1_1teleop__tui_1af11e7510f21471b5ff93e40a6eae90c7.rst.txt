@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1af11e7510f21471b5ff93e40a6eae90c7:
+
+Variable teleop_diagnostics::teleop_tui::DEFAULT_TURN_AXIS
+==========================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::DEFAULT_TURN_AXIS
+   :project: rover

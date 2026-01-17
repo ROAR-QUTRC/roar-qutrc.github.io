@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1ac1059067264284b053841845f3443b75:
+
+Variable teleop_diagnostics::teleop_tui::AXIS_ACTIVITY_THRESHOLD
+================================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::AXIS_ACTIVITY_THRESHOLD
+   :project: rover

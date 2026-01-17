@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1a90c3742cee4347bae97a755b75c66508:
+
+Variable teleop_diagnostics::teleop_tui::WHEEL_MOTION_THRESHOLD
+===============================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::WHEEL_MOTION_THRESHOLD
+   :project: rover

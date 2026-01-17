@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1ade4b499702dd7596633e9d6767ccae8c:
+
+Variable teleop_diagnostics::teleop_tui::SERVICE_DISCOVERY_TIMEOUT
+==================================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::SERVICE_DISCOVERY_TIMEOUT
+   :project: rover

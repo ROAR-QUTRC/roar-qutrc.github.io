@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1a4dc6280da1f4ff1b81d6c96ab257ff32:
+
+Variable teleop_diagnostics::teleop_tui::CURSES_REFRESH_MS
+==========================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::CURSES_REFRESH_MS
+   :project: rover

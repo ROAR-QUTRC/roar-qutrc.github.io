@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1acbf751eeeb21cd8038089ed24668a2fc:
+
+Variable teleop_diagnostics::teleop_tui::CONFIG_PANEL_HEIGHT
+============================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::CONFIG_PANEL_HEIGHT
+   :project: rover

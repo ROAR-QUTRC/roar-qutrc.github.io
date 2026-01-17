@@ -1,0 +1,14 @@
+.. _exhale_variable_namespaceteleop__diagnostics_1_1teleop__tui_1a1fe7595f7eeb4b88fffc0e842721469b:
+
+Variable teleop_diagnostics::teleop_tui::DEFAULT_FORWARD_ENABLE_AXIS
+====================================================================
+
+- Defined in :ref:`file_ros_ws_src_teleop_diagnostics_teleop_diagnostics_teleop_tui.py`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: teleop_diagnostics::teleop_tui::DEFAULT_FORWARD_ENABLE_AXIS
+   :project: rover
