@@ -1,0 +1,14 @@
+.. _exhale_define_mandelbrot__cpu_8c_1aecb4dd17977d6a5bd0b4f9c4ce9e8fb0:
+
+Define X_MIN
+============
+
+- Defined in :ref:`file_scripts_mandelbrot_cpu.c`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: X_MIN
+   :project: rover

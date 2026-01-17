@@ -1,0 +1,14 @@
+.. _exhale_define_mandelbrot__cpu_8c_1a6d110622dec617e1cf3b9ada5856dde6:
+
+Define DEFAULT_MAX_ITER
+=======================
+
+- Defined in :ref:`file_scripts_mandelbrot_cpu.c`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DEFAULT_MAX_ITER
+   :project: rover

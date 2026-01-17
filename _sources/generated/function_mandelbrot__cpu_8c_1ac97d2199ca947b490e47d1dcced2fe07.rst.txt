@@ -1,0 +1,14 @@
+.. _exhale_function_mandelbrot__cpu_8c_1ac97d2199ca947b490e47d1dcced2fe07:
+
+Function render_line
+====================
+
+- Defined in :ref:`file_scripts_mandelbrot_cpu.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: render_line(int, int, int, int, int, double, double)
+   :project: rover

@@ -1,0 +1,14 @@
+.. _exhale_function_mandelbrot__cpu_8c_1a22197429aeafa904310b6bb848c049a4:
+
+Function mandelbrot
+===================
+
+- Defined in :ref:`file_scripts_mandelbrot_cpu.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: mandelbrot(double, double, int)
+   :project: rover

@@ -1,0 +1,14 @@
+.. _exhale_function_matrix__cpu_8c_1af9eb7dcd9c3a4c59b09b41a208702488:
+
+Function matrix_multiply
+========================
+
+- Defined in :ref:`file_scripts_matrix_cpu.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: matrix_multiply(float *, float *, float *, int, int)
+   :project: rover

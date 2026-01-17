@@ -256,6 +256,11 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_scripts.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_shared.rst
 
 .. toctree::
@@ -581,6 +586,16 @@ Files
    :maxdepth: 5
 
    file_ros_ws_src_perseus_sensors_i2c_imu_driver_src_main.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_scripts_mandelbrot_cpu.c.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_scripts_matrix_cpu.c.rst
 
 .. toctree::
    :maxdepth: 5

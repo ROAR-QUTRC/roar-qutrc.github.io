@@ -1,0 +1,14 @@
+.. _exhale_function_matrix__cpu_8c_1ab603c970ba599c58449cc15ec4c2f38a:
+
+Function get_time_ms(struct timeval \*, struct timeval \*)
+==========================================================
+
+- Defined in :ref:`file_scripts_matrix_cpu.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: get_time_ms(struct timeval *, struct timeval *)
+   :project: rover
