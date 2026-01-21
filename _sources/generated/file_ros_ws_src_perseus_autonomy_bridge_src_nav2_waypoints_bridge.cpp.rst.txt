@@ -1,0 +1,75 @@
+
+.. _file_ros_ws_src_perseus_autonomy_bridge_src_nav2_waypoints_bridge.cpp:
+
+File nav2_waypoints_bridge.cpp
+==============================
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_autonomy_bridge_src>` (``ros_ws/src/perseus_autonomy_bridge/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``ros_ws/src/perseus_autonomy_bridge/src/nav2_waypoints_bridge.cpp``)
+---------------------------------------------------------------------------------
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+- ``cmath``
+
+- ``geometry_msgs/msg/pose_stamped.hpp``
+
+- ``memory``
+
+- ``nav2_msgs/action/navigate_through_poses.hpp``
+
+- ``perseus_interfaces/msg/navigation_data.hpp``
+
+- ``perseus_interfaces/msg/waypoint.hpp``
+
+- ``perseus_interfaces/srv/run_waypoints.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``rclcpp/serialization.hpp``
+
+- ``rclcpp_action/rclcpp_action.hpp``
+
+- ``string``
+
+- ``vector``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classNav2WaypointsBridge`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_nav2__waypoints__bridge_8cpp_1a1b15090a4d4ca9e99bf90f9bdb45831c`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_nav2__waypoints__bridge_8cpp_1a484533fb7ee08d4d7286292c8ebf37cb`
+
+- :ref:`exhale_typedef_nav2__waypoints__bridge_8cpp_1a7e89ab1e93255e9d40c23a1aa7cfe961`
+

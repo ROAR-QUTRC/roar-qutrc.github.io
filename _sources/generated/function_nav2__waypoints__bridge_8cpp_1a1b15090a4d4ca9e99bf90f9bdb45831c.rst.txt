@@ -1,0 +1,14 @@
+.. _exhale_function_nav2__waypoints__bridge_8cpp_1a1b15090a4d4ca9e99bf90f9bdb45831c:
+
+Function yaw_to_quat
+====================
+
+- Defined in :ref:`file_ros_ws_src_perseus_autonomy_bridge_src_nav2_waypoints_bridge.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: yaw_to_quat(double)
+   :project: rover

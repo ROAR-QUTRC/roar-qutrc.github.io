@@ -10,7 +10,7 @@ Namespaces
 ----------
 
 
-- :ref:`namespace_i2c_imu_driver__@28`
+- :ref:`namespace_i2c_imu_driver__@29`
 
 
 Classes

@@ -71,6 +71,16 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_perseus_autonomy_bridge.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_autonomy_bridge_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ros_ws_src_perseus_can_if.rst
 
 .. toctree::
@@ -606,6 +616,11 @@ Files
    :maxdepth: 5
 
    file_ros_ws_src_perseus_hardware_include_mcb_system.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_autonomy_bridge_src_nav2_waypoints_bridge.cpp.rst
 
 .. toctree::
    :maxdepth: 5

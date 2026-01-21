@@ -1,6 +1,0 @@
-
-.. _namespace_i2c_imu_driver__@28:
-
-Namespace i2c_imu_driver::@28
-=============================
-
