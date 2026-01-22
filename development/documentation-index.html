@@ -1032,13 +1032,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#using-nix-build" class="md-nav__link">
-    <span class="md-ellipsis">Using nix build</span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#using-nix-develop" class="md-nav__link">
     <span class="md-ellipsis">Using nix develop</span>
   </a>
@@ -1062,6 +1055,13 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-nix-build" class="md-nav__link">
+    <span class="md-ellipsis">Using nix build</span>
+  </a>
   
 </li>
         
@@ -9194,13 +9194,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#using-nix-build" class="md-nav__link">
-    <span class="md-ellipsis">Using nix build</span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#using-nix-develop" class="md-nav__link">
     <span class="md-ellipsis">Using nix develop</span>
   </a>
@@ -9224,6 +9217,13 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-nix-build" class="md-nav__link">
+    <span class="md-ellipsis">Using nix build</span>
+  </a>
   
 </li>
         
@@ -9262,17 +9262,9 @@
 <h2 id="how-to-build">How to build<a class="headerlink" href="#how-to-build" title="Link to this heading">¶</a></h2>
 <p>Unless you’re making major edits to the raw markdown/reST files, or you’re fiddling with the build toolchain, you probably don’t need to build them locally - let the continuous deployment take care of it for you!
 However, if you do need to test things locally, you have two options.
-The first is to use <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> - this is ideal if you’re making small edits to the documentation and you want to check that everything’s building properly before pushing to GitHub.
-The second is to enter a <em>development shell</em> using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> - if you want slightly faster builds, you’re modifying Python dependencies, or you’re tinkering with the build toolchain, this is what you’ll need.</p>
-<h3 id="using-nix-build">Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code><a class="headerlink" href="#using-nix-build" title="Link to this heading">¶</a></h3>
-<p>To build the documentation, simply run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span></code> - the output will be in the <code class="docutils literal notranslate"><span class="pre">result</span></code> symlink in the directory where you ran the command.</p>
-<div class="note admonition">
-<p class="admonition-title">Note</p>
-<p>A quick start to view changes locally is to run the following commands from the /perseus-v2 directory</p>
-<p>nix build .#docs</p>
-<p>nix run nixpkgs#darkhttpd – ./result/html/</p>
-<p>…and then view the ‘127.0.0.1:8080’ or ‘localhost:8080’ in a browser</p>
-</div>
+The first is to enter a <em>development shell</em> using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> - if you want slightly faster builds, you’re modifying Python dependencies, or you’re tinkering with the build toolchain, this is what you’ll need.
+The second is to use <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code> - this option (by default) requires root access in order to allow the build to have access to the internet.
+If you have root access, this option is useful if you’re making small edits to the documentation and you want to check that everything’s building properly before pushing to GitHub.</p>
 <h3 id="using-nix-develop">Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code><a class="headerlink" href="#using-nix-develop" title="Link to this heading">¶</a></h3>
 <h4 id="building">Building<a class="headerlink" href="#building" title="Link to this heading">¶</a></h4>
 <ol class="arabic simple" start="0">
@@ -9297,8 +9289,22 @@ This is because the <code class="docutils literal notranslate"><span class="pre"
 </ul>
 <p>You will have to exit and re-enter the dev shell for any of these changes to take effect, as the Python environment is built and applied upon entering the dev shell.
 Alternatively, you can also run <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">COMMAND</span></code> to run a command in the currently specified Python environment.
-However, as previously mentioned, <code class="docutils literal notranslate"><span class="pre">uv</span></code> can only be run from the directory containing th <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file, which limits its usefulness.
+However, as previously mentioned, <code class="docutils literal notranslate"><span class="pre">uv</span></code> can only be run from the directory containing the <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file, which limits its usefulness.
 For further usage, consult the <code class="docutils literal notranslate"><span class="pre">uv</span></code> <a class="reference external" href="https://docs.astral.sh/uv/reference/cli/">usage documentation</a> - in particular you may find the <code class="docutils literal notranslate"><span class="pre">venv</span></code> command useful (though at that point you may as well just exit and re-enter the shell to rebuild the environment with Nix anyway).</p>
+<h3 id="using-nix-build">Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code><a class="headerlink" href="#using-nix-build" title="Link to this heading">¶</a></h3>
+<p>To build the documentation, run <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span> <span class="pre">--option</span> <span class="pre">sandbox</span> <span class="pre">relaxed</span></code> - the output will be in the <code class="docutils literal notranslate"><span class="pre">result</span></code> symlink in the directory where you ran the command.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>While this option is possible, it is mainly used for the Github Actions.
+For general development, you should use the <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">develop</span></code> option described above, as it is safer and faster.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>A quick start to view changes locally is to run the following commands from the /perseus-v2 directory</p>
+<p>sudo nix build .#docs –option sandbox relaxed</p>
+<p>nix run nixpkgs#darkhttpd – ./result/html/</p>
+<p>…and then view the ‘127.0.0.1:8080’ or ‘localhost:8080’ in a browser</p>
+</div>
 <h2 id="serving-the-built-docs">Serving the built docs<a class="headerlink" href="#serving-the-built-docs" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">darkhttpd</span></code> is an excellent fast and lightweight HTTP server, and is excellent for quickly testing that the docs are displaying properly.
 Whilst simply opening the built files from a file browser is fine 99% of the time, some JavaScript may not run correctly without being loaded from a HTTP server for some reason.
@@ -9407,7 +9413,7 @@ You may have to experiment with using either <code class="docutils literal notra
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/development/documentation-index.b3358adb-6f4d-482d-8b9e-b9d404d8e88f.js"></script>
+        <script defer="defer" src="../_static/tippy/development/documentation-index.89701d78-4e7e-4385-bdb1-9cd79ab5f47a.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
