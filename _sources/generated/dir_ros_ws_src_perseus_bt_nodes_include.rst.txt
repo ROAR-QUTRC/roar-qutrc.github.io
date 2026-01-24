@@ -1,0 +1,21 @@
+.. _dir_ros_ws_src_perseus_bt_nodes_include:
+
+
+Directory include
+=================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_ros_ws_src_perseus_bt_nodes>` (``ros_ws/src/perseus_bt_nodes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``ros_ws/src/perseus_bt_nodes/include``
+
+Subdirectories
+--------------
+
+- :ref:`dir_ros_ws_src_perseus_bt_nodes_include_perseus_bt_nodes`
+
+
+

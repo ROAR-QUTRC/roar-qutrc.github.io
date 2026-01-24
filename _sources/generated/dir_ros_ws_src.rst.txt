@@ -18,6 +18,7 @@ Subdirectories
 - :ref:`dir_ros_ws_src_autonomy`
 - :ref:`dir_ros_ws_src_input_devices`
 - :ref:`dir_ros_ws_src_perseus_autonomy_bridge`
+- :ref:`dir_ros_ws_src_perseus_bt_nodes`
 - :ref:`dir_ros_ws_src_perseus_can_if`
 - :ref:`dir_ros_ws_src_perseus_hardware`
 - :ref:`dir_ros_ws_src_perseus_input`

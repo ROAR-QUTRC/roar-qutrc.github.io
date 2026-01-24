@@ -1,6 +1,0 @@
-
-.. _namespace_perseus_lite_hardware__@18:
-
-Namespace perseus_lite_hardware::@18
-====================================
-

@@ -81,6 +81,26 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_perseus_bt_nodes.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_bt_nodes_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_bt_nodes_include_perseus_bt_nodes.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_perseus_bt_nodes_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ros_ws_src_perseus_can_if.rst
 
 .. toctree::
@@ -485,6 +505,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ros_ws_src_perseus_bt_nodes_include_perseus_bt_nodes_get_goal_from_goals.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_shared_hi-can_src_hi_can.cpp.rst
 
 .. toctree::
@@ -575,6 +600,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ros_ws_src_perseus_bt_nodes_include_perseus_bt_nodes_increment_index.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp.rst
 
 .. toctree::
@@ -640,6 +670,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ros_ws_src_perseus_bt_nodes_include_perseus_bt_nodes_pop_first_goal.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_shared_ptr-wrapper_src_ptr_wrapper.cpp.rst
 
 .. toctree::
@@ -656,6 +691,11 @@ Files
    :maxdepth: 5
 
    file_ros_ws_src_perseus_can_if_include_rcb_driver_rcb_driver.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_perseus_bt_nodes_src_register_nodes.cpp.rst
 
 .. toctree::
    :maxdepth: 5
