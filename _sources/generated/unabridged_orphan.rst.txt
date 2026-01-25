@@ -276,6 +276,26 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_ros_ws_src_pointcloud_to_laserscan.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_pointcloud_to_laserscan_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_ros_ws_src_pointcloud_to_laserscan_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_ros_ws_src_teleop_diagnostics.rst
 
 .. toctree::
@@ -605,6 +625,16 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_ros_ws_src_pointcloud_to_laserscan_src_laserscan_to_pointcloud_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan_laserscan_to_pointcloud_node.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp.rst
 
 .. toctree::
@@ -666,6 +696,16 @@ Files
    :maxdepth: 5
 
    file_arm-teleop-direct_include_perseus-arm-teleop.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_pointcloud_to_laserscan_src_pointcloud_to_laserscan_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan_pointcloud_to_laserscan_node.hpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -751,6 +791,11 @@ Files
    :maxdepth: 5
 
    file_ros_ws_src_perseus_hardware_include_vesc_system.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan_visibility_control.h.rst
 
 .. toctree::
    :maxdepth: 5
