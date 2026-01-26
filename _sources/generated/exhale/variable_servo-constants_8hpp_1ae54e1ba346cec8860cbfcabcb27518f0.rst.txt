@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1ae54e1ba346cec8860cbfcabcb27518f0:
+
+Variable perseus::servo::protocol::HEADER1
+==========================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::protocol::HEADER1
+   :project: rover

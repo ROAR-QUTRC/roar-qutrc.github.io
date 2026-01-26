@@ -1,0 +1,27 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_arm-teleop-direct:
+
+
+Directory arm-teleop-direct
+===========================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software>` (``software``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/arm-teleop-direct``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_arm-teleop-direct_include`
+- :ref:`dir_software_arm-teleop-direct_src`
+
+
+

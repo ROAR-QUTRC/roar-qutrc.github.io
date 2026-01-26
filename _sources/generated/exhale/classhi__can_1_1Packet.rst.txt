@@ -1,0 +1,23 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_class_classhi__can_1_1Packet:
+
+Class Packet
+============
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_packet.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: hi_can::Packet
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

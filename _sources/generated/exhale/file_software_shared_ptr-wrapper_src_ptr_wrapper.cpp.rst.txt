@@ -1,0 +1,38 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_ptr-wrapper_src_ptr_wrapper.cpp:
+
+File ptr_wrapper.cpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_ptr-wrapper_src>` (``software/shared/ptr-wrapper/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/ptr-wrapper/src/ptr_wrapper.cpp``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_ptr-wrapper_src_ptr_wrapper.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ptr_wrapper.hpp`` (:ref:`file_software_shared_ptr-wrapper_include_ptr_wrapper.hpp`)
+
+
+
+
+

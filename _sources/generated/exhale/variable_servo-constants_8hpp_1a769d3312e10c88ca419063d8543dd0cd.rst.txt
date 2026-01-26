@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1a769d3312e10c88ca419063d8543dd0cd:
+
+Variable perseus::servo::error_bits::CHECKSUM
+=============================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::error_bits::CHECKSUM
+   :project: rover

@@ -1,0 +1,66 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_scripts_matrix_cpu.c:
+
+File matrix_cpu.c
+=================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_scripts>` (``software/scripts``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/scripts/matrix_cpu.c``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_scripts_matrix_cpu.c.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``stdio.h``
+
+- ``stdlib.h``
+
+- ``string.h``
+
+- ``sys/time.h``
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_matrix__cpu_8c_1a217378af7d88fe477738faf18b80b737`
+
+- :ref:`exhale_function_matrix__cpu_8c_1ab603c970ba599c58449cc15ec4c2f38a`
+
+- :ref:`exhale_function_matrix__cpu_8c_1a17c01fe507fb342f5ef2b592165835f0`
+
+- :ref:`exhale_function_matrix__cpu_8c_1af9eb7dcd9c3a4c59b09b41a208702488`
+
+- :ref:`exhale_function_matrix__cpu_8c_1aa35730e2ee087e2e891f4e2805f69c58`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_matrix__cpu_8c_1a9771cabfd673a8e350f1f8ce0b8f458f`
+

@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1a14cef23ebf52cb7ec1dc03eb73827c90:
+
+Variable perseus::servo::timing::DEFAULT_TIMEOUT
+================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::timing::DEFAULT_TIMEOUT
+   :project: rover

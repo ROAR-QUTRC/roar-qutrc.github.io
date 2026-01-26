@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1afd9f3d34ba4dec369c066ba5cc0ca197:
+
+Variable perseus::servo::register_addr::FIRMWARE_MAIN_VERSION
+=============================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::FIRMWARE_MAIN_VERSION
+   :project: rover

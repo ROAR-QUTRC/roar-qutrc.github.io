@@ -1,0 +1,29 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_ros_ws_src_perseus_payloads_include_arm_driver_arm_driver.hpp:
+
+Program Listing for File arm_driver.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_ros_ws_src_perseus_payloads_include_arm_driver_arm_driver.hpp>` (``software/ros_ws/src/perseus_payloads/include/arm_driver/arm_driver.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <rclcpp/rclcpp.hpp>
+   #include <sensor_msgs/msg/joint_state.hpp>
+   
+   class ArmDriver : public rclcpp::Node
+   {
+   public:
+       explicit ArmDriver(const rclcpp::NodeOptions& options = rclcpp::NodeOptions());
+   
+   private:
+   };

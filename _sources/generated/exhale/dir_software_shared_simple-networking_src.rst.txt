@@ -1,0 +1,26 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_shared_simple-networking_src:
+
+
+Directory src
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_simple-networking>` (``software/shared/simple-networking``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/shared/simple-networking/src``
+
+
+Files
+-----
+
+- :ref:`file_software_shared_simple-networking_src_client.cpp`
+
+

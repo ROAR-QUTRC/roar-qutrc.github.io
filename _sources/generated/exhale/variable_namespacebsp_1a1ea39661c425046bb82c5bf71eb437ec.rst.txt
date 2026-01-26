@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_namespacebsp_1a1ea39661c425046bb82c5bf71eb437ec:
+
+Variable bsp::I2C_SCL
+=====================
+
+- Defined in :ref:`file_firmware_components_board-support_include_board_support.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: bsp::I2C_SCL
+   :project: rover

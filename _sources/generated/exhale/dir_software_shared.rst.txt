@@ -1,0 +1,33 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_shared:
+
+
+Directory shared
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software>` (``software``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/shared``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_shared_crc`
+- :ref:`dir_software_shared_fd-wrapper`
+- :ref:`dir_software_shared_hi-can`
+- :ref:`dir_software_shared_hi-can-net`
+- :ref:`dir_software_shared_hi-can-raw`
+- :ref:`dir_software_shared_ptr-wrapper`
+- :ref:`dir_software_shared_simple-networking`
+- :ref:`dir_software_shared_type-demangle`
+
+
+

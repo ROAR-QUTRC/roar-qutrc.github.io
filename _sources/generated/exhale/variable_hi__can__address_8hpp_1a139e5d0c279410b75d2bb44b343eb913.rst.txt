@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_hi__can__address_8hpp_1a139e5d0c279410b75d2bb44b343eb913:
+
+Variable hi_can::addressing::status::GROUP_ID
+=============================================
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::status::GROUP_ID
+   :project: rover

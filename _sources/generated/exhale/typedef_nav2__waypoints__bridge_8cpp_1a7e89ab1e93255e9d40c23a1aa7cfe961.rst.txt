@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_typedef_nav2__waypoints__bridge_8cpp_1a7e89ab1e93255e9d40c23a1aa7cfe961:
+
+Typedef NavigateThroughPoses
+============================
+
+- Defined in :ref:`file_software_ros_ws_src_perseus_autonomy_bridge_src_nav2_waypoints_bridge.cpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: NavigateThroughPoses
+   :project: rover

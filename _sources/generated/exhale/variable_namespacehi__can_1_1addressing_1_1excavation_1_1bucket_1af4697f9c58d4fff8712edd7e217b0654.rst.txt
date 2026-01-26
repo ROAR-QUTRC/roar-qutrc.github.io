@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1af4697f9c58d4fff8712edd7e217b0654:
+
+Variable hi_can::addressing::excavation::bucket::SUBSYSTEM_ID
+=============================================================
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::excavation::bucket::SUBSYSTEM_ID
+   :project: rover

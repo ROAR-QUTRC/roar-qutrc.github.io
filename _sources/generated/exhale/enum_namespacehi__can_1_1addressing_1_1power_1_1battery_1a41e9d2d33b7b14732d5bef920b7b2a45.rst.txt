@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1battery_1a41e9d2d33b7b14732d5bef920b7b2a45:
+
+Enum device
+===========
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::power::battery::device
+   :project: rover

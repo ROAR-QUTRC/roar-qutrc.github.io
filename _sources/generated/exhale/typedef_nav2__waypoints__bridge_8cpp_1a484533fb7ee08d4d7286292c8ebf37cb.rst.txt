@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_typedef_nav2__waypoints__bridge_8cpp_1a484533fb7ee08d4d7286292c8ebf37cb:
+
+Typedef GoalHandleNav
+=====================
+
+- Defined in :ref:`file_software_ros_ws_src_perseus_autonomy_bridge_src_nav2_waypoints_bridge.cpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: GoalHandleNav
+   :project: rover

@@ -1,0 +1,22 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__parameters__excavation__bucket__controller:
+
+Namespace hi_can::parameters::excavation::bucket::controller
+============================================================
+
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1a9f8a393d92b874562b4cd7eb279c6e0c`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1a0d56d05c172ec4476d48d33d52c2e820`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1aab3b49ecc4324f8c02c4fb43cbdd8e72`

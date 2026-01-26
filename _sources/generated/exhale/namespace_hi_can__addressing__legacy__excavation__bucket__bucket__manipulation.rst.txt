@@ -1,0 +1,25 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__addressing__legacy__excavation__bucket__bucket__manipulation:
+
+Namespace hi_can::addressing::legacy::excavation::bucket::bucket::manipulation
+==============================================================================
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1af4988aa97879122ec38e23d01d578e40`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1aede42147adf41c960bdc93592573f055`

@@ -1,0 +1,21 @@
+
+.. highlight:: none
+
+
+
+.. _dir_firmware:
+
+
+Directory firmware
+==================
+
+
+*Directory path:* ``firmware``
+
+Subdirectories
+--------------
+
+- :ref:`dir_firmware_components`
+
+
+

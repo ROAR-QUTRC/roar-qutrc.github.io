@@ -1,0 +1,25 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__addressing__legacy__drive:
+
+Namespace hi_can::addressing::legacy::drive
+===========================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__addressing__legacy__drive__motors`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a91e259388c868dd8eb77c8c5c4cc12c2`

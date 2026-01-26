@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_typedef_hi__can__parameter_8hpp_1a0d56d05c172ec4476d48d33d52c2e820:
+
+Typedef hi_can::parameters::excavation::bucket::controller::magnet_t
+====================================================================
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_parameter.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: hi_can::parameters::excavation::bucket::controller::magnet_t
+   :project: rover

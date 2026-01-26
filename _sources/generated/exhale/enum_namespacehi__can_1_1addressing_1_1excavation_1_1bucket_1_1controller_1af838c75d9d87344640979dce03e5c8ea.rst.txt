@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_enum_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1_1controller_1af838c75d9d87344640979dce03e5c8ea:
+
+Enum group
+==========
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::excavation::bucket::controller::group
+   :project: rover

@@ -1,0 +1,35 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_ros_ws_src_perseus_payloads_include_bucket_controller_bucket_controller.hpp:
+
+Program Listing for File bucket_controller.hpp
+==============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_ros_ws_src_perseus_payloads_include_bucket_controller_bucket_controller.hpp>` (``software/ros_ws/src/perseus_payloads/include/bucket_controller/bucket_controller.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <actuator_msgs/msg/actuators.hpp>
+   #include <chrono>
+   #include <rclcpp/rclcpp.hpp>
+   #include <sensor_msgs/msg/joy.hpp>
+   
+   class BucketController : public rclcpp::Node
+   {
+   public:
+       explicit BucketController(const rclcpp::NodeOptions& options = rclcpp::NodeOptions());
+   
+   private:
+       void _joy_callback(const sensor_msgs::msg::Joy::SharedPtr msg);
+   
+       rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr _joy_subscription;
+       rclcpp::Publisher<actuator_msgs::msg::Actuators>::SharedPtr _actuator_publisher;
+   };

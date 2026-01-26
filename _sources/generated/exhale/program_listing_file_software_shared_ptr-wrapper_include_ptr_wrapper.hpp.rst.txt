@@ -1,0 +1,100 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_shared_ptr-wrapper_include_ptr_wrapper.hpp:
+
+Program Listing for File ptr_wrapper.hpp
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_shared_ptr-wrapper_include_ptr_wrapper.hpp>` (``software/shared/ptr-wrapper/include/ptr_wrapper.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <functional>
+   #include <stdexcept>
+   
+   template <typename T>
+   class PtrWrapper
+   {
+   public:
+       PtrWrapper() = default;
+       PtrWrapper(T* ptr, std::function<void(T*)> deallocator)
+           : PtrWrapper([ptr](void)
+                        { return ptr; }, deallocator)
+       {
+       }
+       PtrWrapper(std::function<T*(void)> allocator, std::function<void(T*)> deallocator)
+           : _deallocator(deallocator)
+       {
+           if (!allocator)
+               throw std::invalid_argument("Allocator must be provided");
+           if (!deallocator)
+               throw std::invalid_argument("Deallocator must be provided");
+           _ptr = allocator();
+       }
+   
+       ~PtrWrapper()
+       {
+           try
+           {
+               if (_ptr)
+                   _deallocator(_ptr);
+           }
+           catch (...)
+           {
+               // ignore - since we're in a destructor, we can't throw
+           }
+       }
+   
+       // we do NOT want to allow copying, that doesn't make sense.
+       // Moving is OK though
+       PtrWrapper(const PtrWrapper&) = delete;
+       PtrWrapper(PtrWrapper&& other) noexcept
+       {
+           swap(*this, other);
+       }
+       PtrWrapper& operator=(PtrWrapper) = delete;
+       PtrWrapper& operator=(PtrWrapper&& other) noexcept
+       {
+           swap(*this, other);
+           return *this;
+       }
+   
+       PtrWrapper& operator=(T* ptr)
+       {
+           if (_ptr)
+               _deallocator(_ptr);
+           _ptr = ptr;
+           return *this;
+       }
+   
+       T** operator&()
+       {
+           return &_ptr;
+       }
+   
+       friend void swap(PtrWrapper& first, PtrWrapper& second)
+       {
+           using std::swap;
+           swap(first._ptr, second._ptr);
+           swap(first._deallocator, second._deallocator);
+       }
+   
+       // allow all the common methods of getting the file descriptor/"dereferencing"
+       virtual inline explicit operator T*() const { return get(); }
+       virtual inline T* operator*() const { return get(); }
+       virtual inline T* operator->() const { return get(); }
+       virtual inline T* get() const { return _ptr; }
+   
+   private:
+       T* _ptr = nullptr;
+   
+       std::function<void(T*)> _deallocator = nullptr;
+   };

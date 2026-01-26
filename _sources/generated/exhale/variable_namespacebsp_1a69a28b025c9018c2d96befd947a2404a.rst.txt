@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_namespacebsp_1a69a28b025c9018c2d96befd947a2404a:
+
+Variable bsp::A1
+================
+
+- Defined in :ref:`file_firmware_components_board-support_include_board_support.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: bsp::A1
+   :project: rover

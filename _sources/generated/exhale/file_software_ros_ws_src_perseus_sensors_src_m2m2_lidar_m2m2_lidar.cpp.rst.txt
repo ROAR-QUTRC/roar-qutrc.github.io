@@ -1,0 +1,163 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp:
+
+File m2m2_lidar.cpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_sensors_src_m2m2_lidar>` (``software/ros_ws/src/perseus_sensors/src/m2m2_lidar``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+
+ROS2 driver for M2M2 LIDAR sensor. 
+
+
+Definition (``software/ros_ws/src/perseus_sensors/src/m2m2_lidar/m2m2_lidar.cpp``)
+----------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp.rst
+
+
+
+Detailed Description
+--------------------
+
+Expected sequence of flow:
+
+1. Node initialisation:
+
+   - Loads ROS params (IP, port, topics, frame_id) - likely to come from a launch file in future
+
+   - Establishes TCP socket connection to sensor
+
+   - Sends initial configuration command - need to test if this is necessary
+
+   - Creates publishers for scan and IMU data via ROS topic
+
+
+
+2. Main operation loop (100ms intervals):
+
+   - Reads raw data packets from sensor
+
+   - Parses into LaserScan messages:
+
+      - Single 360° sweep per scan
+
+      - Each scan timestamped
+
+      - Points evenly spaced with time_increment
+
+
+
+   - Parses IMU data if present
+
+   - Publishes to respective topics
+
+
+
+3. Cleanup on shutdown:
+
+   - Closes socket connection
+
+   - Releases resources
+
+
+
+
+
+This is under construction but hopefully helpful as multiple people are collaborating on this.
+
+Hardware to Laserscan generation: The driver is going to take a single 360 degree sweep as a "scan". Each scan is timestamped. Each datapoint in the scan is not timestamped. Individual data points in the scan are not timestamped but are assumed to be evenly spaced and have a time_increment value. scan_time is the time for a one complete 360 degree sweep.
+
+
+
+- sensor_msgs::msg::LaserScan 
+
+sensor_msgs::msg::Imu 
+
+
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``arpa/inet.h``
+
+- ``bit``
+
+- ``cassert``
+
+- ``chrono``
+
+- ``cmath``
+
+- ``iomanip``
+
+- ``m2m2_lidar/m2m2_lidar.hpp`` (:ref:`file_software_ros_ws_src_perseus_sensors_include_m2m2_lidar_m2m2_lidar.hpp`)
+
+- ``netdb.h``
+
+- ``netinet/in.h``
+
+- ``numbers``
+
+- ``openssl/bio.h``
+
+- ``openssl/evp.h``
+
+- ``ranges``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``sensor_msgs/msg/laser_scan.hpp``
+
+- ``simple_networking/client.hpp`` (:ref:`file_software_shared_simple-networking_include_simple_networking_client.hpp`)
+
+- ``stdexcept``
+
+- ``sys/socket.h``
+
+- ``sys/types.h``
+
+- ``thread``
+
+- ``unistd.h``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_std__chrono_literals`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classstring`
+
+- :ref:`exhale_class_classvector`
+

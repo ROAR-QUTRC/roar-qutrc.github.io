@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_typedef_hi__can__parameter_8hpp_1aab3b49ecc4324f8c02c4fb43cbdd8e72:
+
+Typedef hi_can::parameters::excavation::bucket::controller::speed_t
+===================================================================
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_parameter.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: hi_can::parameters::excavation::bucket::controller::speed_t
+   :project: rover

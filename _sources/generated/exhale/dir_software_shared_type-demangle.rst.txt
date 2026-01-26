@@ -1,0 +1,27 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_shared_type-demangle:
+
+
+Directory type-demangle
+=======================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared>` (``software/shared``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/shared/type-demangle``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_shared_type-demangle_include`
+- :ref:`dir_software_shared_type-demangle_src`
+
+
+

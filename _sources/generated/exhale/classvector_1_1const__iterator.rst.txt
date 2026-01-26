@@ -1,0 +1,29 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_class_classvector_1_1const__iterator:
+
+Class vector::const_iterator
+============================
+
+.. did not find file this was defined in
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classvector`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: vector::const_iterator
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

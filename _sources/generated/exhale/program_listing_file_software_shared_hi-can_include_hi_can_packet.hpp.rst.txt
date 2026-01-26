@@ -1,0 +1,165 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_shared_hi-can_include_hi_can_packet.hpp:
+
+Program Listing for File hi_can_packet.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_shared_hi-can_include_hi_can_packet.hpp>` (``software/shared/hi-can/include/hi_can_packet.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <algorithm>
+   #include <chrono>
+   #include <cstddef>
+   #include <functional>
+   #include <map>
+   #include <optional>
+   #include <stdexcept>
+   #include <vector>
+   
+   #include "hi_can_address.hpp"
+   
+   namespace hi_can
+   {
+       class Packet
+       {
+       public:
+           Packet() = default;
+   
+           Packet(const addressing::flagged_address_t& address, const uint8_t data[] = nullptr, size_t data_len = 0);
+           Packet(const addressing::flagged_address_t& address, const std::vector<uint8_t>& data);
+           template <typename T>
+           Packet(const addressing::flagged_address_t& address, const T& data)
+           {
+               set_address(address);
+               set_data(data);
+           }
+   
+           template <typename T>
+           std::optional<T> get_data() const
+           {
+               if (_data.size() != sizeof(T))
+                   return std::nullopt;
+   
+               T data;
+               std::copy(_data.begin(), _data.end(), reinterpret_cast<uint8_t* const>(&data));
+               return data;
+           }
+           constexpr const auto& get_data() const { return _data; }
+   
+           void set_data(const uint8_t data[], size_t data_len);
+           void set_data(const std::vector<uint8_t>& data);
+           template <typename T>
+           void set_data(const T& data)
+           {
+               set_data(reinterpret_cast<const uint8_t* const>(&data), sizeof(T));
+           }
+   
+           constexpr auto get_data_len() const { return _data.size(); }
+   
+           constexpr auto get_address() const { return _address; }
+           void set_address(const addressing::flagged_address_t& address);
+   
+           constexpr bool get_is_rtr() const { return _address.is_rtr; }
+           void set_is_rtr(const bool& is_rtr) { _address.is_rtr = is_rtr; }
+   
+           constexpr bool get_is_error() const { return _address.is_error; }
+           void set_is_error(const bool& is_error) { _address.is_error = is_error; }
+   
+           constexpr bool get_is_extended() const { return _address.is_extended; }
+           void set_is_extended(const bool& is_extended) { _address.is_extended = is_extended; }
+   
+           // implement comparison functions for STL containers
+           constexpr auto operator<=>(const Packet& other) const { return _address <=> other._address; }
+           constexpr auto operator==(const Packet& other) const
+           {
+               return (_address == other._address) &&
+                      (_data == other._data);
+           }
+           constexpr auto operator!=(const Packet& other) const { return !(*this == other); }
+   
+       private:
+           addressing::flagged_address_t _address = addressing::MAX_ADDRESS;
+           std::vector<uint8_t> _data{};
+       };
+   
+       typedef std::function<void(const hi_can::Packet&)> packet_callback_t;
+   
+       // forward declarations to avoid circular dependencies
+       namespace parameters
+       {
+           class ParameterGroup;
+       }
+       class FilteredCanInterface;
+       class PacketManager
+       {
+       public:
+           struct callback_config_t
+           {
+               packet_callback_t data_callback = nullptr;
+               std::function<void(void)> timeout_callback = nullptr;
+               packet_callback_t timeout_recovery_callback = nullptr;
+               std::chrono::steady_clock::duration timeout = std::chrono::steady_clock::duration::zero();
+           };
+           typedef std::function<std::vector<uint8_t>(void)> data_generator_t;
+           struct transmission_config_t
+           {
+               data_generator_t generator = nullptr;
+               std::chrono::steady_clock::duration interval = std::chrono::steady_clock::duration::zero();
+               bool should_transmit_immediately = false;
+           };
+   
+           PacketManager(FilteredCanInterface& interface);
+   
+           void handle(bool should_block = false, bool should_force_transmission = false)
+           {
+               handle_receive(should_block);
+               handle_transmit(should_force_transmission);
+           }
+           void handle_receive(bool should_block = false);
+           void handle_transmit(bool should_force_transmission = false);
+   
+           void add_group(const parameters::ParameterGroup& group);
+   
+           void remove_group(const parameters::ParameterGroup& group);
+   
+           void set_callback(const addressing::filter_t& filter, const callback_config_t& config);
+           std::optional<callback_config_t> get_callback(const addressing::filter_t& filter);
+           void remove_callback(const addressing::filter_t& filter);
+   
+           void set_transmission_config(const addressing::flagged_address_t& address, const transmission_config_t& config);
+           void set_transmission_generator(const addressing::flagged_address_t& address, const data_generator_t& generator);
+           void set_transmission_interval(const addressing::flagged_address_t& address, const std::chrono::steady_clock::duration& interval);
+           std::optional<transmission_config_t> get_transmission_config(const addressing::flagged_address_t& address);
+           void remove_transmission(const addressing::flagged_address_t& address);
+   
+           FilteredCanInterface& get_interface() const { return _interface; }
+   
+       private:
+           struct callback_data_t
+           {
+               callback_config_t config{};
+               Packet last_packet{};
+               bool has_timed_out = false;
+               std::chrono::steady_clock::time_point last_received{};
+           };
+           struct transmission_data_t
+           {
+               transmission_config_t config{};
+               std::chrono::steady_clock::time_point last_transmitted{};
+           };
+           void _handle_received_packet(const Packet& packet);
+           FilteredCanInterface& _interface;
+           std::map<addressing::filter_t, callback_data_t> _callbacks;
+           std::map<addressing::flagged_address_t, transmission_data_t> _transmissions;
+       };
+   }

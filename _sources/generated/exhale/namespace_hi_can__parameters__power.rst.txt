@@ -1,0 +1,20 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__parameters__power:
+
+Namespace hi_can::parameters::power
+===================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__parameters__power__bms`
+
+- :ref:`namespace_hi_can__parameters__power__distribution`

@@ -1,0 +1,65 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_data_types.hpp:
+
+File imu_data_types.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver>` (``software/ros_ws/src/perseus_sensors/i2c_imu_driver/include/i2c_imu_driver``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/ros_ws/src/perseus_sensors/i2c_imu_driver/include/i2c_imu_driver/imu_data_types.hpp``)
+-------------------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_data_types.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_imu_node.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_i2c_imu_driver`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structi2c__imu__driver_1_1ImuData`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_imu__data__types_8hpp_1acbd8f60a815c9bc7ad4f35b323766193`
+

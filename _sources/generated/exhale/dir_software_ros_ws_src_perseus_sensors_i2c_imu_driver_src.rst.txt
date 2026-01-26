@@ -1,0 +1,28 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src:
+
+
+Directory src
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_sensors_i2c_imu_driver>` (``software/ros_ws/src/perseus_sensors/i2c_imu_driver``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/ros_ws/src/perseus_sensors/i2c_imu_driver/src``
+
+
+Files
+-----
+
+- :ref:`file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_i2c_device.cpp`
+- :ref:`file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_i2c_imu_node.cpp`
+- :ref:`file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_imu_device_config.cpp`
+
+

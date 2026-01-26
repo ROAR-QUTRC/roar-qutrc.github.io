@@ -1,0 +1,30 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_perseus__servo__error_bits:
+
+Namespace perseus::servo::error_bits
+====================================
+
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_servo-constants_8hpp_1a5eec7110cccfbee77573032206c1d7f9`
+
+- :ref:`exhale_variable_servo-constants_8hpp_1a769d3312e10c88ca419063d8543dd0cd`
+
+- :ref:`exhale_variable_servo-constants_8hpp_1af3aa270bc3e7d2ef60558992ef63d519`
+
+- :ref:`exhale_variable_servo-constants_8hpp_1acd3995815fac331c27c926fa05d34d1d`
+
+- :ref:`exhale_variable_servo-constants_8hpp_1a973e46319bf04e4db7002b2831365e37`
+
+- :ref:`exhale_variable_servo-constants_8hpp_1add8e1dc3954d368467904ad3f2d77e81`
+
+- :ref:`exhale_variable_servo-constants_8hpp_1ae26423a500fe90f0ebd5d4bf05286fd5`

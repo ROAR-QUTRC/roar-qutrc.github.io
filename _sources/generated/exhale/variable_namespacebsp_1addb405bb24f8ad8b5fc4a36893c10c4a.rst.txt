@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_namespacebsp_1addb405bb24f8ad8b5fc4a36893c10c4a:
+
+Variable bsp::I2C_SDA
+=====================
+
+- Defined in :ref:`file_firmware_components_board-support_include_board_support.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: bsp::I2C_SDA
+   :project: rover

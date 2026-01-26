@@ -1,0 +1,20 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_shared_simple-networking_include_simple_networking.hpp:
+
+Program Listing for File simple_networking.hpp
+==============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_shared_simple-networking_include_simple_networking.hpp>` (``software/shared/simple-networking/include/simple_networking.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include "simple_networking/client.hpp"

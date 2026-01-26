@@ -1,0 +1,49 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_fd-wrapper_src_fd_wrapper.cpp:
+
+File fd_wrapper.cpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_fd-wrapper_src>` (``software/shared/fd-wrapper/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/fd-wrapper/src/fd_wrapper.cpp``)
+--------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_fd-wrapper_src_fd_wrapper.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``fd_wrapper.hpp`` (:ref:`file_software_shared_fd-wrapper_include_fd_wrapper.hpp`)
+
+- ``stdexcept``
+
+- ``unistd.h``
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_fd__wrapper_8cpp_1a809aad577929eaafd71283850cdfcb72`
+

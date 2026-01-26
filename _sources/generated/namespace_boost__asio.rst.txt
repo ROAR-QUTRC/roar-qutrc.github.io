@@ -1,6 +1,0 @@
-
-.. _namespace_boost__asio:
-
-Namespace boost::asio
-=====================
-

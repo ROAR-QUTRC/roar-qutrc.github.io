@@ -1,0 +1,27 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_shared_ptr-wrapper:
+
+
+Directory ptr-wrapper
+=====================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared>` (``software/shared``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/shared/ptr-wrapper``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_shared_ptr-wrapper_include`
+- :ref:`dir_software_shared_ptr-wrapper_src`
+
+
+

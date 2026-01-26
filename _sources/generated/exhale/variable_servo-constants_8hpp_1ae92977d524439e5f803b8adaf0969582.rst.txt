@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1ae92977d524439e5f803b8adaf0969582:
+
+Variable perseus::servo::protocol::BROADCAST_ID
+===============================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::protocol::BROADCAST_ID
+   :project: rover

@@ -1,0 +1,59 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_arm-teleop-direct_include_perseus-arm-teleop.hpp:
+
+Program Listing for File perseus-arm-teleop.hpp
+===============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_arm-teleop-direct_include_perseus-arm-teleop.hpp>` (``software/arm-teleop-direct/include/perseus-arm-teleop.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   // Forward declare WINDOW type to avoid ncurses/boost conflicts
+   struct _win_st;
+   typedef struct _win_st WINDOW;
+   
+   #include <fcntl.h>
+   #include <termios.h>
+   
+   #include <boost/asio.hpp>
+   #include <chrono>
+   #include <cstdint>
+   #include <string>
+   #include <vector>
+   
+   class ST3215ServoReader
+   {
+   public:
+       ST3215ServoReader(const std::string& port, unsigned int baud_rate, uint8_t acceleration = 30);
+   
+       ~ST3215ServoReader();
+   
+       uint16_t read_position(uint8_t servo_id);
+   
+       void write_position(uint8_t servo_id, uint16_t position);
+   
+       void write_control_register(uint8_t servo_id, uint8_t address, uint8_t value);
+   
+       int16_t read_load(uint8_t servo_id);
+   
+       boost::asio::serial_port& get_serial_port() { return _serial_port; }
+   
+   private:
+       std::vector<uint8_t> _create_write_command(uint8_t id, uint8_t address, const std::vector<uint8_t>& data);
+   
+       uint16_t _read_position_once(uint8_t servo_id, const std::chrono::milliseconds& timeout);
+   
+       std::vector<uint8_t> _create_read_command(uint8_t id, uint8_t address, uint8_t size);
+   
+       boost::asio::io_service _io_service;
+       boost::asio::serial_port _serial_port;
+   };

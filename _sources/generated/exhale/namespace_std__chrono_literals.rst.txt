@@ -1,0 +1,11 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_std__chrono_literals:
+
+Namespace std::chrono_literals
+==============================
+

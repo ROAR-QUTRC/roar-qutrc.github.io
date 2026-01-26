@@ -1,0 +1,718 @@
+:orphan:
+
+
+Full API
+========
+
+Directories
+***********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_firmware.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_firmware_components.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_firmware_components_board-support.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_firmware_components_board-support_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_firmware_components_board-support_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_firmware_components_hi-can.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_firmware_components_hi-can_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_firmware_components_hi-can_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_arm-teleop-direct.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_arm-teleop-direct_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_arm-teleop-direct_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_autonomy.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_autonomy_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_autonomy_bridge.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_autonomy_bridge_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_can_if.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_can_if_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_can_if_include_rcb_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_can_if_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_can_if_src_rcb_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_input.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_input_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_input_include_generic_controller.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_input_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_input_src_generic_controller.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_lite_hardware.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_lite_hardware_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_lite_hardware_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads_include_arm_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads_include_bucket_controller.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads_include_bucket_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads_src_arm_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads_src_bucket_controller.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_payloads_src_bucket_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_i2c_imu_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_include_m2m2_lidar.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_src_m2m2_lidar.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_pointcloud_to_laserscan.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_pointcloud_to_laserscan_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_pointcloud_to_laserscan_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_scripts.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_crc.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_crc_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_crc_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_fd-wrapper.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_fd-wrapper_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_fd-wrapper_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can-net.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can-net_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can-net_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can-raw.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can-raw_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can-raw_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_hi-can_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_ptr-wrapper.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_ptr-wrapper_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_ptr-wrapper_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_simple-networking.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_simple-networking_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_simple-networking_include_simple_networking.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_simple-networking_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_type-demangle.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_type-demangle_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_shared_type-demangle_src.rst
+
+Files
+*****
+
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_payloads_src_arm_driver_arm_driver.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_payloads_include_arm_driver_arm_driver.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_firmware_components_board-support_src_board_support.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_firmware_components_board-support_include_board_support.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_payloads_src_bucket_controller_bucket_controller.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_payloads_include_bucket_controller_bucket_controller.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_payloads_src_bucket_driver_bucket_driver.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_payloads_include_bucket_driver_bucket_driver.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_simple-networking_src_client.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_simple-networking_include_simple_networking_client.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_simple-networking_include_simple_networking_core.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_crc_src_crc.c.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_crc_include_crc.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_fd-wrapper_src_fd_wrapper.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_fd-wrapper_include_fd_wrapper.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_input_src_generic_controller_generic_controller.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_input_include_generic_controller_generic_controller.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can_src_hi_can.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can_include_hi_can.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can_include_hi_can_address.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can-net_src_hi_can_net.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can-net_include_hi_can_net.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can_src_hi_can_packet.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can_include_hi_can_packet.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can_src_hi_can_parameter.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can_include_hi_can_parameter.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can-raw_src_hi_can_raw.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_hi-can-raw_include_hi_can_raw.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_firmware_components_hi-can_src_hi_can_twai.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_firmware_components_hi-can_include_hi_can_twai.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_i2c_device.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_device.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_i2c_imu_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_imu_node.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_data_types.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_imu_device_config.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_imu_device_config.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_pointcloud_to_laserscan_src_laserscan_to_pointcloud_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan_laserscan_to_pointcloud_node.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_src_m2m2_lidar_m2m2_lidar.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_include_m2m2_lidar_m2m2_lidar.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_scripts_mandelbrot_cpu.c.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_scripts_matrix_cpu.c.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_autonomy_bridge_src_nav2_waypoints_bridge.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_autonomy_src_odom_tester.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_arm-teleop-direct_src_perseus-arm-teleop.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_arm-teleop-direct_include_perseus-arm-teleop.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_pointcloud_to_laserscan_src_pointcloud_to_laserscan_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan_pointcloud_to_laserscan_node.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_ptr-wrapper_src_ptr_wrapper.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_ptr-wrapper_include_ptr_wrapper.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_can_if_src_rcb_driver_rcb_driver.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_can_if_include_rcb_driver_rcb_driver.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_arm-teleop-direct_include_servo-constants.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_simple-networking_include_simple_networking.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_lite_hardware_src_st3215_system.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_autonomy_src_topic_remapper.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_type-demangle_src_type_demangle.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_shared_type-demangle_include_type_demangle.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan_visibility_control.h.rst

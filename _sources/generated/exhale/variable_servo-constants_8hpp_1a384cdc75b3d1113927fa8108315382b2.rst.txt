@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1a384cdc75b3d1113927fa8108315382b2:
+
+Variable perseus::servo::ui::MAX_DISPLAY_TORQUE
+===============================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::ui::MAX_DISPLAY_TORQUE
+   :project: rover

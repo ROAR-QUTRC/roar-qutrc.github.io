@@ -1,0 +1,18 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_shared_ptr-wrapper_src_ptr_wrapper.cpp:
+
+Program Listing for File ptr_wrapper.cpp
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_shared_ptr-wrapper_src_ptr_wrapper.cpp>` (``software/shared/ptr-wrapper/src/ptr_wrapper.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "ptr_wrapper.hpp"

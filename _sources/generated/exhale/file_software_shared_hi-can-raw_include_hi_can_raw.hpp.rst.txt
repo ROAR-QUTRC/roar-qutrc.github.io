@@ -1,0 +1,66 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_hi-can-raw_include_hi_can_raw.hpp:
+
+File hi_can_raw.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_hi-can-raw_include>` (``software/shared/hi-can-raw/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/hi-can-raw/include/hi_can_raw.hpp``)
+------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_hi-can-raw_include_hi_can_raw.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``fd_wrapper.hpp`` (:ref:`file_software_shared_fd-wrapper_include_fd_wrapper.hpp`)
+
+- ``hi_can.hpp`` (:ref:`file_software_shared_hi-can_include_hi_can.hpp`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_ros_ws_src_perseus_can_if_include_rcb_driver_rcb_driver.hpp`
+
+- :ref:`file_software_ros_ws_src_perseus_payloads_include_bucket_driver_bucket_driver.hpp`
+
+- :ref:`file_software_shared_hi-can-raw_src_hi_can_raw.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classhi__can_1_1RawCanInterface`
+

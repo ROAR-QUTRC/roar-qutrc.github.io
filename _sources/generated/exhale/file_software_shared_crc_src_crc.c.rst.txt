@@ -1,0 +1,32 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_crc_src_crc.c:
+
+File crc.c
+==========
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_crc_src>` (``software/shared/crc/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/crc/src/crc.c``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_crc_src_crc.c.rst
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1ab442c1fd6204fee7bc59a6ec1af06ed8:
+
+Variable perseus::servo::register_addr::GOAL_SPEED
+==================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::GOAL_SPEED
+   :project: rover

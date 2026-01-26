@@ -1,0 +1,24 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software:
+
+
+Directory software
+==================
+
+
+*Directory path:* ``software``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_arm-teleop-direct`
+- :ref:`dir_software_ros_ws`
+- :ref:`dir_software_scripts`
+- :ref:`dir_software_shared`
+
+
+

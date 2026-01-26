@@ -1,0 +1,93 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp:
+
+File st3215_system.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_lite_hardware_include>` (``software/ros_ws/src/perseus_lite_hardware/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/ros_ws/src/perseus_lite_hardware/include/st3215_system.hpp``)
+------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``boost/asio.hpp``
+
+- ``hardware_interface/system_interface.hpp``
+
+- ``iomanip``
+
+- ``mutex``
+
+- ``numbers``
+
+- ``queue``
+
+- ``rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp``
+
+- ``span``
+
+- ``sstream``
+
+- ``string_view``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_ros_ws_src_perseus_lite_hardware_src_st3215_system.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_perseus_lite_hardware`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structperseus__lite__hardware_1_1ST3215SystemHardware_1_1ServoState`
+
+- :ref:`exhale_class_classperseus__lite__hardware_1_1ST3215SystemHardware`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_st3215__system_8hpp_1afaa8a3b7f094e9ce07d05448ec0c994b`
+
+- :ref:`exhale_enum_st3215__system_8hpp_1a59a446359ee2a7b66d39f0f7f1865d1c`
+
+- :ref:`exhale_enum_st3215__system_8hpp_1aacd790514eda40c441d2bcd9521fed73`
+
+- :ref:`exhale_enum_st3215__system_8hpp_1a8f236a1cc11970647abb86d60c13acb6`
+

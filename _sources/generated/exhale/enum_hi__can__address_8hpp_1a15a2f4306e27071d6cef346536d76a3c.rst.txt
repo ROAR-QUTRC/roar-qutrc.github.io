@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_enum_hi__can__address_8hpp_1a15a2f4306e27071d6cef346536d76a3c:
+
+Enum parameter
+==============
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::legacy::drive::motors::esc::parameter
+   :project: rover

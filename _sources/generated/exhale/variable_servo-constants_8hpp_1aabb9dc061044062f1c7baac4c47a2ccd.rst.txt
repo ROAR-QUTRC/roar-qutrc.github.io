@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1aabb9dc061044062f1c7baac4c47a2ccd:
+
+Variable perseus::servo::register_addr::RUNNING_TIME
+====================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::RUNNING_TIME
+   :project: rover

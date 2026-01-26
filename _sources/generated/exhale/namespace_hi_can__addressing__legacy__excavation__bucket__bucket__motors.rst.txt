@@ -1,0 +1,25 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__addressing__legacy__excavation__bucket__bucket__motors:
+
+Namespace hi_can::addressing::legacy::excavation::bucket::bucket::motors
+========================================================================
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_hi__can__address_8hpp_1acffbb1dbe6cdb953aab2c7deb4a5f676`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_hi__can__address_8hpp_1a64bfd77beba676e4e440668ac995f8f6`

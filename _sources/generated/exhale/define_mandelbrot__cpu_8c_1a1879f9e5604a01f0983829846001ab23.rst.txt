@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_define_mandelbrot__cpu_8c_1a1879f9e5604a01f0983829846001ab23:
+
+Define DEFAULT_HEIGHT
+=====================
+
+- Defined in :ref:`file_software_scripts_mandelbrot_cpu.c`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DEFAULT_HEIGHT
+   :project: rover

@@ -1,0 +1,27 @@
+
+.. highlight:: none
+
+
+
+.. _dir_firmware_components_board-support:
+
+
+Directory board-support
+=======================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_firmware_components>` (``firmware/components``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``firmware/components/board-support``
+
+Subdirectories
+--------------
+
+- :ref:`dir_firmware_components_board-support_include`
+- :ref:`dir_firmware_components_board-support_src`
+
+
+

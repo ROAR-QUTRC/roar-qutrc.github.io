@@ -1,0 +1,42 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_payloads_src_bucket_controller_bucket_controller.cpp:
+
+File bucket_controller.cpp
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_payloads_src_bucket_controller>` (``software/ros_ws/src/perseus_payloads/src/bucket_controller``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/ros_ws/src/perseus_payloads/src/bucket_controller/bucket_controller.cpp``)
+-------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_payloads_src_bucket_controller_bucket_controller.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``bucket_controller/bucket_controller.hpp`` (:ref:`file_software_ros_ws_src_perseus_payloads_include_bucket_controller_bucket_controller.hpp`)
+
+- ``cstdint``
+
+
+
+
+

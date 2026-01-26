@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1a7e5cd2d3e2803a20d285e9c9fd69eff9:
+
+Variable perseus::servo::register_addr::PRESENT_LOAD
+====================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::PRESENT_LOAD
+   :project: rover

@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_imu__device__config_8cpp_1a28ab5c903f40346cad2e5f383cb84181:
+
+Variable i2c_imu_driver::MPU_GYRO_SCALE_FACTOR
+==============================================
+
+- Defined in :ref:`file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_imu_device_config.cpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: i2c_imu_driver::MPU_GYRO_SCALE_FACTOR
+   :project: rover

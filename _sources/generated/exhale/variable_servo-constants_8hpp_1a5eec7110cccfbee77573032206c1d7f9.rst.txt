@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1a5eec7110cccfbee77573032206c1d7f9:
+
+Variable perseus::servo::error_bits::ANGLE_LIMIT
+================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::error_bits::ANGLE_LIMIT
+   :project: rover

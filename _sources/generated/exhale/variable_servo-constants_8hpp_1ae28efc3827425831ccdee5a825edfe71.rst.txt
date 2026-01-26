@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1ae28efc3827425831ccdee5a825edfe71:
+
+Variable perseus::servo::limits::TORQUE_SAFETY_THRESHOLD
+========================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::limits::TORQUE_SAFETY_THRESHOLD
+   :project: rover

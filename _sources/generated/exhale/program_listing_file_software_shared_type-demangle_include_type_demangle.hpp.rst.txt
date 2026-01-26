@@ -1,0 +1,22 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_shared_type-demangle_include_type_demangle.hpp:
+
+Program Listing for File type_demangle.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_shared_type-demangle_include_type_demangle.hpp>` (``software/shared/type-demangle/include/type_demangle.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <string>
+   
+   std::string demangle(const char* name);

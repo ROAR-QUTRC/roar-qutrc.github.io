@@ -1,0 +1,27 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_scripts:
+
+
+Directory scripts
+=================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software>` (``software``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/scripts``
+
+
+Files
+-----
+
+- :ref:`file_software_scripts_mandelbrot_cpu.c`
+- :ref:`file_software_scripts_matrix_cpu.c`
+
+

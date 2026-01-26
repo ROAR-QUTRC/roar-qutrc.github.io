@@ -1,0 +1,30 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__addressing__power__distribution:
+
+Namespace hi_can::addressing::power::distribution
+=================================================
+
+
+Namespace containing all addresses in the power distribution subsystem. 
+
+
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a6dab62ddb95bf2ef584d217d2b23c8d7`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1power_1_1distribution_1a0ce7aa474754e3973599792a7cecf700`

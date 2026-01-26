@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_namespacehi__can_1_1addressing_1a6372ba8ceb7b37c468fa77a3e86f123a:
+
+Variable hi_can::addressing::MAX_ADDRESS
+========================================
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::MAX_ADDRESS
+   :project: rover

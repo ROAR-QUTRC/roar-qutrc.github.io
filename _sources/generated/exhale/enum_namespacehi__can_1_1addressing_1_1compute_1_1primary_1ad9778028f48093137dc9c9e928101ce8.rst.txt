@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_enum_namespacehi__can_1_1addressing_1_1compute_1_1primary_1ad9778028f48093137dc9c9e928101ce8:
+
+Enum device
+===========
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::compute::primary::device
+   :project: rover

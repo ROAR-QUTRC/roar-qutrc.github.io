@@ -1,0 +1,65 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_arm-teleop-direct_src_perseus-arm-teleop.cpp:
+
+File perseus-arm-teleop.cpp
+===========================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_arm-teleop-direct_src>` (``software/arm-teleop-direct/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/arm-teleop-direct/src/perseus-arm-teleop.cpp``)
+----------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_arm-teleop-direct_src_perseus-arm-teleop.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``array``
+
+- ``chrono``
+
+- ``fcntl.h``
+
+- ``iomanip``
+
+- ``iostream``
+
+- ``perseus-arm-teleop.hpp`` (:ref:`file_software_arm-teleop-direct_include_perseus-arm-teleop.hpp`)
+
+- ``servo-constants.hpp`` (:ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`)
+
+- ``sstream``
+
+- ``stdexcept``
+
+- ``termios.h``
+
+- ``thread``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_boost__asio`
+

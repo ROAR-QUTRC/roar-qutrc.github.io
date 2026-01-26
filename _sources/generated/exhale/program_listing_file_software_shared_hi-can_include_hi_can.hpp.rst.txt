@@ -1,0 +1,75 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_shared_hi-can_include_hi_can.hpp:
+
+Program Listing for File hi_can.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_shared_hi-can_include_hi_can.hpp>` (``software/shared/hi-can/include/hi_can.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <set>
+   
+   #include "hi_can_address.hpp"
+   #include "hi_can_packet.hpp"
+   #include "hi_can_parameter.hpp"
+   
+   namespace hi_can
+   {
+       class CanInterface
+       {
+       public:
+           virtual void transmit(const Packet& packet) = 0;
+           virtual std::optional<Packet> receive(bool blocking = false) = 0;
+   
+           virtual void receive_all(bool block = true);
+   
+           virtual void set_receive_callback(const packet_callback_t& callback) { _receive_callback = callback; };
+           void clear_receive_callback() { set_receive_callback(nullptr); }
+   
+       protected:
+           packet_callback_t _receive_callback = nullptr;
+       };
+   
+       class FilteredCanInterface : public CanInterface
+       {
+       public:
+           virtual FilteredCanInterface& add_filter(const addressing::filter_t& filter);
+           virtual FilteredCanInterface& remove_filter(const addressing::filter_t& filter);
+   
+           virtual const std::set<addressing::filter_t>& get_filters() const { return _filters; }
+   
+           virtual std::optional<addressing::filter_t> find_matching_filter(const addressing::flagged_address_t& address) const;
+           virtual bool address_matches_filters(const addressing::flagged_address_t& address) const;
+   
+       protected:
+           std::set<addressing::filter_t> _filters;
+       };
+   
+       class SoftwareFilteredCanInterface : public FilteredCanInterface
+       {
+       public:
+           SoftwareFilteredCanInterface(const std::shared_ptr<CanInterface> interface)
+               : _interface(interface)
+           {
+           }
+   
+           // note: docs inherited from base class
+           void transmit(const Packet& packet) override { _interface->transmit(packet); }
+           std::optional<Packet> receive(bool blocking = false) override;
+   
+           // note: no need to override set_receive_callback since that's based on the receive method
+   
+       private:
+           const std::shared_ptr<CanInterface> _interface;
+       };
+   };

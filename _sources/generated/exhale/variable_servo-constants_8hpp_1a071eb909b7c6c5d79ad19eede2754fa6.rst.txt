@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1a071eb909b7c6c5d79ad19eede2754fa6:
+
+Variable perseus::servo::register_addr::GOAL_POSITION
+=====================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::GOAL_POSITION
+   :project: rover

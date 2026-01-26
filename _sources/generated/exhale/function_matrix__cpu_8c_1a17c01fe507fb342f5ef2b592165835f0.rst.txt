@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_function_matrix__cpu_8c_1a17c01fe507fb342f5ef2b592165835f0:
+
+Function init_matrix
+====================
+
+- Defined in :ref:`file_software_scripts_matrix_cpu.c`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: init_matrix(float *, int)
+   :project: rover

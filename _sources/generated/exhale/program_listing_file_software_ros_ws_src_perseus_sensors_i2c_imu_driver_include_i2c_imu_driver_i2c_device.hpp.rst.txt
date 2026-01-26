@@ -1,0 +1,55 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_device.hpp:
+
+Program Listing for File i2c_device.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_device.hpp>` (``software/ros_ws/src/perseus_sensors/i2c_imu_driver/include/i2c_imu_driver/i2c_device.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <chrono>
+   #include <cstdint>
+   #include <optional>
+   #include <string>
+   
+   #include "fd_wrapper.hpp"
+   
+   namespace i2c_imu_driver
+   {
+   
+       class I2cDevice
+       {
+       public:
+           I2cDevice(const std::string& bus_path, uint8_t device_address);
+   
+           bool is_connected() const;
+   
+           std::optional<uint8_t> read_register(uint8_t reg_address);
+   
+           bool write_register(uint8_t reg_address, uint8_t value);
+   
+           bool read_registers(uint8_t reg_address, uint8_t* buffer, size_t length);
+   
+           bool write_registers(uint8_t reg_address, const uint8_t* buffer, size_t length);
+   
+           uint8_t get_device_address() const { return _device_address; }
+   
+           const std::string& get_bus_path() const { return _bus_path; }
+   
+       private:
+           std::string _bus_path;
+           uint8_t _device_address;
+           FdWrapper _i2c_fd;
+       };
+   
+   }  // namespace i2c_imu_driver

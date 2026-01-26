@@ -1,0 +1,32 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_class_classhi__can_1_1TwaiInterface:
+
+Class TwaiInterface
+===================
+
+- Defined in :ref:`file_firmware_components_hi-can_include_hi_can_twai.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public hi_can::FilteredCanInterface`` (:ref:`exhale_class_classhi__can_1_1FilteredCanInterface`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: hi_can::TwaiInterface
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

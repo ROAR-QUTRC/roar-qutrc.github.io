@@ -1,0 +1,52 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_firmware_components_hi-can_src_hi_can_twai.cpp:
+
+File hi_can_twai.cpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_firmware_components_hi-can_src>` (``firmware/components/hi-can/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``firmware/components/hi-can/src/hi_can_twai.cpp``)
+---------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_firmware_components_hi-can_src_hi_can_twai.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``cassert``
+
+- ``cstring``
+
+- ``driver/gpio.h``
+
+- ``hi_can_twai.hpp`` (:ref:`file_firmware_components_hi-can_include_hi_can_twai.hpp`)
+
+- ``sdkconfig.h``
+
+- ``stdexcept``
+
+- ``unistd.h``
+
+
+
+
+

@@ -1,0 +1,30 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__addressing__excavation__bucket:
+
+Namespace hi_can::addressing::excavation::bucket
+================================================
+
+
+Namespace containing all addresses in the arm subsystem. 
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__addressing__excavation__bucket__controller`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1excavation_1_1bucket_1af4697f9c58d4fff8712edd7e217b0654`

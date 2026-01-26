@@ -1,0 +1,26 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_ros_ws:
+
+
+Directory ros_ws
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software>` (``software``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/ros_ws``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_ros_ws_src`
+
+
+

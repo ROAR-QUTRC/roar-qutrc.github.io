@@ -1,0 +1,25 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_std:
+
+Namespace std
+=============
+
+
+STL namespace. 
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_std__chrono`
+
+- :ref:`namespace_std__chrono_literals`

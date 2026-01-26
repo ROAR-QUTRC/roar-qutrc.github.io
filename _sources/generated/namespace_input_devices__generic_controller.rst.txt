@@ -1,6 +1,0 @@
-
-.. _namespace_input_devices__generic_controller:
-
-Namespace input_devices::generic_controller
-===========================================
-

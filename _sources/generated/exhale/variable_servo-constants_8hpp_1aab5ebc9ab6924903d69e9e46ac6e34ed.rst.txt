@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1aab5ebc9ab6924903d69e9e46ac6e34ed:
+
+Variable perseus::servo::register_addr::TORQUE_LIMIT
+====================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::TORQUE_LIMIT
+   :project: rover

@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1ad34cfd1202313e7f973261dfb2fd39cb:
+
+Variable perseus::servo::ui::SERVO_REFRESH_DELAY_MS
+===================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::ui::SERVO_REFRESH_DELAY_MS
+   :project: rover

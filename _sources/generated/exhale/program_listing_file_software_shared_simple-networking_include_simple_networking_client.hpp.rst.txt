@@ -1,0 +1,95 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_shared_simple-networking_include_simple_networking_client.hpp:
+
+Program Listing for File client.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_shared_simple-networking_include_simple_networking_client.hpp>` (``software/shared/simple-networking/include/simple_networking/client.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <netdb.h>
+   
+   #include <cstdint>
+   #include <fd_wrapper.hpp>
+   #include <functional>
+   #include <optional>
+   #include <ptr_wrapper.hpp>
+   #include <string>
+   #include <vector>
+   
+   #include "core.hpp"
+   
+   namespace networking
+   {
+       struct socket_config_handlers_t
+       {
+           std::function<bool(int)> pre_bind{};
+           std::function<bool(int)> pre_connect{};
+           std::function<bool(int)> post_connect{};
+       };
+       class Client
+       {
+       public:
+           Client(const address_t& address,
+                  const socket_protocol protocol = socket_protocol::TCP,
+                  const address_t& bind_service = {},
+                  const socket_config_handlers_t& config_handlers = {});
+           Client(const address_t& address,
+                  const socket_protocol protocol,
+                  const uint16_t bind_port,
+                  const socket_config_handlers_t& config_handlers = {})
+               : Client(address, protocol, {.service = std::to_string(bind_port)}, config_handlers) {};
+           // copy constructor + assignment are deleted, since copying doesn't make sense
+           // however, we allow move semantics
+           Client(const Client& other) = delete;
+           Client(Client&& other) noexcept
+           {
+               swap(*this, other);
+           }
+           Client& operator=(Client other) = delete;
+           Client& operator=(Client&& other) noexcept
+           {
+               swap(*this, other);
+               return *this;
+           }
+   
+           friend void swap(Client& first, Client& second) noexcept
+           {
+               using std::swap;
+               swap(first._address, second._address);
+               swap(first._bind_address, second._bind_address);
+               swap(first._protocol, second._protocol);
+               swap(first._destination_addrinfo, second._destination_addrinfo);
+               swap(first._bind_addrinfo, second._bind_addrinfo);
+               swap(first._socket, second._socket);
+           }
+   
+           ssize_t transmit(const std::string& message);
+           ssize_t transmit(const std::vector<uint8_t>& buffer);
+           std::optional<std::vector<uint8_t>> receive(size_t len, bool blocking = false);
+   
+       private:
+           int _create_socket(const socket_config_handlers_t& config_handlers);
+           int _create_bound_socket(struct addrinfo*& current_addr, struct addrinfo* current_bind_addr, const socket_config_handlers_t& config_handlers);
+           std::string _get_full_address_string() const;
+   
+           address_t _address{};
+           address_t _bind_address{};
+           socket_protocol _protocol{};
+   
+           PtrWrapper<struct addrinfo> _destination_addrinfo{nullptr, &freeaddrinfo};
+           PtrWrapper<struct addrinfo> _bind_addrinfo{nullptr, &freeaddrinfo};
+   
+           FdWrapper _socket;
+       };
+   }

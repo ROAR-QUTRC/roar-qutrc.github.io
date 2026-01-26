@@ -1,0 +1,57 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_fd-wrapper_include_fd_wrapper.hpp:
+
+File fd_wrapper.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_fd-wrapper_include>` (``software/shared/fd-wrapper/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/fd-wrapper/include/fd_wrapper.hpp``)
+------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_fd-wrapper_include_fd_wrapper.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``functional``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_device.hpp`
+
+- :ref:`file_software_shared_fd-wrapper_src_fd_wrapper.cpp`
+
+- :ref:`file_software_shared_hi-can-raw_include_hi_can_raw.hpp`
+
+- :ref:`file_software_shared_simple-networking_include_simple_networking_client.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classFdWrapper`
+

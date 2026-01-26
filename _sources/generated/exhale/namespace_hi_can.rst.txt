@@ -1,0 +1,63 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can:
+
+Namespace hi_can
+================
+
+
+Contains all classes, functions, and types related to implementing Hi-CAN. 
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__addressing`
+
+- :ref:`namespace_hi_can__parameters`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1callback__config__t`
+
+- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1callback__data__t`
+
+- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmission__config__t`
+
+- :ref:`exhale_struct_structhi__can_1_1PacketManager_1_1transmission__data__t`
+
+- :ref:`exhale_class_classhi__can_1_1CanInterface`
+
+- :ref:`exhale_class_classhi__can_1_1FilteredCanInterface`
+
+- :ref:`exhale_class_classhi__can_1_1NetworkClient`
+
+- :ref:`exhale_class_classhi__can_1_1NetworkServer`
+
+- :ref:`exhale_class_classhi__can_1_1Packet`
+
+- :ref:`exhale_class_classhi__can_1_1PacketManager`
+
+- :ref:`exhale_class_classhi__can_1_1RawCanInterface`
+
+- :ref:`exhale_class_classhi__can_1_1SoftwareFilteredCanInterface`
+
+- :ref:`exhale_class_classhi__can_1_1TwaiInterface`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespacehi__can_1a024d30e162a189788c628e9bd48a8d75`

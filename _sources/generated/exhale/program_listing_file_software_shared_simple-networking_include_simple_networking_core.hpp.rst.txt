@@ -1,0 +1,48 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_shared_simple-networking_include_simple_networking_core.hpp:
+
+Program Listing for File core.hpp
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_shared_simple-networking_include_simple_networking_core.hpp>` (``software/shared/simple-networking/include/simple_networking/core.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <format>
+   #include <string>
+   
+   namespace networking
+   {
+       struct address_t
+       {
+           std::string hostname{};
+           std::string service{};
+   
+           explicit operator std::string() const
+           {
+               if (service == "")
+                   return hostname;
+               return std::format("{}:{}", hostname, service);
+           }
+       };
+       enum class socket_protocol
+       {
+           TCP,
+           UDP
+       };
+   
+       // Use inline to prevent multiple definition errors
+       inline std::string get_string_from_protocol(const socket_protocol& protocol)
+       {
+           return (protocol == socket_protocol::TCP) ? "TCP" : "UDP";
+       }
+   }

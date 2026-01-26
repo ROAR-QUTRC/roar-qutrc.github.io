@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_namespacehi__can_1_1addressing_1a6630cf54dd47345fcad6003c8ea66635:
+
+Variable hi_can::addressing::PARAM_ADDRESS_POS
+==============================================
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hi_can::addressing::PARAM_ADDRESS_POS
+   :project: rover

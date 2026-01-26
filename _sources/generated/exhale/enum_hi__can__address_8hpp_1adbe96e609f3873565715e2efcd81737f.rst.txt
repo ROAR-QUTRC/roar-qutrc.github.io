@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_enum_hi__can__address_8hpp_1adbe96e609f3873565715e2efcd81737f:
+
+Enum parameter
+==============
+
+- Defined in :ref:`file_software_shared_hi-can_include_hi_can_address.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: hi_can::addressing::status::parameter
+   :project: rover

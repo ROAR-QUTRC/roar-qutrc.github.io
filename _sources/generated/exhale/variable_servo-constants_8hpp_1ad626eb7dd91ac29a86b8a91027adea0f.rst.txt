@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1ad626eb7dd91ac29a86b8a91027adea0f:
+
+Variable perseus::servo::register_addr::CW_DEAD_BAND
+====================================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::register_addr::CW_DEAD_BAND
+   :project: rover

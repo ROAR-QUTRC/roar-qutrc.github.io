@@ -1,0 +1,33 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_ros_ws_src:
+
+
+Directory src
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws>` (``software/ros_ws``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/ros_ws/src``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_ros_ws_src_autonomy`
+- :ref:`dir_software_ros_ws_src_perseus_autonomy_bridge`
+- :ref:`dir_software_ros_ws_src_perseus_can_if`
+- :ref:`dir_software_ros_ws_src_perseus_input`
+- :ref:`dir_software_ros_ws_src_perseus_lite_hardware`
+- :ref:`dir_software_ros_ws_src_perseus_payloads`
+- :ref:`dir_software_ros_ws_src_perseus_sensors`
+- :ref:`dir_software_ros_ws_src_pointcloud_to_laserscan`
+
+
+

@@ -1,0 +1,49 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_i2c_imu_node.cpp:
+
+File i2c_imu_node.cpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src>` (``software/ros_ws/src/perseus_sensors/i2c_imu_driver/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/ros_ws/src/perseus_sensors/i2c_imu_driver/src/i2c_imu_node.cpp``)
+----------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_src_i2c_imu_node.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``i2c_imu_driver/i2c_imu_node.hpp`` (:ref:`file_software_ros_ws_src_perseus_sensors_i2c_imu_driver_include_i2c_imu_driver_i2c_imu_node.hpp`)
+
+- ``stdexcept``
+
+- ``thread``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_i2c_imu_driver`
+

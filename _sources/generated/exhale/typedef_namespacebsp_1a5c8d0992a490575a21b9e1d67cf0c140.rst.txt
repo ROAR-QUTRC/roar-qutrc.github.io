@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_typedef_namespacebsp_1a5c8d0992a490575a21b9e1d67cf0c140:
+
+Typedef bsp::pin_pair_t
+=======================
+
+- Defined in :ref:`file_firmware_components_board-support_include_board_support.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: bsp::pin_pair_t
+   :project: rover

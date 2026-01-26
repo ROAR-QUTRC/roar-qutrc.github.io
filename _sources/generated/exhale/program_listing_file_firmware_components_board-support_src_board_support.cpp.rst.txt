@@ -1,0 +1,31 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_firmware_components_board-support_src_board_support.cpp:
+
+Program Listing for File board_support.cpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_firmware_components_board-support_src_board_support.cpp>` (``firmware/components/board-support/src/board_support.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "board_support.hpp"
+   
+   #if __has_include(<Wire.h>)
+   #include <Wire.h>
+   
+   namespace bsp
+   {
+       void initI2C()
+       {
+           Wire.begin(I2C_SDA, I2C_SCL, 400000);
+       }
+   }
+   
+   #endif

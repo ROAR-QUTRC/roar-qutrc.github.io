@@ -1,0 +1,95 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_firmware_components_board-support_include_board_support.hpp:
+
+File board_support.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_firmware_components_board-support_include>` (``firmware/components/board-support/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``firmware/components/board-support/include/board_support.hpp``)
+----------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_firmware_components_board-support_include_board_support.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``driver/gpio.h``
+
+- ``tuple``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_firmware_components_board-support_src_board_support.cpp`
+
+- :ref:`file_firmware_components_hi-can_include_hi_can_twai.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_bsp`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_namespacebsp_1a5c8d0992a490575a21b9e1d67cf0c140`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespacebsp_1a69a28b025c9018c2d96befd947a2404a`
+
+- :ref:`exhale_variable_namespacebsp_1a2d6f2e3d7577047a8eba7a9a58745564`
+
+- :ref:`exhale_variable_namespacebsp_1a901c8dcdfa04ad68cdf52a71f22cd103`
+
+- :ref:`exhale_variable_namespacebsp_1a2f8c15b73a2bb094ab94746689edb094`
+
+- :ref:`exhale_variable_namespacebsp_1abbc23bbacfd01297540beaba6f81ca04`
+
+- :ref:`exhale_variable_namespacebsp_1ab1eb9eda889f14bf6a2e0acd53670713`
+
+- :ref:`exhale_variable_namespacebsp_1a4fe2ecad367cb8fda47116e78ff470a1`
+
+- :ref:`exhale_variable_namespacebsp_1a23cb2f08becd3b35b5457c54c7987200`
+
+- :ref:`exhale_variable_namespacebsp_1aff59dd8ae16c84a6a1f26758c2215191`
+
+- :ref:`exhale_variable_namespacebsp_1a8e351ec26b29eacfa1cb218f7582eec5`
+
+- :ref:`exhale_variable_namespacebsp_1ac98e099ba3e68620edbce97e434443b5`
+
+- :ref:`exhale_variable_namespacebsp_1a188db7ec8187679d43a4a1fd69f8794b`
+
+- :ref:`exhale_variable_namespacebsp_1a1ea39661c425046bb82c5bf71eb437ec`
+
+- :ref:`exhale_variable_namespacebsp_1addb405bb24f8ad8b5fc4a36893c10c4a`
+

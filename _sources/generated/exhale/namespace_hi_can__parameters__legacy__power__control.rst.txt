@@ -1,0 +1,20 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__parameters__legacy__power__control:
+
+Namespace hi_can::parameters::legacy::power::control
+====================================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control__contactor`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control__power_bus`

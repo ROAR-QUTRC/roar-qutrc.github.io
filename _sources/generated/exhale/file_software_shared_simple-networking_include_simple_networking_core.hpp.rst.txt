@@ -1,0 +1,74 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_simple-networking_include_simple_networking_core.hpp:
+
+File core.hpp
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_simple-networking_include_simple_networking>` (``software/shared/simple-networking/include/simple_networking``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/simple-networking/include/simple_networking/core.hpp``)
+-------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_simple-networking_include_simple_networking_core.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``format``
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_shared_simple-networking_include_simple_networking_client.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_networking`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structnetworking_1_1address__t`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_core_8hpp_1ad879df5efe29b2769745cf503ca7bafd`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_core_8hpp_1aba7339362833a8ae17a330c19b1d9272`
+

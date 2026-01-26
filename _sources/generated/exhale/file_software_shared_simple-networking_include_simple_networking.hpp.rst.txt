@@ -1,0 +1,38 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_simple-networking_include_simple_networking.hpp:
+
+File simple_networking.hpp
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_simple-networking_include>` (``software/shared/simple-networking/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/simple-networking/include/simple_networking.hpp``)
+--------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_simple-networking_include_simple_networking.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``simple_networking/client.hpp`` (:ref:`file_software_shared_simple-networking_include_simple_networking_client.hpp`)
+
+
+
+
+

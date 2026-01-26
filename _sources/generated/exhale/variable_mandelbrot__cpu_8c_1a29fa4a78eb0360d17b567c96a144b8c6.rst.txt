@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_mandelbrot__cpu_8c_1a29fa4a78eb0360d17b567c96a144b8c6:
+
+Variable CHARS
+==============
+
+- Defined in :ref:`file_software_scripts_mandelbrot_cpu.c`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CHARS
+   :project: rover

@@ -1,0 +1,23 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__addressing__space_resources:
+
+Namespace hi_can::addressing::space_resources
+=============================================
+
+
+Namespace containing all addresses in the space resources system. 
+
+
+
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_namespacehi__can_1_1addressing_1_1space__resources_1aca2d4f6b2059e0fccdb5de20389b48ee`

@@ -1,0 +1,22 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__parameters__legacy:
+
+Namespace hi_can::parameters::legacy
+====================================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__parameters__legacy__drive`
+
+- :ref:`namespace_hi_can__parameters__legacy__excavation`
+
+- :ref:`namespace_hi_can__parameters__legacy__power`

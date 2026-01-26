@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_servo-constants_8hpp_1add8e1dc3954d368467904ad3f2d77e81:
+
+Variable perseus::servo::error_bits::OVERLOAD
+=============================================
+
+- Defined in :ref:`file_software_arm-teleop-direct_include_servo-constants.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus::servo::error_bits::OVERLOAD
+   :project: rover

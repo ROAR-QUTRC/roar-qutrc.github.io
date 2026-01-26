@@ -7,5 +7,7 @@ This is a dirty hack to ensure that Sphinx includes all the generated figures in
 
 .. image:: example.drawio.svg
 .. image:: example.drawio-dark.svg
-.. image:: system_architecture.drawio.svg
-.. image:: system_architecture.drawio-dark.svg
+.. image:: system-architecture.drawio.svg
+.. image:: can-bus.drawio-dark.svg
+.. image:: system-architecture.drawio-dark.svg
+.. image:: can-bus.drawio.svg

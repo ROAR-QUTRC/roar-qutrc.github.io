@@ -1,0 +1,47 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_hi_can__parameters:
+
+Namespace hi_can::parameters
+============================
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can__parameters__drive`
+
+- :ref:`namespace_hi_can__parameters__excavation`
+
+- :ref:`namespace_hi_can__parameters__legacy`
+
+- :ref:`namespace_hi_can__parameters__power`
+
+- :ref:`namespace_hi_can__parameters__shared`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int16__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1wrapped__value__t`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1BidirectionalSerializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1Deserializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1ParameterGroup`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1Serializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1SimpleSerializable`

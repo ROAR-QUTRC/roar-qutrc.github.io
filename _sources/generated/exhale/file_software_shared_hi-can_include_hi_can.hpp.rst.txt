@@ -1,0 +1,76 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_hi-can_include_hi_can.hpp:
+
+File hi_can.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_hi-can_include>` (``software/shared/hi-can/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/hi-can/include/hi_can.hpp``)
+----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_hi-can_include_hi_can.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``hi_can_address.hpp`` (:ref:`file_software_shared_hi-can_include_hi_can_address.hpp`)
+
+- ``hi_can_packet.hpp`` (:ref:`file_software_shared_hi-can_include_hi_can_packet.hpp`)
+
+- ``hi_can_parameter.hpp`` (:ref:`file_software_shared_hi-can_include_hi_can_parameter.hpp`)
+
+- ``set``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_firmware_components_hi-can_include_hi_can_twai.hpp`
+
+- :ref:`file_software_shared_hi-can-raw_include_hi_can_raw.hpp`
+
+- :ref:`file_software_shared_hi-can_include_hi_can_parameter.hpp`
+
+- :ref:`file_software_shared_hi-can_src_hi_can.cpp`
+
+- :ref:`file_software_shared_hi-can_src_hi_can_packet.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classhi__can_1_1CanInterface`
+
+- :ref:`exhale_class_classhi__can_1_1FilteredCanInterface`
+
+- :ref:`exhale_class_classhi__can_1_1SoftwareFilteredCanInterface`
+

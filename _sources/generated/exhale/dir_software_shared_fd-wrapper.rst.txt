@@ -1,0 +1,27 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_shared_fd-wrapper:
+
+
+Directory fd-wrapper
+====================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared>` (``software/shared``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/shared/fd-wrapper``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_shared_fd-wrapper_include`
+- :ref:`dir_software_shared_fd-wrapper_src`
+
+
+

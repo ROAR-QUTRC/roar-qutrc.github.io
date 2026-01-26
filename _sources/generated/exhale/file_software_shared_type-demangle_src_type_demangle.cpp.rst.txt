@@ -1,0 +1,32 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_type-demangle_src_type_demangle.cpp:
+
+File type_demangle.cpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_type-demangle_src>` (``software/shared/type-demangle/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/type-demangle/src/type_demangle.cpp``)
+--------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_type-demangle_src_type_demangle.cpp.rst
+
+
+
+
+
+
+
+
+

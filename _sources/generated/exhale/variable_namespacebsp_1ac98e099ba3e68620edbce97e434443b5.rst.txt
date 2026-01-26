@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_namespacebsp_1ac98e099ba3e68620edbce97e434443b5:
+
+Variable bsp::CAN_RX_PIN
+========================
+
+- Defined in :ref:`file_firmware_components_board-support_include_board_support.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: bsp::CAN_RX_PIN
+   :project: rover

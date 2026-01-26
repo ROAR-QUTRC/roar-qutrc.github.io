@@ -1,0 +1,239 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_shared_hi-can_include_hi_can_parameter.hpp:
+
+File hi_can_parameter.hpp
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_shared_hi-can_include>` (``software/shared/hi-can/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/shared/hi-can/include/hi_can_parameter.hpp``)
+--------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_shared_hi-can_include_hi_can_parameter.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+- ``cmath``
+
+- ``cstdint``
+
+- ``hi_can.hpp`` (:ref:`file_software_shared_hi-can_include_hi_can.hpp`)
+
+- ``hi_can_address.hpp`` (:ref:`file_software_shared_hi-can_include_hi_can_address.hpp`)
+
+- ``netinet/in.h``
+
+- ``optional``
+
+- ``tuple``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_shared_hi-can_include_hi_can.hpp`
+
+- :ref:`file_software_shared_hi-can_src_hi_can_packet.cpp`
+
+- :ref:`file_software_shared_hi-can_src_hi_can_parameter.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_hi_can`
+
+- :ref:`namespace_hi_can__parameters`
+
+- :ref:`namespace_hi_can__parameters__drive`
+
+- :ref:`namespace_hi_can__parameters__drive__vesc`
+
+- :ref:`namespace_hi_can__parameters__excavation`
+
+- :ref:`namespace_hi_can__parameters__excavation__bucket`
+
+- :ref:`namespace_hi_can__parameters__excavation__bucket__controller`
+
+- :ref:`namespace_hi_can__parameters__legacy`
+
+- :ref:`namespace_hi_can__parameters__legacy__drive`
+
+- :ref:`namespace_hi_can__parameters__legacy__drive__motors`
+
+- :ref:`namespace_hi_can__parameters__legacy__excavation`
+
+- :ref:`namespace_hi_can__parameters__legacy__excavation__bucket`
+
+- :ref:`namespace_hi_can__parameters__legacy__power`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control__contactor`
+
+- :ref:`namespace_hi_can__parameters__legacy__power__control__power_bus`
+
+- :ref:`namespace_hi_can__parameters__power`
+
+- :ref:`namespace_hi_can__parameters__power__bms`
+
+- :ref:`namespace_hi_can__parameters__power__distribution`
+
+- :ref:`namespace_hi_can__parameters__shared`
+
+- :ref:`namespace_hi_can__parameters__shared__elevator`
+
+- :ref:`namespace_hi_can__parameters__shared__elevator__elevator`
+
+- :ref:`namespace_hi_can__parameters__shared__elevator__elevator__motor`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__brake__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__brake__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__handbrake__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__handbrake__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__rel__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__current__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__duty__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__pos__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1set__rpm__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__1__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__2__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__3__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__4__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__5__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1drive_1_1vesc_1_1status__6__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1__limits__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1__speed__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1__status__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1excavation_1_1bucket_1_1__motor__speed__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1power_1_1control_1_1contactor_1_1__control__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1power_1_1control_1_1power__bus_1_1__immediate__control__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1power_1_1control_1_1power__bus_1_1__scheduled__control__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1legacy_1_1power_1_1control_1_1power__bus_1_1__status__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1power_1_1bms_1_1pack__status`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1power_1_1distribution_1_1bus__status__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int16__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1scaled__int32__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1shared_1_1elevator_1_1elevator_1_1motor_1_1speed__t`
+
+- :ref:`exhale_struct_structhi__can_1_1parameters_1_1wrapped__value__t`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1BidirectionalSerializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1Deserializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1drive_1_1vesc_1_1VescParameterGroup`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1legacy_1_1drive_1_1motors_1_1EscParameterGroup`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1legacy_1_1power_1_1control_1_1power__bus_1_1PowerBusParameterGroup`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1ParameterGroup`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1Serializable`
+
+- :ref:`exhale_class_classhi__can_1_1parameters_1_1SimpleSerializable`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_hi__can__parameter_8hpp_1a93ae02b9024768272d9dfaabda0b84ad`
+
+- :ref:`exhale_enum_hi__can__parameter_8hpp_1afcf09325a137a3ee0d979f7cc66fdaa5`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_hi__can__parameter_8hpp_1a72179808b2f0413d1e6f008b46f4ad7c`
+
+- :ref:`exhale_define_hi__can__parameter_8hpp_1ab4c771eba1ed710c6b5d3ee907e755aa`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1a9f8a393d92b874562b4cd7eb279c6e0c`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1a0d56d05c172ec4476d48d33d52c2e820`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1aab3b49ecc4324f8c02c4fb43cbdd8e72`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1aa77b8e6b18e1a97a8c1f5dbde51436be`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1adb3d4ec6d89544076a4df7d3cd53fd5e`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1aff4c63f23e7c5830fc2c7d046f40a818`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1af028ec87471d0bad84c3a82cb604d2bf`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1a968f6e3ed2e9132a4f62299c41d3f847`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1a949f3057a3112a9bec478053d13b78d4`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1af40abb0e9e0080b6f01cca420d0407d8`
+
+- :ref:`exhale_typedef_hi__can__parameter_8hpp_1a4b8ba3ffd080eeed039f75f0ca0e240f`
+
