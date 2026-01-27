@@ -66,6 +66,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#interactive-tutorial" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1546,6 +1551,19 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Git<wbr>Hub</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="#" class="md-nav__link md-nav__link--active">
         
   
@@ -1557,6 +1575,96 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Git<wbr>Hub</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-tutorial" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Interactive Tutorial</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Terminology</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Branches</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-cd" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>CI/CD</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Pull Requests</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merges" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Merges</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-your-local-repo" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Updating your local repo</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -12991,9 +13099,89 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Git<wbr>Hub</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-tutorial" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Interactive Tutorial</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Terminology</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Branches</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-cd" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>CI/CD</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Pull Requests</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merges" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Merges</span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-your-local-repo" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Updating your local repo</span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -13013,6 +13201,100 @@
   
 
 <h1 id="github">GitHub<a class="headerlink" href="#github" title="Link to this heading">¶</a></h1>
+<p>This page provides a quick reference of commonly used git commands within the repository, alongside some basic terminology and concepts. It is an overview of <em>how</em> to use git.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>For info on what to name branches, or general GitHub standards, see <a class="reference internal" href="../../standards/github.html"><span class="std std-doc">GitHub Standards</span></a>. It provides on overview of <em>what</em> specifics to use within the git commands.</p>
+</div>
+<h2 id="interactive-tutorial">Interactive Tutorial<a class="headerlink" href="#interactive-tutorial" title="Link to this heading">¶</a></h2>
+<p>For a full interactive tutorial on git, head to <a class="reference external" href="https://learngitbranching.js.org/">this website</a>. It contains a fully interactive tutorial going through all the commands of git, and providing a safe workspace to try them out in.</p>
+<p>The main sections to work through within the levels menu are the ‘Introduction Sequence’ in the ‘Main’ tab, and the ‘Push &amp; Pull’ tutorials in the ‘Remote’ tab. To access the levels menu, head to the bottom-right corner of the screen and click the question mark, then hit ‘levels’ to open the menu.</p>
+<h2 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Git</strong> is a version control system (VCS) that is used for tracking changes in files. It is a local system that can interface with external systems (repositories)</p></li>
+<li><p><strong>GitHub</strong> is a remote repository manager, which provides a central location for changes to be tracked between devices. It also provides additional functionality in regards to continuous integration/development (CI/CD) and the docs.</p></li>
+<li><p><strong>Repository</strong> This is a collection of files and folders that git is tracking. For example, <code class="docutils literal notranslate"><span class="pre">perseus-v2</span></code> is the repository that contains all the files for the perseus rover.</p></li>
+<li><p><strong>Main</strong> The main branch or <em>main</em> is the production branch for all the perseus code and files. Files on the main branch are shared with everyone, and are protected by certain CI/CD commands to prevent any broken changes from entering production (for more details see <a class="reference internal" href="../../standards/github.html"><span class="std std-doc">GitHub Standards</span></a>)</p></li>
+<li><p><strong>Branches</strong> Each branch is an independent collection of commits, that tracks changes from a certain point in time. Think of branches like a tree, the main branch is the trunk (where everything stems from) and each branch is, well, a branch. Each branch can develop code independently from everything else, allowing changes, testing, and development to happen without breaking production.</p></li>
+<li><p><strong>Commits</strong> A commit in it’s simplest form is a set of changes. It consists of files that have been added, modified, or deleted. Each commit also includes a message describing what it has changed. The repository is made up of commits, which git tracks.</p></li>
+<li><p><strong>Push</strong> When you make a commit following <a class="reference internal" href="../../standards/github.html"><span class="std std-doc">The Standards</span></a>, it is a local commit (only on your device). The same applies to any new branches created. A push is when you upload those commits and any new branch to the remote repository on GitHub.</p></li>
+<li><p><strong>Pull</strong> When changes are made to the remote repository you can <em>pull</em> changes to update your local repository and ensure you are up to date with the latest version of the <code class="docutils literal notranslate"><span class="pre">perseus-v2</span></code> repository.</p></li>
+</ul>
+<p>For more details and further terminology see <a class="reference external" href="https://git-scm.com/docs/gitglossary">the official docs</a>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>When using git it can be useful to run the command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to see an overview of your current branch and changes. This is especially important when working with the CLI only, without a UI (ie. outside VSCode).</p>
+</div>
+<h2 id="branches">Branches<a class="headerlink" href="#branches" title="Link to this heading">¶</a></h2>
+<p>For changes to the perseus repo, you should create a new branch - there are a couple different ways to do this, but the main one is:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">git branch NEW_BRANCH_NAME</span>
+<span class="go">git checkout NEW_BRANCH_NAME</span>
+</code></pre></div>
+</div>
+<p>Or (combined version):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">git checkout -b NEW_BRANCH_NAME</span>
+</code></pre></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Make sure to follow the <a class="reference internal" href="../../standards/github.html"><span class="std std-doc">github standards</span></a> when creating and naming your branch.</p>
+</div>
+<p>These commands create a new branch and switch to it. The new branch will be a copy of whatever branch you had currently checked out. To make a branch from a different branch than the one you are on, you can do:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">git branch NEW_BRANCH_NAME OLD_BRANCH_NAME</span>
+<span class="go">git checkout NEW_BRANCH_NAME</span>
+</code></pre></div>
+</div>
+<p>Or (combined version):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">checkout</span><span class="w"> </span><span class="o">-</span><span class="n">b</span><span class="w"> </span><span class="n">NEW_BRANCH_NAME</span><span class="w"> </span><span class="n">OLD_BRANCH_NAME</span>
+</code></pre></div>
+</div>
+<p>When you’ve made changes, you can stage them. Staging your changes adds them to the next commit, essentially moving them from ‘in-progress/development’ to ‘section done’. When making a commit it is important to remember that commits remain within your local repository <em>until</em> you push the changes to GitHub. For details on pushing commits to the remote repository see below. You can stage changes by either using the vscode source control feature (Source control tab on left sidebar below Explorer tab), or using:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">git add path_to_file</span>
+</code></pre></div>
+</div>
+<p>You can also add everything in a folder:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">git add path_to_folder</span>
+</code></pre></div>
+</div>
+<p>Or (to add the current folder):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span class="go">git add .</span>
+</code></pre></div>
+</div>
+<p>If you do this while in the base folder (<code class="docutils literal notranslate"><span class="pre">~/perseus-v2</span></code>), it will add all changed files in the local repository.</p>
+<p>Then you can push your commits to the remote GitHub repository. The first time you do this, you’ll need to run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--set-upstream</span> <span class="pre">origin</span> <span class="pre">NEW_BRANCH_NAME</span></code> to add your local branch to the GitHub.
+After that, you can just run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> whenever you want to update the remote GitHub branch from your local branch (after staging changes). Make sure that you follow the GitHub standards when making commits to ensure the repository remains professional.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>When making a commit, be sure to follow the <a class="reference internal" href="../../standards/github.html"><span class="std std-doc">github standards</span></a> to ensure consistency across the GitHub.</p>
+</div>
+<h2 id="ci-cd">CI/CD<a class="headerlink" href="#ci-cd" title="Link to this heading">¶</a></h2>
+<p>CI/CD (Continuous Integration, Continuous Deployment) is how we ensure that any changes won’t break our system. You can check that your branch is passing the CI/CD checks on GitHub - there should be a green tick, a red cross, or an orange dot in the heading at the top of the table next to the last commit message. The orange dot means the checks are still being run. The green tick means all the checks were successful. The red cross means some checks failed. You can check which ones failed by clicking on the cross.</p>
+<p><img alt="CI/CD_GitHub" src="../../_images/github-ci-cd.png" /></p>
+<p>Have a look at <a class="reference internal" href="../../systems/ci-cd.html"><span class="std std-doc">CI/CD</span></a> for more details on our CI/CD.</p>
+<h2 id="pull-requests">Pull Requests<a class="headerlink" href="#pull-requests" title="Link to this heading">¶</a></h2>
+<p>Once you’ve finished developing on your branch , you can open a Pull Request (PR) to merge your branch into the main branch. To do this, go to the <a class="reference external" href="https://github.com/ROAR-QUTRC/perseus-v2">Perseus GitHub repo</a> and go to “Pull requests” then click “New pull request”. Select your branch and click “View pull request”. This will take you to the pull request page, where you can write a title and a description of your changes. Make sure your branch is not behind main when submitting the pull request, see <a class="reference internal" href="#merges"><span class="std std-ref">Merges</span></a> below for more detail.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p><em>Finished developing</em> means your code is finalised, has been tested, and in your opinion should not require any more changes. Testing is required before a pull-request is made, you must be able to show/prove your code works before it can get merged into the main Github branch.</p>
+</div>
+<p>For changes to the docs, please ensure you include a screenshot of the built changes to ensure they are formatted properly (see <a class="reference internal" href="../documentation-index.html"><span class="std std-doc">Documentation</span></a>).</p>
+<p>Once you’re finished writing the description of your PR, you can select reviewers. For most files, the reviewers will be autoselected from the <code class="docutils literal notranslate"><span class="pre">.github/CODEOWNERS</span></code> file, which specifies who can approve changes to which files.
+For example, this line:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span><code>/software/web_ui/ @OMEN44 @UltraFishy
+</code></pre></div>
+</div>
+<p>Means that a change to any files in the <code class="docutils literal notranslate"><span class="pre">/software/web_ui/</span></code> directory must be approved by the github users OMEN44 or UltraFishy.</p>
+<p>Some files do not have a CODEOWNER. Changes to these can be approved by anyone in the ROAR team (anyone who has write access to the repo). An example of this is the .envrc file in the repo root or any files in the software/scripts/ directory. For changes to these files, you can assign any reviewer, but you should still assign one of the leads as they are the most likely to be looking at and approving PRs.</p>
+<p>Reviewers need to approve every file change in the PR. If they have any problems with your changes, they will make comments on the PR on GitHub and you need to make the changes before they approve the PR. If they approve a file change, but you later decide to make another change to the same file, that file will need to be approved again.</p>
+<h2 id="merges">Merges<a class="headerlink" href="#merges" title="Link to this heading">¶</a></h2>
+<p>Once a PR is approved and is passing all CI/CD checks, that branch will be added to the merge queue. GitHub will automatically merge your branch into the main branch. If your branch is several commits behind main, it may not be able to be automatically merged. During development you should be regularly merging main into your branch using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">main</span></code>. Make sure you are on the correct branch before running this command (you should be on your branch, not main). Merging ensures that any changes someone else has made don’t conflict with your changes. Make sure you run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> to update your local main branch before running this though, or there won’t be any changes to be merged.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Keep track of your PR and it’s current status while waiting for it to be merged. Make sure to keep the branch up-to-date with commits from main if the PR is taking a while to be approved or rejected.</p>
+</div>
+<h2 id="updating-your-local-repo">Updating your local repo<a class="headerlink" href="#updating-your-local-repo" title="Link to this heading">¶</a></h2>
+<p>The repo on your computer won’t update automatically. To do this, you need to periodically run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>, which updates your current branch with the latest changes from it’s corresponding counterpart on the GitHub. To update all branches you should instead run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">--all</span></code>.</p>
+<p>Updating with the latest changes from remote won’t get rid of local branches that have been deleted or merged on the GitHub. To do this, you can run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">prune</span> <span class="pre">origin</span></code>, which removes any branches on your local repo that no longer exist on the GitHub. You can also combine these two methods using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">--prune</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">--all</span> <span class="pre">--prune</span></code>.</p>
 
 
 
@@ -13086,7 +13368,7 @@
         <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../../_static/tippy/development/environment/github.d3bad362-ad6d-488f-88eb-7b06037cbaf7.js"></script>
+        <script defer="defer" src="../../_static/tippy/development/environment/github.d48e2117-e9c9-4042-848a-a0a1025214c2.js"></script>
         <script src="../../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
