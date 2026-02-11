@@ -13002,6 +13002,7 @@
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="cp">#pragma once</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/asio.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hardware_interface/hardware_component_interface.hpp&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hardware_interface/system_interface.hpp&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iomanip&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;mutex&gt;</span>
@@ -13093,7 +13094,7 @@
 
 <span class="w">        </span><span class="c1">// ROS 2 Control Functions</span>
 <span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">CallbackReturn</span><span class="w"> </span><span class="n">on_init</span><span class="p">(</span>
-<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">HardwareInfo</span><span class="o">&amp;</span><span class="w"> </span><span class="n">info</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">HardwareComponentInterfaceParams</span><span class="o">&amp;</span><span class="w"> </span><span class="n">params</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
 
 <span class="w">        </span><span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">StateInterface</span><span class="o">&gt;</span>
 <span class="w">        </span><span class="n">export_state_interfaces</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
@@ -13280,7 +13281,7 @@
         <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../../_static/tippy/generated/exhale/program_listing_file_software_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp.7e24865f-afc0-4f5d-9874-e719be86fc06.js"></script>
+        <script defer="defer" src="../../_static/tippy/generated/exhale/program_listing_file_software_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp.b6a95963-8401-4885-9d45-7bdc02badf21.js"></script>
         <script src="../../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>

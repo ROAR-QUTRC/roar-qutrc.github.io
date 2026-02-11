@@ -32,6 +32,8 @@ Includes
 
 - ``boost/asio.hpp``
 
+- ``hardware_interface/hardware_component_interface.hpp``
+
 - ``hardware_interface/system_interface.hpp``
 
 - ``iomanip``
