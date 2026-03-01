@@ -13255,8 +13255,8 @@ Whilst simply opening the built files from a file browser is fine 99% of the tim
 Run <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">DOCS_LOCATION</span></code> to start serving the documentation (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span> to terminate).
 You may have to experiment with using either <code class="docutils literal notranslate"><span class="pre">localhost:8080</span></code> or the loopback address <code class="docutils literal notranslate"><span class="pre">127.0.0.1:8080</span></code> - sometimes one of these won’t load correctly and certain features won’t work.</p>
 <ul class="simple">
-<li><p>Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span></code>: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">./result/html</span></code></p></li>
-<li><p>Building with the dev shell: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">./docs/build/html</span></code> (assuming you’re in the repository root)</p></li>
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">build</span> <span class="pre">.#docs</span></code>: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">./result/html/</span></code></p></li>
+<li><p>Building with the dev shell: <code class="docutils literal notranslate"><span class="pre">nix</span> <span class="pre">run</span> <span class="pre">nixpkgs#darkhttpd</span> <span class="pre">--</span> <span class="pre">./docs/build/html/</span></code> (assuming you’re in the repository root)</p></li>
 </ul>
 <p>To serve on a different port than <code class="docutils literal notranslate"><span class="pre">8080</span></code>, add the <code class="docutils literal notranslate"><span class="pre">--port</span> <span class="pre">PORT</span></code> flag to the end of the command.</p>
 
@@ -13332,7 +13332,7 @@ You may have to experiment with using either <code class="docutils literal notra
         <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
         <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
         <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-        <script defer="defer" src="../_static/tippy/development/documentation-index.4f2b4964-01a3-4918-85f5-64a35d86913e.js"></script>
+        <script defer="defer" src="../_static/tippy/development/documentation-index.c17e01da-de37-462e-be87-be56c69159bf.js"></script>
         <script src="../_static/js/dark-opt-images.js?v=dbe69b92"></script>
     
   </body>
