@@ -27,6 +27,7 @@ Subdirectories
 - :ref:`dir_software_ros_ws_src_perseus_lite_hardware`
 - :ref:`dir_software_ros_ws_src_perseus_payloads`
 - :ref:`dir_software_ros_ws_src_perseus_sensors`
+- :ref:`dir_software_ros_ws_src_perseus_vision`
 - :ref:`dir_software_ros_ws_src_pointcloud_to_laserscan`
 
 

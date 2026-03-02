@@ -1,0 +1,115 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_vision_include_perseus_vision_aruco_detector.hpp:
+
+File aruco_detector.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_vision_include_perseus_vision>` (``software/ros_ws/src/perseus_vision/include/perseus_vision``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+
+ArUco marker detection and 6-DoF pose estimation ROS2 node. 
+
+
+Definition (``software/ros_ws/src/perseus_vision/include/perseus_vision/aruco_detector.hpp``)
+---------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_vision_include_perseus_vision_aruco_detector.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cv_bridge/cv_bridge.hpp``
+
+- ``geometry_msgs/msg/pose.hpp``
+
+- ``geometry_msgs/msg/pose_stamped.hpp``
+
+- ``geometry_msgs/msg/transform_stamped.hpp``
+
+- ``memory``
+
+- ``mutex``
+
+- ``opencv2/aruco.hpp``
+
+- ``opencv2/calib3d.hpp``
+
+- ``opencv2/core.hpp``
+
+- ``opencv2/imgcodecs.hpp``
+
+- ``perseus_interfaces/msg/object_detections.hpp``
+
+- ``perseus_interfaces/srv/detect_objects.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``sensor_msgs/msg/camera_info.hpp``
+
+- ``sensor_msgs/msg/compressed_image.hpp``
+
+- ``sensor_msgs/msg/image.hpp``
+
+- ``std_msgs/msg/header.hpp``
+
+- ``string``
+
+- ``tf2/LinearMath/Matrix3x3.h``
+
+- ``tf2/LinearMath/Quaternion.h``
+
+- ``tf2_geometry_msgs/tf2_geometry_msgs.hpp``
+
+- ``tf2_ros/buffer.h``
+
+- ``tf2_ros/transform_broadcaster.h``
+
+- ``tf2_ros/transform_listener.h``
+
+- ``vector``
+
+- ``visualization_msgs/msg/marker_array.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_ros_ws_src_perseus_vision_src_aruco_detector.cpp`
+
+- :ref:`file_software_ros_ws_src_perseus_vision_src_aruco_detector_node.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_perseus_vision`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classperseus__vision_1_1ArucoDetector`
+

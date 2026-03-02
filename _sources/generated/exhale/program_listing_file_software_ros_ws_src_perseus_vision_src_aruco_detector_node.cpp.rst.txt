@@ -1,0 +1,27 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_ros_ws_src_perseus_vision_src_aruco_detector_node.cpp:
+
+Program Listing for File aruco_detector_node.cpp
+================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_ros_ws_src_perseus_vision_src_aruco_detector_node.cpp>` (``software/ros_ws/src/perseus_vision/src/aruco_detector_node.cpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #include "perseus_vision/aruco_detector.hpp"
+   #include "rclcpp/rclcpp.hpp"
+   
+   int main(int argc, char** argv)
+   {
+       rclcpp::init(argc, argv);
+       rclcpp::spin(std::make_shared<perseus_vision::ArucoDetector>());
+       rclcpp::shutdown();
+       return 0;
+   }

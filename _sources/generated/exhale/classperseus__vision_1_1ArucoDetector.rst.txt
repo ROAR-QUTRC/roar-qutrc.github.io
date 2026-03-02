@@ -1,0 +1,32 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_class_classperseus__vision_1_1ArucoDetector:
+
+Class ArucoDetector
+===================
+
+- Defined in :ref:`file_software_ros_ws_src_perseus_vision_include_perseus_vision_aruco_detector.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public rclcpp::Node``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: perseus_vision::ArucoDetector
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

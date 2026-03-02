@@ -1,0 +1,40 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_vision_src_aruco_detector_node.cpp:
+
+File aruco_detector_node.cpp
+============================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_vision_src>` (``software/ros_ws/src/perseus_vision/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/ros_ws/src/perseus_vision/src/aruco_detector_node.cpp``)
+-------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_vision_src_aruco_detector_node.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``perseus_vision/aruco_detector.hpp`` (:ref:`file_software_ros_ws_src_perseus_vision_include_perseus_vision_aruco_detector.hpp`)
+
+- ``rclcpp/rclcpp.hpp``
+
+
+
+
+

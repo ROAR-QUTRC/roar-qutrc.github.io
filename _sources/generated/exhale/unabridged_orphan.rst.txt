@@ -256,6 +256,26 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_software_ros_ws_src_perseus_vision.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_vision_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_vision_include_perseus_vision.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_vision_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_software_ros_ws_src_pointcloud_to_laserscan.rst
 
 .. toctree::
@@ -421,6 +441,21 @@ Files
    :maxdepth: 5
 
    file_software_ros_ws_src_perseus_payloads_include_arm_driver_arm_driver.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_vision_src_aruco_detector.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_vision_include_perseus_vision_aruco_detector.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_vision_src_aruco_detector_node.cpp.rst
 
 .. toctree::
    :maxdepth: 5
