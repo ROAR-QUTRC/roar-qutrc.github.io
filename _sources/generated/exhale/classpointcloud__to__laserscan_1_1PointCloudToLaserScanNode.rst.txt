@@ -8,7 +8,7 @@
 Class PointCloudToLaserScanNode
 ===============================
 
-- Defined in :ref:`file_software_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan_pointcloud_to_laserscan_node.hpp`
+- Defined in :ref:`file_software_ros_ws_src_pcl_to_lsr_include_pcl_to_lsr_pointcloud_to_laserscan_node.hpp`
 
 
 Inheritance Relationships

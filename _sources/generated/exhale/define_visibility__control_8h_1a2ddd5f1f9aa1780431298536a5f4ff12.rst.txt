@@ -8,7 +8,7 @@
 Define POINTCLOUD_TO_LASERSCAN_EXPORT
 =====================================
 
-- Defined in :ref:`file_software_ros_ws_src_pointcloud_to_laserscan_include_pointcloud_to_laserscan_visibility_control.h`
+- Defined in :ref:`file_software_ros_ws_src_pcl_to_lsr_include_pcl_to_lsr_visibility_control.h`
 
 
 Define Documentation
