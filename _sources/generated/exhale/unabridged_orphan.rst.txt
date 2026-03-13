@@ -186,6 +186,16 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_software_ros_ws_src_perseus_mapping.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_mapping_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_software_ros_ws_src_perseus_payloads.rst
 
 .. toctree::
@@ -685,6 +695,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_software_ros_ws_src_perseus_mapping_src_map_saver.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_software_scripts_matrix_cpu.c.rst
 
 .. toctree::
@@ -741,6 +756,11 @@ Files
    :maxdepth: 5
 
    file_software_arm-teleop-direct_include_servo-constants.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_mapping_src_sim_pointcloud_filter.cpp.rst
 
 .. toctree::
    :maxdepth: 5

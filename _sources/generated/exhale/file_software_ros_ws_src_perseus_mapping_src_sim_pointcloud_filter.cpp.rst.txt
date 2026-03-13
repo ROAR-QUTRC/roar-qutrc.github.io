@@ -1,0 +1,53 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_mapping_src_sim_pointcloud_filter.cpp:
+
+File sim_pointcloud_filter.cpp
+==============================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_mapping_src>` (``software/ros_ws/src/perseus_mapping/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/ros_ws/src/perseus_mapping/src/sim_pointcloud_filter.cpp``)
+----------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_mapping_src_sim_pointcloud_filter.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cmath``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``sensor_msgs/msg/point_cloud2.hpp``
+
+- ``sensor_msgs/point_cloud2_iterator.hpp``
+
+- ``vector``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classSimPointcloudFilter`
+

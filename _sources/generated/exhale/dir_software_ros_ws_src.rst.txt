@@ -26,6 +26,7 @@ Subdirectories
 - :ref:`dir_software_ros_ws_src_perseus_can_if`
 - :ref:`dir_software_ros_ws_src_perseus_input`
 - :ref:`dir_software_ros_ws_src_perseus_lite_hardware`
+- :ref:`dir_software_ros_ws_src_perseus_mapping`
 - :ref:`dir_software_ros_ws_src_perseus_payloads`
 - :ref:`dir_software_ros_ws_src_perseus_sensors`
 - :ref:`dir_software_ros_ws_src_perseus_vision`

@@ -1,0 +1,32 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_class_classMapSaver:
+
+Class MapSaver
+==============
+
+- Defined in :ref:`file_software_ros_ws_src_perseus_mapping_src_map_saver.cpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public rclcpp::Node``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: MapSaver
+   :project: rover
+   :members:
+   :protected-members:
+   :undoc-members:
+   :allow-dot-graphs:

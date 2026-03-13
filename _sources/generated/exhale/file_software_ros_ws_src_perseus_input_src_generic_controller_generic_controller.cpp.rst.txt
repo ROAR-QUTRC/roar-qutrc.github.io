@@ -40,7 +40,7 @@ Includes
 
 - ``limits``
 
-- ``map`` (:ref:`file_software_ros_ws_src_autonomy_src_topic_remapper.cpp`)
+- ``map`` (:ref:`file_software_ros_ws_src_perseus_mapping_src_map_saver.cpp`)
 
 - ``stdexcept``
 
