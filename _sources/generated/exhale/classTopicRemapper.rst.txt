@@ -8,15 +8,16 @@
 Class TopicRemapper
 ===================
 
-- Defined in :ref:`file_software_ros_ws_src_autonomy_src_topic_remapper.cpp`
+- Defined in :ref:`file_software_ros_ws_src_perseus_sensors_include_topic_remapper_topic_remapper.hpp`
 
 
 Inheritance Relationships
 -------------------------
 
-Base Type
-*********
+Base Types
+**********
 
+- ``public rclcpp::Node``
 - ``public rclcpp::Node``
 
 

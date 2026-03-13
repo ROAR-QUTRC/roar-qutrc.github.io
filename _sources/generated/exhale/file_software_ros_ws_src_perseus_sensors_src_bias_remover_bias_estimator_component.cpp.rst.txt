@@ -1,0 +1,77 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_sensors_src_bias_remover_bias_estimator_component.cpp:
+
+File bias_estimator_component.cpp
+=================================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_sensors_src_bias_remover>` (``software/ros_ws/src/perseus_sensors/src/bias_remover``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/ros_ws/src/perseus_sensors/src/bias_remover/bias_estimator_component.cpp``)
+--------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_sensors_src_bias_remover_bias_estimator_component.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cmath``
+
+- ``geometry_msgs/msg/twist.hpp``
+
+- ``geometry_msgs/msg/twist_stamped.hpp``
+
+- ``geometry_msgs/msg/vector3_stamped.hpp``
+
+- ``nav_msgs/msg/odometry.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``rclcpp_components/register_node_macro.hpp``
+
+- ``sensor_msgs/msg/imu.hpp``
+
+- ``string``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_imu_processors`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classimu__processors_1_1BiasEstimator`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_bias__estimator__component_8cpp_1a1e86b7ffc84e571fe767c847012ff0dd`
+
+- :ref:`exhale_function_bias__estimator__component_8cpp_1a441d2e7c76f3d7c94f16ccd8d63b007c`
+

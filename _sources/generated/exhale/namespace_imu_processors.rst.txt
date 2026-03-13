@@ -1,0 +1,29 @@
+
+.. highlight:: none
+
+
+
+
+.. _namespace_imu_processors:
+
+Namespace imu_processors
+========================
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classimu__processors_1_1BiasEstimator`
+
+- :ref:`exhale_class_classimu__processors_1_1BiasRemover`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_bias__estimator__component_8cpp_1a1e86b7ffc84e571fe767c847012ff0dd`
+
+- :ref:`exhale_function_bias__estimator__component_8cpp_1a441d2e7c76f3d7c94f16ccd8d63b007c`

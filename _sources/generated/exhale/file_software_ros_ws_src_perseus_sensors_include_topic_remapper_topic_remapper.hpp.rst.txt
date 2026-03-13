@@ -1,0 +1,78 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_sensors_include_topic_remapper_topic_remapper.hpp:
+
+File topic_remapper.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_sensors_include_topic_remapper>` (``software/ros_ws/src/perseus_sensors/include/topic_remapper``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+
+Dynamic topic remapper node. 
+
+
+Definition (``software/ros_ws/src/perseus_sensors/include/topic_remapper/topic_remapper.hpp``)
+----------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_sensors_include_topic_remapper_topic_remapper.hpp.rst
+
+
+
+Detailed Description
+--------------------
+
+This node dynamically detects the message type of a topic and republishes it at a lower frequency. It uses ROS 2's generic subscription and publisher capabilities to handle any message type without compile-time knowledge of the specific types. 
+
+
+
+
+Includes
+--------
+
+
+- ``functional``
+
+- ``memory``
+
+- ``rclcpp/generic_publisher.hpp``
+
+- ``rclcpp/generic_subscription.hpp``
+
+- ``rclcpp/message_info.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``rclcpp/serialization.hpp``
+
+- ``string``
+
+- ``unordered_map``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_ros_ws_src_perseus_sensors_src_topic_remapper_topic_remapper.cpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classTopicRemapper`
+

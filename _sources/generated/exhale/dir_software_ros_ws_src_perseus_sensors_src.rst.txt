@@ -20,7 +20,9 @@ Directory src
 Subdirectories
 --------------
 
+- :ref:`dir_software_ros_ws_src_perseus_sensors_src_bias_remover`
 - :ref:`dir_software_ros_ws_src_perseus_sensors_src_m2m2_lidar`
+- :ref:`dir_software_ros_ws_src_perseus_sensors_src_topic_remapper`
 
 
 

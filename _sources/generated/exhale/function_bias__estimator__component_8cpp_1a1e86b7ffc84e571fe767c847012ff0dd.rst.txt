@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_function_bias__estimator__component_8cpp_1a1e86b7ffc84e571fe767c847012ff0dd:
+
+Function imu_processors::abslt
+==============================
+
+- Defined in :ref:`file_software_ros_ws_src_perseus_sensors_src_bias_remover_bias_estimator_component.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: imu_processors::abslt(double, double)
+   :project: rover

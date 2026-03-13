@@ -1,0 +1,65 @@
+
+.. highlight:: none
+
+
+
+
+.. _program_listing_file_software_ros_ws_src_perseus_sensors_include_topic_remapper_topic_remapper.hpp:
+
+Program Listing for File topic_remapper.hpp
+===========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_software_ros_ws_src_perseus_sensors_include_topic_remapper_topic_remapper.hpp>` (``software/ros_ws/src/perseus_sensors/include/topic_remapper/topic_remapper.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include <functional>
+   #include <memory>
+   #include <string>
+   #include <unordered_map>
+   
+   #include "rclcpp/generic_publisher.hpp"
+   #include "rclcpp/generic_subscription.hpp"
+   #include "rclcpp/message_info.hpp"
+   #include "rclcpp/rclcpp.hpp"
+   #include "rclcpp/serialization.hpp"
+   
+   
+   class TopicRemapper : public rclcpp::Node
+   {
+   public:
+       explicit TopicRemapper(const rclcpp::NodeOptions& options = rclcpp::NodeOptions());
+   
+       ~TopicRemapper();
+   
+   private:
+       void detect_and_subscribe();
+   
+       void generic_message_callback(std::shared_ptr<rclcpp::SerializedMessage> msg);
+   
+       // ROS parameters
+       std::string _input_topic_name;
+       std::string _output_topic_name;
+       double _reduction_frequency;  // Target output frequency in Hz
+       std::string _message_type;    // Detected message type
+   
+       // ROS components
+       std::shared_ptr<rclcpp::GenericSubscription> _subscription;
+       std::shared_ptr<rclcpp::GenericPublisher> _publisher;
+       rclcpp::TimerBase::SharedPtr _detection_timer;
+   
+       // Timing for frequency reduction
+       std::chrono::steady_clock::time_point _last_publish_time;
+       std::chrono::milliseconds _publish_interval;
+   
+       // Retry tracking
+       int _detection_attempts;
+       static constexpr int MAX_DETECTION_ATTEMPTS = 50;  // ~5 seconds at 100ms intervals
+   
+       // Flag to track if we've detected and set up the publisher
+       bool _is_setup_complete;
+   };

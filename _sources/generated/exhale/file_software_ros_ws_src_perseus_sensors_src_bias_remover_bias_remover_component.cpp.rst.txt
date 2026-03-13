@@ -1,0 +1,62 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_sensors_src_bias_remover_bias_remover_component.cpp:
+
+File bias_remover_component.cpp
+===============================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_sensors_src_bias_remover>` (``software/ros_ws/src/perseus_sensors/src/bias_remover``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/ros_ws/src/perseus_sensors/src/bias_remover/bias_remover_component.cpp``)
+------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_sensors_src_bias_remover_bias_remover_component.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``geometry_msgs/msg/vector3_stamped.hpp``
+
+- ``optional``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``rclcpp_components/register_node_macro.hpp``
+
+- ``sensor_msgs/msg/imu.hpp``
+
+- ``string``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_imu_processors`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classimu__processors_1_1BiasRemover`
+

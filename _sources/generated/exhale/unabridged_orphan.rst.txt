@@ -266,12 +266,27 @@ Directories
 .. toctree::
    :maxdepth: 5
 
+   dir_software_ros_ws_src_perseus_sensors_include_topic_remapper.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_software_ros_ws_src_perseus_sensors_src.rst
 
 .. toctree::
    :maxdepth: 5
 
+   dir_software_ros_ws_src_perseus_sensors_src_bias_remover.rst
+
+.. toctree::
+   :maxdepth: 5
+
    dir_software_ros_ws_src_perseus_sensors_src_m2m2_lidar.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_ros_ws_src_perseus_sensors_src_topic_remapper.rst
 
 .. toctree::
    :maxdepth: 5
@@ -456,6 +471,16 @@ Files
    :maxdepth: 5
 
    file_software_ros_ws_src_perseus_vision_src_aruco_detector_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_src_bias_remover_bias_estimator_component.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_src_bias_remover_bias_remover_component.cpp.rst
 
 .. toctree::
    :maxdepth: 5
@@ -736,6 +761,16 @@ Files
    :maxdepth: 5
 
    file_software_ros_ws_src_autonomy_src_topic_remapper.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_src_topic_remapper_topic_remapper.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_sensors_include_topic_remapper_topic_remapper.hpp.rst
 
 .. toctree::
    :maxdepth: 5

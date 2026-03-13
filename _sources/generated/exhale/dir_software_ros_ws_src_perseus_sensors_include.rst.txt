@@ -21,6 +21,7 @@ Subdirectories
 --------------
 
 - :ref:`dir_software_ros_ws_src_perseus_sensors_include_m2m2_lidar`
+- :ref:`dir_software_ros_ws_src_perseus_sensors_include_topic_remapper`
 
 
 
