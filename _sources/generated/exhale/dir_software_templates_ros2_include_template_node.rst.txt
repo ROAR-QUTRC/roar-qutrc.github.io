@@ -1,0 +1,26 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_templates_ros2_include_template_node:
+
+
+Directory template_node
+=======================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software_templates_ros2_include>` (``software/templates/ros2/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/templates/ros2/include/template_node``
+
+
+Files
+-----
+
+- :ref:`file_software_templates_ros2_include_template_node_template_node.hpp`
+
+

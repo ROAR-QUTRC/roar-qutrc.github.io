@@ -1,0 +1,27 @@
+
+.. highlight:: none
+
+
+
+.. _dir_software_templates_ros2:
+
+
+Directory ros2
+==============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_software_templates>` (``software/templates``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``software/templates/ros2``
+
+Subdirectories
+--------------
+
+- :ref:`dir_software_templates_ros2_include`
+- :ref:`dir_software_templates_ros2_src`
+
+
+

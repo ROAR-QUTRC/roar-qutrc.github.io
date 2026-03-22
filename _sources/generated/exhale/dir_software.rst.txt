@@ -19,6 +19,7 @@ Subdirectories
 - :ref:`dir_software_ros_ws`
 - :ref:`dir_software_scripts`
 - :ref:`dir_software_shared`
+- :ref:`dir_software_templates`
 
 
 

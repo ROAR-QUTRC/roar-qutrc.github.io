@@ -453,6 +453,36 @@ Directories
 
    dir_software_shared_type-demangle_src.rst
 
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_templates.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_templates_ros2.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_templates_ros2_include.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_templates_ros2_include_template_node.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_templates_ros2_src.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_software_templates_ros2_src_template_node.rst
+
 Files
 *****
 
@@ -776,6 +806,16 @@ Files
    :maxdepth: 5
 
    file_software_ros_ws_src_perseus_lite_hardware_include_st3215_system.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_templates_ros2_src_template_node_template_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_templates_ros2_include_template_node_template_node.hpp.rst
 
 .. toctree::
    :maxdepth: 5

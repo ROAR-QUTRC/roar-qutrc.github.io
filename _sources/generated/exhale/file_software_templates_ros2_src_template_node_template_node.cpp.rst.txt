@@ -1,0 +1,38 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_templates_ros2_src_template_node_template_node.cpp:
+
+File template_node.cpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_templates_ros2_src_template_node>` (``software/templates/ros2/src/template_node``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+Definition (``software/templates/ros2/src/template_node/template_node.cpp``)
+----------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_templates_ros2_src_template_node_template_node.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``template_node/template_node.hpp`` (:ref:`file_software_templates_ros2_include_template_node_template_node.hpp`)
+
+
+
+
+
