@@ -275,6 +275,8 @@ Variables
 
 - :ref:`exhale_variable_hi__can__address_8hpp_1a5279d9211cd5549674407fddeafb67fd`
 
+- :ref:`exhale_variable_hi__can__address_8hpp_1a6e5e51412cd9a6a40795f2a5f73ddbe2`
+
 - :ref:`exhale_variable_hi__can__address_8hpp_1abbac1ad06bedba3b2268790ddf85fb6b`
 
 - :ref:`exhale_variable_hi__can__address_8hpp_1a8967ec77023111b22e5d8486c40509de`
