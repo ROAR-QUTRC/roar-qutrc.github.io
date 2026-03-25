@@ -22,5 +22,6 @@ Files
 -----
 
 - :ref:`file_software_ros_ws_src_perseus_vision_include_perseus_vision_aruco_detector.hpp`
+- :ref:`file_software_ros_ws_src_perseus_vision_include_perseus_vision_cube_detector.hpp`
 
 

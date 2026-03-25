@@ -11,8 +11,30 @@ Namespace perseus_vision
 
 
 
+Namespaces
+----------
+
+
+- :ref:`namespace_perseus_vision__@236176170244200344370254035322071212240333323135`
+
+- :ref:`namespace_perseus_vision__@326035123243263144370256373045115053356163367302`
+
+
 Classes
 -------
 
 
+- :ref:`exhale_struct_structperseus__vision_1_1Detection`
+
 - :ref:`exhale_class_classperseus__vision_1_1ArucoDetector`
+
+- :ref:`exhale_class_classperseus__vision_1_1CubeDetector`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_cube__detector_8hpp_1a92fb9cce04365aa27870e507c25c4f5a`
+
+- :ref:`exhale_variable_cube__detector_8hpp_1a368f2f72322423251a3021c062f81b24`

@@ -1,0 +1,126 @@
+
+.. highlight:: none
+
+
+
+
+.. _file_software_ros_ws_src_perseus_vision_include_perseus_vision_cube_detector.hpp:
+
+File cube_detector.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_software_ros_ws_src_perseus_vision_include_perseus_vision>` (``software/ros_ws/src/perseus_vision/include/perseus_vision``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+
+Cube detection and depth-based pose estimation ROS2 node. 
+
+
+Definition (``software/ros_ws/src/perseus_vision/include/perseus_vision/cube_detector.hpp``)
+--------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_software_ros_ws_src_perseus_vision_include_perseus_vision_cube_detector.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ament_index_cpp/get_package_share_directory.hpp``
+
+- ``atomic``
+
+- ``builtin_interfaces/msg/time.hpp``
+
+- ``chrono``
+
+- ``cstdint``
+
+- ``cv_bridge/cv_bridge.hpp``
+
+- ``geometry_msgs/msg/pose.hpp``
+
+- ``geometry_msgs/msg/pose_stamped.hpp``
+
+- ``geometry_msgs/msg/quaternion.hpp``
+
+- ``memory``
+
+- ``mutex``
+
+- ``onnxruntime/onnxruntime_cxx_api.h``
+
+- ``opencv2/opencv.hpp``
+
+- ``perseus_interfaces/msg/object_detections.hpp``
+
+- ``perseus_interfaces/srv/detect_objects.hpp``
+
+- ``rcl_interfaces/msg/set_parameters_result.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``sensor_msgs/msg/camera_info.hpp``
+
+- ``sensor_msgs/msg/image.hpp``
+
+- ``sensor_msgs/msg/region_of_interest.hpp``
+
+- ``std_msgs/msg/header.hpp``
+
+- ``string``
+
+- ``tf2_ros/buffer.h``
+
+- ``tf2_ros/transform_listener.h``
+
+- ``vector``
+
+- ``visualization_msgs/msg/marker_array.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_software_ros_ws_src_perseus_vision_src_cube_detector.cpp`
+
+- :ref:`file_software_ros_ws_src_perseus_vision_src_cube_detector_node.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_perseus_vision`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structperseus__vision_1_1Detection`
+
+- :ref:`exhale_class_classperseus__vision_1_1CubeDetector`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_cube__detector_8hpp_1a92fb9cce04365aa27870e507c25c4f5a`
+
+- :ref:`exhale_variable_cube__detector_8hpp_1a368f2f72322423251a3021c062f81b24`
+

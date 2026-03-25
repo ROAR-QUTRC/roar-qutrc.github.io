@@ -32,6 +32,8 @@ Includes
 
 - ``chrono``
 
+- ``cmath``
+
 - ``cstdio``
 
 - ``ctime``

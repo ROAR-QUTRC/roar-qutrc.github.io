@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_cube__detector_8hpp_1a368f2f72322423251a3021c062f81b24:
+
+Variable perseus_vision::CLASS_NAMES
+====================================
+
+- Defined in :ref:`file_software_ros_ws_src_perseus_vision_include_perseus_vision_cube_detector.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus_vision::CLASS_NAMES
+   :project: rover

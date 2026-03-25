@@ -580,6 +580,21 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_software_ros_ws_src_perseus_vision_src_cube_detector.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_vision_include_perseus_vision_cube_detector.hpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_software_ros_ws_src_perseus_vision_src_cube_detector_node.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_software_shared_fd-wrapper_src_fd_wrapper.cpp.rst
 
 .. toctree::

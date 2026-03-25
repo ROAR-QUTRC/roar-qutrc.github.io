@@ -67,6 +67,8 @@ Includes
 
 - ``sensor_msgs/msg/image.hpp``
 
+- ``sensor_msgs/msg/region_of_interest.hpp``
+
 - ``std_msgs/msg/header.hpp``
 
 - ``string``

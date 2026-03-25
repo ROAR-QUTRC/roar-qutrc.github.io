@@ -1,0 +1,19 @@
+
+.. highlight:: none
+
+
+
+.. _exhale_variable_cube__detector_8hpp_1a92fb9cce04365aa27870e507c25c4f5a:
+
+Variable perseus_vision::CLASS_COLOURS
+======================================
+
+- Defined in :ref:`file_software_ros_ws_src_perseus_vision_include_perseus_vision_cube_detector.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: perseus_vision::CLASS_COLOURS
+   :project: rover
