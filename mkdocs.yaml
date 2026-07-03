@@ -38,6 +38,7 @@ theme:
     text: Roboto
     code: Roboto Mono
 extra:
+  homepage: /01-home
   social:
     - icon: simple/github
       link: https://github.com/ROAR-QUTRC
@@ -49,7 +50,6 @@ extra:
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
-  - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
@@ -61,6 +61,7 @@ markdown_extensions:
   - admonition # adds admonitions
   - pymdownx.details # adds collapsible sections
   - pymdownx.superfences # allows for nesting of fenced code blocks
+
   # Extended Markdown Features
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -68,20 +69,21 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - def_list
+  - footnotes
+  - pymdownx.mark
+  - attr_list
 
   # math
   - pymdownx.arithmatex:
       generic: true
 
+  # Code Highlighting
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
-  - pymdownx.mark
-  - attr_list
+
+  # Emoji Support
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
