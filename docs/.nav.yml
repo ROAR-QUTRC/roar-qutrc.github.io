@@ -1,16 +1,16 @@
 nav:
   - Home:
       - Welcome To The Docs: 01-home
-      - Meet The Team: 01-home/team
-      - About Us: 01-home/about-us
+      - Meet The Team:       01-home/team
+      - About Us:            01-home/about-us
   - Perseus V3:
       - Getting Started: 02-perseus-v3/01-getting-started
-      - challenge tasks: 02-perseus-v3/02-challenge-tasks
-      - Standards: 02-perseus-v3/03-standards
-      - Tutorials: 02-perseus-v3/04-tutorials
-      - Software: 02-perseus-v3/05-software
-      - Firmware: 02-perseus-v3/06-firmware
-      - Electrical: 02-perseus-v3/07-electrical
-      - Hardware: 02-perseus-v3/08-hardware
+      - Challenge Tasks: 02-perseus-v3/02-challenge-tasks
+      - Standards:       02-perseus-v3/03-standards
+      - Tutorials:       02-perseus-v3/04-tutorials
+      - Software:        02-perseus-v3/05-software
+      - Firmware:        02-perseus-v3/06-firmware
+      - Electrical:      02-perseus-v3/07-electrical
+      - Hardware:        02-perseus-v3/08-hardware
   - Archive:
     - About: 03-archive
