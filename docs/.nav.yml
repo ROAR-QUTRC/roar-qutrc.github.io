@@ -1,9 +1,16 @@
 nav:
   - Home:
-      - index.md
-  - Persues V3:
-      - perseus-v3
-  - Team:
-      - team
+      - Welcome To The Docs: 01-home
+      - Meet The Team: 01-home/team
+      - About Us: 01-home/about-us
+  - Perseus V3:
+      - Getting Started: 02-perseus-v3/01-Getting-Started
+      - Challenge Tasks: 02-perseus-v3/02-Challenge-Tasks
+      - Standards: 02-perseus-v3/03-Standards
+      - Tutorials: 02-perseus-v3/04-Tutorials
+      - Software: 02-perseus-v3/05-Software
+      - Firmware: 02-perseus-v3/06-Firmware
+      - Electrical: 02-perseus-v3/07-Electrical
+      - Hardware: 02-perseus-v3/08-Hardware
   - Archive:
-      - archive
+    - About: 03-archive
