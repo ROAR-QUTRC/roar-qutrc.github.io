@@ -7,6 +7,7 @@
       doxygen
       python313Packages.mkdocs-material
       python313Packages.mkdocs-material-extensions
+      python313Packages.mkdocs-awesome-nav
    ] ++ python313Packages.mkdocs-material.optional-dependencies.imaging;
 
   languages = {

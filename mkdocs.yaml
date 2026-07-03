@@ -49,6 +49,10 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+plugins:
+  - search
+  - awesome-nav
+
 markdown_extensions:
   # Callouts
   - admonition # adds admonitions

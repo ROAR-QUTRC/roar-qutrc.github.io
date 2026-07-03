@@ -1,0 +1,9 @@
+nav:
+  - Home:
+      - index.md
+  - Archive:
+      - archive
+  - Team:
+      - team/index.md
+  - Persues V3:
+      - perseus-v3/index.md
