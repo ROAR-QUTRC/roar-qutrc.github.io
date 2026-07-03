@@ -48,6 +48,9 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - search
@@ -58,6 +61,17 @@ markdown_extensions:
   - admonition # adds admonitions
   - pymdownx.details # adds collapsible sections
   - pymdownx.superfences # allows for nesting of fenced code blocks
+  # Extended Markdown Features
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+
+  # math
+  - pymdownx.arithmatex:
+      generic: true
 
   - pymdownx.highlight:
       anchor_linenums: true
