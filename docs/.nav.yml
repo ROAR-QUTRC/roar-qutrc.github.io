@@ -1,8 +1,11 @@
+use_index_title: true
+flatten_single_child_sections: true
+
+sort:
+  sections: mixed
+
 nav:
-  - Home:
-      - Welcome To The Docs: 01-home
-      - Meet The Team:       01-home/team
-      - About Us:            01-home/about-us
+  - Home: 01-home
   - Perseus V3:
       - Getting Started: 02-perseus-v3/01-getting-started
       - Challenge Tasks: 02-perseus-v3/02-challenge-tasks

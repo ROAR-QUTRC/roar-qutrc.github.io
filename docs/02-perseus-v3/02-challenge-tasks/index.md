@@ -2,7 +2,7 @@
 
 The Australian Rover Challenge is held each year in Adeliade.
 
-- [Post Landing](./01-post-landing.md)
-- [Space Resources](./02-space-resources.md)
-- [Excavation and Construction](./03-excavation-and-construction.md)
-- [Autonomy and Mapping](./04-autonomy-and-mapping.md)
+- [Post Landing](./01-post-landing/index.md)
+- [Space Resources](./02-space-resources/index.md)
+- [Excavation and Construction](./03-excavation-and-construction/index.md)
+- [Autonomy and Mapping](./04-autonomy-and-mapping/index.md)
