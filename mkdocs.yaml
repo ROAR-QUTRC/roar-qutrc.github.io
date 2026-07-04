@@ -18,6 +18,8 @@ theme:
     - navigation.indexes
     - navigation.top
     - navigation.footer
+    - navigation.indexes
+    - navigation.top
     - search.suggest
   palette:
     # Dark Mode
