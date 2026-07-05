@@ -7,20 +7,22 @@ theme:
   logo: assets/Rover-Logo.svg
   favicon: assets/Logo-Simple.png
   features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - navigation.footer
+    - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
-    - navigation.tracking
-    - navigation.tabs # Converts top level navigation into tabs
-    # - navigation.sections # Converts second level navigation into sections
     - navigation.path
-    - navigation.prune
-    - navigation.indexes
+    # - navigation.sections # Converts second level navigation into sections
+    - navigation.tabs # Converts top level navigation into tabs
     - navigation.top
-    - navigation.footer
-    - navigation.indexes
-    - navigation.top
+    - navigation.tracking
     - search.suggest
+    - toc.follow
   palette:
     # Dark Mode
     - scheme: slate

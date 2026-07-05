@@ -1,1 +1,3 @@
-# Hardware Standards
+---
+title: Hardware Standards
+---

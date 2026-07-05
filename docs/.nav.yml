@@ -1,19 +1,14 @@
+# Use the "title" field in the index.md preamble for folder titles
 use_index_title: true
+
+# Flatten directories with a single markdown file into a single page
+# This is useful to group images and static elements with a single markdown file
 flatten_single_child_sections: true
 
+# This allows folders and files to be sorted in the correct order
 sort:
   sections: mixed
 
-nav:
-  - Home: 01-home
-  - Perseus V3:
-      - Getting Started: 02-perseus-v3/01-getting-started
-      - Challenge Tasks: 02-perseus-v3/02-challenge-tasks
-      - Standards:       02-perseus-v3/03-standards
-      - Tutorials:       02-perseus-v3/04-tutorials
-      - Software:        02-perseus-v3/05-software
-      - Firmware:        02-perseus-v3/06-firmware
-      - Electrical:      02-perseus-v3/07-electrical
-      - Hardware:        02-perseus-v3/08-hardware
-  - Archive:
-    - About: 03-archive
+# The nav section is the main purpose of this plugin. We do not use it since in favour
+# of ordering files manually and setting titles so the file structure reflects what is rendered.
+# nav:

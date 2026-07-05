@@ -1,1 +1,5 @@
-# Welcome to the docs
+---
+title: Home
+---
+
+This is the docs

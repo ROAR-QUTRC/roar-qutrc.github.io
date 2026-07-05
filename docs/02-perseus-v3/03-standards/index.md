@@ -1,4 +1,6 @@
-# Development Standards
+---
+title: Development Standards
+---
 
 Standards allow for a streamlined project that helps with
 both readability and develop speed.

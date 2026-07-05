@@ -1,1 +1,3 @@
-# Electrical Standards
+---
+title: Electrical Standards
+---
