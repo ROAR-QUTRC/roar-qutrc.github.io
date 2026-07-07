@@ -1,0 +1,54 @@
+# This workflow is based on the following examples:
+#  - github static website deployment: https://github.com/OMEN44/omen44.github.io/actions/new?category=none&query=Static+HTML
+#  - devenv.sh actions example: https://devenv.sh/integrations/github-actions/
+# MkDocs does have the command `mkdocs gh-deploy` which has not been used as it does not have much documentation and
+# is not trusted with material for mkdocs being abandoned
+name: "Deploy ducumentation website"
+on:
+  # Run on push to the main branch and when manually triggered from the Actions tab
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: cachix/install-nix-action@v31
+      - uses: cachix/cachix-action@v17
+        with:
+          name: devenv
+      - name: Install devenv.sh
+        run: nix profile add nixpkgs#devenv
+      - name: Test devenv installation
+        run: devenv --version
+      - name: Setup devenv environment
+        run: devenv test
+      - name: Build docs
+        run: devenv shell build
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          # Upload the site directory as an artifact for deployment
+          path: "./site"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

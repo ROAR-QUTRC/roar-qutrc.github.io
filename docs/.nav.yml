@@ -9,6 +9,12 @@ flatten_single_child_sections: true
 sort:
   sections: mixed
 
-# The nav section is the main purpose of this plugin. We do not use it since in favour
-# of ordering files manually and setting titles so the file structure reflects what is rendered.
-# nav:
+# The nav section is the main purpose of this plugin. As mentioned in the docs, ordering an naming is done at a file level
+# so the file structure here is as close to what is rendered as possible. The only exception is that the index.md file
+# which must be in the root of the /docs folder which we want to render in the home folder.
+nav:
+  - Home:
+      - Welcome: index.md
+      - 01-home/*
+  - 02-perseus-v3
+  - 03-archive

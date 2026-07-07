@@ -47,11 +47,10 @@ Replacing `<section title>` with the title you want to be displayed.
 
 The order that files appear in the navigation tree is dictiated by the raw file names. To keep things consistent you must follow the number prefixing convention mentioned above and set custom titles for each section unless the order does not matter (such as the tutorials section).
 
-??? info "Configuration location"
+!!! tip "Configuration location"
 
     Material for MkDocs does not support a nice way of specifiying the page order. The [Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/) plugin fixes this. The configuration for this plugin lives in `docs/.nav.yml` file
 
-## Editor
+??? info "Landing page config"
 
-what the helly
-this
+    The landing page must be in the root of the `/docs` directory but we want it to render in the Home tab. To acheive this a _very_ minimal navigation has been specified in `/docs/.nav.yml` to add the landing `index.md` to the Home tab.
