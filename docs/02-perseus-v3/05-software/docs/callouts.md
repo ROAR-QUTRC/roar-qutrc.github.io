@@ -4,6 +4,8 @@ This feature should be used when basic text emphasis like bold, highlighting, an
 
 ## Usage
 
+### Basic
+
 The minimum to create a call out is `!!!` followed by the callout variant name. A list of supported variants can seen below. However, any single word can be used as the variant and the colour theme will default to note. The content is optional and must be indented if specified. Here is an example:
 
 ```
@@ -11,10 +13,43 @@ The minimum to create a call out is `!!!` followed by the callout variant name. 
     Remember to do the thing!
 ```
 
-!!! What the hec
-trieuher
+!!! tip
 
-## Variants
+    Remember to do the thing!
+
+### Titles
+
+The title of a callout can be set by adding some text in quotes after the variant name:
+
+```
+!!! tip "Reminder"
+    Remember to do the thing!
+```
+
+!!! tip "Reminder"
+
+    Remember to do the thing!
+
+The whole title section can be remove by using empty quotes `""`:
+
+!!! tip ""
+
+    Remember to do the thing!
+
+### Collapsible Callouts
+
+By replacing the `!!!` with `???` (`???+` for expanded by default) the callout will then become collapsible:
+
+```
+??? tip
+    Remember to do the thing!
+```
+
+??? tip
+
+    Remember to do the thing!
+
+### Variants
 
 !!! note
 

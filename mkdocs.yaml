@@ -1,5 +1,5 @@
 site_name: ROAR Documentation
-site_url: https://sitename.example
+site_url: https://roar-qutrc.github.io
 repo_url: https://github.com/ROAR-QUTRC/perseus-v2
 copyright: "&copy; Copyright 2026, ROAR Team."
 theme:
@@ -97,3 +97,6 @@ markdown_extensions:
 
   - pymdownx.tabbed:
       alternate_style: true
+
+  # Annotations
+  - md_in_html

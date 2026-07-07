@@ -3,7 +3,7 @@
 #  - devenv.sh actions example: https://devenv.sh/integrations/github-actions/
 # MkDocs does have the command `mkdocs gh-deploy` which has not been used as it does not have much documentation and
 # is not trusted with material for mkdocs being abandoned
-name: "Deploy ducumentation website"
+name: "Deploy documentation website"
 on:
   # Run on push to the main branch and when manually triggered from the Actions tab
   push:

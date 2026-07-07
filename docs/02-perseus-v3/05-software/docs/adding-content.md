@@ -1,16 +1,16 @@
 # Adding Content
 
-Adding content is as simple writing markdown (well mostly) through the magic of [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)! The markdown files inside the `docs` directory are rendered as pages using to define collapsable sections. Now of course, there are a few details to remember here:
+Adding content is as simple writing markdown (well mostly) through the magic of [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)! The markdown files inside the `docs` directory are rendered as pages using folders to define collapsable sections. Now of course, there are a few details to remember:
 
-- The name of the file be used as the section name unless a top level header `#` is specified
+- The name of the file will be used as the section name unless a top level header `#` is specified
 - To add content or change the name of collapsible sections place an `index.md` file inside the folder
 - When the order matters prefix the file or folder with a zero padded 2 digit number (e.g. `03-name`)
 
-All other extensions and features are well documented on the Material for MkDocs website with a summary of useful features like code blocks and call outs in this section.
+All other extensions and features are well documented on the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) website with a summary of useful features like [code blocks](code-blocks.md) and [call outs](callouts.md) in these docs.
 
 ## Markdown
 
-All vanilla markdown features are supported in addition to a number of custom extensions provided by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Here is a list of the supported syntaxes:
+A good reference if you've forgotten how to use markdown is this [cheat sheet](https://www.markdownguide.org/cheat-sheet/). All the following markdown features are supported:
 
 - Headings
 - Bold
@@ -29,13 +29,11 @@ All vanilla markdown features are supported in addition to a number of custom ex
 - Highlighting
 - Math (using MathJax)
 
-A good reference if you've forgotten how to use some of these is this [cheat sheet](https://www.markdownguide.org/cheat-sheet/).
-
 ## Navigation Tree
 
 Make sure when you are adding new docs that the titles and order of pages in the navigation section make sense!
 
-The title of normal pages is set by adding a top level header to your file. Setting the title of expandable sections is slightly more involved. You must add a `index.md` file in the root of the directory you are naming and add the following to the top of the file:
+The title of normal pages is set by adding a top level header to your file. Setting the title of expandable sections is slightly more involved. You must add an `index.md` file in the root of the directory you are naming and add the following to the top of the file:
 
 ```
 ---
