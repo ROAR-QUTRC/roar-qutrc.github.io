@@ -3,18 +3,22 @@
 {
   env.NO_MKDOCS_2_WARNING = 1;
 
-  packages = with pkgs; [
-      python313Packages.mkdocs-material
-      python313Packages.mkdocs-material-extensions
-      python313Packages.mkdocs-awesome-nav
-   ] ++ python313Packages.mkdocs-material.optional-dependencies.imaging;
+  packages =
+    with pkgs.python3Packages;
+    [
+      mkdocs-material
+      mkdocs-material-extensions
+      mkdocs-awesome-nav
+      mkdocs-redirects
+    ]
+    ++ mkdocs-material.optional-dependencies.imaging;
 
   languages = {
     python.enable = true;
   };
 
   scripts = {
-    dev.exec = "mkdocs serve";
-    build.exec = "mkdocs build";
+    dev.exec = "cd $(git rev-parse --show-toplevel) && mkdocs serve";
+    build.exec = "cd $(git rev-parse --show-toplevel) && mkdocs build";
   };
 }
