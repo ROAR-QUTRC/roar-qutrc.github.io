@@ -9,7 +9,7 @@
       mkdocs-material
       mkdocs-material-extensions
       mkdocs-awesome-nav
-      mkdocs-redirects
+      mkdocs-drawio-exporter
     ]
     ++ mkdocs-material.optional-dependencies.imaging;
 

@@ -4,6 +4,7 @@ repo_url: https://github.com/ROAR-QUTRC/perseus-v2
 copyright: "&copy; Copyright 2026, ROAR Team."
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/Rover-Logo.svg
   favicon: assets/Logo-Simple.png
   features:
@@ -60,6 +61,9 @@ extra_javascript:
 plugins:
   - search
   - awesome-nav
+  - drawio-exporter:
+      format: svg
+      cache_dir: assets/drawio/.cache
 
 markdown_extensions:
   # Callouts
