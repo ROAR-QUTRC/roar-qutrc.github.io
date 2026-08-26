@@ -37,7 +37,7 @@ The library distinguishes itself through flexible socket configuration using han
 
 When opening files, sockets, pipes or devices standard on unix systems an integer is returned known as a File Descriptor (FD). In short, when a process opens or uses one of the affore mentioned resources, the operating system must keep track of this and the FD is simply a unique identifier for a resource. For more information and graphical explanations check out this [article](https://bottomupcs.com/ch01s03.html).
 
-The `FdWrapper` class located in `software/shared/fd-wrapper/` is a wrapper arround a FD which implements the [RAII](../../03-standards/01-software-standards/02-c-standards.md#always-use-raii-or-riia-and-understand-who-owns-what) design pattern and handles automatically closing resources.
+The `FdWrapper` class located in `software/shared/fd-wrapper/` is a wrapper arround a FD which implements the [RAII](../03-standards/01-software-standards/02-c-standards.md#always-use-raii-or-riia-and-understand-who-owns-what) design pattern and handles automatically closing resources.
 
 !!! tip "Usage Example"
 
