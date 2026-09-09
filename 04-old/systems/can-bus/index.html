@@ -1,0 +1,7534 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://roar-qutrc.github.io/04-old/systems/can-bus/">
+      
+      
+        <link rel="prev" href="../../standards-index/">
+      
+      
+        <link rel="next" href="../ci-cd/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/Logo-Simple.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>CAN Bus - ROAR Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#can-bus" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/01-home" title="ROAR Documentation" class="md-header__button md-logo" aria-label="ROAR Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/Rover-Logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ROAR Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CAN Bus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ROAR-QUTRC/perseus-v2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../02-perseus-v3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Perseus V3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../03-archive/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Archive
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  old docs
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="/01-home" title="ROAR Documentation" class="md-nav__button md-logo" aria-label="ROAR Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/Rover-Logo.svg" alt="logo">
+
+    </a>
+    ROAR Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ROAR-QUTRC/perseus-v2" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01-home/about-us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01-home/team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meet the team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseus V3
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Perseus V3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/01-getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/02-challenge-tasks/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge Tasks
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Challenge Tasks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/02-challenge-tasks/01-post-landing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post Landing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/02-challenge-tasks/02-space-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Space Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/02-challenge-tasks/03-excavation-and-construction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Excavation and Construction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/02-challenge-tasks/04-autonomy-and-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autonomy and Mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/03-standards/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development Standards
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development Standards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/03-standards/01-software-standards/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Standards
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software Standards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/01-software-standards/01-general-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/01-software-standards/02-c-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/01-software-standards/03-python-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/01-software-standards/04-js-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JS/TS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/01-software-standards/05-nix-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nix
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/01-software-standards/06-framework-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework Specific
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/01-software-standards/07-git-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/02-electrical-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electrical Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/03-standards/03-hardware-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/04-tutorials/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hi can
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hi can
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/04-tutorials/hi-can/basic-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Hi-CAN Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/04-tutorials/hi-can/packet-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using the PacketManager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/04-tutorials/web-ui-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web UI Widget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/05-software/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/ci-cd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/cmake-infrustructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CMake Build Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/devenv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Devenv Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/05-software/docs/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6_5" id="__nav_2_6_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/docs/00-developing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/docs/adding-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/docs/annotations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annotations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/docs/callouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/docs/code-blocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Blocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/docs/drawio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/docs/tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Content Tabs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/hi-can/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hi-CAN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/network-config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/nix-outpus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nix Outputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/ros2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ROS2 Packages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/05-software/scripts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scripts
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6_10" id="__nav_2_6_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scripts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/scripts/clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    clean.bash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/scripts/devenv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    devenv-setup.sh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/scripts/nix-package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nix-package.sh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/scripts/nix-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nix-setup.sh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/scripts/vcan-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vcan-setup.sh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/shared-libraries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared Libraries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-perseus-v3/05-software/templates/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6_12" id="__nav_2_6_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Templates
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/templates/cmake/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CMake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/templates/ros-node/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ROS Node
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/templates/web-ui-widget/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web UI Widget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/05-software/web-ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/06-firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Firmware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/07-electrical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electrical
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02-perseus-v3/08-hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../03-archive/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../03-archive/contributor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../03-archive/numbers/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Numbers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Numbers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../03-archive/numbers/one/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    One
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../03-archive/numbers/two/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Two
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../03-archive/test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    old docs
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    old docs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge breakdowns
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Challenge breakdowns
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenge-breakdowns/autonomy-and-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autonomy and Mapping Operations Manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenge-breakdowns/excavation-and-construction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Excavation &amp; Construction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenge-breakdowns/post-landing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post-Landing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenge-breakdowns/space-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Space Resources Task Points Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../challenge-breakdowns-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge Breakdowns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/documentation-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_2" id="__nav_4_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Environment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/environment/github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/environment/nix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nix
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/environment-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/hardware/chassis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chassis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/hardware-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_6" id="__nav_4_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/software/aruco_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArUco Detector Node (aruco_detector)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/software/local-localisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Local Localisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/software/robot-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Robot Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/software/ros-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/software/web-ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/software-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hardware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/can-daisy-chain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Can daisy chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/rover-control-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rover Control Board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/smol-brain-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smol Brain Board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/vescs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VESCs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/nix-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nix Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-lite-operation/basic-operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-lite-operation-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseus-Lite Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8_5" id="__nav_4_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseus operation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Perseus operation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-operation/arm-teleop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arm Teleoperation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-operation/autonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autonomy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-operation/excavation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Excavation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-operation/power-on/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Powering on Perseus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-operation/teleop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseus Teleoperation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-operation/web-ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web-UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/perseus-operation-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseus Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index%20copy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintenance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maintenance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintenance/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintenance/github-repo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Repository Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintenance/nix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nix Build System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintenance/software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintenance-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintenance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Standards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/electrical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics Design Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Design Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_12_4" id="__nav_4_12_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_12_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_12_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/software/cpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++ Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/software/frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framework Specific Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/software/general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Software Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/software/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/software/typescript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JS/TS Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/software-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_14" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CAN Bus
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CAN Bus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-detection-and-flags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Detection and Flags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling-and-counters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling and Counters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbitration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arbitration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi-can" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hi-CAN
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hi-CAN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#address-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Address Construction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#broadcasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Broadcasting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-compliant-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-compliant Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hi-can-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hi-CAN Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hi-CAN Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addressing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Addressing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Addressing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi-can-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hi-CAN Usage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hi-CAN Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#can-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CAN Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packet Manager
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Packet Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Callbacks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transmissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transmissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameter Groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminology
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ci-cd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_14_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_14_4" id="__nav_4_14_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_14_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_14_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hardware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/assembly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perseus Assembly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/i2c_imu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I2C IMU
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nix
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_14_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_14_7" id="__nav_4_14_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_14_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_14_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/cmake/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CMake Build Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/network-config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/nix-outputs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nix outputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scripts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/web-ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web-UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../st3215-protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ST3215 Servo Protocol Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../systems-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_16_1" id="__nav_4_16_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hi can
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_16_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_16_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hi can
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/hi-can/01-hi-can-basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Hi-CAN Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/hi-can/02-hi-can-packet-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using the PacketManager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/hi-can-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hi-CAN Tutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/rplidar-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RPLidar C1 Connection Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/running-simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running the Gazebo Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/visualise-perseus-lite-rviz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visualise Perseus-Lite in RViz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/web-ui-widgets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Widget Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-detection-and-flags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Detection and Flags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling-and-counters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling and Counters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbitration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arbitration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi-can" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hi-CAN
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hi-CAN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#address-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Address Construction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#broadcasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Broadcasting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-compliant-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-compliant Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hi-can-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hi-CAN Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hi-CAN Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addressing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Addressing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Addressing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hi-can-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hi-CAN Usage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hi-CAN Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#can-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CAN Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packet Manager
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Packet Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#callbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Callbacks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transmissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transmissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameter Groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminology
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    old docs
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Systems
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/ROAR-QUTRC/perseus-v2/edit/master/docs/04-old/systems/can-bus.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/ROAR-QUTRC/perseus-v2/raw/master/docs/04-old/systems/can-bus.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="can-bus">CAN Bus</h1>
+<p>On Perseus, most embedded systems communicate over the <a href="https://en.wikipedia.org/wiki/CAN_bus">CAN bus</a>.
+To ensure that systems on Perseus work as reliably and with as little hassle as possible, we have created hardware and software standards to which CAN devices should be designed.</p>
+<p>Depending on what you're doing, you may only need to read specific sections of this document.
+If you're doing hardware design or physically connecting the CAN bus, the <a href="#hardware"></a> section will obviously be most relevant to you.
+Alternatively, if you're writing software, you'll probably find the <a href="#hi-can-usage"></a> section most useful, with <a href="#hi-can-architecture"></a> for necessary background information and terminology.
+Finally, reading through the whole <a href="#protocol"></a> section will probably be helpful when debugging issues with the bus, and will likely improve your understanding of the Hi-CAN library's usage.</p>
+<h2 id="hardware">Hardware</h2>
+<p>CAN transmits data over a twisted wire pair of CAN high and CAN low <sup id="fnref:can-hl"><a class="footnote-ref" href="#fn:can-hl">1</a></sup>.
+To make connecting systems easy, almost all subsystems and PCBs use the <a href="https://en.wikipedia.org/wiki/D-subminiature">DE-9</a> connector (usually called DB9 - as noted in the Wikipedia page, this is a misnomer that's stuck) for connecting to the CAN bus, where the female connector is mounted to the PCB, and the cable has 2 male ends.
+In this application, pin 2 is CAN low, and pin 7 CAN high, this being the most <a href="https://en.wikipedia.org/wiki/CAN_bus#Layers">common pinout</a> for CAN bus on a DE-9 connector (potentially with pin 3 as ground, and pin 9 as power).
+When the connectors are used with a return conductor pair (more on that later), pins 1 and 8 are used as return CAN low and high respectively, as they seem to be the least commonly used for other purposes.</p>
+<p>```{figure} /generated/can-bus.drawio.svg
+:alt: CAN bus connectors
+:align: center
+:class: has-dark-opt</p>
+<p>DE-9 CAN bus pinout from outside face
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Some direct-to-board applications, like connecting a USB-CAN adapter, use a 2- or 3-pin JST-XH connector [^jst-pins], although this is only possible for short {term}`branches &lt;branch&gt;`.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>[^jst-pins]: For 3-pin JST connectors: Pin 1 - GND, pin 2 - CAN High, pin 3 - CAN Low. For 2-pin connectors: Pin 1 - CAN High, pin 2 - CAN Low.
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>(can-loops-branches)=
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>### Loops and Branches
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>All devices attached to the CAN bus require at least 3 connections: CAN high, CAN low, and ground.
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>The pair of CAN high/low wires that attach to the bus are called a _branch_, and must be less than 30cm long, otherwise signal reflections will cause interference and potentially stop the bus from working properly.
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>However, for longer connections like payloads, this means the bus must _loop_ out to the device, which can then attach via a short branch, and back.
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>To save space and wiring, the conductor pairs for both ends of the loop are typically run through the same DE-9 connector.
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>This is where the &lt;project:/hardware/can-daisy-chain.md&gt; comes in.
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>Normally, only the &quot;standard&quot; CAN bus pins 2 and 7 (the {term}`&quot;A&quot; pair`) are used, but when the bus needs to make a loop, pins 1 and 8 (the {term}`&quot;B&quot; pair`) make the second connection, also called the &quot;return&quot; connection.
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>However, wiring the bus this way means that the loop must **always** be completed, otherwise the bus will be split in two.
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>When designing CAN bus {term}`node`s, the easiest way to do this is usually to put a standard DE-9 connector on-board the PCB, and connect its A and B pins together there.
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>Since the bus is continuous up until the connector, thanks to the loopback being on the PCB, the PCB connection can then make use of the full 30cm of branch length.
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>If the node is disconnected, then a {term}`loopback connector` will need to be fitted in its place to complete the loop.
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>### Termination
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>CAN bus networks require 120 Ohm terminating resistors at both ends of the bus, which CAN high to CAN low.
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>On Perseus, the termination on both ends of the bus is on-board the {term}`RCB`, and uses _split termination_.
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>Rather than a single 120 Ohm resistor, split termination uses two 60 Ohm resistors [^60-ohms] with a capacitor in the middle, as this filters out some noise - see [^split-termination] for more information.
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>Since both terminations are on the RCB, the CAN bus must both start and end there, making a full loop around the rover.
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>[^60-ohms]: On the RCB, these have actually been substituted with **much** more readily available _62_ Ohm resistors for cost and availability.
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>[^split-termination]: For more information on split termination, see section 7.2.2 in [this datasheet](https://www.ti.com/document-viewer/TCAN332/datasheet#GUID-BE537D5C-327A-49E5-8C24-D63E50312EEB/TITLE-SLLSEQ7SLLSEQ72828).
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>### Connectivity
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>Every device on the CAN bus requires what is called a _controller_ to actually implement the protocol.
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>Controllers then have `CAN_TX` and `CAN_RX` lines, for transmitting and receiving data respectively [^can-rx-tx].
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>However, to actually connect to the bus, a _transceiver_ is also needed, which converts the TX/RX lines to and from bus voltage levels.
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>Many microcontrollers, such as the ESP32-S3 that powers the {term}`SBB`s, have controllers built in.
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>However, almost no devices include a transceiver as well, which must usually be provided externally.
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>In the case of the SBBs, it is built in to the PCB.
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>Additionally, to connect to a CAN bus on most Linux devices, you will need a USB to CAN adapter - although the Jetson Orin Nano is an exception, with its built-in CAN controller.
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>Note that there are two main types of adapter - SocketCAN, and SLCAN (Serial Line CAN).
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>SocketCAN devices will be immediately available to configure when plugged in, but SLCAN devices will first need to be set up with {manpage}`slcand(1)` before they can be configured and enabled.
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>Unfortunately, despite the added complexity, SLCAN devices tend to be much more common than SocketCAN ones.
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>[^can-rx-tx]: These lines are normally high by default, and pulled _low_ when a 1 is being transmitted.
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>## Protocol
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>### Signalling
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>CAN is a _differential_ protocol, meaning that a one or a zero being transmitted is determined by the _difference_ between two lines, rather than the absolute voltage relative to ground.
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>Aside from power, nodes only need a ground connection to ensure that the absolute difference between between CANH or CANL and ground doesn&#39;t become high enough to damage components.
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>To transmit a 0, called the _dominant state_, CAN low is pulled to 0V, and CAN high is pulled to 5V.
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>This is called the bus being _asserted_.
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>However, to transmit a 1, called the _recessive state_, the bus is simply released, and the termination resistors pull the lines to an equal voltage - typically about 2.5V.
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>This means that a 0 on the bus is given by CANH $&gt;$ CANL, and a 1 by CANH $\leq$ CANL, with some tolerance.
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>### Frames
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>CAN transmits data in _frames_, which come in several different types.
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>The first, and most common, type is a _data_ or _message_ frame, which we often call a _packet_.
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>Every CAN bus data frame consists of an address (or ID) and some flags, with up to 8 bytes of data.
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>This address can be either 11 or 29 bits long, depending on the first of these flags, called the IDE (Identifier Extension Bit) flag.
+<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>If the IDE flag is a 0 (dominant), the frame uses an 11-bit address, called {term}`Standard Frame Format`.
+<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>This frame format is is also called CAN 2.0A.
+<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>However, if it is a 1, the frame instead uses a 29-bit address, called the {term}`Extended Frame Format`, or a CAN 2.0B frame.
+<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>
+<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>```{note} Data length
+<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>Data frames don&#39;t actually have to contain any data!
+<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>They can be transmitted with 0 bytes of data.
+<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>However, this is uncommon and usually not very useful.
+</code></pre></div></p>
+<p>The next type of frame is a <em>remote frame</em>, and is very similar to a data frame.
+It contains the same address section and set of flags, but has the RTR, or Remote Transmission Request, flag set.
+When that flag is set, the frame can contain no data, and is instead <em>requesting</em> data be transmitted from a remote node.</p>
+<p>Both remote and data frames have an <em>acknowledge</em> (ACK) slot, which the transmitting node will leave recessive (1).
+If any other nodes on the bus have correctly received the frame, they will pull the ACK slot to 0 (dominant), indicating successful reception.
+Alternatively, if the slot is left recessive, the transmitting node knows that there was an error in transmission (since no other devices acknowledged it).
+The transmitter can choose to handle this in different ways, but will almost always just attempt to re-transmit the frame.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>When developing CAN bus nodes, make sure you either disable requiring acknowledgement [^no-ack], or have at least one other device on the bus.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>If you do not, the device under test will rapidly enter an error state due to none of its frames being acknowledged, which would typically mean a hardware failure.
+</code></pre></div>
+<p>Finally, the last common frame type is an <em>error frame</em>, and is detailed in the <a href="#errors"></a> section.</p>
+<h3 id="errors">Errors</h3>
+<p>Unless you're debugging the CAN bus or writing low-level code that interacts with it, you can probably skip this section.</p>
+<h4 id="error-detection-and-flags">Error Detection and Flags</h4>
+<p>If a node detects an error during frame transmission or reception, it will transmit an error active or error passive flag.
+To ensure that all nodes stay synchronised, a single bit of the opposite polarity is inserted into the frame after 5 identical bits, which is called <em>bit stuffing</em>.
+Error flags exploit this, as they are a deliberate sequence of <em>6</em> identical bits - dominant for an error active flag, and recessive for an error passive flag.
+This has the effect of simultaneously destroying the frame with an "artificial" error and signalling to all devices that it was incorrect - making it an error frame.
+An error flag will be raised by every node that detects an error, regardless of whether it was the original transmitter or not, as otherwise the transmitter might not know that there was a problem.</p>
+<p>In practice, this looks like at least one node detecting an error, and then transmitting an error flag - this is called the <em>primary</em> error flag.
+This error flag will then force any <em>remaining</em> nodes to detect a bit stuffing error, and they will then raise their <em>own</em> error flags, called <em>secondary</em> error flags.
+As such, an error bit sequence can last anywhere from 6-12 bits, depending on when each node detects the fault.</p>
+<h4 id="error-handling-and-counters">Error Handling and Counters</h4>
+<p>The CAN specification dictates that nodes must implement two different counters: The Transmit Error Counter (TEC), and Receive Error Counter (REC).
+As the counters increase, nodes must then take themselves into error states.
+By default, every node is in the <em>Error Active</em> state, which is just normal operation.
+However, if either counter exceeds 127, the node will enter the <em>Error Passive</em> state, detailed more below.
+If the counters keep increasing and either passes 255, the node must then enter the <em>Bus Off</em> state, where it fully disconnects itself from the bus and can no longer transmit data, acknowledgements, or error flags.
+For ESP32-based firmware, this is when <em>bus recovery</em> can be (and is) initiated.
+Alternatively, for Linux, the <code>restart-ms</code> option will re-start the bus after a set delay, although this is disabled by default.
+Many CAN devices (including Linux and ESP32's) also implement an Error Warning state when a counter is above 95 but not yet in the Error Passive state so applications can take preemptive action.
+In the Error Passive state, nodes can still operate mostly normally, but will only transmit Error Passive flags instead of Error Active, and must wait an additional delay after the end of each frame before beginning transmission to give normally operating nodes precedence.</p>
+<p>When a <em>transmitting</em> node detects an error, it will immediately raise a primary error flag (which can be either active <em>or</em> passive), and increment its TEC by 8.
+Alternatively, if a <em>receiver</em> raises the primary error flag, it will increment its <em>REC</em> by 8.
+However, if a receiver instead raises the <em>secondary</em> error flag, it increments its REC by only 1.
+Finally, each time a frame is successfully transmitted or received, the TEC and REC respectively are decremented by 1.
+Note that since an Error Passive flag uses <em>recessive</em> bits, it will be "invisible" unless it's actively transmitting.
+This means that only transmitting nodes can raise error passive flags, preventing faulty receiving nodes from destroying valid frames once they enter the Error Passive state.</p>
+<h3 id="arbitration">Arbitration</h3>
+<p>One of the features of CAN is called <em>arbitration</em>, and automatically determines message priority.
+If multiple nodes start transmitting at the same time, arbitration ensures that one of them will automatically yield the bus to the other after <em>losing arbitration</em>.
+The start of a frame, including the ID and flags, comprises the <em>arbitration phase</em> of the message.
+During this time, each transmitting node is monitoring the bus.
+Since the bus has to be released to a recessive state (1), a node releasing the bus to transmit a 1 at the same time as another node asserts the bus to a 0 will detect this and yield the bus.
+The first consequence of this is that loss of arbitration can only be detected by nodes with a 1 instead of a 0 in the arbitration phase.
+This then means that frames with a lower ID number will <strong>always take priority</strong> over ones with a higher ID.
+Additionally, since the extended ID flag is asserted for {term}<code>SFF</code> frames, 11-bit frames will always take precedence over 29-bit extended frames.
+The second consequence is since the arbitration phase only lasts for the frame "header", if two nodes start transmitting frames with the same ID, it <strong>will cause an error</strong> if their data differs!</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>This is why ensuring that each device has its own address is critical!
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>If you don&#39;t, nodes may transmit at the same time and fail to negotiate arbitration, causing errors.
+</code></pre></div>
+<h3 id="hi-can">Hi-CAN</h3>
+<p>Since the CAN specification does not mandate anything about its actual use, several different protocols have been created for various uses.
+In the case of Perseus, we have written a relatively simple protocol called Hi-CAN---short for hierarchical CAN---as well as a library to implement it.
+This section details its design and use.
+In the event that the implementation in code deliberately differs from the description in this document, the code should be considered "canonical" and the documentation updated.
+Bugs, of course, are an exception.</p>
+<h4 id="parameters">Parameters</h4>
+<p>Hi-CAN was designed primarily to be simple to implement and understand, but also flexible enough to serve a variety of use-cases with minimal hassle.
+To meet this, each device implementing Hi-CAN exposes a set of what are called <em>parameters</em>.
+Each parameter is a piece of data associated with a single CAN ID.
+Parameters should be no more than 8 bytes long, so that they fit in a single CAN data frame (hence, a single CAN ID), and contain a single control input or piece of information.
+A piece of information is usually either a status or sensor reading, and may contain multiple related <em>fields</em>.
+For example, a device status parameter might have uptime, CPU load, and status code fields within it.
+Alternatively, a control input might be something like desired motor speed, power bus control, or enabling/disabling a sensor.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Although it may make sense to combine multiple pieces of information into a status parameter, this should only be done for control interfaces with a _very_ good reason.
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Otherwise, you&#39;re forced to update everything in that parameter at once, even if you only want to change a single thing.
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>However, this behaviour may be wanted in some cases.
+</code></pre></div>
+<p>A set of logically related parameters are then combined into a <em>parameter group</em>, which could typically be described as one "part" or "function" of a device.
+It may also often make sense for a device to provide the same parameter group multiple times under different IDs.
+For example, a board controlling multiple motors should usually implement a single, standard, motor control parameter group for each motor.
+That group might then contain speed and current limit control interfaces, as well as current draw and motor controller status parameters.
+Alternatively, if the board has multiple sensors, each sensor might get a parameter group.
+In a concrete example, the {term}<code>RCB</code> implements the same parameter group for all 4 of its buses, which each provide the same set of control and feedback interfaces.</p>
+<h4 id="address-construction">Address Construction</h4>
+<p>As previously mentioned, frames contain an either 11- or 29-bit long ID, or address.
+Perseus only uses extended frames, with Hi-CAN splitting addresses into 5 sections.
+In order, those sections are the:</p>
+<ul>
+<li>System ID (6 bits, maximum value 63 or <code>0x3F</code>)</li>
+<li>Subsystem ID (3 bits, maximum value 7 or <code>0x07</code>)</li>
+<li>Device ID (4 bits, maximum value 15 or <code>0x0F</code>)</li>
+<li>Parameter Group ID, or just Group ID (8 bits, maximum value 255 or <code>0xFF</code>)</li>
+<li>Parameter ID (8 bits, maximum value 255 or <code>0xFF</code>)</li>
+</ul>
+<p>Which, in binary, breaks the address up like so <sup id="fnref:id-breakdown"><a class="footnote-ref" href="#fn:id-breakdown">3</a></sup>: [000AAAAA][ABBBCCCC][DDDDDDDD][EEEEEEEE]</p>
+<p>Or, in hexadecimal (note that the subsystem ID, being only 3 bits, shares its hex digit with the system ID): [AA][BC][DD][EE]</p>
+<p>Some examples of what the full CAN frame ID looks like in various scenarios are provided below - note the system ID's overlap onto the third digit:</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum EFF CAN ID <sup id="fnref:id-example-1"><a class="footnote-ref" href="#fn:id-example-1">4</a></sup></td>
+<td><code>0x1FFFFFFF</code></td>
+</tr>
+<tr>
+<td>Maximum System ID</td>
+<td><code>0x1F800000</code></td>
+</tr>
+<tr>
+<td>Maximum Subsystem ID</td>
+<td><code>0x00700000</code></td>
+</tr>
+<tr>
+<td>Maximum Device ID</td>
+<td><code>0x000F0000</code></td>
+</tr>
+<tr>
+<td>Maximum Group ID</td>
+<td><code>0x0000FF00</code></td>
+</tr>
+<tr>
+<td>Maximum Parameter ID</td>
+<td><code>0x000000FF</code></td>
+</tr>
+<tr>
+<td>All IDs 1</td>
+<td><code>0x00910101</code></td>
+</tr>
+<tr>
+<td>All IDs 2</td>
+<td><code>0x01220202</code></td>
+</tr>
+<tr>
+<td>All IDs <code>0x0F</code> (<code>0x07</code> for subsystem)</td>
+<td><code>0x07FF0F0F</code></td>
+</tr>
+</tbody>
+</table>
+<p>Thanks to CAN <a href="#arbitration">arbitration</a>, this gives the address a <em>hierarchical</em> set of priorities from the various IDs, with the system ID being the most important - hence the name Hi-CAN.
+The combination of system, subsystem, and device IDs together identify any physical device on the bus.
+When a frame has an ID for a specific device, that means it is either being transmitted <em>to</em> or <em>by</em> that device.
+Then, the group and parameter IDs actually select a unique parameter that the device provides.</p>
+<h4 id="broadcasting">Broadcasting</h4>
+<p>Devices implementing Hi-CAN should typically be <em>broadcasting</em> everything that isn't a control interface on a fixed interval.
+Additionally, when a device receives a remote frame with an address matching any of its parameters, it should immediately transmit that parameter with its latest information.
+This allows for any node requiring information more frequently to simply request it using remote frames, and allows nodes to query the current state of control interfaces.</p>
+<p>Some devices may also implement control interfaces that must be continuously updated.
+These are usually for systems that could become unsafe in the event of control loss, like motors or heaters.
+In this case, those interfaces must receive new data within a certain interval of the last update, or they will revert to a fail-safe state.
+This behaviour is detailed more in the <a href="#software"></a> section.</p>
+<h4 id="non-compliant-hardware">Non-compliant Hardware</h4>
+<p>Of course, not all off-the-shelf devices can be made Hi-CAN compliant.
+One example is the {term}<code>VESC</code>s used to drive Perseus' motors, which use IDs in the fixed format <code>0x0000AABB</code> (A: command ID, B: VESC ID).
+Fortunately, in most cases, between configuring the devices and reserving specific system/subsystem IDs, even non-compliant devices can be shoehorned into the Hi-CAN ecosystem.</p>
+<p>In the case of VESCs, the solution was fairly easy:</p>
+<ol>
+<li>Assign system 0 (drive) and subsystem 0 (VESC) to VESCs, thus reserving all frame IDs starting with <code>0x000</code>.
+   This ensures that no other Hi-CAN devices will transmit packets that could be mistaken for VESC commands.</li>
+<li>Provide a VESC-specific address builder (a specialised {type}<code>address_t&lt;hi_can::addressing::drive::vesc::address_t&gt;</code>), taking care of the ID's differing layout.</li>
+</ol>
+<h2 id="software">Software</h2>
+<p>The library implementing Hi-CAN, creatively also named <code>hi-can</code>, is split into a few different components.
+First is main <code>hi-can</code> library - this is pure C++ for portability, and defines the API for interacting with the CAN bus, how packets and parameters work, assigns addresses, and more.
+To eliminate code duplication and ensure that the same library core runs on all systems (both Linux and embedded), code in <code>hi-can</code> has to be system-agnostic, with all target-specific code split into separate libraries that depend on <code>hi-can</code> called <em>implementations</em>.</p>
+<h3 id="hi-can-architecture">Hi-CAN Architecture</h3>
+<p>Note that all Hi-CAN libraries are under the <a href="project:#namespace_hi_can"><code>hi_can</code></a> namespace, which will not be specified for the sake of brevity.
+The main Hi-CAN library is split into 3 sections:</p>
+<ul>
+<li>Core: Abstraction layers, frame construction, handling scheduled frame transmission/reception, managing parameter groups</li>
+<li><a href="project:#namespace_hi_can__addressing"><code>hi_can::addressing</code></a>: CAN address construction, ID assignments</li>
+<li><a href="project:#namespace_hi_can__parameters"><code>hi_can::parameters</code></a>: Parameter construction, serialisation and deserialisation, and defining parameter groups</li>
+</ul>
+<p>% set the namespace for code snippets</p>
+<p>```{namespace} hi_can</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>#### Implementations
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>The first implementation is the raw SocketCAN implementation for Linux systems - `hi-can-raw`.
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>This is what almost all Linux code needing CAN bus access will be interacting with.
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>To use it, projects need to configure their CMake build process to link to `hi-can-raw`, then include the main header file:
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>```cpp
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>#include &lt;hi_can_raw.hpp&gt;
+</code></pre></div>
+<p>Next is the specialisation for microcontrollers - in this case, the library is also named <code>hi-can</code>, but is located in the <a href="project:#dir_firmware_components"><code>firmware/components</code></a> directory.
+As before, to use the library, the project must first be configured to link to the library, and then include the implementation's header file:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hi_can_twai.hpp&gt;</span>
+</code></pre></div>
+<p>Details on setting projects up to link to the implementations can be found under <project:/development-index.md>.</p>
+<h4 id="core">Core</h4>
+<p>At the core of the Hi-CAN library is the {expr}<code>CanInterface</code> class.
+Although it doesn't do much on its own, being simply an interface for implementations to complete, it defines the library's API for directly interacting with the CAN bus.
+Its primary jobs are simply to provide a way to transmit and receive CAN frames - see its documentation for more information.
+However, most applications only care about a small fraction of the data on the bus, hence the {expr}<code>FilteredCanInterface</code> interface which only receives frames matching its filters (more on that later).
+On Linux, the kernel should handle filtering after socket configuration, and in embedded applications, it should usually be handled by hardware.
+However, in the few cases where filters need to be implemented on the application side, the {expr}<code>SoftwareFilteredCanInterface</code> takes an un-filtered CAN interface and wraps it to provide filtering.</p>
+<p>To actually <em>represent</em> CAN frames, the {expr}<code>Packet</code> class bundles together data, the frame ID, frame flags, and methods for conveniently setting/getting the data.
+This is what the {expr}<code>CanInterface</code> class actually deals with user-side.
+However, this still leaves the burden of handling interval transmissions or fail-safe parameters, for which the {expr}<code>PacketManager</code> class was written.
+For data transmission, it handles interval (scheduled) parameters, since single-shot frames can be transmitted with less hassle directly through the {expr}<code>CanInterface</code>.
+Its primary use-case, however, is data <em>reception</em>.
+When properly configured, the {expr}<code>PacketManager</code> will automatically handle calling callbacks on data reception, parameter timeout, and recovery if data is received after a timeout.
+As usual, check its documentation for the full API, or the library <a href="#hi-can-usage">usage</a> section for the fundamentals.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>All system-specific addressing and parameter types and variables are defined under their own namespaces.
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>For example, the list of primary compute device IDs is defined in {enum}`addressing::compute::primary::device`.
+</code></pre></div>
+<h4 id="addressing">Addressing</h4>
+<p>Depending on where in the stack you are, Hi-CAN uses one of a few different ways to represent CAN addresses.
+The first and most basic is simply the {expr}<code>addressing::raw_address_t</code>, representing the underlying 11- or 29-bit long frame ID.
+However, actual frames also have several flags associated with them needing storage, so the {expr}<code>addressing::flagged_address_t</code> struct was created to to serve that need.</p>
+<p>```{namespace-push} addressing::flagged_address_t</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Flagged addresses have 3 additional members: {expr}`is_extended`, {expr}`is_rtr`, and {expr}`is_error`.
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>As one would expect, {expr}`is_extended` determines whether the ID is in standard (11-bit) or extended (29-bit) form, and for Hi-CAN usage, should always be `true`.
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>The next flag, {expr}`is_rtr` is exactly what it looks like: Is the frame a remote (RTR) frame?
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>Finally, {expr}`is_error` is set if the frame had an error during reception.
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>Note that it cannot be set when _transmitting_ a frame, as this would be nonsensical.
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>```{namespace-pop}
+</code></pre></div>
+<p>As detailed in the <a href="#address-construction">Hi-CAN protocol</a> section, frame IDs are split into several different sub-fields.
+Although much of the library interacts directly with frame IDs in either raw or flagged addresses, the {expr}<code>addressing::standard_address_t</code> struct has also been created to allow for easily creating or modifying Hi-CAN addresses in a much more human-friendly fashion.
+With multiple ways of constructing addresses, the {expr}<code>addressing::structured_address_t</code> interface type was created, which guarantees easy conversion to a standard {expr}<code>addressing::raw_address_t</code> with a simple cast.
+As such, both the {expr}<code>addressing::flagged_address_t</code> and {expr}<code>addressing::standard_address_t</code> inherit from it, as should any other ways of constructing addresses.
+This means that any time the library needs a raw address, it can be built with one of the much more convenient structs instead.</p>
+<p>All IDs (system, subsystem, device, group, and parameter) are defined in <a href="project:#file_software_shared_hi-can_include_hi_can_address.hpp">{file}<code>/software/shared/hi-can/include/hi_can_address.hpp</code></a>.</p>
+<h5 id="filters">Filters</h5>
+<p>{expr}<code>addressing::filter_t</code>'s can be applied to a {expr}<code>FilteredCanInterface</code> to allow it to only receive from addresses that match any of the filters.
+The {expr}<code>addressing::filter_t::address</code> member determines the actual <em>address</em> to match---unless the mask is changed, the filter will only allow that single address.
+Next is the {expr}<code>addressing::filter_t::mask</code>, which determines which bits in the address to match.
+By default, it will match the entire address.
+However, if any bits in the mask are cleared, they won't be compared during matching.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>If the filter&#39;s mask is set to `0x0000FFFF` and address to `0x12345678`, it would match `0x12345678` and `0x00345678`, but not `0x12345600`, since it&#39;s only comparing the last 16 bits (4 digits).
+</code></pre></div>
+<p>The filter can also be set to match RTR and error flags, with the {expr}<code>addressing::filter_t::should_match_rtr</code> and {expr}<code>addressing::filter_t::should_match_error</code> flags respectively.</p>
+<p>Filters can be <em>added</em> using {expr}<code>FilteredCanInterface::add_filter()</code>, and removed with {expr}<code>FilteredCanInterface::remove_filter()</code>.
+If the interface has <em>no</em> filters applied (either because it's just been created or all filters were removed), it will allow all IDs.</p>
+<h4 id="parameters_1">Parameters</h4>
+<p>Everything parameters is located in {file}<code>/software/shared/hi-can/include/hi_can_parameter.hpp</code> and its corresponding source file.
+To actually <em>transmit</em> data over the bus, it must be <em>{term}<code>serialised &lt;serialisation&gt;</code></em> into a sequence of bytes---that is, an array of {expr}<code>uint8_t</code>'s, represented as a {expr}<code>std::vector&lt;uint8_t&gt;</code>.
+Once it's been received, the byte sequence must then be <em>{term}<code>deserialised &lt;deserialisation&gt;</code></em> back into a standard data type.
+Hi-CAN defines the {expr}<code>parameters::Serializable</code> and {expr}<code>parameters::Deserializable</code> classes for a standard API for handling (de)serialisation, as well as the {expr}<code>parameters::BidirectionalSerializable</code> class, which implements both of them.
+To serialise data, use the {expr}<code>parameters::Serializable::serialize_data()</code>, which returns a buffer that can then be assigned to a frame with {expr}<code>Packet::set_data()</code> method.
+Alternatively, to deserialise data back into a useful type, use {expr}<code>parameters::Deserializable::deserialize_data()</code> instead.
+As previously mentioned, almost all parameters should implement the {expr}<code>parameters::BidirectionalSerializable</code> for bidirectional transformations.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>As described in &lt;project:/standards/software/general.md&gt;, software uses American spelling, so any functions/method definitions should use the American _serialize_ instead of _serialise_.
+</code></pre></div>
+<p>Although all systems currently running on Perseus use {term}<code>little-endian</code> {term}<code>byte order</code>, allowing standard integer types like the {expr}<code>uint32_t</code> to be directly copied in and out of buffers, a system's byte order is not always guaranteed.
+Therefore, wherever possible, Hi-CAN data should explicitly convert data into {term}<code>network order</code> ({term}<code>big-endian</code>), so that the byte order is well defined.
+This also has the added benefit that the serialised data is easier for humans to interpret.
+In code, this usually means using functions like {cpp-inline}<code>htonl()</code> (host to network, {expr}<code>long</code>) or {cpp-inline}<code>ntohs()</code> (network to host, {expr}<code>short</code>) during serialisation and deserialisation respectively to guarantee the correct byte order.
+However, if transmitting data in the host's byte order, or if the order is guaranteed (like in a packed <code>struct</code>), data can be copied directly in and out of the buffers.
+This is implemented by the {expr}<code>parameters::SimpleSerializable</code> class, which simply wraps the provided type to provide serialisation.
+For base types such as the {expr}<code>int32_t</code> which cannot be inherited from, the {expr}<code>parameters::wrapped_value_t</code> wraps them in a struct so they can be passed into {expr}<code>parameters::SimpleSerializable</code> and the like.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>If you&#39;re serialising a `struct`, make sure it&#39;s properly packed!
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>By default, members are aligned to the system&#39;s memory word width---in modern computers, typically 64 bits, or for the ESP32, 32 bits.
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>This means that any types that take up fewer bits will be &quot;expanded&quot; to the full width.
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>To disable this behaviour, use the `#pragma pack` directive, usually as follows:
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>```cpp
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>#pragma pack(push, 1)
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>// define the structs here
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>#pragma pack(pop)
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>```
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>Using `push` and `pop` means the changes will only be applied between the two lines, so the rest of your file will remain unaffected.
+</code></pre></div>
+<p>Additionally, although most systems store {expr}<code>float</code>s and {expr}<code>double</code>s using the IEEE 754 standard, this is nowhere <em>near</em> guaranteed (especially on embedded architectures), and as such copying floating-point numbers directly to/from buffers is <strong>strongly</strong> discouraged.
+The recommended alternative is to use <em>fixed-point</em> math and transmit data over the network as an integer with a multiplier.
+Rather than transmitting the value <code>123.456</code> as a <code>float</code>, this means first multiplying by a multiplier (say 1000x), then sending an <code>int32_t</code>: <code>123456</code>.
+This functionality is provided by the {expr}<code>parameters::scaled_int32_t</code> and {expr}<code>parameters::scaled_int16_t</code> types.</p>
+<p>Most of the time, parameters are provided as part of a group, which must implement the {expr}<code>parameters::ParameterGroup</code> interface, like for example the {expr}<code>parameters::drive::vesc::VescParameterGroup</code>.
+Parameter groups are implemented as follows:</p>
+<ol>
+<li>Create internal private members to store the relevant parameters.</li>
+<li>Create getters for the parameters, usually as references.</li>
+<li>In the parameter group constructor, do one or more of:</li>
+<li>Add entries to {expr}<code>parameters::ParameterGroup::_callbacks</code>: {expr}<code>PacketManager</code> callback configurations, for parameters that receive data.</li>
+<li>Add entries to {expr}<code>parameters::ParameterGroup::_transmissions</code>: {expr}<code>PacketManager</code> transmission configurations, for interval transmission parameters.</li>
+<li>Override {expr}<code>parameters::ParameterGroup::get_startup_transmissions()</code> with a list of frames to transmit upon the group's initialisation.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>The {expr}`PacketManager` class usage is detailed in the [](#hi-can-usage) section.
+</code></pre></div>
+<p>Parameter groups will typically take an {expr}<code>addressing::standard_address_t</code> from which the device address is extracted, and some form of <code>enum</code> or group number which determines the group ID.
+Since the actual parameter IDs are fixed, the parameter group can then construct the full addresses for all of its internal parameters from those two values.</p>
+<h3 id="hi-can-usage">Hi-CAN Usage</h3>
+<p>This section details the practical usage of the Hi-CAN library in actual code.</p>
+<h4 id="can-interface">CAN Interface</h4>
+<p>As previously mentioned, programs require a CAN interface instance to interact with the CAN bus.
+Currently, there are two available options provided by the library implementations:</p>
+<ol>
+<li>The {expr}<code>RawCanInterface</code> class for Linux. Defined in the <code>hi-can-raw</code> under {file}<code>/software/shared</code>. Based on raw <a href="https://docs.kernel.org/networking/can.html">SocketCAN</a>.</li>
+<li>The {expr}<code>TwaiInterface</code> class for firmware. Defined in the <code>hi-can</code> library under {file}<code>/firmware/components</code>. Based on the ESP32's <a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/twai.html">{term}<code>TWAI</code></a> library.</li>
+</ol>
+<p>Although each implementation implements the same API, they all come with their own quirks, so you should read each one's documentation thoroughly.
+To start using Hi-CAN, you must instantiate one of these options.
+The interface can now be used directly to receive or transmit a {expr}<code>Packet</code> with the {expr}<code>CanInterface::transmit()</code><sup id="fnref:raw-can-tx"><a class="footnote-ref" href="#fn:raw-can-tx">5</a></sup> and {expr}<code>CanInterface::receive()</code> methods.</p>
+<h4 id="packet-manager">Packet Manager</h4>
+<p>```{namespace-push} PacketManager</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Directly handling packet transmission and reception is a lot of repetitive code that can be easily shared.
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>As such, the {expr}`PacketManager` class does exactly that, managing scheduled transmission of frames as well as parameter reception and timeouts.
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>```{warning}
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>When constructed, the {expr}`PacketManager` takes over receiving frames from the {expr}`FilteredCanInterface` passed into it.
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>You **must not** override the interface&#39;s receive callback, otherwise the {expr}`PacketManager` can no longer receive data!
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>However, you can still transmit frames directly with the interface.
+</code></pre></div>
+<p>The class is based around two main features: <em>callbacks</em> and <em>transmissions</em>, each of which has its own section below.
+These are handled by the {expr}<code>handle_receive()</code> and {expr}<code>handle_transmit()</code> methods respectively, or usually {expr}<code>handle()</code> instead which calls both of them.
+Either both receive and transmit, or the main handler must be called regularly for the class to operate.
+Usually, this means calling it in your program's main loop or on a high-frequency (typically less than 10ms interval) timer.</p>
+<h5 id="callbacks">Callbacks</h5>
+<p>```{namespace-push} callback_config_t</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>In the {expr}`PacketManager`, callbacks are functions that get called when a frame is received.
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>A callback is set using the {expr}`set_callback()` method, which requires both a {expr}`addressing::filter_t` and a {expr}`PacketManager::callback_config_t`.
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>The filter specifies _what_ addresses should be handled, and the configuration specifies _how_ to handle them.
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>In the configuration, there is the main {expr}`data_callback` function, which gets called any time a matching frame is received, and several other fields which specify how to handle data timeouts.
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>If a timeout duration is specified with {expr}`timeout`, data is expected spaced {expr}`timeout` apart, whatever that duration happens to be.
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>In Hi-CAN, 2 frames may be missed before the parameter is considered timed out, at which point the {expr}`timeout_callback` function will be called.
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>This means that if the timeout is 1 second, the parameter will time out after 3 seconds (1 second of expected delay, plus 2 seconds for missed frames).
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>Finally, if data is received for the first time after a timeout, the {expr}`timeout_recovery_callback` function is called after the data callback.
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>To retrieve a pre-existing callback configuration, or remove an unneeded one, you can use the {expr}`get_callback()` and {expr}`remove_callback()` functions, respectively.
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>If needed, callbacks can also be updated with {expr}`set_callback()`.
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>```{namespace-pop}
+</code></pre></div>
+<h5 id="transmissions">Transmissions</h5>
+<p>```{namespace-push} transmission_config_t</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Transmission configurations are set with {expr}`set_transmission_config()`, and are how the {expr}`PacketManager` handles sending data on a schedule.
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Each transmission configuration, stored in the {expr}`PacketManager::transmission_config_t` struct, is associated with a standard {expr}`addressing::flagged_address_t`.
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>The transmitted frames will all be sent with the provided address, and data provided by the {expr}`generator` function.
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>Using a function rather than a fixed data buffer makes implementing parameters much easier, since the data generator can just be the parameter&#39;s serialisation function.
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>The {expr}`transmission_config_t` also has two additional members: {expr}`interval`, how often the data should be transmitted, and {expr}`should_transmit_immediately`, whether the data should be transmitted immediately after storing the configuration instead of waiting for a transmit call.
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>Analogous to callbacks, previously set transmission configurations can be updated using the {expr}`set_transmission_config()` and {expr}`set_transmission_interval()` methods, or removed with {expr}`remove_transmission()`.
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>```{namespace-pop}
+</code></pre></div>
+<h5 id="parameter-groups">Parameter Groups</h5>
+<p>As mentioned previously, the {expr}<code>parameters::ParameterGroup</code> class is a conveniently grouped set of callback and transmission configurations to implement a set of parameters.
+A parameter group can then be added to or removed from a {expr}<code>PacketManager</code> with the {expr}<code>PacketManager::add_group()</code> or {expr}<code>PacketManager::remove_group()</code> methods.
+This allows for the same configurations to be reused in multiple places without having to provide each set of configurations directly to the {expr}<code>PacketManager</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>
+</code></pre></div>
+<h3 id="working-examples">Working Examples</h3>
+<p>Working examples of how to use the Hi-CAN library are provided in each of its <a href="project:/tutorials/hi-can-index.md">tutorials</a>.</p>
+<h2 id="terminology">Terminology</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>TWAI
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>  Two-Wire Automotive Interface. What Espressif call their implementation of CAN for legal reasons.
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>CAN
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>  Short for Controller Area Network.
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>CAN bus
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>  The physical/logical bus to which devices are connected to construct the network.
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>Hi-CAN
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>  Short for Hierarchical CAN. The name of the protocol used in Perseus which dictates how devices communicate on the CAN bus. See [](#hi-can) for more information.
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>VCAN
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>  Virtual CAN bus on Linux. Very useful for testing CAN software.
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>Node
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>  A device on the {term}`CAN bus`.
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a>Branch
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a>  A short conductor pair (CAN high, CAN low) coming off the {term}`CAN bus` to connect a device. Must be shorter than 30cm.
+<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a>
+<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a>Loop
+<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a>  A loop of the {term}`CAN bus` (going out and returning) run &quot;outside&quot; its normal path to a {term}`node` which would otherwise require a long branch.
+<a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a>
+<a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a>A pair
+<a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a>&quot;A&quot; pair
+<a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a>  The conductor/pin pair that CAN high and low are normally connected to. If unspecified, the conductors will be an A pair. Typically {literal}`CAN_A_L` and {literal}`CAN_A_H` if specified.
+<a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a>
+<a id="__codelineno-16-29" name="__codelineno-16-29" href="#__codelineno-16-29"></a>B pair
+<a id="__codelineno-16-30" name="__codelineno-16-30" href="#__codelineno-16-30"></a>&quot;B&quot; pair
+<a id="__codelineno-16-31" name="__codelineno-16-31" href="#__codelineno-16-31"></a>  Secondary conductor pair to allow for a loop&#39;s return path to be in the same cable. Typically denoted as {literal}`CAN_B_L` and {literal}`CAN_B_H`.
+<a id="__codelineno-16-32" name="__codelineno-16-32" href="#__codelineno-16-32"></a>
+<a id="__codelineno-16-33" name="__codelineno-16-33" href="#__codelineno-16-33"></a>Loopback
+<a id="__codelineno-16-34" name="__codelineno-16-34" href="#__codelineno-16-34"></a>  Connecting the A and B conductor pairs together to complete a {term}`loop`.
+<a id="__codelineno-16-35" name="__codelineno-16-35" href="#__codelineno-16-35"></a>
+<a id="__codelineno-16-36" name="__codelineno-16-36" href="#__codelineno-16-36"></a>Loop connector
+<a id="__codelineno-16-37" name="__codelineno-16-37" href="#__codelineno-16-37"></a>  A connector using both the A and B pairs. Must be attached to a loop which connects the A and B pairs together in order to complete the bus.
+<a id="__codelineno-16-38" name="__codelineno-16-38" href="#__codelineno-16-38"></a>
+<a id="__codelineno-16-39" name="__codelineno-16-39" href="#__codelineno-16-39"></a>CAN jumper
+<a id="__codelineno-16-40" name="__codelineno-16-40" href="#__codelineno-16-40"></a>Loopback connector
+<a id="__codelineno-16-41" name="__codelineno-16-41" href="#__codelineno-16-41"></a>  A connector which internally forms a loopback.
+<a id="__codelineno-16-42" name="__codelineno-16-42" href="#__codelineno-16-42"></a>
+<a id="__codelineno-16-43" name="__codelineno-16-43" href="#__codelineno-16-43"></a>SFF
+<a id="__codelineno-16-44" name="__codelineno-16-44" href="#__codelineno-16-44"></a>Standard Frame Format
+<a id="__codelineno-16-45" name="__codelineno-16-45" href="#__codelineno-16-45"></a>  CAN message frame using 11-bit IDs.
+<a id="__codelineno-16-46" name="__codelineno-16-46" href="#__codelineno-16-46"></a>
+<a id="__codelineno-16-47" name="__codelineno-16-47" href="#__codelineno-16-47"></a>EFF
+<a id="__codelineno-16-48" name="__codelineno-16-48" href="#__codelineno-16-48"></a>Extended Frame Format
+<a id="__codelineno-16-49" name="__codelineno-16-49" href="#__codelineno-16-49"></a>  CAN message frame using 29-bit IDs.
+<a id="__codelineno-16-50" name="__codelineno-16-50" href="#__codelineno-16-50"></a>
+<a id="__codelineno-16-51" name="__codelineno-16-51" href="#__codelineno-16-51"></a>Address
+<a id="__codelineno-16-52" name="__codelineno-16-52" href="#__codelineno-16-52"></a>CAN Address
+<a id="__codelineno-16-53" name="__codelineno-16-53" href="#__codelineno-16-53"></a>CAN ID
+<a id="__codelineno-16-54" name="__codelineno-16-54" href="#__codelineno-16-54"></a>Frame ID
+<a id="__codelineno-16-55" name="__codelineno-16-55" href="#__codelineno-16-55"></a>  The 11- or 29-bit ID number at the start of a CAN data or remote frame.
+<a id="__codelineno-16-56" name="__codelineno-16-56" href="#__codelineno-16-56"></a>
+<a id="__codelineno-16-57" name="__codelineno-16-57" href="#__codelineno-16-57"></a>CAN Frame
+<a id="__codelineno-16-58" name="__codelineno-16-58" href="#__codelineno-16-58"></a>  See [](#frames).
+<a id="__codelineno-16-59" name="__codelineno-16-59" href="#__codelineno-16-59"></a>
+<a id="__codelineno-16-60" name="__codelineno-16-60" href="#__codelineno-16-60"></a>DLC
+<a id="__codelineno-16-61" name="__codelineno-16-61" href="#__codelineno-16-61"></a>Data Length Code
+<a id="__codelineno-16-62" name="__codelineno-16-62" href="#__codelineno-16-62"></a>  The section of a CAN data frame preceding the data which determines how many bytes of data are present.
+<a id="__codelineno-16-63" name="__codelineno-16-63" href="#__codelineno-16-63"></a>
+<a id="__codelineno-16-64" name="__codelineno-16-64" href="#__codelineno-16-64"></a>Serialisation
+<a id="__codelineno-16-65" name="__codelineno-16-65" href="#__codelineno-16-65"></a>  The process of converting a data type into a byte sequence.
+<a id="__codelineno-16-66" name="__codelineno-16-66" href="#__codelineno-16-66"></a>
+<a id="__codelineno-16-67" name="__codelineno-16-67" href="#__codelineno-16-67"></a>Deserialisation
+<a id="__codelineno-16-68" name="__codelineno-16-68" href="#__codelineno-16-68"></a>  Reversing {term}`serialisation`.
+<a id="__codelineno-16-69" name="__codelineno-16-69" href="#__codelineno-16-69"></a>
+<a id="__codelineno-16-70" name="__codelineno-16-70" href="#__codelineno-16-70"></a>Endianness
+<a id="__codelineno-16-71" name="__codelineno-16-71" href="#__codelineno-16-71"></a>Byte order
+<a id="__codelineno-16-72" name="__codelineno-16-72" href="#__codelineno-16-72"></a>  Whether computers store the bytes of a multi-byte type like a {expr}`uint32_t` in increasing or decreasing significance.
+<a id="__codelineno-16-73" name="__codelineno-16-73" href="#__codelineno-16-73"></a>
+<a id="__codelineno-16-74" name="__codelineno-16-74" href="#__codelineno-16-74"></a>Little Endian
+<a id="__codelineno-16-75" name="__codelineno-16-75" href="#__codelineno-16-75"></a>Little-Endian
+<a id="__codelineno-16-76" name="__codelineno-16-76" href="#__codelineno-16-76"></a>Network Order
+<a id="__codelineno-16-77" name="__codelineno-16-77" href="#__codelineno-16-77"></a>  {term}`Byte order` in which bytes are stored in order of least to most significant. Often referred to as network order, as it is often the preferred format for data transfer over networks. For example, `0x12345678` would be stored in memory as {cpp-inline}`[0x78 0x56 0x34 0x12]`.
+<a id="__codelineno-16-78" name="__codelineno-16-78" href="#__codelineno-16-78"></a>  Reverse of {term}`Big-Endian`.
+<a id="__codelineno-16-79" name="__codelineno-16-79" href="#__codelineno-16-79"></a>
+<a id="__codelineno-16-80" name="__codelineno-16-80" href="#__codelineno-16-80"></a>Big Endian
+<a id="__codelineno-16-81" name="__codelineno-16-81" href="#__codelineno-16-81"></a>Big-Endian
+<a id="__codelineno-16-82" name="__codelineno-16-82" href="#__codelineno-16-82"></a>  {term}`Byte order` in which bytes are stored in order of most to least significant. For example, `0x12345678` would be stored in memory as {cpp-inline}`[0x12 0x34 0x56 0x78]`.
+<a id="__codelineno-16-83" name="__codelineno-16-83" href="#__codelineno-16-83"></a>  Reverse of {term}`Little-Endian`.
+</code></pre></div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:can-hl">
+<p>Typically some variation of <code>CAN_H</code>/<code>CAN_L</code>, <code>CANH</code>/<code>CANL</code>, or <code>CAN+</code>/<code>CAN-</code> in schematics.&#160;<a class="footnote-backref" href="#fnref:can-hl" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:no-ack">
+<p>On Linux, this means setting <a href="https://www.kernel.org/doc/html/latest/networking/can.html#netlink-interface-to-set-get-devices-properties"><code>presume-ack</code></a> to <code>on</code>, and in firmware, setting the <code>HI_CAN_NO_ACK</code> <code>menuconfig</code> option.&#160;<a class="footnote-backref" href="#fnref:no-ack" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:id-breakdown">
+<p>A: System, B: Subsystem, C: Device, D: Group, E: Parameter. The square brackets group group by byte.&#160;<a class="footnote-backref" href="#fnref:id-breakdown" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:id-example-1">
+<p>Note that due to the CAN ID being 29 bits long, the maximum value for the first hex digit is only ever 1.&#160;<a class="footnote-backref" href="#fnref:id-example-1" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:raw-can-tx">
+<p>One example of the aforementioned "quirks" is if a Linux CAN interface is connected to <code>any</code> instead of an actual can bus like <code>can0</code>. In this case, it can <em>receive</em> from all buses, but not <em>transmit</em> to any of them unless the exact bus is specified.&#160;<a class="footnote-backref" href="#fnref:raw-can-tx" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../standards-index/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Standards">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Standards
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ci-cd/" class="md-footer__link md-footer__link--next" aria-label="Next: CI/CD">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                CI/CD
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; Copyright 2026, ROAR Team.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ROAR-QUTRC" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/qutroarteam/reels/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388 5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552 1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388 5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912.056-1.28.07-1.69.063-4.948-.006-3.258-.02-3.667-.081-4.947-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123 5.86 5.86 0 0 0-2.128-1.38C19.074.322 18.202.12 16.924.066 15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895 3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228-.06-1.264-.072-1.644-.08-4.848-.006-3.204.006-3.583.061-4.848.05-1.169.246-1.805.408-2.228.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417 1.265-.06 1.644-.072 4.848-.08 3.203-.006 3.583.006 4.85.062 1.168.05 1.804.244 2.227.408.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227.06 1.265.074 1.645.08 4.848.005 3.203-.006 3.583-.061 4.848-.051 1.17-.245 1.805-.408 2.23-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442 1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024 6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16 4 4 0 0 1 8 12.008"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://au.linkedin.com/company/roar-team" target="_blank" rel="noopener" title="au.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "search.suggest", "content.tabs.link", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
